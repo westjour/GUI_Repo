@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WDB xmlns="http://ns">
+  <Stations StationID="" Station_Name="" Place_Name="" Lat="" Long="" Elev="" Tav="" Amp="" Tmht="" Wmht="">
+    <Storm_Intensity>
+      <Intensity Month="" SIValue="" />
+    </Storm_Intensity>
+    <Hourly_Rainfall>
+      <Rain Year="" DOY="" Hour="" HrPrecip="" />
+    </Hourly_Rainfall>
+    <Weather Columns="Year,DOY,SRAD,Tmax,Tmin,Rain,DewP,Wind,PAR,">
+    </Weather>
+  </Stations>
+  <Version_Control>
+    <Version Number="X_1.0">
+      <ReleaseDate>03/11/2014</ReleaseDate>
+      <Notes>Automatically converted from Access DB by salus_access2xml program.</Notes>
+    </Version>
+  </Version_Control>
+</WDB>

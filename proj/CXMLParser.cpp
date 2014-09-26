@@ -1,5 +1,3 @@
-#include<iostream>
-
 #include <map>
 #include <vector>
 
@@ -76,7 +74,7 @@ void CXMLParser::parseWDB(QVector<CStation*>* stations)
                         QString value = attrNode.value();
 
                         // Add attribute to the station's attribute map
-                        station->getAttributes().insert(std::pair<QString, QString>(name, value));
+                        station->getAttributes().insert(name, value);
                     }
                 }
 
@@ -126,6 +124,17 @@ void CXMLParser::parseWDB(QVector<CStation*>* stations)
             n = n.nextSiblingElement();
         } // end "if element"
     } // end while, done parsing XML
+    
+    qDebug("<<<DONE PARSING XML>>>");
+    
+    QMap<QPair<QString, QString>, QVector<QString> > weatherMap = (*stations)[0]->mDailyWeather->mWeather;
+    qDebug("in parseWDB(), weather map size=%i", weatherMap.size());
+    QList<QPair<QString, QString> >::const_iterator citer = weatherMap.keys().begin();
+    
+    /*for(citer; citer!=weatherMap.keys().end(); citer++)
+     {
+         QPair<QString,QString> p = (*citer);
+     }*/
 }
 
 
@@ -147,18 +156,27 @@ void CXMLParser::parseWeatherData( CStation* station, QString s )
     a[sizeof(a) - 1] = '\0';
 
 
-    //
-    // Parse characters
-    //
+    /*******************************
+    # Parse characters
+    ********************************/
 
-    // Keeps track of where we are on a line of CSV
+    // This variable keeps track of where we are on a line of CSV. For example
+    // while we are parsing through characters of the Year, j=0. When we are
+    // parsing through chars of the DOY, j=1 etc.
     int j = 0;
 
     // String representing a value on the line of CSV
     QString str = QString();
 
-    CStation::WeatherDay* day = new CStation::WeatherDay();
-
+    // 'Year' on the line of CSV
+    QString year = QString();
+    
+    // 'Day of Year' on the line of CSV
+    QString DOY = QString();
+    
+    // List of values for a particular Weather Day
+    QVector<QString> values;
+    
     for(unsigned i=0; i<=sizeof(a)-1; i++)
     {
         //
@@ -174,29 +192,27 @@ void CXMLParser::parseWeatherData( CStation* station, QString s )
         else
         {
             // Char is a newline at the front of the line, ignore it
-            if (ch.unicode() == UNICODE_NEWLINE && j==0)
+            if (ch.unicode() == UNICODE_NEWLINE && j==0){
                 continue;
+            }
 
-            // Char is a newline at the end of the line, start new Weather day
+            // Char is a newline at the end of the line so this is a new Weather day
             else if (ch.unicode() == UNICODE_NEWLINE && j!=0)
             {
-                // When we reach a new line, there is still a value (from the previous
-                // line) that has not been added to the list of values yet. So,
+                // When we reach a new line, there is still a value from the previous
+                // previous day that has not been added to that day's list of values. So,
                 // we do it now.
-                day->values.push_back(str);
-
-                // Add the day to the Station's Daily Weather
-                station->getDailyWeather()->mWeather.push_back(day);
-                
-                // Create a new weather day since we are going to a new line
-                day = new CStation::WeatherDay();
+                values = station->mDailyWeather->mWeather.value(qMakePair(year, DOY));
+                values.append(str);
 
                 // Reset j since we are going to a new line
                 j = 0;
                 
-                // clear string
-                str = QString();
+                str.clear();
+                year.clear();
+                DOY.clear();
                 
+             
                 // Go to next char in Weather data
                 continue;
             }
@@ -204,32 +220,64 @@ void CXMLParser::parseWeatherData( CStation* station, QString s )
             // This is a comma, so start a new value
             else if (ch.unicode() == UNICODE_COMMA)
             {
-                day->values.push_back(str);
-
-                // clear string
-                str = QString();
+                // The string is the Year
+                if (j==0){
+                    year = str;
+                }
+                
+                // The string is the DOY. Assuming we already have the year stored, we create a mapping
+                else if (j==1){
+                    DOY = str;
+                    
+                    QPair<QString, QString> pair = qMakePair(year, DOY);
+                    values.clear();
+            
+                    station->mDailyWeather->mWeather.insert(pair, values);
+                    
+                    if(station->mDailyWeather->mWeather.contains(qMakePair(year, DOY)))
+                        qDebug("in parsingWeather - map contains year %s day %s", year.toUtf8().constData(), DOY.toUtf8().constData());
+                    else
+                        qDebug("in parsingWeather - map doesn't contain year %s day %s", year.toUtf8().constData(), DOY.toUtf8().constData());
+                }
+                
+                // Some other value on the line
+                else{
+                    if (station->mDailyWeather->mWeather.contains(qMakePair(year, DOY)))
+                    {
+                        values = station->mDailyWeather->mWeather.value(qMakePair(year, DOY));
+                        
+                        values.append(str);
+                    }
+                }
+                
+                str.clear();
+                j++;
             }
 
-            // Keep building the string
+            // Keep reading chars and building the string
             else
                 str.append(ch);
         }
-
-        j++;
     }
-}
+    bool containsFirstDay = false;
+    if (station->mDailyWeather->mWeather.contains(qMakePair(1979, 1)))
+        containsFirstDay = true;
+
+    qDebug("<<<DONE PARSING WEATHER DATA, mapsize=%i, hasFirstDay? %i>>>", station->mDailyWeather->mWeather.size(),
+           bool(containsFirstDay));
+};
 
 
-/* Brief: Parses a XDB XML file
+/* Brief: Parse a XDB XML file
  */
 void CXMLParser::parseXDB(/*QFile* file*/){}
 
 
-/* Brief: Parses a SDB XML file
+/* Brief: Parse a SDB XML file
  */
 void CXMLParser::parseSDB(/*QFile* file*/){}
 
 
-/* Brief: Parses a CDB XML file
+/* Brief: Parse a CDB XML file
  */
 void CXMLParser::parseCDB(/*QFile* file*/){}

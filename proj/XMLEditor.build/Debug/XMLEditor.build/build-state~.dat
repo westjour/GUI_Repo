@@ -2,23 +2,16 @@ TXMLEditor
 v6
 r1
 cCheck dependencies
-cProcessInfoPlistFile /Users/westjour/Desktop/GUIRepo2/proj/Debug/XMLEditor.app/Contents/Info.plist /Users/westjour/Desktop/GUIRepo2/proj/Info.plist
-cCompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/main.o /Users/westjour/Desktop/GUIRepo2/proj/src/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CDailyWeatherModel.o /Users/westjour/Desktop/GUIRepo2/proj/src/CDailyWeatherModel.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CDailyWeatherView.o /Users/westjour/Desktop/GUIRepo2/proj/src/CDailyWeatherView.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CMainWindow.o /Users/westjour/Desktop/GUIRepo2/proj/src/CMainWindow.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CStation.o /Users/westjour/Desktop/GUIRepo2/proj/src/CStation.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CXMLParser.o /Users/westjour/Desktop/GUIRepo2/proj/src/CXMLParser.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CDailyWeatherModel.o /Users/westjour/Desktop/GUIRepo2/proj/moc_CDailyWeatherModel.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CDailyWeatherView.o /Users/westjour/Desktop/GUIRepo2/proj/moc_CDailyWeatherView.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CMainWindow.o /Users/westjour/Desktop/GUIRepo2/proj/moc_CMainWindow.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cLd /Users/westjour/Desktop/GUIRepo2/proj/Debug/XMLEditor.app/Contents/MacOS/XMLEditor normal x86_64
-cTouch /Users/westjour/Desktop/GUIRepo2/proj/Debug/XMLEditor.app
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk
-c00000000530295C100000000000000AA
-t1392678337
-s170
+cProcessInfoPlistFile /Users/westjour/Desktop/GUI_Repo/proj/Debug/XMLEditor.app/Contents/Info.plist /Users/westjour/Desktop/GUI_Repo/proj/Info.plist
+cCompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/main.o /Users/westjour/Desktop/GUI_Repo/proj/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CDailyWeatherModel.o /Users/westjour/Desktop/GUI_Repo/proj/CDailyWeatherModel.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CDailyWeatherView.o /Users/westjour/Desktop/GUI_Repo/proj/CDailyWeatherView.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CMainWindow.o /Users/westjour/Desktop/GUI_Repo/proj/CMainWindow.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CStation.o /Users/westjour/Desktop/GUI_Repo/proj/CStation.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CXMLParser.o /Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CDailyWeatherModel.o /Users/westjour/Desktop/GUI_Repo/proj/moc_CDailyWeatherModel.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CDailyWeatherView.o /Users/westjour/Desktop/GUI_Repo/proj/moc_CDailyWeatherView.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CMainWindow.o /Users/westjour/Desktop/GUI_Repo/proj/moc_CMainWindow.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/SDKSettings.plist
 c000000005370C40F000000000000044C
@@ -30,187 +23,144 @@ c000000005370C40F00000000000001DE
 t1399899151
 s478
 
-N/System/Library/Frameworks/AGL.framework/AGL
-c000000005416E0600000000000019CF0
-t1410785376
-s105712
+N/Users/westjour/Desktop/GUI_Repo/proj/CDailyWeatherModel.cpp
+c000000005425C20F00000000000015AF
+t1411760655
+s5551
 
-N/System/Library/Frameworks/OpenGL.framework/OpenGL
-c000000005416DFD2000000000002C960
-t1410785234
-s182624
+N/Users/westjour/Desktop/GUI_Repo/proj/CDailyWeatherView.cpp
+c0000000054256DA600000000000000E0
+t1411739046
+s224
 
-N/Users/westjour/Desktop/GUIRepo2/proj/Debug/XMLEditor.app
-t1411161340
-s102
+N/Users/westjour/Desktop/GUI_Repo/proj/CMainWindow.cpp
+c000000005425C3280000000000001A1A
+t1411760936
+s6682
 
-N/Users/westjour/Desktop/GUIRepo2/proj/Debug/XMLEditor.app/Contents/Info.plist
-t1411161340
-s1050
-
-N/Users/westjour/Desktop/GUIRepo2/proj/Debug/XMLEditor.app/Contents/MacOS/XMLEditor
-t1411161342
-s111100
-
-N/Users/westjour/Desktop/GUIRepo2/proj/Debug/XMLEditor.app/Contents/PkgInfo
-t1411161340
-s8
-
-N/Users/westjour/Desktop/GUIRepo2/proj/Info.plist
-c00000000541C996800000000000002B7
-t1411160424
-s695
-
-N/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CDailyWeatherModel.o
-t1411161341
-s323688
-
-N/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CDailyWeatherView.o
-t1411161341
-s511224
-
-N/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CMainWindow.o
-t1411161342
-s895236
-
-N/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CStation.o
-t1411161341
-s156116
-
-N/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CXMLParser.o
-t1411161341
-s349504
-
-N/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/XMLEditor.LinkFileList
-c00000000541C9CFC000000000000040B
-t1411161340
-s1035
-
-N/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/main.o
-t1411161341
-s442500
-
-N/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CDailyWeatherModel.o
-t1411161341
-s254320
-
-N/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CDailyWeatherView.o
-t1411161341
-s523588
-
-N/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CMainWindow.o
-t1411161342
-s352124
-
-N/Users/westjour/Desktop/GUIRepo2/proj/moc_CDailyWeatherModel.cpp
-c00000000541C99750000000000000AD3
-t1411160437
-s2771
-
-N/Users/westjour/Desktop/GUIRepo2/proj/moc_CDailyWeatherView.cpp
-c00000000541C99750000000000000AA6
-t1411160437
-s2726
-
-N/Users/westjour/Desktop/GUIRepo2/proj/moc_CMainWindow.cpp
-c00000000541C99760000000000000E13
-t1411160438
-s3603
-
-N/Users/westjour/Desktop/GUIRepo2/proj/src/CDailyWeatherModel.cpp
-c00000000541C935E0000000000000F13
-t1411158878
-s3859
-
-N/Users/westjour/Desktop/GUIRepo2/proj/src/CDailyWeatherView.cpp
-c00000000541316F90000000000000096
-t1410537209
-s150
-
-N/Users/westjour/Desktop/GUIRepo2/proj/src/CMainWindow.cpp
-c00000000541C8CCE0000000000001920
-t1411157198
-s6432
-
-N/Users/westjour/Desktop/GUIRepo2/proj/src/CStation.cpp
-c00000000541C473900000000000000CE
-t1411139385
+N/Users/westjour/Desktop/GUI_Repo/proj/CStation.cpp
+c000000005425875000000000000000CE
+t1411745616
 s206
 
-N/Users/westjour/Desktop/GUIRepo2/proj/src/CXMLParser.cpp
-c00000000541C92F80000000000001B59
-t1411158776
-s7001
+N/Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp
+c000000005425C2B1000000000000230A
+t1411760817
+s8970
 
-N/Users/westjour/Desktop/GUIRepo2/proj/src/main.cpp
+N/Users/westjour/Desktop/GUI_Repo/proj/Debug/XMLEditor.app/Contents/Info.plist
+t2
+s0
+
+N/Users/westjour/Desktop/GUI_Repo/proj/Debug/XMLEditor.app/Contents/PkgInfo
+t2
+s0
+
+N/Users/westjour/Desktop/GUI_Repo/proj/Info.plist
+c000000005420149D00000000000002B7
+t1411388573
+s695
+
+N/Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CDailyWeatherModel.o
+t2
+s0
+
+N/Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CDailyWeatherView.o
+t2
+s0
+
+N/Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CMainWindow.o
+t2
+s0
+
+N/Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CStation.o
+t2
+s0
+
+N/Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CXMLParser.o
+t2
+s0
+
+N/Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/main.o
+t2
+s0
+
+N/Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CDailyWeatherModel.o
+t2
+s0
+
+N/Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CDailyWeatherView.o
+t2
+s0
+
+N/Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CMainWindow.o
+t2
+s0
+
+N/Users/westjour/Desktop/GUI_Repo/proj/main.cpp
 c00000000541C48C800000000000000AE
 t1411139784
 s174
 
-N/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/QtCore
-c0000000054199891000000000062254C
-t1410963601
-s6432076
+N/Users/westjour/Desktop/GUI_Repo/proj/moc_CDailyWeatherModel.cpp
+c000000005420303F0000000000000ABB
+t1411395647
+s2747
 
-N/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/QtGui
-c0000000054199890000000000052534C
-t1410963600
-s5395276
+N/Users/westjour/Desktop/GUI_Repo/proj/moc_CDailyWeatherView.cpp
+c00000000542014A60000000000000A8E
+t1411388582
+s2702
 
-N/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/QtWidgets
-c0000000054199890000000000064EF18
-t1410963600
-s6614808
+N/Users/westjour/Desktop/GUI_Repo/proj/moc_CMainWindow.cpp
+c00000000542014A60000000000000DFB
+t1411388582
+s3579
 
-N/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtXml.framework/QtXml
-c0000000054199890000000000004E184
-t1410963600
-s319876
-
-CBuild AST from /Users/westjour/Desktop/GUIRepo2/proj/moc_CDailyWeatherModel.cpp
+CBuild AST from /Users/westjour/Desktop/GUI_Repo/proj/CDailyWeatherModel.cpp
 r0
 
-CBuild AST from /Users/westjour/Desktop/GUIRepo2/proj/moc_CDailyWeatherView.cpp
+CBuild AST from /Users/westjour/Desktop/GUI_Repo/proj/CDailyWeatherView.cpp
 r0
 
-CBuild AST from /Users/westjour/Desktop/GUIRepo2/proj/moc_CMainWindow.cpp
+CBuild AST from /Users/westjour/Desktop/GUI_Repo/proj/CMainWindow.cpp
 r0
 
-CBuild AST from /Users/westjour/Desktop/GUIRepo2/proj/src/CDailyWeatherModel.cpp
+CBuild AST from /Users/westjour/Desktop/GUI_Repo/proj/CStation.cpp
 r0
 
-CBuild AST from /Users/westjour/Desktop/GUIRepo2/proj/src/CDailyWeatherView.cpp
+CBuild AST from /Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp
 r0
 
-CBuild AST from /Users/westjour/Desktop/GUIRepo2/proj/src/CMainWindow.cpp
+CBuild AST from /Users/westjour/Desktop/GUI_Repo/proj/main.cpp
 r0
 
-CBuild AST from /Users/westjour/Desktop/GUIRepo2/proj/src/CStation.cpp
+CBuild AST from /Users/westjour/Desktop/GUI_Repo/proj/moc_CDailyWeatherModel.cpp
 r0
 
-CBuild AST from /Users/westjour/Desktop/GUIRepo2/proj/src/CXMLParser.cpp
+CBuild AST from /Users/westjour/Desktop/GUI_Repo/proj/moc_CDailyWeatherView.cpp
 r0
 
-CBuild AST from /Users/westjour/Desktop/GUIRepo2/proj/src/main.cpp
+CBuild AST from /Users/westjour/Desktop/GUI_Repo/proj/moc_CMainWindow.cpp
 r0
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies861d4e7cd4ccb941^46ce527cd4ccb941^---0#1#1#--18"Check dependencies36"3BF4A976-A8AC-48F6-BA57-62F1A302FF90-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies2c0ecbc9fad5b941^6153cbc9fad5b941^---0#1#1#--18"Check dependencies36"09960CE6-FC57-4C54-8F92-8B2B449389C4-
 
-CCompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CDailyWeatherModel.o /Users/westjour/Desktop/GUIRepo2/proj/src/CDailyWeatherModel.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s432854140.326202
-e432854141.543345
+CCompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CDailyWeatherModel.o /Users/westjour/Desktop/GUI_Repo/proj/CDailyWeatherModel.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s433453769.796753
+e433453771.097487
 r1
 xCompileC
 xXMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CDailyWeatherModel.o
-x/Users/westjour/Desktop/GUIRepo2/proj/src/CDailyWeatherModel.cpp
+x/Users/westjour/Desktop/GUI_Repo/proj/CDailyWeatherModel.cpp
 xnormal
 xx86_64
 xc++
 xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/westjour/Desktop/GUIRepo2/proj/src/CDailyWeatherModel.cpp
-d/Users/westjour/Desktop/GUIRepo2/proj/src/CDailyWeatherModel.h
+d/Users/westjour/Desktop/GUI_Repo/proj/CDailyWeatherModel.cpp
+d/Users/westjour/Desktop/GUI_Repo/proj/CDailyWeatherModel.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QAbstractTableModel
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qabstractitemmodel.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qvariant.h
@@ -259,34 +209,37 @@ d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qobject_impl.
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qregexp.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qstringmatcher.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qvector.h
-d/Users/westjour/Desktop/GUIRepo2/proj/src/CStation.h
+d/Users/westjour/Desktop/GUI_Repo/proj/CStation.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QString
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector
-o/Users/westjour/Desktop/GUIRepo2/proj/src/CDailyWeatherModel.cpp:120:1: warning: control may reach end of non-void function [-Wreturn-type]
+d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QMap
+o/Users/westjour/Desktop/GUI_Repo/proj/CDailyWeatherModel.cpp:160:1: warning: control may reach end of non-void function [-Wreturn-type]
 o}
 o^
-o/Users/westjour/Desktop/GUIRepo2/proj/src/CDailyWeatherModel.cpp:128:79: warning: unused parameter 'value' [-Wunused-parameter]
+o/Users/westjour/Desktop/GUI_Repo/proj/CDailyWeatherModel.cpp:168:79: warning: unused parameter 'value' [-Wunused-parameter]
 obool CDailyWeatherModel::setData( const QModelIndex & index, const QVariant & value, int role )
 o                                                                              ^
-o2 warnings generated.
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Compile /Users/westjour/Desktop/GUIRepo2/proj/src/CDailyWeatherModel.cpp178"CompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CDailyWeatherModel.o src/CDailyWeatherModel.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerf392537cd4ccb941^8b178b7dd4ccb941^-470"/Users/westjour/Desktop/GUIRepo2/proj/src/CDailyWeatherModel.cpp:120:1: warning: control may reach end of non-void function [-Wreturn-type]}^/Users/westjour/Desktop/GUIRepo2/proj/src/CDailyWeatherModel.cpp:128:79: warning: unused parameter 'value' [-Wunused-parameter]bool CDailyWeatherModel::setData( const QModelIndex & index, const QVariant & value, int role )                                                                              ^2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@42"Control may reach end of non-void function-432854141#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@71"file:///Users/westjour/Desktop/GUIRepo2/proj/src/CDailyWeatherModel.cpp0000000000000000^119#0#119#0#3458#0#14"Semantic Issue--2@24"Unused parameter 'value'-432854141#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@71"file:///Users/westjour/Desktop/GUIRepo2/proj/src/CDailyWeatherModel.cpp0000000000000000^127#78#127#78#3684#0#14"Semantic Issue--0#0#1#-19%DVTDocumentLocation4@71"file:///Users/westjour/Desktop/GUIRepo2/proj/src/CDailyWeatherModel.cpp0000000000000000^2934"CompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CDailyWeatherModel.o src/CDailyWeatherModel.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/westjour/Desktop/GUIRepo2/proj    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.6 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/XMLEditor.hmap -I/Users/westjour/Desktop/GUIRepo2/proj/Debug/include -I../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AGL.framework/Headers -I../../../Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/DerivedSources/x86_64 -I/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/DerivedSources -F/Users/westjour/Desktop/GUIRepo2/proj/Debug -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib -pipe -O2 -Wall -W -fPIE -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_CORE_LIB -MMD -MT dependencies -MF /Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CDailyWeatherModel.d --serialize-diagnostics /Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CDailyWeatherModel.dia -c /Users/westjour/Desktop/GUIRepo2/proj/src/CDailyWeatherModel.cpp -o /Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CDailyWeatherModel.o36"28BBE42B-DC85-4ACD-A7CB-CE0FBECB98F8-
-b5E43E3A4-7324-4E24-9E7D-5464564280F4
+o/Users/westjour/Desktop/GUI_Repo/proj/CDailyWeatherModel.cpp:189:1: warning: control reaches end of non-void function [-Wreturn-type]
+o}
+o^
+o3 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Compile /Users/westjour/Desktop/GUI_Repo/proj/CDailyWeatherModel.cpp174"CompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CDailyWeatherModel.o CDailyWeatherModel.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler2008ccc9fad5b941^9cf919cbfad5b941^-600"/Users/westjour/Desktop/GUI_Repo/proj/CDailyWeatherModel.cpp:160:1: warning: control may reach end of non-void function [-Wreturn-type]}^/Users/westjour/Desktop/GUI_Repo/proj/CDailyWeatherModel.cpp:168:79: warning: unused parameter 'value' [-Wunused-parameter]bool CDailyWeatherModel::setData( const QModelIndex & index, const QVariant & value, int role )                                                                              ^/Users/westjour/Desktop/GUI_Repo/proj/CDailyWeatherModel.cpp:189:1: warning: control reaches end of non-void function [-Wreturn-type]}^3 warnings generated.-0#0#1#-19%DVTDocumentLocation2@67"file:///Users/westjour/Desktop/GUI_Repo/proj/CDailyWeatherModel.cpp0000000000000000^2926"CompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CDailyWeatherModel.o CDailyWeatherModel.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/westjour/Desktop/GUI_Repo/proj    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.6 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/XMLEditor.hmap -I/Users/westjour/Desktop/GUI_Repo/proj/Debug/include -I../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AGL.framework/Headers -I../../../Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I/Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/DerivedSources/x86_64 -I/Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/DerivedSources -F/Users/westjour/Desktop/GUI_Repo/proj/Debug -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib -pipe -O0 -Wall -W -fPIE -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_CORE_LIB -MMD -MT dependencies -MF /Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CDailyWeatherModel.d --serialize-diagnostics /Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CDailyWeatherModel.dia -c /Users/westjour/Desktop/GUI_Repo/proj/CDailyWeatherModel.cpp -o /Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CDailyWeatherModel.o36"B447E2BF-0F35-47BD-9252-A115932C904E-
+b205A2712-4E93-4384-B4E4-F11A63289BE0
 
-CCompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CDailyWeatherView.o /Users/westjour/Desktop/GUIRepo2/proj/src/CDailyWeatherView.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s432854140.326420
-e432854141.721701
+CCompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CDailyWeatherView.o /Users/westjour/Desktop/GUI_Repo/proj/CDailyWeatherView.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s433453769.797083
+e433453771.399764
 r1
 xCompileC
 xXMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CDailyWeatherView.o
-x/Users/westjour/Desktop/GUIRepo2/proj/src/CDailyWeatherView.cpp
+x/Users/westjour/Desktop/GUI_Repo/proj/CDailyWeatherView.cpp
 xnormal
 xx86_64
 xc++
 xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/westjour/Desktop/GUIRepo2/proj/src/CDailyWeatherView.cpp
-d/Users/westjour/Desktop/GUIRepo2/proj/src/CDailyWeatherView.h
-d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QTableView
-d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qtableview.h
+d/Users/westjour/Desktop/GUI_Repo/proj/CDailyWeatherView.cpp
+d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QHeaderView
+d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qheaderview.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qabstractitemview.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qabstractscrollarea.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qframe.h
@@ -380,21 +333,24 @@ d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qstyle.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qtabbar.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qtabwidget.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qrubberband.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/westjour/Desktop/GUIRepo2/proj/src/CDailyWeatherView.cpp176"CompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CDailyWeatherView.o src/CDailyWeatherView.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerf4a5537cd4ccb941^a4c2b87dd4ccb941^---0#0#1#-19%DVTDocumentLocation2@70"file:///Users/westjour/Desktop/GUIRepo2/proj/src/CDailyWeatherView.cpp0000000000000000^2928"CompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CDailyWeatherView.o src/CDailyWeatherView.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/westjour/Desktop/GUIRepo2/proj    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.6 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/XMLEditor.hmap -I/Users/westjour/Desktop/GUIRepo2/proj/Debug/include -I../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AGL.framework/Headers -I../../../Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/DerivedSources/x86_64 -I/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/DerivedSources -F/Users/westjour/Desktop/GUIRepo2/proj/Debug -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib -pipe -O2 -Wall -W -fPIE -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_CORE_LIB -MMD -MT dependencies -MF /Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CDailyWeatherView.d --serialize-diagnostics /Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CDailyWeatherView.dia -c /Users/westjour/Desktop/GUIRepo2/proj/src/CDailyWeatherView.cpp -o /Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CDailyWeatherView.o36"92754AB5-296B-4FA1-8C7C-3C3408D2A263-
-b5E43E3A4-7324-4E24-9E7D-5464564280F4
+d/Users/westjour/Desktop/GUI_Repo/proj/CDailyWeatherView.h
+d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QTableView
+d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qtableview.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Compile /Users/westjour/Desktop/GUI_Repo/proj/CDailyWeatherView.cpp172"CompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CDailyWeatherView.o CDailyWeatherView.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler7024ccc9fad5b941^425b66cbfad5b941^---0#0#1#-19%DVTDocumentLocation2@66"file:///Users/westjour/Desktop/GUI_Repo/proj/CDailyWeatherView.cpp0000000000000000^2920"CompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CDailyWeatherView.o CDailyWeatherView.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/westjour/Desktop/GUI_Repo/proj    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.6 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/XMLEditor.hmap -I/Users/westjour/Desktop/GUI_Repo/proj/Debug/include -I../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AGL.framework/Headers -I../../../Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I/Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/DerivedSources/x86_64 -I/Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/DerivedSources -F/Users/westjour/Desktop/GUI_Repo/proj/Debug -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib -pipe -O0 -Wall -W -fPIE -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_CORE_LIB -MMD -MT dependencies -MF /Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CDailyWeatherView.d --serialize-diagnostics /Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CDailyWeatherView.dia -c /Users/westjour/Desktop/GUI_Repo/proj/CDailyWeatherView.cpp -o /Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CDailyWeatherView.o36"98A485A1-C419-4F39-A2DE-A557AAE82714-
+b205A2712-4E93-4384-B4E4-F11A63289BE0
 
-CCompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CMainWindow.o /Users/westjour/Desktop/GUIRepo2/proj/src/CMainWindow.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s432854140.326727
-e432854142.277511
+CCompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CMainWindow.o /Users/westjour/Desktop/GUI_Repo/proj/CMainWindow.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s433453769.797509
+e433453771.600905
 r1
 xCompileC
 xXMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CMainWindow.o
-x/Users/westjour/Desktop/GUIRepo2/proj/src/CMainWindow.cpp
+x/Users/westjour/Desktop/GUI_Repo/proj/CMainWindow.cpp
 xnormal
 xx86_64
 xc++
 xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/westjour/Desktop/GUIRepo2/proj/src/CMainWindow.cpp
+d/Users/westjour/Desktop/GUI_Repo/proj/CMainWindow.cpp
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QGridLayout
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qgridlayout.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qlayout.h
@@ -505,11 +461,11 @@ d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qpen.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qtextoption.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QGroupBox
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qgroupbox.h
-d/Users/westjour/Desktop/GUIRepo2/proj/src/CMainWindow.h
+d/Users/westjour/Desktop/GUI_Repo/proj/CMainWindow.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QMainWindow
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qmainwindow.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector
-d/Users/westjour/Desktop/GUIRepo2/proj/ui_mainwindow.h
+d/Users/westjour/Desktop/GUI_Repo/proj/ui_mainwindow.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/QVariant
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/QAction
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qaction.h
@@ -537,30 +493,31 @@ d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/QToolBar
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qtoolbar.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/QWidget
-d/Users/westjour/Desktop/GUIRepo2/proj/src/CXMLParser.h
-d/Users/westjour/Desktop/GUIRepo2/proj/src/CStation.h
+d/Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.h
+d/Users/westjour/Desktop/GUI_Repo/proj/CStation.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QString
-d/Users/westjour/Desktop/GUIRepo2/proj/src/CDailyWeatherView.h
+d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QMap
+d/Users/westjour/Desktop/GUI_Repo/proj/CDailyWeatherView.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QTableView
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qtableview.h
-d/Users/westjour/Desktop/GUIRepo2/proj/src/CDailyWeatherModel.h
+d/Users/westjour/Desktop/GUI_Repo/proj/CDailyWeatherModel.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QAbstractTableModel
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Compile /Users/westjour/Desktop/GUIRepo2/proj/src/CMainWindow.cpp164"CompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CMainWindow.o src/CMainWindow.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerfcc6537cd4ccb941^990c477ed4ccb941^---0#0#1#-19%DVTDocumentLocation2@64"file:///Users/westjour/Desktop/GUIRepo2/proj/src/CMainWindow.cpp0000000000000000^2892"CompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CMainWindow.o src/CMainWindow.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/westjour/Desktop/GUIRepo2/proj    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.6 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/XMLEditor.hmap -I/Users/westjour/Desktop/GUIRepo2/proj/Debug/include -I../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AGL.framework/Headers -I../../../Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/DerivedSources/x86_64 -I/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/DerivedSources -F/Users/westjour/Desktop/GUIRepo2/proj/Debug -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib -pipe -O2 -Wall -W -fPIE -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_CORE_LIB -MMD -MT dependencies -MF /Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CMainWindow.d --serialize-diagnostics /Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CMainWindow.dia -c /Users/westjour/Desktop/GUIRepo2/proj/src/CMainWindow.cpp -o /Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CMainWindow.o36"38EA7B07-B49E-45BE-9D9B-A69F89612340-
-b5E43E3A4-7324-4E24-9E7D-5464564280F4
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Compile /Users/westjour/Desktop/GUI_Repo/proj/CMainWindow.cpp160"CompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CMainWindow.o CMainWindow.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerfb3eccc9fad5b941^8cd699cbfad5b941^---0#0#1#-19%DVTDocumentLocation2@60"file:///Users/westjour/Desktop/GUI_Repo/proj/CMainWindow.cpp0000000000000000^2884"CompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CMainWindow.o CMainWindow.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/westjour/Desktop/GUI_Repo/proj    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.6 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/XMLEditor.hmap -I/Users/westjour/Desktop/GUI_Repo/proj/Debug/include -I../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AGL.framework/Headers -I../../../Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I/Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/DerivedSources/x86_64 -I/Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/DerivedSources -F/Users/westjour/Desktop/GUI_Repo/proj/Debug -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib -pipe -O0 -Wall -W -fPIE -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_CORE_LIB -MMD -MT dependencies -MF /Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CMainWindow.d --serialize-diagnostics /Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CMainWindow.dia -c /Users/westjour/Desktop/GUI_Repo/proj/CMainWindow.cpp -o /Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CMainWindow.o36"B2032568-4549-451D-A483-C2B2A1B857CD-
+b205A2712-4E93-4384-B4E4-F11A63289BE0
 
-CCompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CStation.o /Users/westjour/Desktop/GUIRepo2/proj/src/CStation.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s432854140.327224
-e432854141.133646
+CCompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CStation.o /Users/westjour/Desktop/GUI_Repo/proj/CStation.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s433453769.797903
+e433453770.711603
 r1
 xCompileC
 xXMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CStation.o
-x/Users/westjour/Desktop/GUIRepo2/proj/src/CStation.cpp
+x/Users/westjour/Desktop/GUI_Repo/proj/CStation.cpp
 xnormal
 xx86_64
 xc++
 xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/westjour/Desktop/GUIRepo2/proj/src/CStation.cpp
-d/Users/westjour/Desktop/GUIRepo2/proj/src/CStation.h
+d/Users/westjour/Desktop/GUI_Repo/proj/CStation.cpp
+d/Users/westjour/Desktop/GUI_Repo/proj/CStation.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QString
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qstring.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qchar.h
@@ -591,21 +548,24 @@ d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qv
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qalgorithms.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qiterator.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qlist.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Compile /Users/westjour/Desktop/GUIRepo2/proj/src/CStation.cpp158"CompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CStation.o src/CStation.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler5ce3537cd4ccb941^8b37227dd4ccb941^---0#0#1#-19%DVTDocumentLocation2@61"file:///Users/westjour/Desktop/GUIRepo2/proj/src/CStation.cpp0000000000000000^2874"CompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CStation.o src/CStation.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/westjour/Desktop/GUIRepo2/proj    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.6 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/XMLEditor.hmap -I/Users/westjour/Desktop/GUIRepo2/proj/Debug/include -I../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AGL.framework/Headers -I../../../Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/DerivedSources/x86_64 -I/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/DerivedSources -F/Users/westjour/Desktop/GUIRepo2/proj/Debug -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib -pipe -O2 -Wall -W -fPIE -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_CORE_LIB -MMD -MT dependencies -MF /Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CStation.d --serialize-diagnostics /Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CStation.dia -c /Users/westjour/Desktop/GUIRepo2/proj/src/CStation.cpp -o /Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CStation.o36"6D8CD704-7D7F-48D5-A5FA-6FCBEF609943-
-b5E43E3A4-7324-4E24-9E7D-5464564280F4
+d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QMap
+d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qmap.h
+d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qpair.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Compile /Users/westjour/Desktop/GUI_Repo/proj/CStation.cpp154"CompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CStation.o CStation.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilera75dccc9fad5b941^992cb6cafad5b941^---0#0#1#-19%DVTDocumentLocation2@57"file:///Users/westjour/Desktop/GUI_Repo/proj/CStation.cpp0000000000000000^2866"CompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CStation.o CStation.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/westjour/Desktop/GUI_Repo/proj    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.6 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/XMLEditor.hmap -I/Users/westjour/Desktop/GUI_Repo/proj/Debug/include -I../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AGL.framework/Headers -I../../../Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I/Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/DerivedSources/x86_64 -I/Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/DerivedSources -F/Users/westjour/Desktop/GUI_Repo/proj/Debug -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib -pipe -O0 -Wall -W -fPIE -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_CORE_LIB -MMD -MT dependencies -MF /Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CStation.d --serialize-diagnostics /Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CStation.dia -c /Users/westjour/Desktop/GUI_Repo/proj/CStation.cpp -o /Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CStation.o36"D251A3CF-7C81-456C-BCA2-203BA9D86FD8-
+b205A2712-4E93-4384-B4E4-F11A63289BE0
 
-CCompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CXMLParser.o /Users/westjour/Desktop/GUIRepo2/proj/src/CXMLParser.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s432854140.327567
-e432854141.661553
-r1
+CCompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CXMLParser.o /Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s433453769.798490
+e433453770.895803
+r0
 xCompileC
 xXMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CXMLParser.o
-x/Users/westjour/Desktop/GUIRepo2/proj/src/CXMLParser.cpp
+x/Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp
 xnormal
 xx86_64
 xc++
 xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/westjour/Desktop/GUIRepo2/proj/src/CXMLParser.cpp
+d/Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QFile
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qfile.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qfiledevice.h
@@ -657,27 +617,124 @@ d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Versions/5/Headers/qdo
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Headers/qtxmlglobal.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Versions/5/Headers/QDomDocument
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Versions/5/Headers/QDomAttr
-d/Users/westjour/Desktop/GUIRepo2/proj/src/CXMLParser.h
-d/Users/westjour/Desktop/GUIRepo2/proj/src/CStation.h
+d/Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.h
+d/Users/westjour/Desktop/GUI_Repo/proj/CStation.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QString
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Compile /Users/westjour/Desktop/GUIRepo2/proj/src/CXMLParser.cpp162"CompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CXMLParser.o src/CXMLParser.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler2503547cd4ccb941^ee5ba97dd4ccb941^---0#0#1#-19%DVTDocumentLocation2@63"file:///Users/westjour/Desktop/GUIRepo2/proj/src/CXMLParser.cpp0000000000000000^2886"CompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CXMLParser.o src/CXMLParser.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/westjour/Desktop/GUIRepo2/proj    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.6 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/XMLEditor.hmap -I/Users/westjour/Desktop/GUIRepo2/proj/Debug/include -I../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AGL.framework/Headers -I../../../Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/DerivedSources/x86_64 -I/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/DerivedSources -F/Users/westjour/Desktop/GUIRepo2/proj/Debug -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib -pipe -O2 -Wall -W -fPIE -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_CORE_LIB -MMD -MT dependencies -MF /Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CXMLParser.d --serialize-diagnostics /Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CXMLParser.dia -c /Users/westjour/Desktop/GUIRepo2/proj/src/CXMLParser.cpp -o /Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CXMLParser.o36"B8C0B964-BC67-4177-B9B5-A695700F7C99-
-b5E43E3A4-7324-4E24-9E7D-5464564280F4
+d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QMap
+d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qmap.h
+oIn file included from /Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp:11:
+oIn file included from ./CStation.h:5:
+oIn file included from ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector:1:
+o../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h:130:14: error: 'data' declared as a pointer to a reference of type 'QString &'
+o    inline T *data() { detach(); return d->begin(); }
+o             ^
+o/Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp:178:35: note: in instantiation of template class 'QVector<QString &>' requested here
+o    QVector<QString> values = new QVector<QString&>();
+o                                  ^
+oIn file included from /Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp:11:
+oIn file included from ./CStation.h:5:
+oIn file included from ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector:1:
+o../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h:131:20: error: 'data' declared as a pointer to a reference of type 'QString &'
+o    inline const T *data() const { return d->begin(); }
+o                   ^
+o../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h:132:20: error: 'constData' declared as a pointer to a reference of type 'QString &'
+o    inline const T *constData() const { return d->begin(); }
+o                   ^
+oIn file included from /Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp:4:
+oIn file included from ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QFile:1:
+oIn file included from ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qfile.h:45:
+oIn file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qfiledevice.h:45:
+oIn file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qiodevice.h:47:
+oIn file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qobject.h:49:
+oIn file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qstring.h:46:
+oIn file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qbytearray.h:47:
+o/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qarraydata.h:207:14: error: 'iterator' declared as a pointer to a reference of type 'QString &'
+o    typedef T* iterator;
+o             ^
+oIn file included from /Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp:11:
+oIn file included from ./CStation.h:5:
+oIn file included from ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector:1:
+o../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h:163:22: note: in instantiation of template class 'QTypedArrayData<QString &>' requested here
+o    typedef typename Data::iterator iterator;
+o                     ^
+o/Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp:178:35: note: in instantiation of template class 'QVector<QString &>' requested here
+o    QVector<QString> values = new QVector<QString&>();
+o                                  ^
+oIn file included from /Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp:4:
+oIn file included from ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QFile:1:
+oIn file included from ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qfile.h:45:
+oIn file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qfiledevice.h:45:
+oIn file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qiodevice.h:47:
+oIn file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qobject.h:49:
+oIn file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qstring.h:46:
+oIn file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qbytearray.h:47:
+o/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qarraydata.h:208:20: error: 'const_iterator' declared as a pointer to a reference of type 'QString &'
+o    typedef const T* const_iterator;
+o                   ^
+o/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qarraydata.h:211:7: error: 'data' declared as a pointer to a reference of type 'QString &'
+o    T *data() { return static_cast<T *>(QArrayData::data()); }
+o      ^
+o/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qarraydata.h:212:13: error: 'data' declared as a pointer to a reference of type 'QString &'
+o    const T *data() const { return static_cast<const T *>(QArrayData::data()); }
+o            ^
+o/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qarraydata.h:237:49: error: 'data' declared as a pointer to a reference of type 'QString &'
+o    static QTypedArrayData *fromRawData(const T *data, size_t n,
+o                                                ^
+oIn file included from /Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp:11:
+oIn file included from ./CStation.h:5:
+oIn file included from ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector:1:
+o../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h:184:14: error: return type of out-of-line definition of 'QVector<QString &>::insert' differs from that in the declaration
+o    iterator insert(iterator before, int n, const T &x);
+o             ^
+o/Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp:178:35: note: in instantiation of template class 'QVector<QString &>' requested here
+o    QVector<QString> values = new QVector<QString&>();
+o                                  ^
+oIn file included from /Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp:11:
+oIn file included from ./CStation.h:5:
+oIn file included from ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector:1:
+o../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h:141:10: note: previous declaration is here
+o    void insert(int i, int n, const T &t);
+o         ^
+o../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h:185:21: error: functions that differ only in their return type cannot be overloaded
+o    inline iterator insert(iterator before, const T &x) { return insert(before, 1, x); }
+o                    ^
+o../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h:140:10: note: previous declaration is here
+o    void insert(int i, const T &t);
+o         ^
+o../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h:204:23: error: 'pointer' declared as a pointer to a reference of type 'value_type' (aka 'QString &')
+o    typedef value_type* pointer;
+o                      ^
+o../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h:205:29: error: 'const_pointer' declared as a pointer to a reference of type 'value_type' (aka 'QString &')
+o    typedef const value_type* const_pointer;
+o                            ^
+o../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h:248:29: error: 'from' declared as a pointer to a reference of type 'QString &'
+o    void defaultConstruct(T *from, T *to);
+o                            ^
+o../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h:249:32: error: 'srcFrom' declared as a pointer to a reference of type 'QString &'
+o    void copyConstruct(const T *srcFrom, const T *srcTo, T *dstFrom);
+o                               ^
+o../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h:250:21: error: 'from' declared as a pointer to a reference of type 'QString &'
+o    void destruct(T *from, T *to);
+o                    ^
+o15 errors generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Compile /Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp158"CompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CXMLParser.o CXMLParser.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler9a96ccc9fad5b941^be6ae5cafad5b941^-7655"In file included from /Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp:11:In file included from ./CStation.h:5:In file included from ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector:1:../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h:130:14: error: 'data' declared as a pointer to a reference of type 'QString &'    inline T *data() { detach(); return d->begin(); }             ^/Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp:178:35: note: in instantiation of template class 'QVector<QString &>' requested here    QVector<QString> values = new QVector<QString&>();                                  ^In file included from /Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp:11:In file included from ./CStation.h:5:In file included from ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector:1:../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h:131:20: error: 'data' declared as a pointer to a reference of type 'QString &'    inline const T *data() const { return d->begin(); }                   ^../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h:132:20: error: 'constData' declared as a pointer to a reference of type 'QString &'    inline const T *constData() const { return d->begin(); }                   ^In file included from /Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp:4:In file included from ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QFile:1:In file included from ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qfile.h:45:In file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qfiledevice.h:45:In file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qiodevice.h:47:In file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qobject.h:49:In file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qstring.h:46:In file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qbytearray.h:47:/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qarraydata.h:207:14: error: 'iterator' declared as a pointer to a reference of type 'QString &'    typedef T* iterator;             ^In file included from /Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp:11:In file included from ./CStation.h:5:In file included from ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector:1:../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h:163:22: note: in instantiation of template class 'QTypedArrayData<QString &>' requested here    typedef typename Data::iterator iterator;                     ^/Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp:178:35: note: in instantiation of template class 'QVector<QString &>' requested here    QVector<QString> values = new QVector<QString&>();                                  ^In file included from /Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp:4:In file included from ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QFile:1:In file included from ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qfile.h:45:In file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qfiledevice.h:45:In file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qiodevice.h:47:In file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qobject.h:49:In file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qstring.h:46:In file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qbytearray.h:47:/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qarraydata.h:208:20: error: 'const_iterator' declared as a pointer to a reference of type 'QString &'    typedef const T* const_iterator;                   ^/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qarraydata.h:211:7: error: 'data' declared as a pointer to a reference of type 'QString &'    T *data() { return static_cast<T *>(QArrayData::data()); }      ^/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qarraydata.h:212:13: error: 'data' declared as a pointer to a reference of type 'QString &'    const T *data() const { return static_cast<const T *>(QArrayData::data()); }            ^/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qarraydata.h:237:49: error: 'data' declared as a pointer to a reference of type 'QString &'    static QTypedArrayData *fromRawData(const T *data, size_t n,                                                ^In file included from /Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp:11:In file included from ./CStation.h:5:In file included from ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector:1:../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h:184:14: error: return type of out-of-line definition of 'QVector<QString &>::insert' differs from that in the declaration    iterator insert(iterator before, int n, const T &x);             ^/Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp:178:35: note: in instantiation of template class 'QVector<QString &>' requested here    QVector<QString> values = new QVector<QString&>();                                  ^In file included from /Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp:11:In file included from ./CStation.h:5:In file included from ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector:1:../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h:141:10: note: previous declaration is here    void insert(int i, int n, const T &t);         ^../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h:185:21: error: functions that differ only in their return type cannot be overloaded    inline iterator insert(iterator before, const T &x) { return insert(before, 1, x); }                    ^../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h:140:10: note: previous declaration is here    void insert(int i, const T &t);         ^../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h:204:23: error: 'pointer' declared as a pointer to a reference of type 'value_type' (aka 'QString &')    typedef value_type* pointer;                      ^../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h:205:29: error: 'const_pointer' declared as a pointer to a reference of type 'value_type' (aka 'QString &')    typedef const value_type* const_pointer;                            ^../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h:248:29: error: 'from' declared as a pointer to a reference of type 'QString &'    void defaultConstruct(T *from, T *to);                            ^../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h:249:32: error: 'srcFrom' declared as a pointer to a reference of type 'QString &'    void copyConstruct(const T *srcFrom, const T *srcTo, T *dstFrom);                               ^../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h:250:21: error: 'from' declared as a pointer to a reference of type 'QString &'    void destruct(T *from, T *to);                    ^15 errors generated.15(36%IDEClangDiagnosticActivityLogMessage2@63"'data' declared as a pointer to a reference of type 'QString &'-433453770#18446744073709551615#0#4(2@78"In file included from /Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp:11:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@59"file:///Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp0000000000000000^10#9#10#9#172#0#21"Apple LLVM 5.0 Notice--2@37"In file included from ./CStation.h:5:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@55"file:///Users/westjour/Desktop/GUI_Repo/proj/CStation.h0000000000000000^4#9#4#9#67#0#21"Apple LLVM 5.0 Notice--2@102"In file included from ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector:1:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@91"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector0000000000000000^0#9#0#9#9#0#21"Apple LLVM 5.0 Notice--2@70"In instantiation of template class 'QVector<QString &>' requested here-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@59"file:///Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp0000000000000000^177#34#177#34#5744#0#14"Semantic Issue--2#27"com.apple.dt.IDE.diagnostic3@93"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h0000000000000000^129#13#129#13#4372#0#14"Semantic Issue--2@63"'data' declared as a pointer to a reference of type 'QString &'-433453770#18446744073709551615#0#3(2@78"In file included from /Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp:11:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@59"file:///Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp0000000000000000^10#9#10#9#172#0#21"Apple LLVM 5.0 Notice--2@37"In file included from ./CStation.h:5:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@55"file:///Users/westjour/Desktop/GUI_Repo/proj/CStation.h0000000000000000^4#9#4#9#67#0#21"Apple LLVM 5.0 Notice--2@102"In file included from ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector:1:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@91"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector0000000000000000^0#9#0#9#9#0#21"Apple LLVM 5.0 Notice--2#27"com.apple.dt.IDE.diagnostic3@93"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h0000000000000000^130#19#130#19#4432#0#14"Semantic Issue--2@68"'constData' declared as a pointer to a reference of type 'QString &'-433453770#18446744073709551615#0#3(2@78"In file included from /Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp:11:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@59"file:///Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp0000000000000000^10#9#10#9#172#0#21"Apple LLVM 5.0 Notice--2@37"In file included from ./CStation.h:5:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@55"file:///Users/westjour/Desktop/GUI_Repo/proj/CStation.h0000000000000000^4#9#4#9#67#0#21"Apple LLVM 5.0 Notice--2@102"In file included from ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector:1:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@91"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector0000000000000000^0#9#0#9#9#0#21"Apple LLVM 5.0 Notice--2#27"com.apple.dt.IDE.diagnostic3@93"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h0000000000000000^131#19#131#19#4488#0#14"Semantic Issue--2@67"'iterator' declared as a pointer to a reference of type 'QString &'-433453770#18446744073709551615#0#10(2@77"In file included from /Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp:4:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@59"file:///Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp0000000000000000^3#9#3#9#43#0#21"Apple LLVM 5.0 Notice--2@100"In file included from ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QFile:1:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@89"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QFile0000000000000000^0#9#0#9#9#0#21"Apple LLVM 5.0 Notice--2@103"In file included from ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qfile.h:45:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@91"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qfile.h0000000000000000^44#9#44#9#2011#0#21"Apple LLVM 5.0 Notice--2@105"In file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qfiledevice.h:45:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@86"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qfiledevice.h0000000000000000^44#9#44#9#2023#0#21"Apple LLVM 5.0 Notice--2@103"In file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qiodevice.h:47:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@84"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qiodevice.h0000000000000000^46#9#46#9#2069#0#21"Apple LLVM 5.0 Notice--2@101"In file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qobject.h:49:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@82"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qobject.h0000000000000000^48#9#48#9#2129#0#21"Apple LLVM 5.0 Notice--2@101"In file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qstring.h:46:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@82"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qstring.h0000000000000000^45#9#45#9#2041#0#21"Apple LLVM 5.0 Notice--2@104"In file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qbytearray.h:47:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@85"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qbytearray.h0000000000000000^46#9#46#9#2082#0#21"Apple LLVM 5.0 Notice--2@78"In instantiation of template class 'QTypedArrayData<QString &>' requested here-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@93"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h0000000000000000^162#21#162#21#5589#0#14"Semantic Issue--2@70"In instantiation of template class 'QVector<QString &>' requested here-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@59"file:///Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp0000000000000000^177#34#177#34#5744#0#14"Semantic Issue--2#27"com.apple.dt.IDE.diagnostic3@85"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qarraydata.h0000000000000000^206#13#206#13#8207#0#14"Semantic Issue--2@73"'const_iterator' declared as a pointer to a reference of type 'QString &'-433453770#18446744073709551615#0#8(2@77"In file included from /Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp:4:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@59"file:///Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp0000000000000000^3#9#3#9#43#0#21"Apple LLVM 5.0 Notice--2@100"In file included from ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QFile:1:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@89"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QFile0000000000000000^0#9#0#9#9#0#21"Apple LLVM 5.0 Notice--2@103"In file included from ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qfile.h:45:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@91"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qfile.h0000000000000000^44#9#44#9#2011#0#21"Apple LLVM 5.0 Notice--2@105"In file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qfiledevice.h:45:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@86"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qfiledevice.h0000000000000000^44#9#44#9#2023#0#21"Apple LLVM 5.0 Notice--2@103"In file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qiodevice.h:47:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@84"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qiodevice.h0000000000000000^46#9#46#9#2069#0#21"Apple LLVM 5.0 Notice--2@101"In file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qobject.h:49:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@82"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qobject.h0000000000000000^48#9#48#9#2129#0#21"Apple LLVM 5.0 Notice--2@101"In file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qstring.h:46:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@82"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qstring.h0000000000000000^45#9#45#9#2041#0#21"Apple LLVM 5.0 Notice--2@104"In file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qbytearray.h:47:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@85"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qbytearray.h0000000000000000^46#9#46#9#2082#0#21"Apple LLVM 5.0 Notice--2#27"com.apple.dt.IDE.diagnostic3@85"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qarraydata.h0000000000000000^207#19#207#19#8238#0#14"Semantic Issue--2@63"'data' declared as a pointer to a reference of type 'QString &'-433453770#18446744073709551615#0#8(2@77"In file included from /Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp:4:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@59"file:///Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp0000000000000000^3#9#3#9#43#0#21"Apple LLVM 5.0 Notice--2@100"In file included from ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QFile:1:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@89"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QFile0000000000000000^0#9#0#9#9#0#21"Apple LLVM 5.0 Notice--2@103"In file included from ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qfile.h:45:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@91"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qfile.h0000000000000000^44#9#44#9#2011#0#21"Apple LLVM 5.0 Notice--2@105"In file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qfiledevice.h:45:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@86"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qfiledevice.h0000000000000000^44#9#44#9#2023#0#21"Apple LLVM 5.0 Notice--2@103"In file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qiodevice.h:47:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@84"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qiodevice.h0000000000000000^46#9#46#9#2069#0#21"Apple LLVM 5.0 Notice--2@101"In file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qobject.h:49:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@82"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qobject.h0000000000000000^48#9#48#9#2129#0#21"Apple LLVM 5.0 Notice--2@101"In file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qstring.h:46:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@82"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qstring.h0000000000000000^45#9#45#9#2041#0#21"Apple LLVM 5.0 Notice--2@104"In file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qbytearray.h:47:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@85"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qbytearray.h0000000000000000^46#9#46#9#2082#0#21"Apple LLVM 5.0 Notice--2#27"com.apple.dt.IDE.diagnostic3@85"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qarraydata.h0000000000000000^210#6#210#6#8270#0#14"Semantic Issue--2@63"'data' declared as a pointer to a reference of type 'QString &'-433453770#18446744073709551615#0#8(2@77"In file included from /Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp:4:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@59"file:///Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp0000000000000000^3#9#3#9#43#0#21"Apple LLVM 5.0 Notice--2@100"In file included from ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QFile:1:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@89"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QFile0000000000000000^0#9#0#9#9#0#21"Apple LLVM 5.0 Notice--2@103"In file included from ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qfile.h:45:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@91"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qfile.h0000000000000000^44#9#44#9#2011#0#21"Apple LLVM 5.0 Notice--2@105"In file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qfiledevice.h:45:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@86"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qfiledevice.h0000000000000000^44#9#44#9#2023#0#21"Apple LLVM 5.0 Notice--2@103"In file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qiodevice.h:47:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@84"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qiodevice.h0000000000000000^46#9#46#9#2069#0#21"Apple LLVM 5.0 Notice--2@101"In file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qobject.h:49:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@82"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qobject.h0000000000000000^48#9#48#9#2129#0#21"Apple LLVM 5.0 Notice--2@101"In file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qstring.h:46:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@82"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qstring.h0000000000000000^45#9#45#9#2041#0#21"Apple LLVM 5.0 Notice--2@104"In file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qbytearray.h:47:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@85"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qbytearray.h0000000000000000^46#9#46#9#2082#0#21"Apple LLVM 5.0 Notice--2#27"com.apple.dt.IDE.diagnostic3@85"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qarraydata.h0000000000000000^211#12#211#12#8339#0#14"Semantic Issue--2@63"'data' declared as a pointer to a reference of type 'QString &'-433453770#18446744073709551615#0#8(2@77"In file included from /Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp:4:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@59"file:///Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp0000000000000000^3#9#3#9#43#0#21"Apple LLVM 5.0 Notice--2@100"In file included from ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QFile:1:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@89"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QFile0000000000000000^0#9#0#9#9#0#21"Apple LLVM 5.0 Notice--2@103"In file included from ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qfile.h:45:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@91"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qfile.h0000000000000000^44#9#44#9#2011#0#21"Apple LLVM 5.0 Notice--2@105"In file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qfiledevice.h:45:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@86"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qfiledevice.h0000000000000000^44#9#44#9#2023#0#21"Apple LLVM 5.0 Notice--2@103"In file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qiodevice.h:47:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@84"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qiodevice.h0000000000000000^46#9#46#9#2069#0#21"Apple LLVM 5.0 Notice--2@101"In file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qobject.h:49:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@82"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qobject.h0000000000000000^48#9#48#9#2129#0#21"Apple LLVM 5.0 Notice--2@101"In file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qstring.h:46:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@82"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qstring.h0000000000000000^45#9#45#9#2041#0#21"Apple LLVM 5.0 Notice--2@104"In file included from /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qbytearray.h:47:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@85"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qbytearray.h0000000000000000^46#9#46#9#2082#0#21"Apple LLVM 5.0 Notice--2#27"com.apple.dt.IDE.diagnostic3@85"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qarraydata.h0000000000000000^236#48#236#48#9561#0#14"Semantic Issue--2@106"Return type of out-of-line definition of 'QVector<QString &>::insert' differs from that in the declaration-433453770#18446744073709551615#0#5(2@78"In file included from /Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp:11:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@59"file:///Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp0000000000000000^10#9#10#9#172#0#21"Apple LLVM 5.0 Notice--2@37"In file included from ./CStation.h:5:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@55"file:///Users/westjour/Desktop/GUI_Repo/proj/CStation.h0000000000000000^4#9#4#9#67#0#21"Apple LLVM 5.0 Notice--2@102"In file included from ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector:1:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@91"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector0000000000000000^0#9#0#9#9#0#21"Apple LLVM 5.0 Notice--2@70"In instantiation of template class 'QVector<QString &>' requested here-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@59"file:///Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp0000000000000000^177#34#177#34#5744#0#14"Semantic Issue--2@28"Previous declaration is here-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@93"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h0000000000000000^140#9#140#9#4747#0#21"Apple LLVM 5.0 Notice--2#27"com.apple.dt.IDE.diagnostic3@93"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h0000000000000000^183#13#183#13#7043#0#14"Semantic Issue--2@68"Functions that differ only in their return type cannot be overloaded-433453770#18446744073709551615#0#4(2@78"In file included from /Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp:11:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@59"file:///Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp0000000000000000^10#9#10#9#172#0#21"Apple LLVM 5.0 Notice--2@37"In file included from ./CStation.h:5:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@55"file:///Users/westjour/Desktop/GUI_Repo/proj/CStation.h0000000000000000^4#9#4#9#67#0#21"Apple LLVM 5.0 Notice--2@102"In file included from ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector:1:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@91"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector0000000000000000^0#9#0#9#9#0#21"Apple LLVM 5.0 Notice--2@28"Previous declaration is here-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@93"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h0000000000000000^139#9#139#9#4711#0#21"Apple LLVM 5.0 Notice--2#27"com.apple.dt.IDE.diagnostic3@93"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h0000000000000000^184#20#184#20#7107#0#14"Semantic Issue--2@85"'pointer' declared as a pointer to a reference of type 'value_type' (aka 'QString &')-433453770#18446744073709551615#0#3(2@78"In file included from /Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp:11:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@59"file:///Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp0000000000000000^10#9#10#9#172#0#21"Apple LLVM 5.0 Notice--2@37"In file included from ./CStation.h:5:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@55"file:///Users/westjour/Desktop/GUI_Repo/proj/CStation.h0000000000000000^4#9#4#9#67#0#21"Apple LLVM 5.0 Notice--2@102"In file included from ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector:1:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@91"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector0000000000000000^0#9#0#9#9#0#21"Apple LLVM 5.0 Notice--2#27"com.apple.dt.IDE.diagnostic3@93"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h0000000000000000^203#22#203#22#8011#0#14"Semantic Issue--2@91"'const_pointer' declared as a pointer to a reference of type 'value_type' (aka 'QString &')-433453770#18446744073709551615#0#3(2@78"In file included from /Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp:11:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@59"file:///Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp0000000000000000^10#9#10#9#172#0#21"Apple LLVM 5.0 Notice--2@37"In file included from ./CStation.h:5:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@55"file:///Users/westjour/Desktop/GUI_Repo/proj/CStation.h0000000000000000^4#9#4#9#67#0#21"Apple LLVM 5.0 Notice--2@102"In file included from ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector:1:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@91"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector0000000000000000^0#9#0#9#9#0#21"Apple LLVM 5.0 Notice--2#27"com.apple.dt.IDE.diagnostic3@93"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h0000000000000000^204#28#204#28#8050#0#14"Semantic Issue--2@63"'from' declared as a pointer to a reference of type 'QString &'-433453770#18446744073709551615#0#3(2@78"In file included from /Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp:11:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@59"file:///Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp0000000000000000^10#9#10#9#172#0#21"Apple LLVM 5.0 Notice--2@37"In file included from ./CStation.h:5:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@55"file:///Users/westjour/Desktop/GUI_Repo/proj/CStation.h0000000000000000^4#9#4#9#67#0#21"Apple LLVM 5.0 Notice--2@102"In file included from ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector:1:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@91"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector0000000000000000^0#9#0#9#9#0#21"Apple LLVM 5.0 Notice--2#27"com.apple.dt.IDE.diagnostic3@93"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h0000000000000000^247#28#247#28#9932#0#14"Semantic Issue--2@66"'srcFrom' declared as a pointer to a reference of type 'QString &'-433453770#18446744073709551615#0#3(2@78"In file included from /Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp:11:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@59"file:///Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp0000000000000000^10#9#10#9#172#0#21"Apple LLVM 5.0 Notice--2@37"In file included from ./CStation.h:5:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@55"file:///Users/westjour/Desktop/GUI_Repo/proj/CStation.h0000000000000000^4#9#4#9#67#0#21"Apple LLVM 5.0 Notice--2@102"In file included from ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector:1:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@91"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector0000000000000000^0#9#0#9#9#0#21"Apple LLVM 5.0 Notice--2#27"com.apple.dt.IDE.diagnostic3@93"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h0000000000000000^248#31#248#31#9978#0#14"Semantic Issue--2@63"'from' declared as a pointer to a reference of type 'QString &'-433453770#18446744073709551615#0#3(2@78"In file included from /Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp:11:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@59"file:///Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp0000000000000000^10#9#10#9#172#0#21"Apple LLVM 5.0 Notice--2@37"In file included from ./CStation.h:5:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@55"file:///Users/westjour/Desktop/GUI_Repo/proj/CStation.h0000000000000000^4#9#4#9#67#0#21"Apple LLVM 5.0 Notice--2@102"In file included from ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector:1:-433453770#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@91"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector0000000000000000^0#9#0#9#9#0#21"Apple LLVM 5.0 Notice--2#27"com.apple.dt.IDE.diagnostic3@93"file:///Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h0000000000000000^249#20#249#20#10037#0#14"Semantic Issue--0#0#1#-19%DVTDocumentLocation4@59"file:///Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp0000000000000000^2878"CompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CXMLParser.o CXMLParser.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/westjour/Desktop/GUI_Repo/proj    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.6 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/XMLEditor.hmap -I/Users/westjour/Desktop/GUI_Repo/proj/Debug/include -I../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AGL.framework/Headers -I../../../Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I/Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/DerivedSources/x86_64 -I/Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/DerivedSources -F/Users/westjour/Desktop/GUI_Repo/proj/Debug -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib -pipe -O0 -Wall -W -fPIE -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_CORE_LIB -MMD -MT dependencies -MF /Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CXMLParser.d --serialize-diagnostics /Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CXMLParser.dia -c /Users/westjour/Desktop/GUI_Repo/proj/CXMLParser.cpp -o /Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CXMLParser.o36"A1E4266C-2A72-49D4-A4D7-B532BC2695FB-
+b205A2712-4E93-4384-B4E4-F11A63289BE0
 
-CCompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/main.o /Users/westjour/Desktop/GUIRepo2/proj/src/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s432854140.325979
-e432854141.649325
+CCompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/main.o /Users/westjour/Desktop/GUI_Repo/proj/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s433453769.796397
+e433453771.399801
 r1
 xCompileC
 xXMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/main.o
-x/Users/westjour/Desktop/GUIRepo2/proj/src/main.cpp
+x/Users/westjour/Desktop/GUI_Repo/proj/main.cpp
 xnormal
 xx86_64
 xc++
 xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/westjour/Desktop/GUIRepo2/proj/src/main.cpp
-d/Users/westjour/Desktop/GUIRepo2/proj/src/CMainWindow.h
+d/Users/westjour/Desktop/GUI_Repo/proj/main.cpp
+d/Users/westjour/Desktop/GUI_Repo/proj/CMainWindow.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QMainWindow
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qmainwindow.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qwidget.h
@@ -765,22 +822,22 @@ d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qinputmethod.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qlocale.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qvariant.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qmap.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Compile /Users/westjour/Desktop/GUIRepo2/proj/src/main.cpp150"CompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/main.o src/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilere482537cd4ccb941^9f3aa67dd4ccb941^---0#0#1#-19%DVTDocumentLocation2@57"file:///Users/westjour/Desktop/GUIRepo2/proj/src/main.cpp0000000000000000^2850"CompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/main.o src/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/westjour/Desktop/GUIRepo2/proj    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.6 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/XMLEditor.hmap -I/Users/westjour/Desktop/GUIRepo2/proj/Debug/include -I../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AGL.framework/Headers -I../../../Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/DerivedSources/x86_64 -I/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/DerivedSources -F/Users/westjour/Desktop/GUIRepo2/proj/Debug -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib -pipe -O2 -Wall -W -fPIE -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_CORE_LIB -MMD -MT dependencies -MF /Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/main.dia -c /Users/westjour/Desktop/GUIRepo2/proj/src/main.cpp -o /Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/main.o36"33A94687-0BC4-4DD2-812E-5F445232B851-
-b5E43E3A4-7324-4E24-9E7D-5464564280F4
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection54"Compile /Users/westjour/Desktop/GUI_Repo/proj/main.cpp146"CompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/main.o main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerc2f6cbc9fad5b941^e06566cbfad5b941^---0#0#1#-19%DVTDocumentLocation2@53"file:///Users/westjour/Desktop/GUI_Repo/proj/main.cpp0000000000000000^2842"CompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/main.o main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/westjour/Desktop/GUI_Repo/proj    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.6 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/XMLEditor.hmap -I/Users/westjour/Desktop/GUI_Repo/proj/Debug/include -I../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AGL.framework/Headers -I../../../Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I/Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/DerivedSources/x86_64 -I/Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/DerivedSources -F/Users/westjour/Desktop/GUI_Repo/proj/Debug -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib -pipe -O0 -Wall -W -fPIE -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_CORE_LIB -MMD -MT dependencies -MF /Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/main.dia -c /Users/westjour/Desktop/GUI_Repo/proj/main.cpp -o /Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/main.o36"7970FEB5-CF43-4491-9E96-19D7C86F534F-
+b205A2712-4E93-4384-B4E4-F11A63289BE0
 
-CCompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CDailyWeatherModel.o /Users/westjour/Desktop/GUIRepo2/proj/moc_CDailyWeatherModel.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s432854140.327963
-e432854141.386841
+CCompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CDailyWeatherModel.o /Users/westjour/Desktop/GUI_Repo/proj/moc_CDailyWeatherModel.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s433453769.798625
+e433453771.098537
 r1
 xCompileC
 xXMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CDailyWeatherModel.o
-x/Users/westjour/Desktop/GUIRepo2/proj/moc_CDailyWeatherModel.cpp
+x/Users/westjour/Desktop/GUI_Repo/proj/moc_CDailyWeatherModel.cpp
 xnormal
 xx86_64
 xc++
 xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/westjour/Desktop/GUIRepo2/proj/moc_CDailyWeatherModel.cpp
-d/Users/westjour/Desktop/GUIrepo/XMLEditor/CDailyWeatherModel.h
+d/Users/westjour/Desktop/GUI_Repo/proj/moc_CDailyWeatherModel.cpp
+d/Users/westjour/Desktop/GUI_Repo/proj/CDailyWeatherModel.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QAbstractTableModel
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qabstractitemmodel.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qvariant.h
@@ -829,22 +886,22 @@ d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qobject_impl.
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qregexp.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qstringmatcher.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qvector.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Compile /Users/westjour/Desktop/GUIRepo2/proj/moc_CDailyWeatherModel.cpp182"CompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CDailyWeatherModel.o moc_CDailyWeatherModel.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler8d25547cd4ccb941^dd08637dd4ccb941^---0#0#1#-19%DVTDocumentLocation2@71"file:///Users/westjour/Desktop/GUIRepo2/proj/moc_CDailyWeatherModel.cpp0000000000000000^2950"CompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CDailyWeatherModel.o moc_CDailyWeatherModel.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/westjour/Desktop/GUIRepo2/proj    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.6 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/XMLEditor.hmap -I/Users/westjour/Desktop/GUIRepo2/proj/Debug/include -I../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AGL.framework/Headers -I../../../Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/DerivedSources/x86_64 -I/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/DerivedSources -F/Users/westjour/Desktop/GUIRepo2/proj/Debug -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib -pipe -O2 -Wall -W -fPIE -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_CORE_LIB -MMD -MT dependencies -MF /Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CDailyWeatherModel.d --serialize-diagnostics /Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CDailyWeatherModel.dia -c /Users/westjour/Desktop/GUIRepo2/proj/moc_CDailyWeatherModel.cpp -o /Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CDailyWeatherModel.o36"21B647B4-334D-4CA0-9651-327B00B0A176-
-b5E43E3A4-7324-4E24-9E7D-5464564280F4
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Compile /Users/westjour/Desktop/GUI_Repo/proj/moc_CDailyWeatherModel.cpp182"CompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CDailyWeatherModel.o moc_CDailyWeatherModel.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerca87ccc9fad5b941^e3fc19cbfad5b941^---0#0#1#-19%DVTDocumentLocation2@71"file:///Users/westjour/Desktop/GUI_Repo/proj/moc_CDailyWeatherModel.cpp0000000000000000^2950"CompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CDailyWeatherModel.o moc_CDailyWeatherModel.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/westjour/Desktop/GUI_Repo/proj    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.6 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/XMLEditor.hmap -I/Users/westjour/Desktop/GUI_Repo/proj/Debug/include -I../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AGL.framework/Headers -I../../../Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I/Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/DerivedSources/x86_64 -I/Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/DerivedSources -F/Users/westjour/Desktop/GUI_Repo/proj/Debug -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib -pipe -O0 -Wall -W -fPIE -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_CORE_LIB -MMD -MT dependencies -MF /Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CDailyWeatherModel.d --serialize-diagnostics /Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CDailyWeatherModel.dia -c /Users/westjour/Desktop/GUI_Repo/proj/moc_CDailyWeatherModel.cpp -o /Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CDailyWeatherModel.o36"5EAD9454-A6A0-4B71-85A0-020020A73583-
+b205A2712-4E93-4384-B4E4-F11A63289BE0
 
-CCompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CDailyWeatherView.o /Users/westjour/Desktop/GUIRepo2/proj/moc_CDailyWeatherView.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s432854140.328369
-e432854141.745008
+CCompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CDailyWeatherView.o /Users/westjour/Desktop/GUI_Repo/proj/moc_CDailyWeatherView.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s433453769.799921
+e433453771.399783
 r1
 xCompileC
 xXMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CDailyWeatherView.o
-x/Users/westjour/Desktop/GUIRepo2/proj/moc_CDailyWeatherView.cpp
+x/Users/westjour/Desktop/GUI_Repo/proj/moc_CDailyWeatherView.cpp
 xnormal
 xx86_64
 xc++
 xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/westjour/Desktop/GUIRepo2/proj/moc_CDailyWeatherView.cpp
-d/Users/westjour/Desktop/GUIrepo/XMLEditor/CDailyWeatherView.h
+d/Users/westjour/Desktop/GUI_Repo/proj/moc_CDailyWeatherView.cpp
+d/Users/westjour/Desktop/GUI_Repo/proj/CDailyWeatherView.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QTableView
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qtableview.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qabstractitemview.h
@@ -940,22 +997,22 @@ d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qstyle.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qtabbar.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qtabwidget.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qrubberband.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/westjour/Desktop/GUIRepo2/proj/moc_CDailyWeatherView.cpp180"CompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CDailyWeatherView.o moc_CDailyWeatherView.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler4739547cd4ccb941^b2b9be7dd4ccb941^---0#0#1#-19%DVTDocumentLocation2@70"file:///Users/westjour/Desktop/GUIRepo2/proj/moc_CDailyWeatherView.cpp0000000000000000^2944"CompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CDailyWeatherView.o moc_CDailyWeatherView.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/westjour/Desktop/GUIRepo2/proj    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.6 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/XMLEditor.hmap -I/Users/westjour/Desktop/GUIRepo2/proj/Debug/include -I../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AGL.framework/Headers -I../../../Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/DerivedSources/x86_64 -I/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/DerivedSources -F/Users/westjour/Desktop/GUIRepo2/proj/Debug -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib -pipe -O2 -Wall -W -fPIE -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_CORE_LIB -MMD -MT dependencies -MF /Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CDailyWeatherView.d --serialize-diagnostics /Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CDailyWeatherView.dia -c /Users/westjour/Desktop/GUIRepo2/proj/moc_CDailyWeatherView.cpp -o /Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CDailyWeatherView.o36"7F5A812E-0135-4B1D-B606-1D78342281B2-
-b5E43E3A4-7324-4E24-9E7D-5464564280F4
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/westjour/Desktop/GUI_Repo/proj/moc_CDailyWeatherView.cpp180"CompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CDailyWeatherView.o moc_CDailyWeatherView.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler09deccc9fad5b941^6b6166cbfad5b941^---0#0#1#-19%DVTDocumentLocation2@70"file:///Users/westjour/Desktop/GUI_Repo/proj/moc_CDailyWeatherView.cpp0000000000000000^2944"CompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CDailyWeatherView.o moc_CDailyWeatherView.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/westjour/Desktop/GUI_Repo/proj    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.6 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/XMLEditor.hmap -I/Users/westjour/Desktop/GUI_Repo/proj/Debug/include -I../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AGL.framework/Headers -I../../../Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I/Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/DerivedSources/x86_64 -I/Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/DerivedSources -F/Users/westjour/Desktop/GUI_Repo/proj/Debug -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib -pipe -O0 -Wall -W -fPIE -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_CORE_LIB -MMD -MT dependencies -MF /Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CDailyWeatherView.d --serialize-diagnostics /Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CDailyWeatherView.dia -c /Users/westjour/Desktop/GUI_Repo/proj/moc_CDailyWeatherView.cpp -o /Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CDailyWeatherView.o36"C6DF22F6-946C-44B0-A1E1-2EF1E513A225-
+b205A2712-4E93-4384-B4E4-F11A63289BE0
 
-CCompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CMainWindow.o /Users/westjour/Desktop/GUIRepo2/proj/moc_CMainWindow.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s432854141.134018
-e432854142.074158
+CCompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CMainWindow.o /Users/westjour/Desktop/GUI_Repo/proj/moc_CMainWindow.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s433453770.712973
+e433453771.701796
 r1
 xCompileC
 xXMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CMainWindow.o
-x/Users/westjour/Desktop/GUIRepo2/proj/moc_CMainWindow.cpp
+x/Users/westjour/Desktop/GUI_Repo/proj/moc_CMainWindow.cpp
 xnormal
 xx86_64
 xc++
 xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/westjour/Desktop/GUIRepo2/proj/moc_CMainWindow.cpp
-d/Users/westjour/Desktop/GUIrepo/XMLEditor/CMainWindow.h
+d/Users/westjour/Desktop/GUI_Repo/proj/moc_CMainWindow.cpp
+d/Users/westjour/Desktop/GUI_Repo/proj/CMainWindow.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QMainWindow
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qmainwindow.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qwidget.h
@@ -1033,88 +1090,22 @@ d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qkeysequence.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qtabwidget.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qicon.h
 d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Compile /Users/westjour/Desktop/GUIRepo2/proj/moc_CMainWindow.cpp168"CompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CMainWindow.o moc_CMainWindow.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler7f6c227dd4ccb941^16fc127ed4ccb941^---0#0#1#-19%DVTDocumentLocation2@64"file:///Users/westjour/Desktop/GUIRepo2/proj/moc_CMainWindow.cpp0000000000000000^2908"CompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CMainWindow.o moc_CMainWindow.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/westjour/Desktop/GUIRepo2/proj    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.6 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/XMLEditor.hmap -I/Users/westjour/Desktop/GUIRepo2/proj/Debug/include -I../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AGL.framework/Headers -I../../../Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/DerivedSources/x86_64 -I/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/DerivedSources -F/Users/westjour/Desktop/GUIRepo2/proj/Debug -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib -pipe -O2 -Wall -W -fPIE -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_CORE_LIB -MMD -MT dependencies -MF /Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CMainWindow.d --serialize-diagnostics /Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CMainWindow.dia -c /Users/westjour/Desktop/GUIRepo2/proj/moc_CMainWindow.cpp -o /Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CMainWindow.o36"E1A9EF46-A2FF-4162-995B-8E45FE6240E5-
-b5E43E3A4-7324-4E24-9E7D-5464564280F4
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Compile /Users/westjour/Desktop/GUI_Repo/proj/moc_CMainWindow.cpp168"CompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CMainWindow.o moc_CMainWindow.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler6ea2b6cafad5b941^ffb2b3cbfad5b941^---0#0#1#-19%DVTDocumentLocation2@64"file:///Users/westjour/Desktop/GUI_Repo/proj/moc_CMainWindow.cpp0000000000000000^2908"CompileC XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CMainWindow.o moc_CMainWindow.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/westjour/Desktop/GUI_Repo/proj    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.6 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/XMLEditor.hmap -I/Users/westjour/Desktop/GUI_Repo/proj/Debug/include -I../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AGL.framework/Headers -I../../../Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I/Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/DerivedSources/x86_64 -I/Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/DerivedSources -F/Users/westjour/Desktop/GUI_Repo/proj/Debug -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib -pipe -O0 -Wall -W -fPIE -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_CORE_LIB -MMD -MT dependencies -MF /Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CMainWindow.d --serialize-diagnostics /Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CMainWindow.dia -c /Users/westjour/Desktop/GUI_Repo/proj/moc_CMainWindow.cpp -o /Users/westjour/Desktop/GUI_Repo/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CMainWindow.o36"6FF0A672-32F4-4284-8CC3-E3273913282D-
+b205A2712-4E93-4384-B4E4-F11A63289BE0
 
-CLd /Users/westjour/Desktop/GUIRepo2/proj/Debug/XMLEditor.app/Contents/MacOS/XMLEditor normal x86_64
-s432854142.278775
-e432854142.338750
-r1
-xLd
-x/Users/westjour/Desktop/GUIRepo2/proj/Debug/XMLEditor.app/Contents/MacOS/XMLEditor
-xnormal
-xx86_64
-d/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/XMLEditor.LinkFileList
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/crt1.10.6.o
-d/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/main.o
-d/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CDailyWeatherModel.o
-d/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CDailyWeatherView.o
-d/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CMainWindow.o
-d/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CStation.o
-d/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/CXMLParser.o
-d/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CDailyWeatherModel.o
-d/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CDailyWeatherView.o
-d/Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/moc_CMainWindow.o
-d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/QtWidgets
-d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/QtGui
-d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/QtCore
-d/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtXml.framework/QtXml
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AGL.framework/AGL
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libstdc++.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libSystem.dylib
-d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.osx.a
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGLU.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGL.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcache.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcommonCrypto.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcompiler_rt.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcopyfile.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcorecrypto.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdispatch.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdyld.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libkeymgr.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/liblaunch.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libmacho.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libquarantine.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libremovefile.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_asl.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_blocks.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_c.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_configuration.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_dnssd.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_info.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_kernel.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_m.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_malloc.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_network.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_notify.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_platform.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_pthread.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_sandbox.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_stats.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunc.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunwind.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libxpc.dylib
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Link /Users/westjour/Desktop/GUIRepo2/proj/Debug/XMLEditor.app/Contents/MacOS/XMLEditor61"Ld Debug/XMLEditor.app/Contents/MacOS/XMLEditor normal x86_647f6b477ed4ccb941^80b9567ed4ccb941^---0#0#1#--1258"Ld Debug/XMLEditor.app/Contents/MacOS/XMLEditor normal x86_64    cd /Users/westjour/Desktop/GUIRepo2/proj    export MACOSX_DEPLOYMENT_TARGET=10.6    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/westjour/Desktop/GUIRepo2/proj/Debug -L/Users/westjour/Qt5.3.2/5.3/clang_64/lib -L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks -F/Users/westjour/Desktop/GUIRepo2/proj/Debug -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib -filelist /Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/XMLEditor.LinkFileList -mmacosx-version-min=10.6 -headerpad_max_install_names -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib -framework QtWidgets -framework QtGui -framework QtCore -framework QtXml -framework OpenGL -framework AGL -Xlinker -dependency_info -Xlinker /Users/westjour/Desktop/GUIRepo2/proj/XMLEditor.build/Debug/XMLEditor.build/Objects-normal/x86_64/XMLEditor_dependency_info.dat -o /Users/westjour/Desktop/GUIRepo2/proj/Debug/XMLEditor.app/Contents/MacOS/XMLEditor36"BF1222E2-06F0-4923-891C-4447A869781B-
-b5E43E3A4-7324-4E24-9E7D-5464564280F4
+CLd /Users/westjour/Desktop/GUI_Repo/proj/Debug/XMLEditor.app/Contents/MacOS/XMLEditor normal x86_64
+r0
 
-CProcessInfoPlistFile /Users/westjour/Desktop/GUIRepo2/proj/Debug/XMLEditor.app/Contents/Info.plist /Users/westjour/Desktop/GUIRepo2/proj/Info.plist
-s432854140.324203
-e432854140.325561
+CProcessInfoPlistFile /Users/westjour/Desktop/GUI_Repo/proj/Debug/XMLEditor.app/Contents/Info.plist /Users/westjour/Desktop/GUI_Repo/proj/Info.plist
+s433453769.794805
+e433453769.795972
 r1
 xProcessInfoPlistFile
-x/Users/westjour/Desktop/GUIRepo2/proj/Debug/XMLEditor.app/Contents/Info.plist
-x/Users/westjour/Desktop/GUIRepo2/proj/Info.plist
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection56"Process /Users/westjour/Desktop/GUIRepo2/proj/Info.plist71"ProcessInfoPlistFile Debug/XMLEditor.app/Contents/Info.plist Info.plist7409537cd4ccb941^9f58537cd4ccb941^---0#0#1#-19%DVTDocumentLocation2@55"file:///Users/westjour/Desktop/GUIRepo2/proj/Info.plist0000000000000000^401"ProcessInfoPlistFile Debug/XMLEditor.app/Contents/Info.plist Info.plist    cd /Users/westjour/Desktop/GUIRepo2/proj    builtin-infoPlistUtility /Users/westjour/Desktop/GUIRepo2/proj/Info.plist -genpkginfo /Users/westjour/Desktop/GUIRepo2/proj/Debug/XMLEditor.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/westjour/Desktop/GUIRepo2/proj/Debug/XMLEditor.app/Contents/Info.plist36"2EAB944D-60D9-4309-A678-D732FB49CA69-
-b5E43E3A4-7324-4E24-9E7D-5464564280F4
+x/Users/westjour/Desktop/GUI_Repo/proj/Debug/XMLEditor.app/Contents/Info.plist
+x/Users/westjour/Desktop/GUI_Repo/proj/Info.plist
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection56"Process /Users/westjour/Desktop/GUI_Repo/proj/Info.plist71"ProcessInfoPlistFile Debug/XMLEditor.app/Contents/Info.plist Info.plist1b82cbc9fad5b941^bdc5cbc9fad5b941^---0#0#1#-19%DVTDocumentLocation2@55"file:///Users/westjour/Desktop/GUI_Repo/proj/Info.plist0000000000000000^401"ProcessInfoPlistFile Debug/XMLEditor.app/Contents/Info.plist Info.plist    cd /Users/westjour/Desktop/GUI_Repo/proj    builtin-infoPlistUtility /Users/westjour/Desktop/GUI_Repo/proj/Info.plist -genpkginfo /Users/westjour/Desktop/GUI_Repo/proj/Debug/XMLEditor.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/westjour/Desktop/GUI_Repo/proj/Debug/XMLEditor.app/Contents/Info.plist36"A08DACFB-EAD8-478B-A9EF-DAD1108CE550-
+b205A2712-4E93-4384-B4E4-F11A63289BE0
 
-CTouch /Users/westjour/Desktop/GUIRepo2/proj/Debug/XMLEditor.app
-s432854142.339578
-e432854142.344484
-r1
-xTouch
-x/Users/westjour/Desktop/GUIRepo2/proj/Debug/XMLEditor.app
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Touch /Users/westjour/Desktop/GUIRepo2/proj/Debug/XMLEditor.app25"Touch Debug/XMLEditor.app3700577ed4ccb941^2332587ed4ccb941^---0#0#1#--151"Touch Debug/XMLEditor.app    cd /Users/westjour/Desktop/GUIRepo2/proj    /usr/bin/touch -c /Users/westjour/Desktop/GUIRepo2/proj/Debug/XMLEditor.app36"D5F3F656-7D0A-4648-B090-42BF44BA8E94-
-b5E43E3A4-7324-4E24-9E7D-5464564280F4
+CTouch /Users/westjour/Desktop/GUI_Repo/proj/Debug/XMLEditor.app
+r0
 

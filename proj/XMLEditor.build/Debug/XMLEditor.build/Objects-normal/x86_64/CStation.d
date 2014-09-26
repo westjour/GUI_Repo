@@ -1,4 +1,4 @@
-dependencies: /Users/westjour/Desktop/GUIRepo2/proj/CStation.cpp \
+dependencies: /Users/westjour/Desktop/GUI_Repo/proj/CStation.cpp \
   CStation.h \
   ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QString \
   ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qstring.h \
@@ -29,4 +29,7 @@ dependencies: /Users/westjour/Desktop/GUIRepo2/proj/CStation.cpp \
   ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qalgorithms.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qiterator.h \
-  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qlist.h
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qlist.h \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QMap \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qmap.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qpair.h

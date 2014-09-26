@@ -1,4 +1,4 @@
-dependencies: /Users/westjour/Desktop/GUIRepo2/proj/main.cpp \
+dependencies: /Users/westjour/Desktop/GUI_Repo/proj/main.cpp \
   CMainWindow.h \
   ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QMainWindow \
   ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qmainwindow.h \

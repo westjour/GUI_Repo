@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/westjour/Desktop/GUIRepo2/proj/CDailyWeatherModel.cpp \
+  /Users/westjour/Desktop/GUI_Repo/proj/CDailyWeatherModel.cpp \
   CDailyWeatherModel.h \
   ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QAbstractTableModel \
   ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qabstractitemmodel.h \
@@ -51,4 +51,5 @@ dependencies: \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qvector.h \
   CStation.h \
   ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QString \
-  ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QMap

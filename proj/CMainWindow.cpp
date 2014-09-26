@@ -35,7 +35,7 @@ CMainWindow::CMainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::Main
     for ( iter = mStations.begin(); iter!=mStations.end(); ++iter )
     {
         CStation* station = *iter;
-        std::map<QString, QString> attrMap = station->getAttributes();
+        QMap<QString, QString> attrMap = station->getAttributes();
         QString s = attrMap["StationID"] + '-' + attrMap["Station_Name"];
         options.append(s);
     }
@@ -112,6 +112,15 @@ CMainWindow::CMainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::Main
     setCentralWidget(new QWidget());
     centralWidget()->setLayout(mainLayout);
 
+    // Check the operating system
+    #ifdef Q_OS_MAC
+        //qDebug("this is a MAC OS");
+    #endif
+    
+    #ifdef Q_OS_WIN
+        //qDebug("this is Windows OS");
+    #endif
+    
     makeConnections();
 }
 
@@ -132,8 +141,11 @@ void CMainWindow::yearIndexChanged(QString text)
 {
     CDailyWeatherModel* model = (CDailyWeatherModel*)mDailyWeatherView->model();
     
+    qDebug("year:%i", text.toInt());
     model->setYear(text.toInt());
     
+    model->update();
+       
 }
 
 

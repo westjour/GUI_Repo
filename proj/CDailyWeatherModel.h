@@ -21,6 +21,10 @@ public:
     void setStations(QVector<CStation* > st){ mStations = st; }
     void setYear(int y){ mYear = y; }
     int getYear(){ return mYear; }
+    void update();
+    
+    // TODO
+    QPair<int, int> getYearBounds();
     
     //
     // The following functions are required for an editable table

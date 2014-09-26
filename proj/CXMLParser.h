@@ -16,7 +16,7 @@ public:
     void parseWDB(QVector<CStation*>* stations);
     void parseCDB(/*QFile* file*/);
 
-    void parseWeatherData(CStation* station, QString s);
+    void parseWeatherData(CStation*, QString s);
 };
 
 #endif // CXMLPARSER_H

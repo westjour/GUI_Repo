@@ -28,7 +28,6 @@ int CDailyWeatherModel::rowCount( const QModelIndex & parent ) const
  */
 void CDailyWeatherModel::update()
 {
-    qDebug("inside CDailyWeatherModel::update");
     beginResetModel();
     endResetModel();
 }

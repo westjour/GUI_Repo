@@ -117,7 +117,6 @@ void CXMLParser::parseWDB(QVector<CStation*>* stations)
 
                         // Parse Weather Data
                         parseWeatherData(station, childElem.text());
-                        int z =4;
                         }
                 }
 
@@ -127,8 +126,6 @@ void CXMLParser::parseWDB(QVector<CStation*>* stations)
             n = n.nextSiblingElement();
         } // end "if element"
     } // end while, done parsing XML
-    
-    qDebug("<<<DONE PARSING XML>>>");
 }
 
 
@@ -256,12 +253,12 @@ void CXMLParser::parseWeatherData( CStation* station, QString s )
     }
 }
 
-void CXMLParser::printThis(QMap<Pair, QVector<QString>* > w)
+/*void CXMLParser::printThis(QMap<Pair, QVector<QString>* > w)
 {
     
     int i =0;
     qDebug("map size:%i", w.size());
-    foreach(QVector<QString>* vec, w)///*iter=w.keys().begin(); iter!=w.keys().end(); iter++*/)
+    foreach(QVector<QString>* vec, w))
     {
         QVector<QString> z = (*vec);
        
@@ -275,7 +272,7 @@ void CXMLParser::printThis(QMap<Pair, QVector<QString>* > w)
         
         i++;
      }
-}
+}*/
 
 
 

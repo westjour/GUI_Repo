@@ -5,6 +5,9 @@
 #include <QVector>
 #include <QMap>
 
+
+typedef QMap<QPair<QString, QString>, QVector<QString>* > Map;
+
 /* Brief: Represents one station in the XML */
 class CStation
 {
@@ -34,7 +37,8 @@ public:
      */
     struct DailyWeather
     {
-        QMap<QPair<QString, QString>, QVector<QString> > mWeather;
+        Map mWeather;
+       
         
         // Attributes of <Weather>, there are none as of 9/26/14
         QMap<QString, QString> mAttributes;

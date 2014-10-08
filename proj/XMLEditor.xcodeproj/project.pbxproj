@@ -600,7 +600,7 @@
 				);
 				OTHER_CPLUSPLUSFLAGS = (
 					"-pipe",
-					"-O2",
+					"-O0",
 					"-Wall",
 					"-W",
 					"-fPIE",
@@ -680,7 +680,7 @@
 				);
 				OTHER_CPLUSPLUSFLAGS = (
 					"-pipe",
-					"-O2",
+					"-O0",
 					"-Wall",
 					"-W",
 					"-fPIE",

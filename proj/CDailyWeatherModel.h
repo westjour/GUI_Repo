@@ -3,6 +3,9 @@
 
 #include <QAbstractTableModel>
 
+typedef QPair<QString, QString> Pair;
+typedef QMap<Pair, QVector<QString>* > Map;
+
 class CStation;
 
 /* Brief:
@@ -22,6 +25,8 @@ public:
     void setYear(int y){ mYear = y; }
     int getYear(){ return mYear; }
     void update();
+    
+    void printThis(Map w) const;
     
     // TODO
     QPair<int, int> getYearBounds();

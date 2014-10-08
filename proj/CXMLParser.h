@@ -17,6 +17,8 @@ public:
     void parseCDB(/*QFile* file*/);
 
     void parseWeatherData(CStation*, QString s);
+    void printThis(QMap<QPair<QString, QString>, QVector<QString>* > w);
+
 };
 
 #endif // CXMLPARSER_H

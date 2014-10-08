@@ -20,7 +20,7 @@ int CDailyWeatherModel::rowCount( const QModelIndex & parent ) const
 {
     if (parent.isValid())
         return 0;
-    return 3;//DAYS_IN_YEAR;
+    return DAYS_IN_YEAR;
 }
 
 
@@ -65,31 +65,18 @@ QVariant CDailyWeatherModel::data( const QModelIndex & index, int role ) const
         else{
             // TODO - find correct station. for now, just use the first
             CStation* station = mStations[0];
+            Map map = station->mDailyWeather->mWeather;
             
-            QMap<QPair<QString, QString>, QVector<QString> > weatherMap = station->mDailyWeather->mWeather;
+            QString yr = QString::number(mYear);
+            QString doy = QString::number(row+1);
+            Pair pair(yr, doy);
             
-            //qDebug("map size from inside model:%i", weatherMap.size());
+           
+            // Find item with pair
+            Map::const_iterator iter = map.find(pair);
+            QVector<QString>* values = iter.value();
             
-            //QList<QPair<QString, QString> >::const_iterator citer = weatherMap.keys().begin();
-            
-            /*for(citer; citer!=weatherMap.keys().end(); citer++)
-            {
-                QPair<QString,QString> p = (*citer);
-            }*/
-            
-            //QList<QPair<QString, QString> >::const_iterator citerEND = weatherMap.keys().end();
-            //QPair<QString, QString> myPair = (*citer);
-            
-            /*if (row == 0 && column == 4)
-            {
-                if (weatherMap.contains(qMakePair(mYear, row+1)))
-                    qDebug("map contains %i, day %i", mYear, row+1);
-                else
-                    qDebug("map doesn't contain %i, day %i", mYear, row+1);
-            }*/
-            
-            return QVariant("abc");
-            //return QVariant(value);
+            return values->at(column-2);
         }
     }
 

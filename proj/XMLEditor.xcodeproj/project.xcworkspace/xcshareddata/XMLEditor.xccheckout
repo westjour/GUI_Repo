@@ -10,29 +10,29 @@
 	<string>XMLEditor</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>191CBD83-7FD2-4901-96F9-C22C50E97487</key>
+		<key>275D239FE779E27468F8A9A470A0821330D0336D</key>
 		<string>https://github.com/westjour/GUI_Repo.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>proj/XMLEditor.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>191CBD83-7FD2-4901-96F9-C22C50E97487</key>
+		<key>275D239FE779E27468F8A9A470A0821330D0336D</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/westjour/GUI_Repo.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>191CBD83-7FD2-4901-96F9-C22C50E97487</string>
+	<string>275D239FE779E27468F8A9A470A0821330D0336D</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>191CBD83-7FD2-4901-96F9-C22C50E97487</string>
+			<string>275D239FE779E27468F8A9A470A0821330D0336D</string>
 			<key>IDESourceControlWCCName</key>
 			<string>GUI_Repo</string>
 		</dict>

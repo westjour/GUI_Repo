@@ -2,7 +2,8 @@
 
 CStation::CStation()
 {
-    mStormIntensity = new CStation::StormIntensity();
-    mDailyWeather = new CStation::DailyWeather();
-    mHourlyRainfall = new CStation::HourlyRainfall();
+    mWeather = new Hash;
+    mWeatherAttr = new AttrMap;
+    mStormIntAttr = new AttrMap;
+    mHrRainAttr = new AttrMap;
 }

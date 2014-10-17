@@ -95,6 +95,7 @@
 		4936C5FC0EF6C5A862FDA934 /* QtGui.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtGui.framework; path = ../../../Qt5.3.2/5.3/clang_64/lib/QtGui.framework; sourceTree = "<absolute>"; };
 		4D64EC62868BEDD2D525E9B5 /* qt_lib_quickparticles_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_quickparticles_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_quickparticles_private.pri; sourceTree = "<absolute>"; };
 		54F5F191E541811663808894 /* qt_lib_printsupport.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_printsupport.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_printsupport.pri; sourceTree = "<absolute>"; };
+		56116E7719F1AAB500D06A85 /* CHourlyWeather.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHourlyWeather.h; sourceTree = SOURCE_ROOT; };
 		565F1AE0597D3BE3053751A3 /* unix.conf */ = {isa = PBXFileReference; lastKnownFileType = file; name = unix.conf; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/common/unix.conf; sourceTree = "<absolute>"; };
 		56AAA5ABE4CCE1FC1BFB53E4 /* qt_lib_printsupport_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_printsupport_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_printsupport_private.pri; sourceTree = "<absolute>"; };
 		59342C100B758CDE10A0EA4D /* mainwindow.ui */ = {isa = PBXFileReference; lastKnownFileType = file; path = mainwindow.ui; sourceTree = "<absolute>"; };
@@ -255,6 +256,7 @@
 				7D55A31CDF682F279FB62437 /* CMainWindow.h */,
 				37BBEF775C693ADDD49563CD /* CStation.h */,
 				B60A5A328D50B94CAB593D17 /* CXMLParser.h */,
+				56116E7719F1AAB500D06A85 /* CHourlyWeather.h */,
 			);
 			name = Sources;
 			sourceTree = "<Group>";

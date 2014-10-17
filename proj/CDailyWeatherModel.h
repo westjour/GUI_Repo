@@ -4,7 +4,7 @@
 #include <QAbstractTableModel>
 
 typedef QPair<QString, QString> Pair;
-typedef QMap<Pair, QVector<QString>* > Map;
+typedef QHash<Pair, QVector<QString>* > Hash;
 
 class CStation;
 
@@ -21,15 +21,12 @@ public:
     };
     
     explicit CDailyWeatherModel(QObject *parent = 0);
-    void setStations(QVector<CStation* > st){ mStations = st; }
+    QVector<CStation* >* getStations(){return mStations;}
+    void setStations(QVector<CStation* >* st){ mStations = st; }
+    void setStation(CStation* station) {mStation=station;}
     void setYear(int y){ mYear = y; }
     int getYear(){ return mYear; }
     void update();
-    
-    void printThis(Map w) const;
-    
-    // TODO
-    QPair<int, int> getYearBounds();
     
     //
     // The following functions are required for an editable table
@@ -43,7 +40,10 @@ public:
 
     
 private:
-        QVector<CStation* > mStations;
+        QVector<CStation* >* mStations;
+    
+        // Station currently being shown in the Daily Weather table
+        CStation* mStation;
     
         // Current year being shown in the Weather Year combobox
         unsigned mYear;

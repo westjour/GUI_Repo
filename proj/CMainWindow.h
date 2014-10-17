@@ -23,14 +23,12 @@ public:
 
     void clearStationLineEdits();
     void makeConnections();
-
+    
 public slots:
     void stationIndexChanged(QString text);
     void yearIndexChanged(QString text);
 
 private:
-    QVector<CStation*> mStations;
-
     //
     // GUI Elements
     //

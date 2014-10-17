@@ -3,59 +3,30 @@
 
 #include <QString>
 #include <QVector>
+#include <QHash>
 #include <QMap>
 
-
-typedef QMap<QPair<QString, QString>, QVector<QString>* > Map;
+typedef QHash<QPair<QString, QString>, QVector<QString>* > Hash;
+typedef QMap<QString, QString> AttrMap;
 
 /* Brief: Represents one station in the XML */
 class CStation
 {
 
-
-private:
-
-
 public:
-    /* Brief:
-     */
-    struct StormIntensity
-    {
-        // Attributes of <Storm_Intensity>, there are none as of 9/26/14
-        QMap<QString, QString> mAttributes;
-    };
-
-    /* Brief:
-     */
-    struct HourlyRainfall
-    {
-        // Attributes of <Hourly_Rainfall>, there are none as of 9/26/14
-        QMap<QString, QString> mAttributes;
-    };
-
-    /* Brief:
-     */
-    struct DailyWeather
-    {
-        Map mWeather;
-       
-        
-        // Attributes of <Weather>, there are none as of 9/26/14
-        QMap<QString, QString> mAttributes;
-    };
-
     CStation();
 
-    QMap<QString, QString>& getAttributes(){return mAttributes;}
+    AttrMap& getAttributes(){return mStatAttr;}
+    Hash* getWeather(){return mWeather;}
     
+private:
     // Station's XML attributes
-    QMap<QString, QString> mAttributes;
+    AttrMap mStatAttr;
 
-    StormIntensity* mStormIntensity;
-
-    HourlyRainfall* mHourlyRainfall;
-    
-    DailyWeather* mDailyWeather;
+    Hash* mWeather;
+    AttrMap* mWeatherAttr;
+    AttrMap* mStormIntAttr;
+    AttrMap* mHrRainAttr;
 };
 
 #endif // CSTATION_H

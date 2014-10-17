@@ -1,9 +1,9 @@
 #ifndef CXMLPARSER_H
 #define CXMLPARSER_H
 
-#include <vector>
-
 class CStation;
+typedef QVector<CStation* > Stations;
+
 
 /* Brief: This class handles the parsing of all XML files */
 class CXMLParser
@@ -11,14 +11,12 @@ class CXMLParser
 public:
     CXMLParser();
 
-    void parseXDB(/*QFile* file*/);
-    void parseSDB(/*QFile* file*/);
-    void parseWDB(QVector<CStation*>* stations);
-    void parseCDB(/*QFile* file*/);
+    Stations* parseXDB(/*QFile* file*/);
+    Stations* parseSDB(/*QFile* file*/);
+    Stations* parseWDB();
+    Stations* parseCDB(/*QFile* file*/);
 
     void parseWeatherData(CStation*, QString s);
-    void printThis(QMap<QPair<QString, QString>, QVector<QString>* > w);
-
 };
 
 #endif // CXMLPARSER_H

@@ -23,7 +23,7 @@ CMainWindow::CMainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::Main
     // Parse XML
     //
     CXMLParser parser;
-    parser.parseWDB(&mStations);
+    QVector<CStation* >* stations = parser.parseWDB();
     
     QGridLayout* mainLayout = new QGridLayout();
 
@@ -32,11 +32,11 @@ CMainWindow::CMainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::Main
     //
     QVector<CStation* >::const_iterator iter;
     QStringList options = QStringList("None");
-    for ( iter = mStations.begin(); iter!=mStations.end(); ++iter )
+    for ( iter = stations->begin(); iter!=stations->end(); ++iter )
     {
         CStation* station = *iter;
-        QMap<QString, QString> attrMap = station->getAttributes();
-        QString s = attrMap["StationID"] + '-' + attrMap["Station_Name"];
+        AttrMap attrs = station->getAttributes();
+        QString s = attrs["StationID"] + '-' + attrs["Station_Name"];
         options.append(s);
     }
 
@@ -80,7 +80,7 @@ CMainWindow::CMainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::Main
     QGroupBox *weatherGroupBox = new QGroupBox("Daily Weather");
     mDailyWeatherView = new CDailyWeatherView();
     CDailyWeatherModel* weatherModel = new CDailyWeatherModel();
-    weatherModel->setStations(mStations);
+    weatherModel->setStations(stations);
     mDailyWeatherView->setModel(weatherModel);
     
     
@@ -93,7 +93,7 @@ CMainWindow::CMainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::Main
     mYearCombobox = new QComboBox();
     mYearCombobox->setFixedSize(150, 30);
     
-    // TO-DO Populate Weather year combobox
+    // TO-DO: Don't assume all years present.
     for(int year=1979; year<2000; year++)
         mYearCombobox->addItem(QString::number(year));
     weatherYearForm->addRow("Choose Year:", mYearCombobox);
@@ -153,6 +153,9 @@ void CMainWindow::yearIndexChanged(QString text)
  */
 void CMainWindow::stationIndexChanged(QString text)
 {
+    CDailyWeatherModel* model = (CDailyWeatherModel*)mDailyWeatherView->model();
+    QVector<CStation* >* stations = model->getStations();
+    
     QString id;
     QString name;
 
@@ -166,7 +169,7 @@ void CMainWindow::stationIndexChanged(QString text)
 
         // Find corresponding station
         QVector<CStation* >::const_iterator iter;
-        for (iter = mStations.begin(); iter != mStations.end(); ++iter)
+        for (iter = stations->begin(); iter != stations->end(); ++iter)
         {
             CStation* currStation = *iter;
             QString statID = currStation->getAttributes()["StationID"];
@@ -180,7 +183,7 @@ void CMainWindow::stationIndexChanged(QString text)
         }
     }
 
-    // If the station is found, update text in line edits
+    // Update Station info line edits
     if (station == NULL)
         clearStationLineEdits();
     else
@@ -196,21 +199,24 @@ void CMainWindow::stationIndexChanged(QString text)
         mTmhtLineEdit->setText(station->getAttributes()["Tmht"]);
         mWmhtLineEdit->setText(station->getAttributes()["Wmht"]);
     }
-
+    
+    // Change the station being shown in the Daily Weather table
+    model->setStation(station);
+    model->update();
 }
 
 void CMainWindow::clearStationLineEdits()
 {
-    mStatNameLineEdit->setText("");
-    mStatIDLineEdit->setText("");
-    mPlaceNameLineEdit->setText("");
-    mLatLineEdit->setText("");
-    mLongLineEdit->setText("");
-    mElevLineEdit->setText("");
-    mTavLineEdit->setText("");
-    mAmpLineEdit->setText("");
-    mTmhtLineEdit->setText("");
-    mWmhtLineEdit->setText("");
+    mStatNameLineEdit->clear();
+    mStatIDLineEdit->clear();
+    mPlaceNameLineEdit->clear();
+    mLatLineEdit->clear();
+    mLongLineEdit->clear();
+    mElevLineEdit->clear();
+    mTavLineEdit->clear();
+    mAmpLineEdit->clear();
+    mTmhtLineEdit->clear();
+    mWmhtLineEdit->clear();
 }
 
 CMainWindow::~CMainWindow()

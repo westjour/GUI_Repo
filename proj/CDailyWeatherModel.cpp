@@ -8,6 +8,7 @@ CDailyWeatherModel::CDailyWeatherModel(QObject *parent) :
     QAbstractTableModel(parent)
 {
     mYear = 1979;
+    mStation = NULL;
 }
 
 
@@ -49,33 +50,43 @@ int CDailyWeatherModel::columnCount( const QModelIndex & parent ) const
 /* Brief: TODO description
  * Parameter: index, TODO description
  * Parameter: role, TODO description
+ *
+ * Note: This function is called
  */
 QVariant CDailyWeatherModel::data( const QModelIndex & index, int role ) const
 {
     int column = index.column();
     int row = index.row();
 
+    //qDebug("from inside Data(), row:%i, col:%i, role=%i, counter=%i", row, column, role, counter);
+    
     if (role == Qt::DisplayRole || role == Qt::EditRole)
     {
+        if (mStation == NULL)
+            return QVariant("n/a");
+        
         if (column == CDailyWeatherModel::YEAR)
             return QVariant(mYear);
         else if (column == CDailyWeatherModel::DOY)
             return QVariant(row+1);
-        else{
-            // TODO - find correct station. for now, just use the first
-            CStation* station = mStations[0];
-            Map map = station->mDailyWeather->mWeather;
+        else {
+            // Note: Be sure to use pointer here! Else, the map will be returned by value. This means
+            // that a copy of this huge map will be made. This will lag the interface.
+            Hash* map = mStation->getWeather();
             
             QString yr = QString::number(mYear);
             QString doy = QString::number(row+1);
             Pair pair(yr, doy);
             
            
-            // Find item with pair
-            Map::const_iterator iter = map.find(pair);
-            QVector<QString>* values = iter.value();
+            // Find item in weather map with key
+            Hash::const_iterator iter = map->find(pair);
             
-            return values->at(column-2);
+            // (Year, Day of Year) not found in weather data map for the current station
+            if(iter == map->end())
+                return QVariant("n/a");
+            
+            return QVariant(iter.value()->at(column-2));
         }
     }
 
@@ -108,6 +119,9 @@ Qt::ItemFlags CDailyWeatherModel::flags( const QModelIndex & index ) const
  */
 QVariant CDailyWeatherModel::headerData( int section, Qt::Orientation orientation, int role ) const
 {
+    /*counter++;
+    qDebug("from inside headerData(), role=%i, counter=%i", role, counter);*/
+    
     if (role == Qt::DisplayRole)
     {
         // Place label on horizontal header sections
@@ -162,14 +176,3 @@ bool CDailyWeatherModel::setData( const QModelIndex & index, const QVariant & va
         return false;
 }
 
-
-/* Brief: Find the maximum and minimum Year values of the weather data.
- This is used to populate the year combobox box in the GUI
- */
-QPair<int, int> getYearBounds()
-{
- /* Note: this assumes that no year is skipped in the weather data. i could place a check to
-  handle this but maybe its better to grab each year from the weather data and make
-  a list */
-    
-}

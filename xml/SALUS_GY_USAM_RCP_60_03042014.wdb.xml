@@ -3,7 +3,9 @@
   <Stations StationID="USAM" Station_Name="USA Maize" Place_Name="" Lat="40.74088" Long="-97.85957" Elev="200" Tav="9.2" Amp="13" Tmht="" Wmht="">
     <Storm_Intensity>
     </Storm_Intensity>
-    <Hourly_Rainfall>
+    <Hourly_Rainfall Columns="Year,DOY,Hour,HrPrecip">
+1982,1,4,0.1
+1982,1,5,0.25
     </Hourly_Rainfall>
     <Weather Columns="Year,DOY,SRAD,Tmax,Tmin,Rain,DewP,Wind,PAR">
 1979,1,7.81947,-13.7937,-18.5125,0,0,0,0
@@ -44209,6 +44211,11 @@
     <Hourly_Rainfall>
     </Hourly_Rainfall>
     <Weather Columns="Year,DOY,SRAD,Tmax,Tmin,Rain,DewP,Wind,PAR">
+1979,1,5,6,7,0,0,0,0
+1979,2,8,9,10,0,0,0,0
+1979,3,11,12,13,14,0,0,0
+1979,4,15,16,17,18,0,0,0
+1979,5,19,20,21,22,0,0,0
     </Weather>
   </Stations>
   <Stations StationID="ARGM" Station_Name="Argentina Maize" Place_Name="" Lat="-35.02745" Long="-59.85315" Elev="200" Tav="9.2" Amp="13" Tmht="" Wmht="">

@@ -77,6 +77,13 @@ dependencies: /Users/westjour/Desktop/GUI_Repo/proj/main.cpp \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qtabwidget.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qicon.h \
   ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QMenuBar \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qmenubar.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qmenu.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qaction.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qvariant.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qmap.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qactiongroup.h \
   ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QApplication \
   ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qapplication.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qcoreapplication.h \
@@ -84,6 +91,4 @@ dependencies: /Users/westjour/Desktop/GUI_Repo/proj/main.cpp \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qeventloop.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qguiapplication.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qinputmethod.h \
-  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qlocale.h \
-  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qvariant.h \
-  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qmap.h
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qlocale.h

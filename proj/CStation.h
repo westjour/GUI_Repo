@@ -3,8 +3,8 @@
 
 #include <QString>
 #include <QVector>
-#include <QHash>
 #include <QMap>
+#include <QHash>
 
 typedef QHash<QPair<QString, QString>, QVector<QString>* > Hash;
 typedef QMap<QString, QString> AttrMap;
@@ -16,12 +16,13 @@ class CStation
 public:
     CStation();
 
-    AttrMap& getAttributes(){return mStatAttr;}
+    AttrMap* getStatAttrs(){return mStatAttr;}
+    AttrMap* getWeatherAttrs(){return mWeatherAttr;}
     Hash* getWeather(){return mWeather;}
     
 private:
     // Station's XML attributes
-    AttrMap mStatAttr;
+    AttrMap* mStatAttr;
 
     Hash* mWeather;
     AttrMap* mWeatherAttr;

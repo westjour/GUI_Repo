@@ -109,15 +109,23 @@ dependencies: /Users/westjour/Desktop/GUI_Repo/proj/CMainWindow.cpp \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qtextoption.h \
   ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QGroupBox \
   ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qgroupbox.h \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QFile \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qfile.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qfiledevice.h \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QXmlStreamWriter \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qxmlstream.h \
   CMainWindow.h \
   ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QMainWindow \
   ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qmainwindow.h \
   ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QMenuBar \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qmenubar.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qmenu.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qaction.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qactiongroup.h \
   ui_mainwindow.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/QVariant \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/QAction \
-  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qaction.h \
-  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qactiongroup.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/QApplication \
   ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qapplication.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qcoreapplication.h \
@@ -133,9 +141,6 @@ dependencies: /Users/westjour/Desktop/GUI_Repo/proj/CMainWindow.cpp \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qabstractscrollarea.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qitemselectionmodel.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qset.h \
-  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/QMenuBar \
-  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qmenubar.h \
-  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qmenu.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/QStatusBar \
   ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qstatusbar.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/QToolBar \
@@ -143,9 +148,9 @@ dependencies: /Users/westjour/Desktop/GUI_Repo/proj/CMainWindow.cpp \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/QWidget \
   CXMLParser.h CStation.h \
   ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QString \
-  ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QHash \
   ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QMap \
-  CDailyWeatherView.h \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QHash \
+  CTableView.h \
   ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QTableView \
   ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qtableview.h \
   CDailyWeatherModel.h \

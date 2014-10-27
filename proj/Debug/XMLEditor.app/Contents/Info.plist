@@ -10,6 +10,8 @@
 	<string>Created by Qt/QMake</string>
 	<key>CFBundleIdentifier</key>
 	<string>abc.XMLEditor</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleSignature</key>

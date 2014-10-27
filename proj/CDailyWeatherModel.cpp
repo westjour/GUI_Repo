@@ -1,6 +1,5 @@
 #include "CDailyWeatherModel.h"
 #include "CStation.h"
-#include <algorithm>
 
 int DAYS_IN_YEAR = 365;
 
@@ -71,8 +70,10 @@ QVariant CDailyWeatherModel::data( const QModelIndex & index, int role ) const
             return QVariant(row+1);
         else {
             // Note: Be sure to use pointer here! Else, the map will be returned by value. This means
-            // that a copy of this huge map will be made. This will lag the interface.
-            Hash* map = mStation->getWeather();
+            // that a copy of this huge map will be made whenever this function is called (whenever
+            // the model needs to be updated or the table needs to be redraen - potentially many times.
+            // This will lag the interface.
+            Hash* hash = mStation->getWeather();
             
             QString yr = QString::number(mYear);
             QString doy = QString::number(row+1);
@@ -80,10 +81,10 @@ QVariant CDailyWeatherModel::data( const QModelIndex & index, int role ) const
             
            
             // Find item in weather map with key
-            Hash::const_iterator iter = map->find(pair);
+            Hash::const_iterator iter = hash->find(pair);
             
             // (Year, Day of Year) not found in weather data map for the current station
-            if(iter == map->end())
+            if(iter == hash->end())
                 return QVariant("n/a");
             
             return QVariant(iter.value()->at(column-2));
@@ -119,34 +120,35 @@ Qt::ItemFlags CDailyWeatherModel::flags( const QModelIndex & index ) const
  */
 QVariant CDailyWeatherModel::headerData( int section, Qt::Orientation orientation, int role ) const
 {
-    /*counter++;
-    qDebug("from inside headerData(), role=%i, counter=%i", role, counter);*/
-    
     if (role == Qt::DisplayRole)
     {
         // Place label on horizontal header sections
         if (orientation == Qt::Horizontal)
         {
-            if (section == CDailyWeatherModel::YEAR)
+            
+            switch(section) {
+                case CDailyWeatherModel::YEAR:
                     return QVariant("Year");
-            else if (section == CDailyWeatherModel::DOY)
+                case CDailyWeatherModel::DOY:
                     return QVariant("DOY");
-            else if (section == CDailyWeatherModel::SRAD)
+                case CDailyWeatherModel::SRAD:
                     return QVariant("SRAD");
-            else if (section == CDailyWeatherModel::TMAX)
+                case CDailyWeatherModel::TMAX:
                     return QVariant("Tmax");
-            else if (section == CDailyWeatherModel::TMIN)
+                case CDailyWeatherModel::TMIN:
                     return QVariant("Tmin");
-            else if (section == CDailyWeatherModel::RAIN)
+                case CDailyWeatherModel::RAIN:
                     return QVariant("Rain");
-            else if (section == CDailyWeatherModel::DEWP)
+                case CDailyWeatherModel::DEWP:
                     return QVariant("DewP");
-            else if (section == CDailyWeatherModel::WIND)
+                case CDailyWeatherModel::WIND:
                     return QVariant("Wind");
-            else if (section == CDailyWeatherModel::PAR)
+                case CDailyWeatherModel::PAR:
                     return QVariant("PAR");
+            }
+            
         }
-        else
+        else // vertical headers
             return QVariant(int(section + 1));
     }
 
@@ -155,8 +157,7 @@ QVariant CDailyWeatherModel::headerData( int section, Qt::Orientation orientatio
         return QVariant(Qt::AlignCenter);
     }
 
-    else
-        return QVariant();
+    return QVariant();
 }
 
 
@@ -167,12 +168,26 @@ QVariant CDailyWeatherModel::headerData( int section, Qt::Orientation orientatio
  */
 bool CDailyWeatherModel::setData( const QModelIndex & index, const QVariant & value, int role )
 {
+    int column = index.column();
+    int row = index.row();
+    
+    Hash* hash = mStation->getWeather();
+
+    QString yr = QString::number(mYear);
+    QString doy = QString::number(row+1);
+    Pair pair(yr, doy);
+    
+    // Find item in weather map with key
+    Hash::iterator iter = hash->find(pair);
+    QVector<QString>* values = iter.value();
+    
     if (index.isValid() && role == Qt::EditRole)
     {
+        (*values)[column-2] = value.toString();
         emit dataChanged(index, index);
         return true;
     }
-    else
-        return false;
+    
+    return false;
 }
 

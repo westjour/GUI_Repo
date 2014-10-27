@@ -5,12 +5,14 @@
 #include <QComboBox>
 #include <QLineEdit>
 #include <QGroupBox>
+#include <QFile>
+#include <QXmlStreamWriter>
 
 #include "CMainWindow.h"
 #include "ui_mainwindow.h"
 #include "CXMLParser.h"
 #include "CStation.h"
-#include "CDailyWeatherView.h"
+#include "CTableView.h"
 #include "CDailyWeatherModel.h"
 
 CMainWindow::CMainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow)
@@ -24,19 +26,29 @@ CMainWindow::CMainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::Main
     //
     CXMLParser parser;
     QVector<CStation* >* stations = parser.parseWDB();
+    /*QVector<CStation* >::const_iterator iter = stations->begin();
+    for(;iter!=stations->end(); iter++) {
+        CStation* station = *iter;
+        Map* weatherMap = station->getWeather();
+        
+        Map::const_iterator mapIter = weatherMap->begin();
+        weatherMap
+        Map::const_iterator iter = hash->find(pair);
+    }*/
+    
     
     QGridLayout* mainLayout = new QGridLayout();
 
     //
     // Construct strings for Station combobox
     //
-    QVector<CStation* >::const_iterator iter;
+    QVector<CStation* >::const_iterator it = stations->begin();
     QStringList options = QStringList("None");
-    for ( iter = stations->begin(); iter!=stations->end(); ++iter )
+    for (; it!=stations->end(); ++it )
     {
-        CStation* station = *iter;
-        AttrMap attrs = station->getAttributes();
-        QString s = attrs["StationID"] + '-' + attrs["Station_Name"];
+        CStation* station = *it;
+        AttrMap* attrs = station->getStatAttrs();
+        QString s = attrs->value("StationID") + '-' + attrs->value("Station_Name");
         options.append(s);
     }
 
@@ -78,13 +90,10 @@ CMainWindow::CMainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::Main
     // Daily Weather Group Box
     //
     QGroupBox *weatherGroupBox = new QGroupBox("Daily Weather");
-    mDailyWeatherView = new CDailyWeatherView();
+    mDailyWeatherView = new CTableView();
     CDailyWeatherModel* weatherModel = new CDailyWeatherModel();
     weatherModel->setStations(stations);
     mDailyWeatherView->setModel(weatherModel);
-    
-    
-    //QAbstractItemModel* model = mDailyWeatherView->model();
     
     QFormLayout* weatherYearForm = new QFormLayout();
     weatherYearForm->setFormAlignment(Qt::AlignLeft);
@@ -104,26 +113,77 @@ CMainWindow::CMainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::Main
     
     weatherGroupBox->setLayout(vlayout1);
 
+    /*
+    //
+    // Hourly Weather Group Box
+    //
+    QGroupBox *hrWeatherGroupBox = new QGroupBox("Hourly Weather");
+    mHrWeatherView = new CTableView();
+    //CDailyWeatherModel* weatherModel = new CDailyWeatherModel();
+    //weatherModel->setStations(stations);
+    //mDailyWeatherView->setModel(weatherModel);
+
+    QVBoxLayout* vlayout2 = new QVBoxLayout();
+    vlayout2->addWidget(mHrWeatherView);
+    
+    hrWeatherGroupBox->setLayout(vlayout2);
+    */
+    
     mainLayout->addWidget(stationGroupBox);
     mainLayout->addWidget(weatherGroupBox);
-
+    //mainLayout->addWidget(hrWeatherGroupBox);
+    
     // Create a default widget as the centeral widget and
     // apply the vertical layout to it.
     setCentralWidget(new QWidget());
     centralWidget()->setLayout(mainLayout);
 
-    // Check the operating system
+    // Create menus based on the operating system
     #ifdef Q_OS_MAC
-        //qDebug("this is a MAC OS");
+    buildMacMenuBar();
     #endif
     
-    #ifdef Q_OS_WIN
-        //qDebug("this is Windows OS");
+    #ifndef Q_OS_MAC
+    buildMenuBar();
     #endif
     
     makeConnections();
 }
 
+/* Brief: Build menu bar for any OS other than MAC
+ */
+void CMainWindow::buildMenuBar()
+{
+    qDebug("this is not a MAC OS");
+
+}
+
+/* Brief: Build menu bar for MAC OS
+ */
+void CMainWindow::buildMacMenuBar()
+{
+    qDebug("this is MAC OS");
+    macMenuBar = new QMenuBar(0);
+    QMenu* fileMenu = macMenuBar->addMenu("File"); //new QMenu("File", 0);
+    
+    mFileSave = new QAction("Save", this);
+    mFileExit = new QAction("Exit", this);
+
+    mFileSave->setMenuRole(QAction::NoRole);
+    mFileExit->setMenuRole(QAction::NoRole);
+    fileMenu->addAction(mFileSave);
+    fileMenu->addAction(mFileExit);
+    
+    macMenuBar->addMenu(fileMenu);
+    setMenuBar(macMenuBar);
+}
+
+/* Brief:
+ */
+CMainWindow::~CMainWindow()
+{
+    delete ui;
+}
 
 /* Brief:
  */
@@ -131,7 +191,8 @@ void CMainWindow::makeConnections()
 {
     connect(mStationCombobox, SIGNAL(currentIndexChanged(QString)), this, SLOT(stationIndexChanged(QString)));
     connect(mYearCombobox, SIGNAL(currentIndexChanged(QString)), this, SLOT(yearIndexChanged(QString)));
-    
+    connect(mFileSave, SIGNAL(triggered (bool)), this, SLOT(onFileSave()));
+    connect(mFileExit, SIGNAL(triggered (bool)), this, SLOT(close()));
 }
 
 
@@ -172,8 +233,8 @@ void CMainWindow::stationIndexChanged(QString text)
         for (iter = stations->begin(); iter != stations->end(); ++iter)
         {
             CStation* currStation = *iter;
-            QString statID = currStation->getAttributes()["StationID"];
-            QString statName = currStation->getAttributes()["Station_Name"];
+            QString statID = currStation->getStatAttrs()->value("StationID");
+            QString statName = currStation->getStatAttrs()->value("Station_Name");
 
             if(statID == id && statName == name)
             {
@@ -188,16 +249,16 @@ void CMainWindow::stationIndexChanged(QString text)
         clearStationLineEdits();
     else
     {
-        mStatNameLineEdit->setText(station->getAttributes()["Station_Name"]);
-        mStatIDLineEdit->setText(station->getAttributes()["StationID"]);
-        mPlaceNameLineEdit->setText(station->getAttributes()["Place_Name"]);
-        mLatLineEdit->setText(station->getAttributes()["Lat"]);
-        mLongLineEdit->setText(station->getAttributes()["Long"]);
-        mElevLineEdit->setText(station->getAttributes()["Elev"]);
-        mTavLineEdit->setText(station->getAttributes()["Tav"]);
-        mAmpLineEdit->setText(station->getAttributes()["Amp"]);
-        mTmhtLineEdit->setText(station->getAttributes()["Tmht"]);
-        mWmhtLineEdit->setText(station->getAttributes()["Wmht"]);
+        mStatNameLineEdit->setText(station->getStatAttrs()->value("Station_Name"));
+        mStatIDLineEdit->setText(station->getStatAttrs()->value("StationID"));
+        mPlaceNameLineEdit->setText(station->getStatAttrs()->value("Place_Name"));
+        mLatLineEdit->setText(station->getStatAttrs()->value("Lat"));
+        mLongLineEdit->setText(station->getStatAttrs()->value("Long"));
+        mElevLineEdit->setText(station->getStatAttrs()->value("Elev"));
+        mTavLineEdit->setText(station->getStatAttrs()->value("Tav"));
+        mAmpLineEdit->setText(station->getStatAttrs()->value("Amp"));
+        mTmhtLineEdit->setText(station->getStatAttrs()->value("Tmht"));
+        mWmhtLineEdit->setText(station->getStatAttrs()->value("Wmht"));
     }
     
     // Change the station being shown in the Daily Weather table
@@ -205,6 +266,9 @@ void CMainWindow::stationIndexChanged(QString text)
     model->update();
 }
 
+
+/* Brief:
+ */
 void CMainWindow::clearStationLineEdits()
 {
     mStatNameLineEdit->clear();
@@ -219,7 +283,112 @@ void CMainWindow::clearStationLineEdits()
     mWmhtLineEdit->clear();
 }
 
-CMainWindow::~CMainWindow()
+
+/* Brief: Creates an XML file and saves it to a directory
+ */
+void CMainWindow::saveXML() {
+    QFile file("/Users/westjour/Desktop/GUI_Repo/xml/NEW_XML.xml");
+    file.open(QIODevice::WriteOnly);
+    QXmlStreamWriter writer(&file);
+    writer.setAutoFormatting(true);
+    writer.writeStartDocument("1.0");
+    writer.writeStartElement("WDB");
+    
+    CDailyWeatherModel* model = (CDailyWeatherModel*)mDailyWeatherView->model();
+    QVector<CStation* >* stations = model->getStations();
+    QVector<CStation* >::const_iterator iter = stations->begin();
+    
+    for(;iter!=stations->end(); iter++)
+    {
+        CStation* station = *iter;
+        AttrMap* statAttrs = station->getStatAttrs();
+        AttrMap* weatherAttrs = station->getWeatherAttrs();
+        
+        QString sName = statAttrs->value("Station_Name");
+        QString sId = statAttrs->value("StationID");
+        QString pName = statAttrs->value("Place_Name");
+        QString lat = statAttrs->value("Lat");
+        QString lon = statAttrs->value("Long");
+        QString elev = statAttrs->value("Elev");
+        QString tav = statAttrs->value("Tav");
+        QString amp = statAttrs->value("Amp");
+        QString tmht = statAttrs->value("Tmht");
+        QString wmht = statAttrs->value("Wmht");
+        
+        writer.writeStartElement("Stations");
+        writer.writeAttribute("StationID", sId);
+        writer.writeAttribute("Station_Name", sName);
+        writer.writeAttribute("Place_Name", pName);
+        writer.writeAttribute("Lat", lat);
+        writer.writeAttribute("Long", lon);
+        writer.writeAttribute("Elev", elev);
+        writer.writeAttribute("Tav", tav);
+        writer.writeAttribute("Amp", amp);
+        writer.writeAttribute("Tmht", tmht);
+        writer.writeAttribute("Wmht", wmht);
+        
+        writer.writeStartElement("Storm_Intensity");
+        writer.writeEndElement();
+        writer.writeStartElement("Hourly_Rainfall");
+        writer.writeEndElement();
+        writer.writeStartElement("Weather");
+        AttrMap::const_iterator iter = weatherAttrs->find("Columns");
+        QString columns = *iter;
+        writer.writeAttribute("Columns", columns);
+        
+        //
+        // Write weather data
+        //
+        Hash* weather = station->getWeather();
+        //Hash::const_iterator it = weather->begin();
+        writer.writeCharacters("\n");
+        Hash::const_iterator hashIter;
+        QString stringToWrite;
+        for(int yr=1979; yr<=2099; yr++) {
+            for(int doy=1; doy<=365;doy++) {
+                Pair pair(QString::number(yr), QString::number(doy));
+                hashIter = weather->find(pair);
+                
+                if(hashIter!=weather->end()) {
+                
+                    QVector<QString>* const values = *hashIter;
+                    stringToWrite = QString::number(yr) + ',' + QString::number(doy) + ',';
+                 
+                    for(int j=0; j<values->size(); j++) {
+                        stringToWrite+= values->at(j);
+                        
+                        if (j != values->size()-1) // this is not the last item, so print a comma
+                            stringToWrite += ',';
+                    }
+                    writer.writeCharacters(stringToWrite + '\n');
+                }
+            }
+        }
+        
+        writer.writeEndElement(); // end <Weather>
+        writer.writeEndElement(); // end <Station>
+        
+    }
+    
+    // Write version control xml
+    writer.writeStartElement("Version_Control");
+     writer.writeStartElement("Version");
+     writer.writeAttribute("Number", "X");
+     writer.writeStartElement("ReleaseDate");
+     writer.writeEndElement();
+     writer.writeStartElement("Notes");
+     writer.writeEndElement();
+     writer.writeEndElement(); // end <Version>
+     writer.writeEndElement(); // end <Version_Control>
+
+    writer.writeEndDocument();
+    file.close();
+
+}
+
+/* Brief: Automatically called when user selects File->Save
+ */
+void CMainWindow::onFileSave()
 {
-    delete ui;
+    saveXML();
 }

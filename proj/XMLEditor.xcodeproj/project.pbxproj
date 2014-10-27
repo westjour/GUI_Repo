@@ -25,22 +25,22 @@
 		16D61A7BE6EAC7D18DE34E58 /* QtXml.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 0B3C25170963FC3686C6B3A7 /* QtXml.framework */; };
 		25450DB7D868083271ABED55 /* QtWidgets.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 216827D014B70BBD74D71E0E /* QtWidgets.framework */; };
 		2D367B399AA57F7319FEA1FA /* main.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 682A50D19E416195436708E4 /* main.cpp */; settings = {ATTRIBUTES = (); }; };
+		31829CB2ECE3CC4CC5DA755D /* CTableView.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 7D8A825EF9A2D64E1F522C0F /* CTableView.cpp */; settings = {ATTRIBUTES = (); }; };
+		46F1ABCBC4169A87B9526082 /* moc_CTableView.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 3A56B540E4C3562F3E13BEA5 /* moc_CTableView.cpp */; settings = {ATTRIBUTES = (); }; };
 		49058BA94FC6A326618DB061 /* CMainWindow.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = F26E6C92CE8B3CB4568546A5 /* CMainWindow.cpp */; settings = {ATTRIBUTES = (); }; };
 		4E3CAED4FB5805A342258087 /* QtGui.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 4936C5FC0EF6C5A862FDA934 /* QtGui.framework */; };
 		626A71DAA3D899DFEC358778 /* moc_CMainWindow.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = DCB612036D136E89ACC8CAC3 /* moc_CMainWindow.cpp */; settings = {ATTRIBUTES = (); }; };
 		8771A8C96E9C391044035D99 /* OpenGL.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = D4B32C2222F82AC56BADEB21 /* OpenGL.framework */; };
-		8EF3ACCA0396840C799875EB /* moc_CDailyWeatherView.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 2CF11537E6046E65834A3425 /* moc_CDailyWeatherView.cpp */; settings = {ATTRIBUTES = (); }; };
 		B10B4D7298B5E160396E8E8B /* moc_CDailyWeatherModel.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 28D43F941E362B391F79A060 /* moc_CDailyWeatherModel.cpp */; settings = {ATTRIBUTES = (); }; };
 		B3CF9240B62B94B17484ECCD /* CStation.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 393B5CE8D3BCE90CCBC751BD /* CStation.cpp */; settings = {ATTRIBUTES = (); }; };
 		BB0C18E0BE3111577C6F6506 /* QtCore.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 0A96879D098723A01097C93A /* QtCore.framework */; };
 		C196F2D85DD169818853FAA2 /* CXMLParser.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 14BBBC027744E753CA279113 /* CXMLParser.cpp */; settings = {ATTRIBUTES = (); }; };
 		D24685D280F516B05C24C44E /* CDailyWeatherModel.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 1C5D03CADA9C9046C7195AD7 /* CDailyWeatherModel.cpp */; settings = {ATTRIBUTES = (); }; };
 		E45E51A644D5FC9F942ECE55 /* AGL.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 8D9815BDB5BD9F90D2BC05C5 /* AGL.framework */; };
-		E676D4EB4B6FBB7129C3C4E6 /* CDailyWeatherView.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = EF7F7B14F54C2AFB002DD38C /* CDailyWeatherView.cpp */; settings = {ATTRIBUTES = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		56A5695119D04C2000C05E3D /* PBXContainerItemProxy */ = {
+		56116E8719F55C4C00D06A85 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6DB9C3763D02B1415CD9D565 /* Project object */;
 			proxyType = 1;
@@ -74,9 +74,8 @@
 		2543E2847376E9ECBDB1C08E /* qt_lib_gui.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_gui.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_gui.pri; sourceTree = "<absolute>"; };
 		25E02FD49BB69611209A5D2F /* clang-mac.conf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "clang-mac.conf"; path = "../../../Qt5.3.2/5.3/clang_64/mkspecs/common/clang-mac.conf"; sourceTree = "<absolute>"; };
 		27766751DB918F57B9DDF380 /* qt_lib_nfc_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_nfc_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_nfc_private.pri; sourceTree = "<absolute>"; };
-		28D43F941E362B391F79A060 /* moc_CDailyWeatherModel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_CDailyWeatherModel.cpp; path = /Users/westjour/Desktop/GUI_Repo/proj/moc_CDailyWeatherModel.cpp; sourceTree = "<absolute>"; };
+		28D43F941E362B391F79A060 /* moc_CDailyWeatherModel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_CDailyWeatherModel.cpp; sourceTree = "<absolute>"; };
 		29D2079B2EDACDED2D8EFAFE /* qt_lib_quickwidgets.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_quickwidgets.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_quickwidgets.pri; sourceTree = "<absolute>"; };
-		2CF11537E6046E65834A3425 /* moc_CDailyWeatherView.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_CDailyWeatherView.cpp; path = /Users/westjour/Desktop/GUI_Repo/proj/moc_CDailyWeatherView.cpp; sourceTree = "<absolute>"; };
 		2D229BA967E5F58D5F81B9C5 /* shell-unix.conf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "shell-unix.conf"; path = "../../../Qt5.3.2/5.3/clang_64/mkspecs/common/shell-unix.conf"; sourceTree = "<absolute>"; };
 		2DBA70E336F777BF3C17A588 /* qt_lib_sensors.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_sensors.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_sensors.pri; sourceTree = "<absolute>"; };
 		2E7F008A77D3B77327460D04 /* qt_lib_scripttools_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_scripttools_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_scripttools_private.pri; sourceTree = "<absolute>"; };
@@ -87,6 +86,7 @@
 		370AD8ED477E9C07B412D2B0 /* qt_lib_sensors_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_sensors_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_sensors_private.pri; sourceTree = "<absolute>"; };
 		37BBEF775C693ADDD49563CD /* CStation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CStation.h; sourceTree = "<absolute>"; };
 		393B5CE8D3BCE90CCBC751BD /* CStation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CStation.cpp; sourceTree = "<absolute>"; };
+		3A56B540E4C3562F3E13BEA5 /* moc_CTableView.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_CTableView.cpp; sourceTree = "<absolute>"; };
 		3AAED81D9FCC81C6A80D1479 /* qt_lib_quick.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_quick.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_quick.pri; sourceTree = "<absolute>"; };
 		3BB49AF2CB8A89961D3437DC /* qt_lib_websockets_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_websockets_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_websockets_private.pri; sourceTree = "<absolute>"; };
 		3C318DE92A6BCE97D5724F2C /* qt_lib_core.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_core.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_core.pri; sourceTree = "<absolute>"; };
@@ -95,7 +95,6 @@
 		4936C5FC0EF6C5A862FDA934 /* QtGui.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtGui.framework; path = ../../../Qt5.3.2/5.3/clang_64/lib/QtGui.framework; sourceTree = "<absolute>"; };
 		4D64EC62868BEDD2D525E9B5 /* qt_lib_quickparticles_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_quickparticles_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_quickparticles_private.pri; sourceTree = "<absolute>"; };
 		54F5F191E541811663808894 /* qt_lib_printsupport.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_printsupport.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_printsupport.pri; sourceTree = "<absolute>"; };
-		56116E7719F1AAB500D06A85 /* CHourlyWeather.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHourlyWeather.h; sourceTree = SOURCE_ROOT; };
 		565F1AE0597D3BE3053751A3 /* unix.conf */ = {isa = PBXFileReference; lastKnownFileType = file; name = unix.conf; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/common/unix.conf; sourceTree = "<absolute>"; };
 		56AAA5ABE4CCE1FC1BFB53E4 /* qt_lib_printsupport_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_printsupport_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_printsupport_private.pri; sourceTree = "<absolute>"; };
 		59342C100B758CDE10A0EA4D /* mainwindow.ui */ = {isa = PBXFileReference; lastKnownFileType = file; path = mainwindow.ui; sourceTree = "<absolute>"; };
@@ -115,6 +114,7 @@
 		7A46863C44CD52632ED75CF3 /* qt_lib_openglextensions.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_openglextensions.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_openglextensions.pri; sourceTree = "<absolute>"; };
 		7D2A6B8F2DF1A3D15D304D52 /* qt_lib_webkit_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_webkit_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_webkit_private.pri; sourceTree = "<absolute>"; };
 		7D55A31CDF682F279FB62437 /* CMainWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMainWindow.h; sourceTree = "<absolute>"; };
+		7D8A825EF9A2D64E1F522C0F /* CTableView.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CTableView.cpp; sourceTree = "<absolute>"; };
 		7E150CEACA64E912D79A293D /* qt_lib_dbus_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_dbus_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_dbus_private.pri; sourceTree = "<absolute>"; };
 		87215ECFC80730ECEF03A015 /* qt_lib_declarative_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_declarative_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_declarative_private.pri; sourceTree = "<absolute>"; };
 		8AF8B98F063AACEE2590A9EC /* qt_lib_svg.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_svg.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_svg.pri; sourceTree = "<absolute>"; };
@@ -123,7 +123,6 @@
 		8E14B09DED5AE7BF5B375D91 /* qt_lib_clucene_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_clucene_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_clucene_private.pri; sourceTree = "<absolute>"; };
 		911C62DD50AF71AE9D66F069 /* qt_lib_sql.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_sql.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_sql.pri; sourceTree = "<absolute>"; };
 		9146E0711BCFB17910DD3FF7 /* qt_lib_quickwidgets_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_quickwidgets_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_quickwidgets_private.pri; sourceTree = "<absolute>"; };
-		92E0738D48D5F9F958074252 /* CDailyWeatherView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDailyWeatherView.h; sourceTree = "<absolute>"; };
 		9A4488EFF1830E805B768670 /* qt_lib_concurrent.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_concurrent.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_concurrent.pri; sourceTree = "<absolute>"; };
 		A373A0B5796EE76B39602FD3 /* qt_lib_positioning.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_positioning.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_positioning.pri; sourceTree = "<absolute>"; };
 		A5AF5794A565A88CD09987B9 /* qt_lib_script_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_script_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_script_private.pri; sourceTree = "<absolute>"; };
@@ -150,7 +149,7 @@
 		D3EB6AF2947F50064E184E97 /* qt_lib_svg_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_svg_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_svg_private.pri; sourceTree = "<absolute>"; };
 		D4B32C2222F82AC56BADEB21 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
 		D9CC895510301795FBC13ABA /* qt_lib_opengl_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_opengl_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_opengl_private.pri; sourceTree = "<absolute>"; };
-		DCB612036D136E89ACC8CAC3 /* moc_CMainWindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_CMainWindow.cpp; path = /Users/westjour/Desktop/GUI_Repo/proj/moc_CMainWindow.cpp; sourceTree = "<absolute>"; };
+		DCB612036D136E89ACC8CAC3 /* moc_CMainWindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_CMainWindow.cpp; sourceTree = "<absolute>"; };
 		DD62063BB309123806BD9C01 /* qt_lib_multimediawidgets.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_multimediawidgets.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_multimediawidgets.pri; sourceTree = "<absolute>"; };
 		DF1A7C6C091A8B7FAFDFDE70 /* qt_lib_widgets.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_widgets.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_widgets.pri; sourceTree = "<absolute>"; };
 		E1500C2942B998C121785275 /* qt_lib_gui_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_gui_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_gui_private.pri; sourceTree = "<absolute>"; };
@@ -159,9 +158,9 @@
 		E58DC59380F7B934EE8562A8 /* XMLEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMLEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5AFDC7D9CA7DD5B8A0010C2 /* qt_lib_qtmultimediaquicktools_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_qtmultimediaquicktools_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri; sourceTree = "<absolute>"; };
 		E6BA331C63798A6BB15CCE23 /* qt_lib_opengl.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_opengl.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_opengl.pri; sourceTree = "<absolute>"; };
+		E6D1B7B232344AD366CAE5AC /* CTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTableView.h; sourceTree = "<absolute>"; };
 		EC2FA2F860C967BF1866A9A4 /* qt_lib_help_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_help_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_help_private.pri; sourceTree = "<absolute>"; };
 		EF5B57EB760C02016CBADA7D /* qt_lib_serialport.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_serialport.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_serialport.pri; sourceTree = "<absolute>"; };
-		EF7F7B14F54C2AFB002DD38C /* CDailyWeatherView.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CDailyWeatherView.cpp; sourceTree = "<absolute>"; };
 		F26E6C92CE8B3CB4568546A5 /* CMainWindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CMainWindow.cpp; sourceTree = "<absolute>"; };
 		F40BA9920B20E12DDB590D27 /* qt_lib_enginio_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_enginio_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_enginio_private.pri; sourceTree = "<absolute>"; };
 		F6E5AE607E8DB6CF3A61335E /* clang.conf */ = {isa = PBXFileReference; lastKnownFileType = file; name = clang.conf; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/common/clang.conf; sourceTree = "<absolute>"; };
@@ -235,8 +234,8 @@
 			isa = PBXGroup;
 			children = (
 				28D43F941E362B391F79A060 /* moc_CDailyWeatherModel.cpp */,
-				2CF11537E6046E65834A3425 /* moc_CDailyWeatherView.cpp */,
 				DCB612036D136E89ACC8CAC3 /* moc_CMainWindow.cpp */,
+				3A56B540E4C3562F3E13BEA5 /* moc_CTableView.cpp */,
 				14C9776A4B2E34DB51106724 /* ui_mainwindow.h */,
 			);
 			name = "Generated Sources";
@@ -247,16 +246,15 @@
 			children = (
 				682A50D19E416195436708E4 /* main.cpp */,
 				1C5D03CADA9C9046C7195AD7 /* CDailyWeatherModel.cpp */,
-				EF7F7B14F54C2AFB002DD38C /* CDailyWeatherView.cpp */,
 				F26E6C92CE8B3CB4568546A5 /* CMainWindow.cpp */,
 				393B5CE8D3BCE90CCBC751BD /* CStation.cpp */,
+				7D8A825EF9A2D64E1F522C0F /* CTableView.cpp */,
 				14BBBC027744E753CA279113 /* CXMLParser.cpp */,
 				CA66E871929802F1B7DE123E /* CDailyWeatherModel.h */,
-				92E0738D48D5F9F958074252 /* CDailyWeatherView.h */,
 				7D55A31CDF682F279FB62437 /* CMainWindow.h */,
 				37BBEF775C693ADDD49563CD /* CStation.h */,
+				E6D1B7B232344AD366CAE5AC /* CTableView.h */,
 				B60A5A328D50B94CAB593D17 /* CXMLParser.h */,
-				56116E7719F1AAB500D06A85 /* CHourlyWeather.h */,
 			);
 			name = Sources;
 			sourceTree = "<Group>";
@@ -473,7 +471,7 @@
 		6DB9C3763D02B1415CD9D565 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0600;
 			};
 			buildConfigurationList = DAC4C1AA5EDEA1C85E9CA5E6 /* Build configuration list for PBXProject "XMLEditor" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -523,13 +521,13 @@
 			files = (
 				2D367B399AA57F7319FEA1FA /* main.cpp in Compile Sources */,
 				D24685D280F516B05C24C44E /* CDailyWeatherModel.cpp in Compile Sources */,
-				E676D4EB4B6FBB7129C3C4E6 /* CDailyWeatherView.cpp in Compile Sources */,
 				49058BA94FC6A326618DB061 /* CMainWindow.cpp in Compile Sources */,
 				B3CF9240B62B94B17484ECCD /* CStation.cpp in Compile Sources */,
+				31829CB2ECE3CC4CC5DA755D /* CTableView.cpp in Compile Sources */,
 				C196F2D85DD169818853FAA2 /* CXMLParser.cpp in Compile Sources */,
 				B10B4D7298B5E160396E8E8B /* moc_CDailyWeatherModel.cpp in Compile Sources */,
-				8EF3ACCA0396840C799875EB /* moc_CDailyWeatherView.cpp in Compile Sources */,
 				626A71DAA3D899DFEC358778 /* moc_CMainWindow.cpp in Compile Sources */,
+				46F1ABCBC4169A87B9526082 /* moc_CTableView.cpp in Compile Sources */,
 			);
 			name = "Compile Sources";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -540,7 +538,7 @@
 		F86E05C107B86A16D2A48FCC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B065C007C8DAD32E2A4D8AA4 /* Qt Preprocess */;
-			targetProxy = 56A5695119D04C2000C05E3D /* PBXContainerItemProxy */;
+			targetProxy = 56116E8719F55C4C00D06A85 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -554,15 +552,17 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1.0;
 				DYLIB_CURRENT_VERSION = 1.0.0;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					/Users/westjour/Qt5.3.2/5.3/clang_64/lib,
 					/Users/westjour/Qt5.3.2/5.3/clang_64/lib,
 				);
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -576,8 +576,8 @@
 					../../../Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers,
 					../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers,
 					.,
-					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers,
-					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AGL.framework/Headers,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework/Headers,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AGL.framework/Headers/,
 					.,
 					"../../../Qt5.3.2/5.3/clang_64/mkspecs/macx-clang",
 				);
@@ -602,7 +602,7 @@
 				);
 				OTHER_CPLUSPLUSFLAGS = (
 					"-pipe",
-					"-O0",
+					"-O2",
 					"-Wall",
 					"-W",
 					"-fPIE",
@@ -632,10 +632,12 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1.0;
 				DYLIB_CURRENT_VERSION = 1.0.0;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					/Users/westjour/Qt5.3.2/5.3/clang_64/lib,
 					/Users/westjour/Qt5.3.2/5.3/clang_64/lib,
@@ -655,8 +657,8 @@
 					../../../Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers,
 					../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers,
 					.,
-					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers,
-					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AGL.framework/Headers,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework/Headers,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AGL.framework/Headers/,
 					.,
 					"../../../Qt5.3.2/5.3/clang_64/mkspecs/macx-clang",
 				);
@@ -682,7 +684,7 @@
 				);
 				OTHER_CPLUSPLUSFLAGS = (
 					"-pipe",
-					"-O0",
+					"-O2",
 					"-Wall",
 					"-W",
 					"-fPIE",
@@ -707,32 +709,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				OTHER_CFLAGS = (
-					"-pipe",
-					"-O0",
-					"-Wall",
-					"-W",
-					"-fPIE",
-					"-DQT_NO_DEBUG",
-					"-DQT_WIDGETS_LIB",
-					"-DQT_XML_LIB",
-					"-DQT_GUI_LIB",
-					"-DQT_CORE_LIB",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-pipe",
-					"-O0",
-					"-Wall",
-					"-W",
-					"-fPIE",
-					"-DQT_NO_DEBUG",
-					"-DQT_WIDGETS_LIB",
-					"-DQT_XML_LIB",
-					"-DQT_GUI_LIB",
-					"-DQT_CORE_LIB",
-				);
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				PRODUCT_NAME = XMLEditor;
 				QT_LIBRARY_SUFFIX = "";
 				SDKROOT = macosx;
@@ -746,30 +724,6 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				OTHER_CFLAGS = (
-					"-pipe",
-					"-O0",
-					"-Wall",
-					"-W",
-					"-fPIE",
-					"-DQT_NO_DEBUG",
-					"-DQT_WIDGETS_LIB",
-					"-DQT_XML_LIB",
-					"-DQT_GUI_LIB",
-					"-DQT_CORE_LIB",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-pipe",
-					"-O0",
-					"-Wall",
-					"-W",
-					"-fPIE",
-					"-DQT_NO_DEBUG",
-					"-DQT_WIDGETS_LIB",
-					"-DQT_XML_LIB",
-					"-DQT_GUI_LIB",
-					"-DQT_CORE_LIB",
-				);
 				PRODUCT_NAME = XMLEditor;
 				QT_LIBRARY_SUFFIX = _debug;
 				SDKROOT = macosx;

@@ -10,4 +10,15 @@
 #define XMLEditor_CHourlyWeather_h
 
 
-#endif
+
+
+#include <QAbstractTableModel>
+
+
+/* Brief:
+ */
+class CDailyWeatherModel : public QAbstractTableModel
+{
+};
+
+#endif // CHOURLYWEATHERVIEW_H

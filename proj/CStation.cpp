@@ -6,4 +6,5 @@ CStation::CStation()
     mWeatherAttr = new AttrMap;
     mStormIntAttr = new AttrMap;
     mHrRainAttr = new AttrMap;
+    mStatAttr = new AttrMap;
 }

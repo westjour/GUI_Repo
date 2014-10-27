@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>B78DAB5F-A36B-4ACA-BB33-2FD5EBA65BCD</string>
+	<string>7CDE7C98-BF97-4AB4-AE05-82D73C45F65C</string>
 	<key>IDESourceControlProjectName</key>
 	<string>XMLEditor</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -14,7 +14,7 @@
 		<string>https://github.com/westjour/GUI_Repo.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>proj/XMLEditor.xcodeproj/project.xcworkspace</string>
+	<string>proj/XMLEditor.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>275D239FE779E27468F8A9A470A0821330D0336D</key>

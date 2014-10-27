@@ -3,8 +3,9 @@
 
 #include <QMainWindow>
 #include <QVector>
+#include <QMenuBar>
 
-class CDailyWeatherView;
+class CTableView;
 class QComboBox;
 class QLineEdit;
 class CStation;
@@ -22,13 +23,19 @@ public:
     ~CMainWindow();
 
     void clearStationLineEdits();
-    void makeConnections();
     
+
 public slots:
     void stationIndexChanged(QString text);
     void yearIndexChanged(QString text);
+    void onFileSave();
 
 private:
+    void buildMenuBar();
+    void buildMacMenuBar();
+    void saveXML();
+    void makeConnections();
+    
     //
     // GUI Elements
     //
@@ -45,8 +52,13 @@ private:
     QLineEdit* mAmpLineEdit;
     QLineEdit* mTmhtLineEdit;
     QLineEdit* mWmhtLineEdit;
-
-    CDailyWeatherView* mDailyWeatherView;
+    
+    QMenuBar* macMenuBar;
+    QAction* mFileSave;
+    QAction* mFileExit;
+    
+    CTableView* mDailyWeatherView;
+    CTableView* mHrWeatherView;
 };
 
 #endif // CMAINWINDOW_H

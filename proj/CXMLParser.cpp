@@ -70,7 +70,7 @@ Stations* CXMLParser::parseWDB()
                         QString value = attrNode.value();
 
                         // Add attribute to the station's attribute map
-                        station->getAttributes().insert(name, value);
+                        station->getStatAttrs()->insert(name, value);
                     }
                 }
 
@@ -88,7 +88,7 @@ Stations* CXMLParser::parseWDB()
                         continue;
                     if(childElem.tagName() == "Weather") {
                         //
-                        // Parse station attributes
+                        // Parse Weather attributes
                         //
                         QDomNamedNodeMap map = childNode.attributes();
                         
@@ -99,6 +99,9 @@ Stations* CXMLParser::parseWDB()
                                 QDomAttr attrNode = s.toAttr();
                                 QString name = attrNode.name();
                                 QString value = attrNode.value();
+                            
+                                // Add attribute to the Weather's attribute map
+                                station->getWeatherAttrs()->insert(name, value);
                             }
                         }
 
@@ -113,7 +116,6 @@ Stations* CXMLParser::parseWDB()
             n = n.nextSiblingElement();
         } // end "if element"
     } // end while, done parsing XML
-    qDebug("done parsing WDB XML");
     
     return stations;
 }

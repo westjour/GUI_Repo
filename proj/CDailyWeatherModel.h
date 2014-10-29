@@ -27,6 +27,7 @@ public:
     void setYear(int y){ mYear = y; }
     int getYear(){ return mYear; }
     void update();
+    CStation* findStation(QString statId, QString statName);
     
     //
     // The following functions are required for an editable table

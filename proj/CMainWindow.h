@@ -29,12 +29,15 @@ public slots:
     void stationIndexChanged(QString text);
     void yearIndexChanged(QString text);
     void onFileSave();
+    void onStationDataChanged(QString field);
 
 private:
     void buildMenuBar();
     void buildMacMenuBar();
     void saveXML();
     void makeConnections();
+    void disableStationDataLineEdits();
+    void enableStationDataLineEdits();
     
     //
     // GUI Elements

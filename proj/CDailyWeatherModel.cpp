@@ -11,6 +11,27 @@ CDailyWeatherModel::CDailyWeatherModel(QObject *parent) :
 }
 
 
+
+/* Brief:
+ */
+CStation* CDailyWeatherModel::findStation(QString statId, QString statName)
+{
+    // Find corresponding station
+    QVector<CStation* >::const_iterator iter;
+    for (iter = mStations->begin(); iter != mStations->end(); ++iter)
+    {
+        CStation* currStation = *iter;
+        QString id = currStation->getStatAttrs()->value("StationID");
+        QString name = currStation->getStatAttrs()->value("Station_Name");
+        
+        if(statId == id && statName == name)
+            return currStation;
+    }
+    
+    return NULL;
+}
+
+
 /* Brief: TODO description
  * Parameter: parent, TODO description
  *

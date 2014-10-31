@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WDB>
-    <Stations StationID="USAM" Station_Name="USA Maize" Place_Name="" Lat="40.74088" Long="-97.85957" Elev="200" Tav="9.2" Amp="13" Tmht="" Wmht="">
+    <Stations StationID="USAM" Station_Name="USA Maize" Place_Name="somePlaceonEarth" Lat="40.74088" Long="-97.85957" Elev="200" Tav="9.2" Amp="13" Tmht="myTmht" Wmht="myWmht">
         <Storm_Intensity/>
         <Hourly_Rainfall/>
         <Weather Columns="Year,DOY,SRAD,Tmax,Tmin,Rain,DewP,Wind,PAR">

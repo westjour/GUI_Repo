@@ -8,6 +8,7 @@
 #include <QFile>
 #include <QXmlStreamWriter>
 #include <QSignalMapper>
+#include <QFileDialog>
 
 #include "CMainWindow.h"
 #include "ui_mainwindow.h"
@@ -152,15 +153,20 @@ void CMainWindow::buildMenuBar()
 void CMainWindow::buildMacMenuBar()
 {
     macMenuBar = new QMenuBar(0);
-    QMenu* fileMenu = macMenuBar->addMenu("File"); //new QMenu("File", 0);
+    QMenu* fileMenu = macMenuBar->addMenu("File");
     
     mFileSave = new QAction("Save", this);
     mFileExit = new QAction("Exit", this);
-
+    mFileOpen = new QAction("Open", this);
+    
     mFileSave->setMenuRole(QAction::NoRole);
     mFileExit->setMenuRole(QAction::NoRole);
+    mFileOpen->setMenuRole(QAction::NoRole);
+
     fileMenu->addAction(mFileSave);
+    fileMenu->addAction(mFileOpen);
     fileMenu->addAction(mFileExit);
+    
     
     macMenuBar->addMenu(fileMenu);
     setMenuBar(macMenuBar);
@@ -181,7 +187,9 @@ void CMainWindow::makeConnections()
 {
     connect(mStationCombobox, SIGNAL(currentIndexChanged(QString)), this, SLOT(stationIndexChanged(QString)));
     connect(mYearCombobox, SIGNAL(currentIndexChanged(QString)), this, SLOT(yearIndexChanged(QString)));
+    
     connect(mFileSave, SIGNAL(triggered (bool)), this, SLOT(onFileSave()));
+    connect(mFileOpen, SIGNAL(triggered (bool)), this, SLOT(onFileOpen()));
     connect(mFileExit, SIGNAL(triggered (bool)), this, SLOT(close()));
     
     
@@ -227,7 +235,7 @@ void CMainWindow::yearIndexChanged(QString text)
 }
 
 
-/* Brief: Automatically called when the station line edit text is changed
+/* Brief: Automatically called when a station line edit text is changed
  * Param: field, field that was modified (i.e. Tmht, Wmht, etc.)
  */
 void CMainWindow::onStationDataChanged(QString field)
@@ -251,18 +259,24 @@ void CMainWindow::onStationDataChanged(QString field)
         //
         AttrMap* attrs = station->getStatAttrs();
         
-        qDebug("id:%s, name:%s", id.toUtf8().constData(), name.toUtf8().constData());
-        if(field == "Wmht") {
-            (*attrs)[field] = mWmhtLineEdit->text();
-            qDebug("wmht changed to %s", mWmhtLineEdit->text().toUtf8().constData());
-        }
-        else if(field == "Tmht")
-            qDebug("tmht changed to %s", mTmhtLineEdit->text().toUtf8().constData());
-        else if(field == "Amp")
-            qDebug("amp changed to %s", mAmpLineEdit->text().toUtf8().constData());
-     
-        // add other fields
-        }
+        // This is the line edit to read text from after an edit. This depends on the field that
+        // was modified.
+        QLineEdit* lineEdit = NULL;
+        
+        if(field == "Wmht") { lineEdit = mWmhtLineEdit ;}
+        else if(field == "Tmht") { lineEdit = mTmhtLineEdit ;}
+        else if(field == "Station_Name") { lineEdit = mStatNameLineEdit ;}
+        else if(field == "StationID") { lineEdit = mStatIDLineEdit ;}
+        else if(field == "Place_Name") { lineEdit = mPlaceNameLineEdit ;}
+        else if(field == "Lat") { lineEdit = mLatLineEdit ;}
+        else if(field == "Long") { lineEdit = mLongLineEdit ;}
+        else if(field == "Elev") { lineEdit = mElevLineEdit ;}
+        else if(field == "Tav") { lineEdit = mTavLineEdit ;}
+        else if(field == "Amp") { lineEdit = mAmpLineEdit ;}
+        
+        // Update Station Attr
+        (*attrs)[field] = lineEdit->text();
+    }
 }
 
 
@@ -460,6 +474,25 @@ void CMainWindow::saveXML() {
     writer.writeEndDocument();
     file.close();
 
+}
+
+
+/* Brief: Automatically called when user selects File->Open
+ */
+void CMainWindow::onFileOpen()
+{
+    QString dir = "../../xml/";
+    
+    // This is necessary on MAC to get the file dialog to have correct default directory
+    QString dummyFile = "dummyFile.txt";
+    
+    QString fileName = QFileDialog::getOpenFileName(this, tr("Open File"), dir+dummyFile, tr("XML Files (*.xml)"));
+    
+    // User didn't select a file
+    if(fileName == NULL)
+        return;
+    
+    qDebug("file to open:%s", fileName.toUtf8().constData());
 }
 
 

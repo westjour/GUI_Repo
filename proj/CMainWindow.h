@@ -29,6 +29,7 @@ public slots:
     void stationIndexChanged(QString text);
     void yearIndexChanged(QString text);
     void onFileSave();
+    void onFileOpen();
     void onStationDataChanged(QString field);
 
 private:
@@ -58,6 +59,7 @@ private:
     
     QMenuBar* macMenuBar;
     QAction* mFileSave;
+    QAction* mFileOpen;
     QAction* mFileExit;
     
     CTableView* mDailyWeatherView;

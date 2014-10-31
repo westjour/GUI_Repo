@@ -116,6 +116,12 @@ dependencies: /Users/westjour/Desktop/GUI_Repo/proj/CMainWindow.cpp \
   ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qxmlstream.h \
   ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QSignalMapper \
   ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qsignalmapper.h \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QFileDialog \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qfiledialog.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qdir.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qfileinfo.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qurl.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qdialog.h \
   CMainWindow.h \
   ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QMainWindow \
   ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qmainwindow.h \

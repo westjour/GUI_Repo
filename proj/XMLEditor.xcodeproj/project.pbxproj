@@ -23,14 +23,16 @@
 
 /* Begin PBXBuildFile section */
 		16D61A7BE6EAC7D18DE34E58 /* QtXml.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 0B3C25170963FC3686C6B3A7 /* QtXml.framework */; };
+		23AD31E18855707CC01F7885 /* CLaunchWindow.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 08A4AEB96F0AC1AC9B6B4865 /* CLaunchWindow.cpp */; settings = {ATTRIBUTES = (); }; };
 		25450DB7D868083271ABED55 /* QtWidgets.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 216827D014B70BBD74D71E0E /* QtWidgets.framework */; };
 		2D367B399AA57F7319FEA1FA /* main.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 682A50D19E416195436708E4 /* main.cpp */; settings = {ATTRIBUTES = (); }; };
 		31829CB2ECE3CC4CC5DA755D /* CTableView.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 7D8A825EF9A2D64E1F522C0F /* CTableView.cpp */; settings = {ATTRIBUTES = (); }; };
 		46F1ABCBC4169A87B9526082 /* moc_CTableView.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 3A56B540E4C3562F3E13BEA5 /* moc_CTableView.cpp */; settings = {ATTRIBUTES = (); }; };
-		49058BA94FC6A326618DB061 /* CMainWindow.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = F26E6C92CE8B3CB4568546A5 /* CMainWindow.cpp */; settings = {ATTRIBUTES = (); }; };
+		49058BA94FC6A326618DB061 /* CWindowWDB.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = F26E6C92CE8B3CB4568546A5 /* CWindowWDB.cpp */; settings = {ATTRIBUTES = (); }; };
 		4E3CAED4FB5805A342258087 /* QtGui.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 4936C5FC0EF6C5A862FDA934 /* QtGui.framework */; };
 		626A71DAA3D899DFEC358778 /* moc_CMainWindow.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = DCB612036D136E89ACC8CAC3 /* moc_CMainWindow.cpp */; settings = {ATTRIBUTES = (); }; };
 		8771A8C96E9C391044035D99 /* OpenGL.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = D4B32C2222F82AC56BADEB21 /* OpenGL.framework */; };
+		9BACEEDA15D35F0513EB2F8A /* moc_CLaunchWindow.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 65E537FC9E72E387800F050D /* moc_CLaunchWindow.cpp */; settings = {ATTRIBUTES = (); }; };
 		B10B4D7298B5E160396E8E8B /* moc_CDailyWeatherModel.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 28D43F941E362B391F79A060 /* moc_CDailyWeatherModel.cpp */; settings = {ATTRIBUTES = (); }; };
 		B3CF9240B62B94B17484ECCD /* CStation.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 393B5CE8D3BCE90CCBC751BD /* CStation.cpp */; settings = {ATTRIBUTES = (); }; };
 		BB0C18E0BE3111577C6F6506 /* QtCore.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 0A96879D098723A01097C93A /* QtCore.framework */; };
@@ -40,7 +42,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		56116E8719F55C4C00D06A85 /* PBXContainerItemProxy */ = {
+		564087201A0D47F900D255B4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6DB9C3763D02B1415CD9D565 /* Project object */;
 			proxyType = 1;
@@ -51,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		0273BC0BE663C4DDFA96F768 /* qt_lib_core_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_core_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_core_private.pri; sourceTree = "<absolute>"; };
+		08A4AEB96F0AC1AC9B6B4865 /* CLaunchWindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CLaunchWindow.cpp; sourceTree = "<absolute>"; };
 		08EAB63874638DF9A230CC12 /* qt_lib_xml.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_xml.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_xml.pri; sourceTree = "<absolute>"; };
 		0A96879D098723A01097C93A /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework; sourceTree = "<absolute>"; };
 		0B3C25170963FC3686C6B3A7 /* QtXml.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtXml.framework; path = ../../../Qt5.3.2/5.3/clang_64/lib/QtXml.framework; sourceTree = "<absolute>"; };
@@ -60,7 +63,7 @@
 		13A39981C9BEB01A31FA84AF /* qt_lib_xml_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_xml_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_xml_private.pri; sourceTree = "<absolute>"; };
 		1407EEECBE29485E7D904097 /* qt_lib_declarative.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_declarative.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_declarative.pri; sourceTree = "<absolute>"; };
 		14BBBC027744E753CA279113 /* CXMLParser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CXMLParser.cpp; sourceTree = "<absolute>"; };
-		14C9776A4B2E34DB51106724 /* ui_mainwindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ui_mainwindow.h; sourceTree = "<absolute>"; };
+		14C9776A4B2E34DB51106724 /* ui_mainwindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ui_mainwindow.h; path = /Users/westjour/Desktop/GUI_Repo/proj/ui/ui_mainwindow.h; sourceTree = "<absolute>"; };
 		1790F14EBA0A3A1A695F0625 /* qt_lib_multimediawidgets_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_multimediawidgets_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_multimediawidgets_private.pri; sourceTree = "<absolute>"; };
 		18B4E6CF757F5C3CDD54DDEC /* .qmake.stash */ = {isa = PBXFileReference; lastKnownFileType = file; name = .qmake.stash; path = ../../../.qmake.stash; sourceTree = "<absolute>"; };
 		1B860945BB9CAC9ABE16CAB6 /* qt_lib_network.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_network.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_network.pri; sourceTree = "<absolute>"; };
@@ -93,13 +96,15 @@
 		3D45E68BBB6C3CBD122B345B /* qconfig.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qconfig.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/qconfig.pri; sourceTree = "<absolute>"; };
 		46FBE41A8FB5C6D4A63C8E1C /* qt_lib_xmlpatterns.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_xmlpatterns.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_xmlpatterns.pri; sourceTree = "<absolute>"; };
 		4936C5FC0EF6C5A862FDA934 /* QtGui.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtGui.framework; path = ../../../Qt5.3.2/5.3/clang_64/lib/QtGui.framework; sourceTree = "<absolute>"; };
+		4CC37DF1DCC11A8F2B6105DA /* ui_launch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ui_launch.h; path = /Users/westjour/Desktop/GUI_Repo/proj/ui/ui_launch.h; sourceTree = "<absolute>"; };
 		4D64EC62868BEDD2D525E9B5 /* qt_lib_quickparticles_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_quickparticles_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_quickparticles_private.pri; sourceTree = "<absolute>"; };
 		54F5F191E541811663808894 /* qt_lib_printsupport.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_printsupport.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_printsupport.pri; sourceTree = "<absolute>"; };
 		565F1AE0597D3BE3053751A3 /* unix.conf */ = {isa = PBXFileReference; lastKnownFileType = file; name = unix.conf; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/common/unix.conf; sourceTree = "<absolute>"; };
 		56AAA5ABE4CCE1FC1BFB53E4 /* qt_lib_printsupport_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_printsupport_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_printsupport_private.pri; sourceTree = "<absolute>"; };
-		59342C100B758CDE10A0EA4D /* mainwindow.ui */ = {isa = PBXFileReference; lastKnownFileType = file; path = mainwindow.ui; sourceTree = "<absolute>"; };
+		58BBC3DD41BFC2EF4D6F7BDE /* CLaunchWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLaunchWindow.h; sourceTree = "<absolute>"; };
 		5E36CD8A8B0E4C1EA2797640 /* qt_lib_network_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_network_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_network_private.pri; sourceTree = "<absolute>"; };
 		6164E9817D25C55FA310A1C3 /* qt_lib_uitools_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_uitools_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_uitools_private.pri; sourceTree = "<absolute>"; };
+		65E537FC9E72E387800F050D /* moc_CLaunchWindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_CLaunchWindow.cpp; sourceTree = "<absolute>"; };
 		682A50D19E416195436708E4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<absolute>"; };
 		6ABDF03CAA7815D90A0C809C /* gcc-base-mac.conf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "gcc-base-mac.conf"; path = "../../../Qt5.3.2/5.3/clang_64/mkspecs/common/gcc-base-mac.conf"; sourceTree = "<absolute>"; };
 		6C797E53906CB6174FB2F521 /* qt_lib_widgets_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_widgets_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_widgets_private.pri; sourceTree = "<absolute>"; };
@@ -121,6 +126,7 @@
 		8D9815BDB5BD9F90D2BC05C5 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
 		8DAB25C9520BBD7EC4BF5166 /* qt_lib_macextras_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_macextras_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_macextras_private.pri; sourceTree = "<absolute>"; };
 		8E14B09DED5AE7BF5B375D91 /* qt_lib_clucene_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_clucene_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_clucene_private.pri; sourceTree = "<absolute>"; };
+		90107D33E658E8B3F52135D5 /* launch.ui */ = {isa = PBXFileReference; lastKnownFileType = file; name = launch.ui; path = ui/launch.ui; sourceTree = "<absolute>"; };
 		911C62DD50AF71AE9D66F069 /* qt_lib_sql.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_sql.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_sql.pri; sourceTree = "<absolute>"; };
 		9146E0711BCFB17910DD3FF7 /* qt_lib_quickwidgets_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_quickwidgets_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_quickwidgets_private.pri; sourceTree = "<absolute>"; };
 		9A4488EFF1830E805B768670 /* qt_lib_concurrent.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_concurrent.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_concurrent.pri; sourceTree = "<absolute>"; };
@@ -157,11 +163,12 @@
 		E57F2B1C78FB5F9665EC7F5B /* qt_lib_script.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_script.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_script.pri; sourceTree = "<absolute>"; };
 		E58DC59380F7B934EE8562A8 /* XMLEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMLEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5AFDC7D9CA7DD5B8A0010C2 /* qt_lib_qtmultimediaquicktools_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_qtmultimediaquicktools_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri; sourceTree = "<absolute>"; };
+		E6203756DEA2CD8BCAB6D262 /* mainwindow.ui */ = {isa = PBXFileReference; lastKnownFileType = file; name = mainwindow.ui; path = ui/mainwindow.ui; sourceTree = "<absolute>"; };
 		E6BA331C63798A6BB15CCE23 /* qt_lib_opengl.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_opengl.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_opengl.pri; sourceTree = "<absolute>"; };
 		E6D1B7B232344AD366CAE5AC /* CTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTableView.h; sourceTree = "<absolute>"; };
 		EC2FA2F860C967BF1866A9A4 /* qt_lib_help_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_help_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_help_private.pri; sourceTree = "<absolute>"; };
 		EF5B57EB760C02016CBADA7D /* qt_lib_serialport.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_serialport.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_serialport.pri; sourceTree = "<absolute>"; };
-		F26E6C92CE8B3CB4568546A5 /* CMainWindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CMainWindow.cpp; sourceTree = "<absolute>"; };
+		F26E6C92CE8B3CB4568546A5 /* CWindowWDB.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = CWindowWDB.cpp; path = /Users/westjour/Desktop/GUI_Repo/proj/CWindowWDB.cpp; sourceTree = "<absolute>"; };
 		F40BA9920B20E12DDB590D27 /* qt_lib_enginio_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_enginio_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_enginio_private.pri; sourceTree = "<absolute>"; };
 		F6E5AE607E8DB6CF3A61335E /* clang.conf */ = {isa = PBXFileReference; lastKnownFileType = file; name = clang.conf; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/common/clang.conf; sourceTree = "<absolute>"; };
 		FBE78C7346BA1C0756902951 /* qt_lib_serialport_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_serialport_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_serialport_private.pri; sourceTree = "<absolute>"; };
@@ -197,7 +204,7 @@
 		12E908B8A1C3C07C115504F5 /* Sources [uic] */ = {
 			isa = PBXGroup;
 			children = (
-				59342C100B758CDE10A0EA4D /* mainwindow.ui */,
+				F027E420C02C9CC7A06A0901 /* ui */,
 			);
 			name = "Sources [uic]";
 			sourceTree = "<Group>";
@@ -234,9 +241,11 @@
 			isa = PBXGroup;
 			children = (
 				28D43F941E362B391F79A060 /* moc_CDailyWeatherModel.cpp */,
+				65E537FC9E72E387800F050D /* moc_CLaunchWindow.cpp */,
 				DCB612036D136E89ACC8CAC3 /* moc_CMainWindow.cpp */,
 				3A56B540E4C3562F3E13BEA5 /* moc_CTableView.cpp */,
 				14C9776A4B2E34DB51106724 /* ui_mainwindow.h */,
+				4CC37DF1DCC11A8F2B6105DA /* ui_launch.h */,
 			);
 			name = "Generated Sources";
 			sourceTree = "<Group>";
@@ -246,11 +255,13 @@
 			children = (
 				682A50D19E416195436708E4 /* main.cpp */,
 				1C5D03CADA9C9046C7195AD7 /* CDailyWeatherModel.cpp */,
-				F26E6C92CE8B3CB4568546A5 /* CMainWindow.cpp */,
+				08A4AEB96F0AC1AC9B6B4865 /* CLaunchWindow.cpp */,
+				F26E6C92CE8B3CB4568546A5 /* CWindowWDB.cpp */,
 				393B5CE8D3BCE90CCBC751BD /* CStation.cpp */,
 				7D8A825EF9A2D64E1F522C0F /* CTableView.cpp */,
 				14BBBC027744E753CA279113 /* CXMLParser.cpp */,
 				CA66E871929802F1B7DE123E /* CDailyWeatherModel.h */,
+				58BBC3DD41BFC2EF4D6F7BDE /* CLaunchWindow.h */,
 				7D55A31CDF682F279FB62437 /* CMainWindow.h */,
 				37BBEF775C693ADDD49563CD /* CStation.h */,
 				E6D1B7B232344AD366CAE5AC /* CTableView.h */,
@@ -437,6 +448,15 @@
 			name = ..;
 			sourceTree = "<Group>";
 		};
+		F027E420C02C9CC7A06A0901 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				E6203756DEA2CD8BCAB6D262 /* mainwindow.ui */,
+				90107D33E658E8B3F52135D5 /* launch.ui */,
+			);
+			name = ui;
+			sourceTree = "<Group>";
+		};
 		FE0A091FDBFB3E9C31B7A1BD /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -471,7 +491,7 @@
 		6DB9C3763D02B1415CD9D565 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastUpgradeCheck = 0610;
 			};
 			buildConfigurationList = DAC4C1AA5EDEA1C85E9CA5E6 /* Build configuration list for PBXProject "XMLEditor" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -521,11 +541,13 @@
 			files = (
 				2D367B399AA57F7319FEA1FA /* main.cpp in Compile Sources */,
 				D24685D280F516B05C24C44E /* CDailyWeatherModel.cpp in Compile Sources */,
-				49058BA94FC6A326618DB061 /* CMainWindow.cpp in Compile Sources */,
+				23AD31E18855707CC01F7885 /* CLaunchWindow.cpp in Compile Sources */,
+				49058BA94FC6A326618DB061 /* CWindowWDB.cpp in Compile Sources */,
 				B3CF9240B62B94B17484ECCD /* CStation.cpp in Compile Sources */,
 				31829CB2ECE3CC4CC5DA755D /* CTableView.cpp in Compile Sources */,
 				C196F2D85DD169818853FAA2 /* CXMLParser.cpp in Compile Sources */,
 				B10B4D7298B5E160396E8E8B /* moc_CDailyWeatherModel.cpp in Compile Sources */,
+				9BACEEDA15D35F0513EB2F8A /* moc_CLaunchWindow.cpp in Compile Sources */,
 				626A71DAA3D899DFEC358778 /* moc_CMainWindow.cpp in Compile Sources */,
 				46F1ABCBC4169A87B9526082 /* moc_CTableView.cpp in Compile Sources */,
 			);
@@ -538,7 +560,7 @@
 		F86E05C107B86A16D2A48FCC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B065C007C8DAD32E2A4D8AA4 /* Qt Preprocess */;
-			targetProxy = 56116E8719F55C4C00D06A85 /* PBXContainerItemProxy */;
+			targetProxy = 564087201A0D47F900D255B4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

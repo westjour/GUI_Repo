@@ -17,11 +17,10 @@
 #include "CTableView.h"
 #include "CDailyWeatherModel.h"
 
-CMainWindow::CMainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow)
-{
+CMainWindow::CMainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow) {
     ui->setupUi(this);
     setFixedSize(1000,1000);
-    setWindowTitle("XML Editor");
+    setWindowTitle("WEATHER");
     
     //
     // Parse XML

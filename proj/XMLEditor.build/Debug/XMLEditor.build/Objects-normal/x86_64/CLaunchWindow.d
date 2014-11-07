@@ -1,10 +1,7 @@
-dependencies: /Users/westjour/Desktop/GUI_Repo/proj/CDailyWeatherView.cpp \
-  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QHeaderView \
-  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qheaderview.h \
-  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qabstractitemview.h \
-  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qabstractscrollarea.h \
-  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qframe.h \
-  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qwidget.h \
+dependencies: /Users/westjour/Desktop/GUI_Repo/proj/CLaunchWindow.cpp \
+  CLaunchWindow.h \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QWidget \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qwidget.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qwindowdefs.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qglobal.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qconfig.h \
@@ -76,9 +73,30 @@ dependencies: /Users/westjour/Desktop/GUI_Repo/proj/CDailyWeatherView.cpp \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qsizepolicy.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qcursor.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qkeysequence.h \
-  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qabstractitemmodel.h \
-  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qvariant.h \
+  ui_launch.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/QVariant \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvariant.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qmap.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/QAction \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qaction.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qicon.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qactiongroup.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/QApplication \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qapplication.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qcoreapplication.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qcoreevent.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qeventloop.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qguiapplication.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qinputmethod.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qlocale.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/QButtonGroup \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qbuttongroup.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/QHeaderView \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qheaderview.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qabstractitemview.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qabstractscrollarea.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qframe.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qabstractitemmodel.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qitemselectionmodel.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qset.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qabstractitemdelegate.h \
@@ -86,14 +104,17 @@ dependencies: /Users/westjour/Desktop/GUI_Repo/proj/CDailyWeatherView.cpp \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qabstractspinbox.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qvalidator.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qregularexpression.h \
-  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qlocale.h \
-  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qicon.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qslider.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qabstractslider.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qstyle.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qtabbar.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qtabwidget.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qrubberband.h \
-  CDailyWeatherView.h \
-  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QTableView \
-  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qtableview.h
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/QLabel \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qlabel.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/QPushButton \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qpushbutton.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qabstractbutton.h \
+  CMainWindow.h \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QMainWindow \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qmainwindow.h

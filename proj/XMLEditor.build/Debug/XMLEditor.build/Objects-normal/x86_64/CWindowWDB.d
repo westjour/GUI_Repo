@@ -1,4 +1,4 @@
-dependencies: /Users/westjour/Desktop/GUI_Repo/proj/CMainWindow.cpp \
+dependencies: /Users/westjour/Desktop/GUI_Repo/proj/CWindowWDB.cpp \
   ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QGridLayout \
   ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qgridlayout.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qlayout.h \

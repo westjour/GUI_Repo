@@ -2,16 +2,16 @@
 #define CMAINWINDOW_H
 
 #include <QMainWindow>
-#include <QVector>
-#include <QMenuBar>
 
 class CTableView;
 class QComboBox;
 class QLineEdit;
 class CStation;
 
+/* Forward declaration this class so that we can use it as a
+member variable. It is actually defined in ui_mainWindow.h */
 namespace Ui {
-class MainWindow;
+    class MainWindow;
 }
 
 class CMainWindow : public QMainWindow
@@ -43,7 +43,7 @@ private:
     //
     // GUI Elements
     //
-    Ui::MainWindow *ui;
+    Ui::MainWindow* ui;
     QComboBox* mStationCombobox;
     QComboBox* mYearCombobox;
     QLineEdit* mStatNameLineEdit;

@@ -43,6 +43,20 @@
 					);
 			};
 		};
+		08A4AEB96F0AC1AC9B6B4865 = {
+			isa = PBXFileReference;
+			path = "CLaunchWindow.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		23AD31E18855707CC01F7885 = {
+			fileRef = "08A4AEB96F0AC1AC9B6B4865";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
 		F26E6C92CE8B3CB4568546A5 = {
 			isa = PBXFileReference;
 			path = "CMainWindow.cpp";
@@ -113,6 +127,20 @@
 					);
 			};
 		};
+		65E537FC9E72E387800F050D = {
+			isa = PBXFileReference;
+			path = "moc_CLaunchWindow.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		9BACEEDA15D35F0513EB2F8A = {
+			fileRef = "65E537FC9E72E387800F050D";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
 		DCB612036D136E89ACC8CAC3 = {
 			isa = PBXFileReference;
 			path = "moc_CMainWindow.cpp";
@@ -147,9 +175,21 @@
 			sourceTree = "<absolute>";
 			lastKnownFileType = "sourcecode.c.h";
 		};
+		4CC37DF1DCC11A8F2B6105DA = {
+			isa = PBXFileReference;
+			path = "ui_launch.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
 		CA66E871929802F1B7DE123E = {
 			isa = PBXFileReference;
 			path = "CDailyWeatherModel.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		58BBC3DD41BFC2EF4D6F7BDE = {
+			isa = PBXFileReference;
+			path = "CLaunchWindow.h";
 			sourceTree = "<absolute>";
 			lastKnownFileType = "sourcecode.c.h";
 		};
@@ -742,19 +782,36 @@
 			sourceTree = "<absolute>";
 			lastKnownFileType = "text";
 		};
-		59342C100B758CDE10A0EA4D = {
+		E6203756DEA2CD8BCAB6D262 = {
 			isa = PBXFileReference;
-			path = "mainwindow.ui";
+			path = "ui/mainwindow.ui";
+			name = "mainwindow.ui";
+			sourceTree = "<absolute>";
+		};
+		90107D33E658E8B3F52135D5 = {
+			isa = PBXFileReference;
+			path = "ui/launch.ui";
+			name = "launch.ui";
 			sourceTree = "<absolute>";
 		};
 		25B08E2869634E9BCBA333A2 = {
 			isa = PBXGroup;
 			children = (
 				"28D43F941E362B391F79A060",
+				"65E537FC9E72E387800F050D",
 				"DCB612036D136E89ACC8CAC3",
 				"3A56B540E4C3562F3E13BEA5",
-				"14C9776A4B2E34DB51106724");
+				"14C9776A4B2E34DB51106724",
+				"4CC37DF1DCC11A8F2B6105DA");
 			name = "Generated Sources";
+			sourceTree = "<Group>";
+		};
+		F027E420C02C9CC7A06A0901 = {
+			isa = PBXGroup;
+			children = (
+				"E6203756DEA2CD8BCAB6D262",
+				"90107D33E658E8B3F52135D5");
+			name = "ui";
 			sourceTree = "<Group>";
 		};
 		A3E1AA9917EC82D3446C262A = {
@@ -937,11 +994,13 @@
 			children = (
 				"682A50D19E416195436708E4",
 				"1C5D03CADA9C9046C7195AD7",
+				"08A4AEB96F0AC1AC9B6B4865",
 				"F26E6C92CE8B3CB4568546A5",
 				"393B5CE8D3BCE90CCBC751BD",
 				"7D8A825EF9A2D64E1F522C0F",
 				"14BBBC027744E753CA279113",
 				"CA66E871929802F1B7DE123E",
+				"58BBC3DD41BFC2EF4D6F7BDE",
 				"7D55A31CDF682F279FB62437",
 				"37BBEF775C693ADDD49563CD",
 				"E6D1B7B232344AD366CAE5AC",
@@ -952,7 +1011,7 @@
 		12E908B8A1C3C07C115504F5 = {
 			isa = PBXGroup;
 			children = (
-				"59342C100B758CDE10A0EA4D");
+				"F027E420C02C9CC7A06A0901");
 			name = "Sources [uic]";
 			sourceTree = "<Group>";
 		};
@@ -980,11 +1039,13 @@
 			files = (
 				"2D367B399AA57F7319FEA1FA",
 				"D24685D280F516B05C24C44E",
+				"23AD31E18855707CC01F7885",
 				"49058BA94FC6A326618DB061",
 				"B3CF9240B62B94B17484ECCD",
 				"31829CB2ECE3CC4CC5DA755D",
 				"C196F2D85DD169818853FAA2",
 				"B10B4D7298B5E160396E8E8B",
+				"9BACEEDA15D35F0513EB2F8A",
 				"626A71DAA3D899DFEC358778",
 				"46F1ABCBC4169A87B9526082");
 			isa = PBXSourcesBuildPhase;

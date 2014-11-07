@@ -14,8 +14,6 @@
 	<string>????</string>
 	<key>CFBundleExecutable</key>
 	<string>XMLEditor</string>
-	<key>CFBundleInfoDictionaryVersion</key>
-	<string>6.0</string>
 	<key>CFBundleIdentifier</key>
 	<string>abc.${PRODUCT_NAME:rfc1034identifier}</string>
 	<key>NOTE</key>

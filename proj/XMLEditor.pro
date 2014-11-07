@@ -12,21 +12,20 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = XMLEditor
 TEMPLATE = app
 
-
-SOURCES += main.cpp\
+SOURCES += main.cpp \
     CDailyWeatherModel.cpp \
-    CMainWindow.cpp \
+    CLaunchWindow.cpp\
+    CWindowWDB.cpp \
     CStation.cpp \
     CTableView.cpp \
-    CXMLParser.cpp \
+    CXMLParser.cpp
 
-
-HEADERS  += \
-    CDailyWeatherModel.h \
-    CMainWindow.h \
+HEADERS  += CDailyWeatherModel.h \
+    CLaunchWindow.h \
+    CWindowWDB.h \
     CStation.h \
     CTableView.h \
     CXMLParser.h
 
-
-FORMS    += mainwindow.ui
+FORMS    += ui/mainwindow.ui \
+    ui/launch.ui

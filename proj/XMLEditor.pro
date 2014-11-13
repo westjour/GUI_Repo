@@ -15,16 +15,16 @@ TEMPLATE = app
 SOURCES += main.cpp \
     CDailyWeatherModel.cpp \
     CLaunchWindow.cpp\
+    CWindowSDB.cpp \
     CWindowWDB.cpp \
     CStation.cpp \
-    CTableView.cpp \
     CXMLParser.cpp
 
 HEADERS  += CDailyWeatherModel.h \
     CLaunchWindow.h \
+    CWindowSDB.h \
     CWindowWDB.h \
     CStation.h \
-    CTableView.h \
     CXMLParser.h
 
 FORMS    += ui/mainwindow.ui \

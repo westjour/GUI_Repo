@@ -1,16 +1,16 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'CMainWindow.h'
+** Meta object code from reading C++ file 'CWindowWDB.h'
 **
 ** Created by: The Qt Meta Object Compiler version 67 (Qt 5.3.2)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "CMainWindow.h"
+#include "CWindowWDB.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'CMainWindow.h' doesn't include <QObject>."
+#error "The header file 'CWindowWDB.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
 #error "This file was generated using the moc from 5.3.2. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -18,34 +18,34 @@
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
-struct qt_meta_stringdata_CMainWindow_t {
+struct qt_meta_stringdata_CWindowWDB_t {
     QByteArrayData data[9];
-    char stringdata[104];
+    char stringdata[103];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_CMainWindow_t, stringdata) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_CWindowWDB_t, stringdata) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
-static const qt_meta_stringdata_CMainWindow_t qt_meta_stringdata_CMainWindow = {
+static const qt_meta_stringdata_CWindowWDB_t qt_meta_stringdata_CWindowWDB = {
     {
-QT_MOC_LITERAL(0, 0, 11),
-QT_MOC_LITERAL(1, 12, 19),
-QT_MOC_LITERAL(2, 32, 0),
-QT_MOC_LITERAL(3, 33, 4),
-QT_MOC_LITERAL(4, 38, 16),
-QT_MOC_LITERAL(5, 55, 10),
-QT_MOC_LITERAL(6, 66, 10),
-QT_MOC_LITERAL(7, 77, 20),
-QT_MOC_LITERAL(8, 98, 5)
+QT_MOC_LITERAL(0, 0, 10),
+QT_MOC_LITERAL(1, 11, 19),
+QT_MOC_LITERAL(2, 31, 0),
+QT_MOC_LITERAL(3, 32, 4),
+QT_MOC_LITERAL(4, 37, 16),
+QT_MOC_LITERAL(5, 54, 10),
+QT_MOC_LITERAL(6, 65, 10),
+QT_MOC_LITERAL(7, 76, 20),
+QT_MOC_LITERAL(8, 97, 5)
     },
-    "CMainWindow\0stationIndexChanged\0\0text\0"
+    "CWindowWDB\0stationIndexChanged\0\0text\0"
     "yearIndexChanged\0onFileSave\0onFileOpen\0"
     "onStationDataChanged\0field"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_CMainWindow[] = {
+static const uint qt_meta_data_CWindowWDB[] = {
 
  // content:
        7,       // revision
@@ -75,10 +75,10 @@ static const uint qt_meta_data_CMainWindow[] = {
        0        // eod
 };
 
-void CMainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void CWindowWDB::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        CMainWindow *_t = static_cast<CMainWindow *>(_o);
+        CWindowWDB *_t = static_cast<CWindowWDB *>(_o);
         switch (_id) {
         case 0: _t->stationIndexChanged((*reinterpret_cast< QString(*)>(_a[1]))); break;
         case 1: _t->yearIndexChanged((*reinterpret_cast< QString(*)>(_a[1]))); break;
@@ -90,26 +90,26 @@ void CMainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
     }
 }
 
-const QMetaObject CMainWindow::staticMetaObject = {
-    { &QMainWindow::staticMetaObject, qt_meta_stringdata_CMainWindow.data,
-      qt_meta_data_CMainWindow,  qt_static_metacall, 0, 0}
+const QMetaObject CWindowWDB::staticMetaObject = {
+    { &QMainWindow::staticMetaObject, qt_meta_stringdata_CWindowWDB.data,
+      qt_meta_data_CWindowWDB,  qt_static_metacall, 0, 0}
 };
 
 
-const QMetaObject *CMainWindow::metaObject() const
+const QMetaObject *CWindowWDB::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *CMainWindow::qt_metacast(const char *_clname)
+void *CWindowWDB::qt_metacast(const char *_clname)
 {
     if (!_clname) return 0;
-    if (!strcmp(_clname, qt_meta_stringdata_CMainWindow.stringdata))
-        return static_cast<void*>(const_cast< CMainWindow*>(this));
+    if (!strcmp(_clname, qt_meta_stringdata_CWindowWDB.stringdata))
+        return static_cast<void*>(const_cast< CWindowWDB*>(this));
     return QMainWindow::qt_metacast(_clname);
 }
 
-int CMainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int CWindowWDB::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QMainWindow::qt_metacall(_c, _id, _a);
     if (_id < 0)

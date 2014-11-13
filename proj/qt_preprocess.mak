@@ -31,15 +31,15 @@ mocables: compiler_moc_header_make_all compiler_moc_source_make_all
 
 check: first
 
-compilers: moc_CDailyWeatherModel.cpp moc_CLaunchWindow.cpp moc_CMainWindow.cpp\
-	 moc_CTableView.cpp ui_mainwindow.h ui_launch.h
+compilers: moc_CDailyWeatherModel.cpp moc_CLaunchWindow.cpp moc_CWindowSDB.cpp\
+	 moc_CWindowWDB.cpp ui_mainwindow.h ui_launch.h
 compiler_objective_c_make_all:
 compiler_objective_c_clean:
 compiler_rcc_make_all:
 compiler_rcc_clean:
-compiler_moc_header_make_all: moc_CDailyWeatherModel.cpp moc_CLaunchWindow.cpp moc_CMainWindow.cpp moc_CTableView.cpp
+compiler_moc_header_make_all: moc_CDailyWeatherModel.cpp moc_CLaunchWindow.cpp moc_CWindowSDB.cpp moc_CWindowWDB.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) moc_CDailyWeatherModel.cpp moc_CLaunchWindow.cpp moc_CMainWindow.cpp moc_CTableView.cpp
+	-$(DEL_FILE) moc_CDailyWeatherModel.cpp moc_CLaunchWindow.cpp moc_CWindowSDB.cpp moc_CWindowWDB.cpp
 moc_CDailyWeatherModel.cpp: ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QAbstractTableModel \
 		CDailyWeatherModel.h
 	/Users/westjour/Qt5.3.2/5.3/clang_64/bin/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -I/Users/westjour/Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I/Users/westjour/Desktop/GUI_Repo/proj -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib CDailyWeatherModel.h -o moc_CDailyWeatherModel.cpp
@@ -48,13 +48,13 @@ moc_CLaunchWindow.cpp: ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Ver
 		CLaunchWindow.h
 	/Users/westjour/Qt5.3.2/5.3/clang_64/bin/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -I/Users/westjour/Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I/Users/westjour/Desktop/GUI_Repo/proj -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib CLaunchWindow.h -o moc_CLaunchWindow.cpp
 
-moc_CMainWindow.cpp: ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QMainWindow \
-		CMainWindow.h
-	/Users/westjour/Qt5.3.2/5.3/clang_64/bin/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -I/Users/westjour/Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I/Users/westjour/Desktop/GUI_Repo/proj -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib CMainWindow.h -o moc_CMainWindow.cpp
+moc_CWindowSDB.cpp: ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QMainWindow \
+		CWindowSDB.h
+	/Users/westjour/Qt5.3.2/5.3/clang_64/bin/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -I/Users/westjour/Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I/Users/westjour/Desktop/GUI_Repo/proj -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib CWindowSDB.h -o moc_CWindowSDB.cpp
 
-moc_CTableView.cpp: ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QTableView \
-		CTableView.h
-	/Users/westjour/Qt5.3.2/5.3/clang_64/bin/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -I/Users/westjour/Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I/Users/westjour/Desktop/GUI_Repo/proj -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib CTableView.h -o moc_CTableView.cpp
+moc_CWindowWDB.cpp: ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QMainWindow \
+		CWindowWDB.h
+	/Users/westjour/Qt5.3.2/5.3/clang_64/bin/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -I/Users/westjour/Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I/Users/westjour/Desktop/GUI_Repo/proj -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib CWindowWDB.h -o moc_CWindowWDB.cpp
 
 compiler_moc_source_make_all:
 compiler_moc_source_clean:

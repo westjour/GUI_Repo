@@ -6,9 +6,12 @@
 //
 //
 
+#include <QFileDialog>
+
 #include "CLaunchWindow.h"
 #include "ui_launch.h"
-#include "CMainWindow.h"
+#include "CWindowWDB.h"
+#include "CWindowSDB.h"
 
 CLaunchWindow::CLaunchWindow(QWidget *parent): ui(new Ui::LaunchForm) {
     ui->setupUi(this);
@@ -24,16 +27,36 @@ void CLaunchWindow::makeConnections() {
 }
 
 
-/*Brief:
+/*Brief: Automatically called when user clicks the Open button
  */
 void CLaunchWindow::onOpen() {
-    CMainWindow* window = new CMainWindow();
-    window->show();
+    QString dir = "../../xml/";
+    
+    // This is necessary on MAC to get the file dialog to have correct default directory
+    QString dummyFile = "dummyFile.txt";
+    
+    QString fileName = QFileDialog::getOpenFileName(this, tr("Open File"), dir+dummyFile, tr("XML Files (*.xml)"));
+    
+    // User didn't select a file
+    if(fileName == NULL)
+        return;
+    
+    if(fileName.contains("sdb")) {
+        qDebug("SDB file");
+        CWindowSDB* window = new CWindowSDB(0, fileName);
+        window->show();
+    }
+    else if (fileName.contains("wdb")) {
+        qDebug("WDB file");
+        CWindowWDB* window = new CWindowWDB(0, fileName);
+        window->show();
+    }
+    
+    
     
     
     // Since we have opened a window, we don't need to see the launch window anymore.
-    //this->hide();
-    
+    this->hide();
 }
 
 /* Brief:

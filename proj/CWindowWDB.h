@@ -1,5 +1,13 @@
-#ifndef CMAINWINDOW_H
-#define CMAINWINDOW_H
+//
+//  CWindowSDB.h
+//  XMLEditor
+//
+//  Created by Jourdan West 9/12/14.
+//
+//
+
+#ifndef __XMLEditor__CWindowWDB__
+#define __XMLEditor__CWindowWDB__
 
 #include <QMainWindow>
 
@@ -14,16 +22,16 @@ namespace Ui {
     class MainWindow;
 }
 
-class CMainWindow : public QMainWindow
+class CWindowWDB : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    explicit CMainWindow(QWidget *parent = 0);
-    ~CMainWindow();
+    explicit CWindowWDB(QWidget *parent = 0, QString filename="NULL");
+    ~CWindowWDB();
 
     void clearStationLineEdits();
-    
+    //void setFilename(QString filename){mFilename = filename;}
 
 public slots:
     void stationIndexChanged(QString text);
@@ -40,30 +48,17 @@ private:
     void disableStationDataLineEdits();
     void enableStationDataLineEdits();
     
+    QString mFilename;
+    
     //
     // GUI Elements
     //
     Ui::MainWindow* ui;
-    QComboBox* mStationCombobox;
-    QComboBox* mYearCombobox;
-    QLineEdit* mStatNameLineEdit;
-    QLineEdit* mStatIDLineEdit;
-    QLineEdit* mPlaceNameLineEdit;
-    QLineEdit* mLatLineEdit;
-    QLineEdit* mLongLineEdit;
-    QLineEdit* mElevLineEdit;
-    QLineEdit* mTavLineEdit;
-    QLineEdit* mAmpLineEdit;
-    QLineEdit* mTmhtLineEdit;
-    QLineEdit* mWmhtLineEdit;
     
     QMenuBar* macMenuBar;
     QAction* mFileSave;
     QAction* mFileOpen;
     QAction* mFileExit;
-    
-    CTableView* mDailyWeatherView;
-    CTableView* mHrWeatherView;
 };
 
-#endif // CMAINWINDOW_H
+#endif /* defined(__XMLEditor__CWindowWDB__) */

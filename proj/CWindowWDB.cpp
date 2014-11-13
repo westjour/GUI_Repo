@@ -10,23 +10,30 @@
 #include <QSignalMapper>
 #include <QFileDialog>
 
-#include "CMainWindow.h"
+#include "CWindowWDB.h"
 #include "ui_mainwindow.h"
 #include "CXMLParser.h"
 #include "CStation.h"
-#include "CTableView.h"
 #include "CDailyWeatherModel.h"
 
-CMainWindow::CMainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow) {
+CWindowWDB::CWindowWDB(QWidget *parent, QString filename) : QMainWindow(parent), ui(new Ui::MainWindow) {
     ui->setupUi(this);
-    setFixedSize(1000,1000);
-    setWindowTitle("WEATHER");
+    //setFixedSize(1000,1000);
+    
+    mFilename = filename;
     
     //
     // Parse XML
     //
     CXMLParser parser;
     QVector<CStation* >* stations = parser.parseWDB();
+    
+    // Set model onto view
+    CDailyWeatherModel* weatherModel = new CDailyWeatherModel();
+    weatherModel->setStations(stations);
+    ui->mDailyWeatherView->setModel(weatherModel);
+
+    qDebug("filename:%s", mFilename.toUtf8().constData());
     
     //
     // Construct strings for Station combobox
@@ -41,92 +48,10 @@ CMainWindow::CMainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::Main
         options.append(s);
     }
 
-    //
-    // Build 'Station Information' Form
-    //
-    mStationCombobox = new QComboBox();
-    mStationCombobox->setFixedSize(200, 30);
-    mStationCombobox->addItems(options);
-
-    mStatNameLineEdit = new QLineEdit();
-    mStatIDLineEdit = new QLineEdit();
-    mPlaceNameLineEdit = new QLineEdit();
-    mLatLineEdit = new QLineEdit();
-    mLongLineEdit = new QLineEdit();
-    mElevLineEdit = new QLineEdit();
-    mTavLineEdit = new QLineEdit();
-    mAmpLineEdit = new QLineEdit();
-    mTmhtLineEdit = new QLineEdit();
-    mWmhtLineEdit = new QLineEdit();
-
-    QGroupBox *stationGroupBox = new QGroupBox("Station Information");
-    QFormLayout* stationForm = new QFormLayout(stationGroupBox);
-    stationForm->setFormAlignment(Qt::AlignLeft);
-    stationForm->setLabelAlignment(Qt::AlignLeft);
-    stationForm->addRow("Choose a Station:", mStationCombobox);
-    stationForm->addRow("Station ID:", mStatIDLineEdit);
-    stationForm->addRow("Station Name:", mStatNameLineEdit);
-    stationForm->addRow("Place Name:", mPlaceNameLineEdit);
-    stationForm->addRow("Lat:", mLatLineEdit);
-    stationForm->addRow("Long:", mLongLineEdit);
-    stationForm->addRow("Elev:", mElevLineEdit);
-    stationForm->addRow("Tav:", mTavLineEdit);
-    stationForm->addRow("Amp:", mAmpLineEdit);
-    stationForm->addRow("Tmht:", mTmhtLineEdit);
-    stationForm->addRow("Wmht:", mWmhtLineEdit);
-
-    //
-    // Daily Weather Group Box
-    //
-    QGroupBox *weatherGroupBox = new QGroupBox("Daily Weather");
-    mDailyWeatherView = new CTableView();
-    CDailyWeatherModel* weatherModel = new CDailyWeatherModel();
-    weatherModel->setStations(stations);
-    mDailyWeatherView->setModel(weatherModel);
-    
-    QFormLayout* weatherYearForm = new QFormLayout();
-    weatherYearForm->setFormAlignment(Qt::AlignLeft);
-    weatherYearForm->setLabelAlignment(Qt::AlignLeft);
-    
-    mYearCombobox = new QComboBox();
-    mYearCombobox->setFixedSize(150, 30);
-    
-    // TO-DO: Don't assume all years present.
-    for(int year=1979; year<2000; year++)
-        mYearCombobox->addItem(QString::number(year));
-    weatherYearForm->addRow("Choose Year:", mYearCombobox);
-    
-    QVBoxLayout* vlayout1 = new QVBoxLayout();
-    vlayout1->addLayout(weatherYearForm);
-    vlayout1->addWidget(mDailyWeatherView);
-    
-    weatherGroupBox->setLayout(vlayout1);
-
-    /*
-    //
-    // Hourly Weather Group Box
-    //
-    QGroupBox *hrWeatherGroupBox = new QGroupBox("Hourly Weather");
-    mHrWeatherView = new CTableView();
-    //CDailyWeatherModel* weatherModel = new CDailyWeatherModel();
-    //weatherModel->setStations(stations);
-    //mDailyWeatherView->setModel(weatherModel);
-
-    QVBoxLayout* vlayout2 = new QVBoxLayout();
-    vlayout2->addWidget(mHrWeatherView);
-    
-    hrWeatherGroupBox->setLayout(vlayout2);
-    */
-    QGridLayout* mainLayout = new QGridLayout();
-    mainLayout->addWidget(stationGroupBox);
-    mainLayout->addWidget(weatherGroupBox);
-    //mainLayout->addWidget(hrWeatherGroupBox);
-    
-    // Create a default widget as the centeral widget and
-    // apply the vertical layout to it.
-    setCentralWidget(new QWidget());
-    centralWidget()->setLayout(mainLayout);
-
+    ui->mStationCombobox->setFixedSize(200, 30);
+    ui->mStationCombobox->addItems(options);
+  
+   
     // Create menus based on the operating system
     #ifdef Q_OS_MAC
     buildMacMenuBar();
@@ -142,14 +67,14 @@ CMainWindow::CMainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::Main
 
 /* Brief: Build menu bar for any OS other than MAC
  */
-void CMainWindow::buildMenuBar()
+void CWindowWDB::buildMenuBar()
 {
 }
 
 
 /* Brief: Build menu bar for MAC OS
  */
-void CMainWindow::buildMacMenuBar()
+void CWindowWDB::buildMacMenuBar()
 {
     macMenuBar = new QMenuBar(0);
     QMenu* fileMenu = macMenuBar->addMenu("File");
@@ -174,7 +99,7 @@ void CMainWindow::buildMacMenuBar()
 
 /* Brief:
  */
-CMainWindow::~CMainWindow()
+CWindowWDB::~CWindowWDB()
 {
     delete ui;
 }
@@ -182,10 +107,10 @@ CMainWindow::~CMainWindow()
 
 /* Brief:
  */
-void CMainWindow::makeConnections()
+void CWindowWDB::makeConnections()
 {
-    connect(mStationCombobox, SIGNAL(currentIndexChanged(QString)), this, SLOT(stationIndexChanged(QString)));
-    connect(mYearCombobox, SIGNAL(currentIndexChanged(QString)), this, SLOT(yearIndexChanged(QString)));
+    connect(ui->mStationCombobox, SIGNAL(currentIndexChanged(QString)), this, SLOT(stationIndexChanged(QString)));
+    connect(ui->mYearCombobox, SIGNAL(currentIndexChanged(QString)), this, SLOT(yearIndexChanged(QString)));
     
     connect(mFileSave, SIGNAL(triggered (bool)), this, SLOT(onFileSave()));
     connect(mFileOpen, SIGNAL(triggered (bool)), this, SLOT(onFileOpen()));
@@ -197,27 +122,26 @@ void CMainWindow::makeConnections()
     //
     QSignalMapper *signalMapper = new QSignalMapper(this);
     
-    connect(mStatNameLineEdit, SIGNAL(textChanged(QString)), signalMapper, SLOT(map()));
-    connect(mStatIDLineEdit, SIGNAL(textChanged(QString)), signalMapper, SLOT(map()));
-    connect(mPlaceNameLineEdit, SIGNAL(textChanged(QString)), signalMapper, SLOT(map()));
-    connect(mLatLineEdit, SIGNAL(textChanged(QString)), signalMapper, SLOT(map()));
-    connect(mLongLineEdit, SIGNAL(textChanged(QString)), signalMapper, SLOT(map()));
-    connect(mElevLineEdit, SIGNAL(textChanged(QString)), signalMapper, SLOT(map()));
-    connect(mTavLineEdit, SIGNAL(textChanged(QString)), signalMapper, SLOT(map()));
-    connect(mAmpLineEdit, SIGNAL(textChanged(QString)), signalMapper, SLOT(map()));
-    connect(mTmhtLineEdit, SIGNAL(textChanged(QString)), signalMapper, SLOT(map()));
-    connect(mWmhtLineEdit, SIGNAL(textChanged(QString)), signalMapper, SLOT(map()));
+    connect(ui->mStatNameLineEdit, SIGNAL(textChanged(QString)), signalMapper, SLOT(map()));
+    connect(ui->mPlaceNameLineEdit, SIGNAL(textChanged(QString)), signalMapper, SLOT(map()));
+    connect(ui->mLatLineEdit, SIGNAL(textChanged(QString)), signalMapper, SLOT(map()));
+    connect(ui->mLongLineEdit, SIGNAL(textChanged(QString)), signalMapper, SLOT(map()));
+    connect(ui->mElevLineEdit, SIGNAL(textChanged(QString)), signalMapper, SLOT(map()));
+    connect(ui->mTavLineEdit, SIGNAL(textChanged(QString)), signalMapper, SLOT(map()));
+    connect(ui->mAmpLineEdit, SIGNAL(textChanged(QString)), signalMapper, SLOT(map()));
+    connect(ui->mTmhtLineEdit, SIGNAL(textChanged(QString)), signalMapper, SLOT(map()));
+    connect(ui->mWmhtLineEdit, SIGNAL(textChanged(QString)), signalMapper, SLOT(map()));
 
-    signalMapper->setMapping(mStatNameLineEdit, ("Station_Name"));
-    signalMapper->setMapping(mStatIDLineEdit, ("StationID"));
-    signalMapper->setMapping(mPlaceNameLineEdit, ("Place_Name"));
-    signalMapper->setMapping(mLatLineEdit, ("Lat"));
-    signalMapper->setMapping(mLongLineEdit, ("Long"));
-    signalMapper->setMapping(mElevLineEdit, ("Elev"));
-    signalMapper->setMapping(mTavLineEdit, ("Tav"));
-    signalMapper->setMapping(mAmpLineEdit, ("Amp"));
-    signalMapper->setMapping(mTmhtLineEdit, ("Tmht"));
-    signalMapper->setMapping(mWmhtLineEdit, ("Wmht"));
+    signalMapper->setMapping(ui->mStatNameLineEdit, ("Station_Name"));
+    signalMapper->setMapping(ui->mStatIDLineEdit, ("StationID"));
+    signalMapper->setMapping(ui->mPlaceNameLineEdit, ("Place_Name"));
+    signalMapper->setMapping(ui->mLatLineEdit, ("Lat"));
+    signalMapper->setMapping(ui->mLongLineEdit, ("Long"));
+    signalMapper->setMapping(ui->mElevLineEdit, ("Elev"));
+    signalMapper->setMapping(ui->mTavLineEdit, ("Tav"));
+    signalMapper->setMapping(ui->mAmpLineEdit, ("Amp"));
+    signalMapper->setMapping(ui->mTmhtLineEdit, ("Tmht"));
+    signalMapper->setMapping(ui->mWmhtLineEdit, ("Wmht"));
     
     connect(signalMapper, SIGNAL(mapped(QString)), this, SLOT(onStationDataChanged(QString)));
 }
@@ -226,9 +150,9 @@ void CMainWindow::makeConnections()
 /* Brief: Slot called when the Weather Year combobox is changed
  * Param: text, text that the 'Year' combobox contains after it is changed
  */
-void CMainWindow::yearIndexChanged(QString text)
+void CWindowWDB::yearIndexChanged(QString text)
 {
-    CDailyWeatherModel* model = (CDailyWeatherModel*)mDailyWeatherView->model();
+    CDailyWeatherModel* model = (CDailyWeatherModel*)ui->mDailyWeatherView->model();
     model->setYear(text.toInt());
     model->update();
 }
@@ -237,12 +161,12 @@ void CMainWindow::yearIndexChanged(QString text)
 /* Brief: Automatically called when a station line edit text is changed
  * Param: field, field that was modified (i.e. Tmht, Wmht, etc.)
  */
-void CMainWindow::onStationDataChanged(QString field)
+void CWindowWDB::onStationDataChanged(QString field)
 {
     // Find the current station
-    CDailyWeatherModel* model = (CDailyWeatherModel*)mDailyWeatherView->model();
+    CDailyWeatherModel* model = (CDailyWeatherModel*)ui->mDailyWeatherView->model();
     
-    QString text = mStationCombobox->currentText();
+    QString text = ui->mStationCombobox->currentText();
     CStation* station = NULL;
     QString id, name;
     
@@ -262,16 +186,16 @@ void CMainWindow::onStationDataChanged(QString field)
         // was modified.
         QLineEdit* lineEdit = NULL;
         
-        if(field == "Wmht") { lineEdit = mWmhtLineEdit ;}
-        else if(field == "Tmht") { lineEdit = mTmhtLineEdit ;}
-        else if(field == "Station_Name") { lineEdit = mStatNameLineEdit ;}
-        else if(field == "StationID") { lineEdit = mStatIDLineEdit ;}
-        else if(field == "Place_Name") { lineEdit = mPlaceNameLineEdit ;}
-        else if(field == "Lat") { lineEdit = mLatLineEdit ;}
-        else if(field == "Long") { lineEdit = mLongLineEdit ;}
-        else if(field == "Elev") { lineEdit = mElevLineEdit ;}
-        else if(field == "Tav") { lineEdit = mTavLineEdit ;}
-        else if(field == "Amp") { lineEdit = mAmpLineEdit ;}
+        if(field == "Wmht") { lineEdit = ui->mWmhtLineEdit ;}
+        else if(field == "Tmht") { lineEdit = ui->mTmhtLineEdit ;}
+        else if(field == "Station_Name") { lineEdit = ui->mStatNameLineEdit ;}
+        else if(field == "StationID") { lineEdit = ui->mStatIDLineEdit ;}
+        else if(field == "Place_Name") { lineEdit = ui->mPlaceNameLineEdit ;}
+        else if(field == "Lat") { lineEdit = ui->mLatLineEdit ;}
+        else if(field == "Long") { lineEdit = ui->mLongLineEdit ;}
+        else if(field == "Elev") { lineEdit = ui->mElevLineEdit ;}
+        else if(field == "Tav") { lineEdit = ui->mTavLineEdit ;}
+        else if(field == "Amp") { lineEdit = ui->mAmpLineEdit ;}
         
         // Update Station Attr
         (*attrs)[field] = lineEdit->text();
@@ -281,46 +205,46 @@ void CMainWindow::onStationDataChanged(QString field)
 
 /* Brief: Disable the station line edits for editing
  */
-void CMainWindow::disableStationDataLineEdits()
+void CWindowWDB::disableStationDataLineEdits()
 {
-    mStatNameLineEdit->setEnabled(false);
-    mStatNameLineEdit->setEnabled(false);
-    mStatIDLineEdit->setEnabled(false);
-    mPlaceNameLineEdit->setEnabled(false);
-    mLatLineEdit->setEnabled(false);
-    mLongLineEdit->setEnabled(false);
-    mElevLineEdit->setEnabled(false);
-    mTavLineEdit->setEnabled(false);
-    mAmpLineEdit->setEnabled(false);
-    mTmhtLineEdit->setEnabled(false);
-    mWmhtLineEdit->setEnabled(false);
+    ui->mStatNameLineEdit->setEnabled(false);
+    ui->mStatNameLineEdit->setEnabled(false);
+    ui->mStatIDLineEdit->setEnabled(false);
+    ui->mPlaceNameLineEdit->setEnabled(false);
+    ui->mLatLineEdit->setEnabled(false);
+    ui->mLongLineEdit->setEnabled(false);
+    ui->mElevLineEdit->setEnabled(false);
+    ui->mTavLineEdit->setEnabled(false);
+    ui->mAmpLineEdit->setEnabled(false);
+    ui->mTmhtLineEdit->setEnabled(false);
+    ui->mWmhtLineEdit->setEnabled(false);
 }
 
 
 /* Brief: Enable the station line edits for editing
  */
-void CMainWindow::enableStationDataLineEdits()
+void CWindowWDB::enableStationDataLineEdits()
 {
-    mStatNameLineEdit->setEnabled(true);
-    mStatNameLineEdit->setEnabled(true);
-    mStatIDLineEdit->setEnabled(true);
-    mPlaceNameLineEdit->setEnabled(true);
-    mLatLineEdit->setEnabled(true);
-    mLongLineEdit->setEnabled(true);
-    mElevLineEdit->setEnabled(true);
-    mTavLineEdit->setEnabled(true);
-    mAmpLineEdit->setEnabled(true);
-    mTmhtLineEdit->setEnabled(true);
-    mWmhtLineEdit->setEnabled(true);
+    ui->mStatNameLineEdit->setEnabled(true);
+    ui->mStatNameLineEdit->setEnabled(true);
+    ui->mStatIDLineEdit->setEnabled(true);
+    ui->mPlaceNameLineEdit->setEnabled(true);
+    ui->mLatLineEdit->setEnabled(true);
+    ui->mLongLineEdit->setEnabled(true);
+    ui->mElevLineEdit->setEnabled(true);
+    ui->mTavLineEdit->setEnabled(true);
+    ui->mAmpLineEdit->setEnabled(true);
+    ui->mTmhtLineEdit->setEnabled(true);
+    ui->mWmhtLineEdit->setEnabled(true);
 }
 
 
 /* Brief: Slot called when the 'Station' combobox is changed
  * Param: text, text that the 'Station' combobox contains after change
  */
-void CMainWindow::stationIndexChanged(QString text)
+void CWindowWDB::stationIndexChanged(QString text)
 {
-    CDailyWeatherModel* model = (CDailyWeatherModel*)mDailyWeatherView->model();
+    CDailyWeatherModel* model = (CDailyWeatherModel*)ui->mDailyWeatherView->model();
     CStation* station = NULL;
     
     if( text.split("-").length() >= 2 ) {
@@ -336,16 +260,16 @@ void CMainWindow::stationIndexChanged(QString text)
     }
     else
     {
-        mStatNameLineEdit->setText(station->getStatAttrs()->value("Station_Name"));
-        mStatIDLineEdit->setText(station->getStatAttrs()->value("StationID"));
-        mPlaceNameLineEdit->setText(station->getStatAttrs()->value("Place_Name"));
-        mLatLineEdit->setText(station->getStatAttrs()->value("Lat"));
-        mLongLineEdit->setText(station->getStatAttrs()->value("Long"));
-        mElevLineEdit->setText(station->getStatAttrs()->value("Elev"));
-        mTavLineEdit->setText(station->getStatAttrs()->value("Tav"));
-        mAmpLineEdit->setText(station->getStatAttrs()->value("Amp"));
-        mTmhtLineEdit->setText(station->getStatAttrs()->value("Tmht"));
-        mWmhtLineEdit->setText(station->getStatAttrs()->value("Wmht"));
+        ui->mStatNameLineEdit->setText(station->getStatAttrs()->value("Station_Name"));
+        ui->mStatIDLineEdit->setText(station->getStatAttrs()->value("StationID"));
+        ui->mPlaceNameLineEdit->setText(station->getStatAttrs()->value("Place_Name"));
+        ui->mLatLineEdit->setText(station->getStatAttrs()->value("Lat"));
+        ui->mLongLineEdit->setText(station->getStatAttrs()->value("Long"));
+        ui->mElevLineEdit->setText(station->getStatAttrs()->value("Elev"));
+        ui->mTavLineEdit->setText(station->getStatAttrs()->value("Tav"));
+        ui->mAmpLineEdit->setText(station->getStatAttrs()->value("Amp"));
+        ui->mTmhtLineEdit->setText(station->getStatAttrs()->value("Tmht"));
+        ui->mWmhtLineEdit->setText(station->getStatAttrs()->value("Wmht"));
         
         enableStationDataLineEdits();
     }
@@ -358,32 +282,32 @@ void CMainWindow::stationIndexChanged(QString text)
 
 /* Brief: Delete text in the station line edits
  */
-void CMainWindow::clearStationLineEdits()
+void CWindowWDB::clearStationLineEdits()
 {
-    mStatNameLineEdit->clear();
-    mStatIDLineEdit->clear();
-    mPlaceNameLineEdit->clear();
-    mLatLineEdit->clear();
-    mLongLineEdit->clear();
-    mElevLineEdit->clear();
-    mTavLineEdit->clear();
-    mAmpLineEdit->clear();
-    mTmhtLineEdit->clear();
-    mWmhtLineEdit->clear();
+    ui->mStatNameLineEdit->clear();
+    ui->mStatIDLineEdit->clear();
+    ui->mPlaceNameLineEdit->clear();
+    ui->mLatLineEdit->clear();
+    ui->mLongLineEdit->clear();
+    ui->mElevLineEdit->clear();
+    ui->mTavLineEdit->clear();
+    ui->mAmpLineEdit->clear();
+    ui->mTmhtLineEdit->clear();
+    ui->mWmhtLineEdit->clear();
 }
 
 
 /* Brief: Creates an XML file and saves it to a directory
  */
-void CMainWindow::saveXML() {
-    QFile file("/Users/westjour/Desktop/GUI_Repo/xml/NEW_XML.xml");
+void CWindowWDB::saveXML() {
+    QFile file(mFilename);
     file.open(QIODevice::WriteOnly);
     QXmlStreamWriter writer(&file);
     writer.setAutoFormatting(true);
     writer.writeStartDocument("1.0");
     writer.writeStartElement("WDB");
     
-    CDailyWeatherModel* model = (CDailyWeatherModel*)mDailyWeatherView->model();
+    CDailyWeatherModel* model = (CDailyWeatherModel*)ui->mDailyWeatherView->model();
     QVector<CStation* >* stations = model->getStations();
     QVector<CStation* >::const_iterator iter = stations->begin();
     
@@ -478,7 +402,7 @@ void CMainWindow::saveXML() {
 
 /* Brief: Automatically called when user selects File->Open
  */
-void CMainWindow::onFileOpen()
+void CWindowWDB::onFileOpen()
 {
     QString dir = "../../xml/";
     
@@ -490,14 +414,12 @@ void CMainWindow::onFileOpen()
     // User didn't select a file
     if(fileName == NULL)
         return;
-    
-    qDebug("file to open:%s", fileName.toUtf8().constData());
 }
 
 
 /* Brief: Automatically called when user selects File->Save
  */
-void CMainWindow::onFileSave()
+void CWindowWDB::onFileSave()
 {
     saveXML();
 }

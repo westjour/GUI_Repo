@@ -6,20 +6,216 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>823</width>
+    <height>966</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Weather Model</string>
+   <string>WEATHER</string>
   </property>
-  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="statGroupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>801</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Station Information</string>
+    </property>
+    <widget class="QWidget" name="formLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>381</width>
+       <height>341</height>
+      </rect>
+     </property>
+     <layout class="QFormLayout" name="stationDataFormLayout">
+      <property name="labelAlignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="formAlignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+      <item row="0" column="0">
+       <widget class="QLabel" name="stationLabel">
+        <property name="text">
+         <string>Choose a Station:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="mStationCombobox"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="statIDLabel">
+        <property name="text">
+         <string>Station ID:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="mStatIDLineEdit"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="statNameLabel">
+        <property name="text">
+         <string>Station Name:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="mStatNameLineEdit"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="placeLabel">
+        <property name="text">
+         <string>Place Name:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="latLabel">
+        <property name="text">
+         <string>Lat:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="mPlaceNameLineEdit"/>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="mLatLineEdit"/>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="longLabel">
+        <property name="text">
+         <string>Long:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="elevLabel">
+        <property name="text">
+         <string>Elev:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="tavLabel">
+        <property name="text">
+         <string>Tav:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="0">
+       <widget class="QLabel" name="ampLabel">
+        <property name="text">
+         <string>Amp:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLineEdit" name="mLongLineEdit"/>
+      </item>
+      <item row="6" column="1">
+       <widget class="QLineEdit" name="mElevLineEdit"/>
+      </item>
+      <item row="7" column="1">
+       <widget class="QLineEdit" name="mTavLineEdit"/>
+      </item>
+      <item row="8" column="1">
+       <widget class="QLineEdit" name="mAmpLineEdit"/>
+      </item>
+      <item row="9" column="0">
+       <widget class="QLabel" name="tmhtLabel">
+        <property name="text">
+         <string>Tmht:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="0">
+       <widget class="QLabel" name="wmhtLabel">
+        <property name="text">
+         <string>Wmht:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="1">
+       <widget class="QLineEdit" name="mTmhtLineEdit"/>
+      </item>
+      <item row="10" column="1">
+       <widget class="QLineEdit" name="mWmhtLineEdit"/>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="dwGroupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>410</y>
+      <width>801</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Daily Weather</string>
+    </property>
+    <widget class="QWidget" name="formLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>261</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <layout class="QFormLayout" name="yearFormLayout">
+      <property name="formAlignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+      <item row="0" column="0">
+       <widget class="QLabel" name="yearLabel">
+        <property name="text">
+         <string>Choose Year:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="mYearCombobox"/>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QTableView" name="mDailyWeatherView">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>781</width>
+       <height>411</height>
+      </rect>
+     </property>
+     <property name="alternatingRowColors">
+      <bool>true</bool>
+     </property>
+     <attribute name="verticalHeaderVisible">
+      <bool>false</bool>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>400</width>
+     <width>823</width>
      <height>22</height>
     </rect>
    </property>

@@ -57,14 +57,28 @@
 					);
 			};
 		};
-		F26E6C92CE8B3CB4568546A5 = {
+		94CF35C944F0BD3E270F8490 = {
 			isa = PBXFileReference;
-			path = "CMainWindow.cpp";
+			path = "CWindowSDB.cpp";
 			sourceTree = "<absolute>";
 			lastKnownFileType = "sourcecode.cpp.cpp";
 		};
-		49058BA94FC6A326618DB061 = {
-			fileRef = "F26E6C92CE8B3CB4568546A5";
+		A3DE32AB31D028650B4B4131 = {
+			fileRef = "94CF35C944F0BD3E270F8490";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		F8E1C5D6150E4D8C8E5957BA = {
+			isa = PBXFileReference;
+			path = "CWindowWDB.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		9386EA582B4A76312DDB1420 = {
+			fileRef = "F8E1C5D6150E4D8C8E5957BA";
 			isa = PBXBuildFile;
 			settings = {
 				ATTRIBUTES = (
@@ -79,20 +93,6 @@
 		};
 		B3CF9240B62B94B17484ECCD = {
 			fileRef = "393B5CE8D3BCE90CCBC751BD";
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-					);
-			};
-		};
-		7D8A825EF9A2D64E1F522C0F = {
-			isa = PBXFileReference;
-			path = "CTableView.cpp";
-			sourceTree = "<absolute>";
-			lastKnownFileType = "sourcecode.cpp.cpp";
-		};
-		31829CB2ECE3CC4CC5DA755D = {
-			fileRef = "7D8A825EF9A2D64E1F522C0F";
 			isa = PBXBuildFile;
 			settings = {
 				ATTRIBUTES = (
@@ -141,28 +141,28 @@
 					);
 			};
 		};
-		DCB612036D136E89ACC8CAC3 = {
+		EAF8498399AC596D6A3D41CA = {
 			isa = PBXFileReference;
-			path = "moc_CMainWindow.cpp";
+			path = "moc_CWindowSDB.cpp";
 			sourceTree = "<absolute>";
 			lastKnownFileType = "sourcecode.cpp.cpp";
 		};
-		626A71DAA3D899DFEC358778 = {
-			fileRef = "DCB612036D136E89ACC8CAC3";
+		D7049B8D2EA076E65CEB587F = {
+			fileRef = "EAF8498399AC596D6A3D41CA";
 			isa = PBXBuildFile;
 			settings = {
 				ATTRIBUTES = (
 					);
 			};
 		};
-		3A56B540E4C3562F3E13BEA5 = {
+		367D357CEF28AC3A09C42364 = {
 			isa = PBXFileReference;
-			path = "moc_CTableView.cpp";
+			path = "moc_CWindowWDB.cpp";
 			sourceTree = "<absolute>";
 			lastKnownFileType = "sourcecode.cpp.cpp";
 		};
-		46F1ABCBC4169A87B9526082 = {
-			fileRef = "3A56B540E4C3562F3E13BEA5";
+		BFFF396E260B5BD9C6D95274 = {
+			fileRef = "367D357CEF28AC3A09C42364";
 			isa = PBXBuildFile;
 			settings = {
 				ATTRIBUTES = (
@@ -193,21 +193,21 @@
 			sourceTree = "<absolute>";
 			lastKnownFileType = "sourcecode.c.h";
 		};
-		7D55A31CDF682F279FB62437 = {
+		49C82568C41A029F3BC2D88F = {
 			isa = PBXFileReference;
-			path = "CMainWindow.h";
+			path = "CWindowSDB.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		99915B276060AE8BD12EF1A2 = {
+			isa = PBXFileReference;
+			path = "CWindowWDB.h";
 			sourceTree = "<absolute>";
 			lastKnownFileType = "sourcecode.c.h";
 		};
 		37BBEF775C693ADDD49563CD = {
 			isa = PBXFileReference;
 			path = "CStation.h";
-			sourceTree = "<absolute>";
-			lastKnownFileType = "sourcecode.c.h";
-		};
-		E6D1B7B232344AD366CAE5AC = {
-			isa = PBXFileReference;
-			path = "CTableView.h";
 			sourceTree = "<absolute>";
 			lastKnownFileType = "sourcecode.c.h";
 		};
@@ -799,8 +799,8 @@
 			children = (
 				"28D43F941E362B391F79A060",
 				"65E537FC9E72E387800F050D",
-				"DCB612036D136E89ACC8CAC3",
-				"3A56B540E4C3562F3E13BEA5",
+				"EAF8498399AC596D6A3D41CA",
+				"367D357CEF28AC3A09C42364",
 				"14C9776A4B2E34DB51106724",
 				"4CC37DF1DCC11A8F2B6105DA");
 			name = "Generated Sources";
@@ -995,15 +995,15 @@
 				"682A50D19E416195436708E4",
 				"1C5D03CADA9C9046C7195AD7",
 				"08A4AEB96F0AC1AC9B6B4865",
-				"F26E6C92CE8B3CB4568546A5",
+				"94CF35C944F0BD3E270F8490",
+				"F8E1C5D6150E4D8C8E5957BA",
 				"393B5CE8D3BCE90CCBC751BD",
-				"7D8A825EF9A2D64E1F522C0F",
 				"14BBBC027744E753CA279113",
 				"CA66E871929802F1B7DE123E",
 				"58BBC3DD41BFC2EF4D6F7BDE",
-				"7D55A31CDF682F279FB62437",
+				"49C82568C41A029F3BC2D88F",
+				"99915B276060AE8BD12EF1A2",
 				"37BBEF775C693ADDD49563CD",
-				"E6D1B7B232344AD366CAE5AC",
 				"B60A5A328D50B94CAB593D17");
 			name = "Sources";
 			sourceTree = "<Group>";
@@ -1040,14 +1040,14 @@
 				"2D367B399AA57F7319FEA1FA",
 				"D24685D280F516B05C24C44E",
 				"23AD31E18855707CC01F7885",
-				"49058BA94FC6A326618DB061",
+				"A3DE32AB31D028650B4B4131",
+				"9386EA582B4A76312DDB1420",
 				"B3CF9240B62B94B17484ECCD",
-				"31829CB2ECE3CC4CC5DA755D",
 				"C196F2D85DD169818853FAA2",
 				"B10B4D7298B5E160396E8E8B",
 				"9BACEEDA15D35F0513EB2F8A",
-				"626A71DAA3D899DFEC358778",
-				"46F1ABCBC4169A87B9526082");
+				"D7049B8D2EA076E65CEB587F",
+				"BFFF396E260B5BD9C6D95274");
 			isa = PBXSourcesBuildPhase;
 			runOnlyForDeploymentPostprocessing = 0;
 			name = "Compile Sources";

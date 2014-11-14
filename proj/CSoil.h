@@ -22,13 +22,13 @@ class CSoil
 public:
     CSoil();
     AttrMap* getSoilAttrs(){return mSoilAttr;}
-    QVector<Layer*> getLayers(){return mLayers;}
+    QVector<Layer*>* getLayers(){return &mLayers;}
     
 private:
     // Station's XML attributes
     AttrMap* mSoilAttr;
 
-    QVector<AttrMap*> mLayers;
+    QVector<Layer*> mLayers;
     
 };
 

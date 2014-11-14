@@ -82,4 +82,9 @@ dependencies: /Users/westjour/Desktop/GUI_Repo/proj/main.cpp \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qfontmetrics.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qfontinfo.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qsizepolicy.h \
-  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qkeysequence.h
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qkeysequence.h \
+  CWindowSDB.h \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QMainWindow \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qmainwindow.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qtabwidget.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qicon.h

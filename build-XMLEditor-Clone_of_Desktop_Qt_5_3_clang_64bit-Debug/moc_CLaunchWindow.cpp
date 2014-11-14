@@ -1,16 +1,16 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'CWindowSDB.h'
+** Meta object code from reading C++ file 'CLaunchWindow.h'
 **
 ** Created by: The Qt Meta Object Compiler version 67 (Qt 5.3.2)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "CWindowSDB.h"
+#include "../proj/CLaunchWindow.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'CWindowSDB.h' doesn't include <QObject>."
+#error "The header file 'CLaunchWindow.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
 #error "This file was generated using the moc from 5.3.2. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -18,27 +18,26 @@
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
-struct qt_meta_stringdata_CWindowSDB_t {
-    QByteArrayData data[4];
-    char stringdata[29];
+struct qt_meta_stringdata_CLaunchWindow_t {
+    QByteArrayData data[3];
+    char stringdata[22];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_CWindowSDB_t, stringdata) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_CLaunchWindow_t, stringdata) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
-static const qt_meta_stringdata_CWindowSDB_t qt_meta_stringdata_CWindowSDB = {
+static const qt_meta_stringdata_CLaunchWindow_t qt_meta_stringdata_CLaunchWindow = {
     {
-QT_MOC_LITERAL(0, 0, 10),
-QT_MOC_LITERAL(1, 11, 13),
-QT_MOC_LITERAL(2, 25, 0),
-QT_MOC_LITERAL(3, 26, 2)
+QT_MOC_LITERAL(0, 0, 13),
+QT_MOC_LITERAL(1, 14, 6),
+QT_MOC_LITERAL(2, 21, 0)
     },
-    "CWindowSDB\0onSoilChanged\0\0id"
+    "CLaunchWindow\0onOpen\0"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_CWindowSDB[] = {
+static const uint qt_meta_data_CLaunchWindow[] = {
 
  // content:
        7,       // revision
@@ -52,47 +51,48 @@ static const uint qt_meta_data_CWindowSDB[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    1,   19,    2, 0x0a /* Public */,
+       1,    0,   19,    2, 0x08 /* Private */,
 
  // slots: parameters
-    QMetaType::Void, QMetaType::QString,    3,
+    QMetaType::Void,
 
        0        // eod
 };
 
-void CWindowSDB::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void CLaunchWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        CWindowSDB *_t = static_cast<CWindowSDB *>(_o);
+        CLaunchWindow *_t = static_cast<CLaunchWindow *>(_o);
         switch (_id) {
-        case 0: _t->onSoilChanged((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 0: _t->onOpen(); break;
         default: ;
         }
     }
+    Q_UNUSED(_a);
 }
 
-const QMetaObject CWindowSDB::staticMetaObject = {
-    { &QMainWindow::staticMetaObject, qt_meta_stringdata_CWindowSDB.data,
-      qt_meta_data_CWindowSDB,  qt_static_metacall, 0, 0}
+const QMetaObject CLaunchWindow::staticMetaObject = {
+    { &QWidget::staticMetaObject, qt_meta_stringdata_CLaunchWindow.data,
+      qt_meta_data_CLaunchWindow,  qt_static_metacall, 0, 0}
 };
 
 
-const QMetaObject *CWindowSDB::metaObject() const
+const QMetaObject *CLaunchWindow::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *CWindowSDB::qt_metacast(const char *_clname)
+void *CLaunchWindow::qt_metacast(const char *_clname)
 {
     if (!_clname) return 0;
-    if (!strcmp(_clname, qt_meta_stringdata_CWindowSDB.stringdata))
-        return static_cast<void*>(const_cast< CWindowSDB*>(this));
-    return QMainWindow::qt_metacast(_clname);
+    if (!strcmp(_clname, qt_meta_stringdata_CLaunchWindow.stringdata))
+        return static_cast<void*>(const_cast< CLaunchWindow*>(this));
+    return QWidget::qt_metacast(_clname);
 }
 
-int CWindowSDB::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int CLaunchWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QMainWindow::qt_metacall(_c, _id, _a);
+    _id = QWidget::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {

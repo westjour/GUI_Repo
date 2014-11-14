@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SDB>
+  <Soils>
+    <Soil SoilID="NLHA" SlDesc="Silty Clay Loam" Slsour="AgMIP Wheat" Sltx="SICL" Sldp="200" SSite="Wigeningen" SCount="Nethelands" SLat="51.967" SLong="5.633" Tacon="Wigeningen" Scom="" Salb="0.11" U="6" SWCON="0.3" CN2="55" Slnf="1" Slpf="1" Smhb="IB001" Smpx="IB001" Smke="IB001" PondMax="3">
+        <Layer MH="" ZLYR="5" LL="0.18" DUL="0.39" SAT="0.49" SHF="1" SWCN="0.5" BD="1.35" OC="2.8" Clay="35" Silt="45" Stones="0" TotN="0.3" pH="6" pHKcl="6" CEC="400" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+        <Layer MH="" ZLYR="10" LL="0.18" DUL="0.39" SAT="0.49" SHF="1" SWCN="0.5" BD="1.35" OC="2.8" Clay="35" Silt="45" Stones="0" TotN="0.3" pH="6" pHKcl="6" CEC="400" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+        <Layer MH="" ZLYR="20" LL="0.18" DUL="0.39" SAT="0.49" SHF="1" SWCN="0.5" BD="1.35" OC="2.8" Clay="35" Silt="45" Stones="0" TotN="0.3" pH="6" pHKcl="6" CEC="400" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+        <Layer MH="" ZLYR="30" LL="0.18" DUL="0.39" SAT="0.49" SHF="0.98" SWCN="0.5" BD="1.35" OC="2.8" Clay="35" Silt="45" Stones="0" TotN="0.3" pH="6" pHKcl="6" CEC="400" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+        <Layer MH="" ZLYR="40" LL="0.18" DUL="0.37" SAT="0.49" SHF="0.95" SWCN="0.5" BD="1.35" OC="1.4" Clay="35" Silt="45" Stones="0" TotN="0.3" pH="6" pHKcl="6" CEC="400" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+        <Layer MH="" ZLYR="60" LL="0.2" DUL="0.37" SAT="0.49" SHF="0.93" SWCN="0.5" BD="1.35" OC="1.4" Clay="35" Silt="45" Stones="0" TotN="0.3" pH="6" pHKcl="6" CEC="400" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+        <Layer MH="" ZLYR="80" LL="0.2" DUL="0.37" SAT="0.49" SHF="0.85" SWCN="0.5" BD="1.35" OC="1.2" Clay="35" Silt="45" Stones="0" TotN="0.3" pH="6" pHKcl="6" CEC="400" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+        <Layer MH="" ZLYR="100" LL="0.2" DUL="0.37" SAT="0.49" SHF="0.8" SWCN="0.5" BD="1.35" OC="1.2" Clay="35" Silt="45" Stones="0" TotN="0.3" pH="6" pHKcl="6" CEC="400" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+        <Layer MH="" ZLYR="130" LL="0.2" DUL="0.37" SAT="0.49" SHF="0.75" SWCN="0.5" BD="1.35" OC="1" Clay="35" Silt="45" Stones="0" TotN="0.3" pH="6" pHKcl="6" CEC="400" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+        <Layer MH="" ZLYR="200" LL="0.2" DUL="0.37" SAT="0.49" SHF="0.6" SWCN="0.5" BD="1.35" OC="1" Clay="35" Silt="45" Stones="0" TotN="0.3" pH="6" pHKcl="6" CEC="400" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+    </Soil>
+  </Soils>
+  <Version_Control>
+    <Version Number="1">
+      <ReleaseDate>11/26/1999 12:00:00 AM</ReleaseDate>
+      <Notes>Initial Rel., beta v.</Notes>
+    </Version>
+    <Version Number="1.1">
+      <ReleaseDate>11/27/1999 12:00:00 AM</ReleaseDate>
+      <Notes>Testing</Notes>
+    </Version>
+    <Version Number="X_1.0">
+      <ReleaseDate>03/11/2014</ReleaseDate>
+      <Notes>Automatically converted from Access DB by salus_access2xml program.</Notes>
+    </Version>
+  </Version_Control>
+</SDB>

@@ -65,11 +65,11 @@ public:
     QLabel *label_13;
     QLineEdit *ssiteLineEdit;
     QLabel *label_14;
-    QLineEdit *SWCONLineEdit;
+    QLineEdit *lineEdit;
     QLabel *label_15;
-    QLineEdit *CN2LineEdit;
-    QLineEdit *slpfLineEdit;
-    QLineEdit *slnfLineEdit;
+    QLineEdit *lineEdit_2;
+    QLineEdit *lineEdit_3;
+    QLineEdit *lineEdit_4;
     QLabel *label_16;
     QLabel *label_17;
     QLabel *smhbLabel;
@@ -94,10 +94,10 @@ public:
         centralwidget->setObjectName(QStringLiteral("centralwidget"));
         groupBox = new QGroupBox(centralwidget);
         groupBox->setObjectName(QStringLiteral("groupBox"));
-        groupBox->setGeometry(QRect(10, 10, 411, 331));
+        groupBox->setGeometry(QRect(10, 10, 411, 371));
         scrollArea = new QScrollArea(groupBox);
         scrollArea->setObjectName(QStringLiteral("scrollArea"));
-        scrollArea->setGeometry(QRect(10, 20, 341, 301));
+        scrollArea->setGeometry(QRect(10, 20, 341, 341));
         scrollArea->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
         scrollArea->setWidgetResizable(true);
         scrollAreaWidgetContents = new QWidget();
@@ -243,30 +243,30 @@ public:
 
         formLayout->setWidget(13, QFormLayout::LabelRole, label_14);
 
-        SWCONLineEdit = new QLineEdit(scrollAreaWidgetContents);
-        SWCONLineEdit->setObjectName(QStringLiteral("SWCONLineEdit"));
+        lineEdit = new QLineEdit(scrollAreaWidgetContents);
+        lineEdit->setObjectName(QStringLiteral("lineEdit"));
 
-        formLayout->setWidget(13, QFormLayout::FieldRole, SWCONLineEdit);
+        formLayout->setWidget(13, QFormLayout::FieldRole, lineEdit);
 
         label_15 = new QLabel(scrollAreaWidgetContents);
         label_15->setObjectName(QStringLiteral("label_15"));
 
         formLayout->setWidget(14, QFormLayout::LabelRole, label_15);
 
-        CN2LineEdit = new QLineEdit(scrollAreaWidgetContents);
-        CN2LineEdit->setObjectName(QStringLiteral("CN2LineEdit"));
+        lineEdit_2 = new QLineEdit(scrollAreaWidgetContents);
+        lineEdit_2->setObjectName(QStringLiteral("lineEdit_2"));
 
-        formLayout->setWidget(14, QFormLayout::FieldRole, CN2LineEdit);
+        formLayout->setWidget(14, QFormLayout::FieldRole, lineEdit_2);
 
-        slpfLineEdit = new QLineEdit(scrollAreaWidgetContents);
-        slpfLineEdit->setObjectName(QStringLiteral("slpfLineEdit"));
+        lineEdit_3 = new QLineEdit(scrollAreaWidgetContents);
+        lineEdit_3->setObjectName(QStringLiteral("lineEdit_3"));
 
-        formLayout->setWidget(16, QFormLayout::FieldRole, slpfLineEdit);
+        formLayout->setWidget(16, QFormLayout::FieldRole, lineEdit_3);
 
-        slnfLineEdit = new QLineEdit(scrollAreaWidgetContents);
-        slnfLineEdit->setObjectName(QStringLiteral("slnfLineEdit"));
+        lineEdit_4 = new QLineEdit(scrollAreaWidgetContents);
+        lineEdit_4->setObjectName(QStringLiteral("lineEdit_4"));
 
-        formLayout->setWidget(15, QFormLayout::FieldRole, slnfLineEdit);
+        formLayout->setWidget(15, QFormLayout::FieldRole, lineEdit_4);
 
         label_16 = new QLabel(scrollAreaWidgetContents);
         label_16->setObjectName(QStringLiteral("label_16"));
@@ -324,13 +324,11 @@ public:
         scrollArea->setWidget(scrollAreaWidgetContents);
         groupBox_2 = new QGroupBox(centralwidget);
         groupBox_2->setObjectName(QStringLiteral("groupBox_2"));
-        groupBox_2->setGeometry(QRect(10, 350, 811, 511));
+        groupBox_2->setGeometry(QRect(10, 390, 811, 511));
         soilLayerView = new QTableView(groupBox_2);
         soilLayerView->setObjectName(QStringLiteral("soilLayerView"));
         soilLayerView->setGeometry(QRect(10, 30, 791, 471));
         SDB->setCentralWidget(centralwidget);
-        groupBox_2->raise();
-        groupBox->raise();
         menubar = new QMenuBar(SDB);
         menubar->setObjectName(QStringLiteral("menubar"));
         menubar->setGeometry(QRect(0, 0, 843, 22));

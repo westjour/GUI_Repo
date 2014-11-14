@@ -26,10 +26,12 @@ public:
     ~CWindowSDB();
     
 public slots:
+    void onSoilChanged(QString id);
     
     
 private:
     QString mFilename;
+    void makeConnections();
     
     //
     // GUI Elements

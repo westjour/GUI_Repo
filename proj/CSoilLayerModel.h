@@ -28,6 +28,7 @@ public:
     explicit CSoilLayerModel(QObject *parent = 0);
     void update();
     void setSoils(QVector<CSoil* >* soils){ mSoils = soils; }
+    void setSoil(CSoil* soil) {mSoil=soil;}
     CSoil* findSoil(QString id);
     
     //

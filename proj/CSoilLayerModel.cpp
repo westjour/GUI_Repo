@@ -21,7 +21,7 @@ CSoilLayerModel::CSoilLayerModel(QObject *parent) :QAbstractTableModel(parent)
  */
 CSoil* CSoilLayerModel::findSoil(QString id)
 {
-    // Find corresponding station
+    // Find corresponding soil
     QVector<CSoil* >::const_iterator iter;
     for (iter = mSoils->begin(); iter != mSoils->end(); ++iter)
     {
@@ -46,8 +46,13 @@ int CSoilLayerModel::rowCount( const QModelIndex & parent ) const
     if (parent.isValid())
         return 0;
     
-    if(mSoil != NULL)
-        return mSoil->getLayers().size();
+    if(mSoil != NULL) {
+        qDebug("SOIL IS NOT NULL! has %i layers", mSoil->getLayers()->size());
+        return mSoil->getLayers()->size();
+        
+    }
+    else
+        return 10;
 }
 
 

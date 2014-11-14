@@ -286,22 +286,24 @@ Soils* CXMLParser::parseSDB()
                             
                             // Add attribute to the station's attribute map
                             soil->getSoilAttrs()->insert(name, value);
-                            
+                           
                             // Iterate through <Layer> elements
                             for(int i=0; i<childElem.childNodes().length(); i++) {
                                 QDomElement layerElem = childElem.childNodes().at(i).toElement();
-                                Layer* layer = new Layer;
+                                Layer* layer = new Layer();
                                 
                                 // Parse <Layer> attributes
                                 QDomNamedNodeMap layerAttrs = layerElem.attributes();
+                                //qDebug("layerAttrs:%i", layerAttrs.size());
                                 QString name, value;
-                                for(int k=0; k<layerAttrs.count(); j++) {
+                                for(int k=0; k<layerAttrs.count(); k++) {
                                     QDomAttr attr = layerAttrs.item(k).toAttr();
                                     name = attr.name();
                                     value = attr.value();
                                     
                                     layer->insert(name, value);
-                                    soil->getLayers().push_back(layer);
+                                    QVector<Layer*>* l = soil->getLayers();
+                                    //l->push_back(layer);
                                 }
                             }
                         }
@@ -310,7 +312,9 @@ Soils* CXMLParser::parseSDB()
                     } // end if, we have parsed <Soil> and its children
                 } // end for loop, parsed <Soils>
             }
-            n = n.nextSiblingElement(); // go to next <Soil> element
+            n = n.nextSiblingElement();
+            
+            // TODO - Parse version control data
         }
     } // end while loop, done parsing XML
     

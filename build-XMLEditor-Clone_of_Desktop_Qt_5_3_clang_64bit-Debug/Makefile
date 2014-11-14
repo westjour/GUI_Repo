@@ -13,11 +13,11 @@ MAKEFILE      = Makefile
 CC            = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang
 CXX           = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
 DEFINES       = -DQT_WIDGETS_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_CORE_LIB
-CFLAGS        = -pipe -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -mmacosx-version-min=10.6 -Wall -W -fPIE $(DEFINES)
-CXXFLAGS      = -pipe -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -mmacosx-version-min=10.6 -Wall -W -fPIE $(DEFINES)
-INCPATH       = -I../../../Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I../proj -I../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AGL.framework/Headers/ -I. -I. -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib
+CFLAGS        = -pipe -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -mmacosx-version-min=10.6 -Wall -W -fPIE $(DEFINES)
+CXXFLAGS      = -pipe -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -mmacosx-version-min=10.6 -Wall -W -fPIE $(DEFINES)
+INCPATH       = -I../../../Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I../proj -I../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AGL.framework/Headers -I. -I. -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib
 LINK          = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
-LFLAGS        = -headerpad_max_install_names -Wl,-syslibroot,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -mmacosx-version-min=10.6
+LFLAGS        = -headerpad_max_install_names -Wl,-syslibroot,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -mmacosx-version-min=10.6
 LIBS          = $(SUBLIBS) -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib -framework QtWidgets -framework QtGui -framework QtCore -framework QtXml -framework OpenGL -framework AGL 
 AR            = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar cq
 RANLIB        = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib -s
@@ -47,25 +47,29 @@ OBJECTS_DIR   = ./
 
 SOURCES       = ../proj/main.cpp \
 		../proj/CDailyWeatherModel.cpp \
-		../proj/CDailyWeatherView.cpp \
-		../proj/CMainWindow.cpp \
+		../proj/CLaunchWindow.cpp \
+		../proj/CWindowSDB.cpp \
+		../proj/CWindowWDB.cpp \
+		../proj/CSoil.cpp \
 		../proj/CStation.cpp \
-		../proj/CXMLParser.cpp \
-		../proj/CTableView.cpp moc_CDailyWeatherModel.cpp \
-		moc_CDailyWeatherView.cpp \
-		moc_CMainWindow.cpp \
-		moc_CTableView.cpp
+		../proj/CXMLParser.cpp moc_CDailyWeatherModel.cpp \
+		moc_CLaunchWindow.cpp \
+		moc_CWindowSDB.cpp \
+		moc_CWindowWDB.cpp \
+		moc_CSoilLayerModel.cpp
 OBJECTS       = main.o \
 		CDailyWeatherModel.o \
-		CDailyWeatherView.o \
-		CMainWindow.o \
+		CLaunchWindow.o \
+		CWindowSDB.o \
+		CWindowWDB.o \
+		CSoil.o \
 		CStation.o \
 		CXMLParser.o \
-		CTableView.o \
 		moc_CDailyWeatherModel.o \
-		moc_CDailyWeatherView.o \
-		moc_CMainWindow.o \
-		moc_CTableView.o
+		moc_CLaunchWindow.o \
+		moc_CWindowSDB.o \
+		moc_CWindowWDB.o \
+		moc_CSoilLayerModel.o
 DIST          = ../../../Qt5.3.2/5.3/clang_64/mkspecs/features/spec_pre.prf \
 		../../../Qt5.3.2/5.3/clang_64/mkspecs/qdevice.pri \
 		../../../Qt5.3.2/5.3/clang_64/mkspecs/features/device_config.prf \
@@ -184,11 +188,12 @@ DIST          = ../../../Qt5.3.2/5.3/clang_64/mkspecs/features/spec_pre.prf \
 		../../../Qt5.3.2/5.3/clang_64/mkspecs/features/lex.prf \
 		../proj/XMLEditor.pro ../proj/main.cpp \
 		../proj/CDailyWeatherModel.cpp \
-		../proj/CDailyWeatherView.cpp \
-		../proj/CMainWindow.cpp \
+		../proj/CLaunchWindow.cpp \
+		../proj/CWindowSDB.cpp \
+		../proj/CWindowWDB.cpp \
+		../proj/CSoil.cpp \
 		../proj/CStation.cpp \
-		../proj/CXMLParser.cpp \
-		../proj/CTableView.cpp
+		../proj/CXMLParser.cpp
 QMAKE_TARGET  = XMLEditor
 DESTDIR       = #avoid trailing-slash linebreak
 TARGET        = XMLEditor.app/Contents/MacOS/XMLEditor
@@ -197,7 +202,7 @@ TARGET        = XMLEditor.app/Contents/MacOS/XMLEditor
 QMAKE_COMP_QMAKE_OBJECTIVE_CFLAGS = -pipe \
 		-g \
 		-isysroot \
-		/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk \
+		/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk \
 		-mmacosx-version-min=10.6 \
 		-Wall \
 		-W
@@ -228,7 +233,7 @@ first: all
 
 all: Makefile XMLEditor.app/Contents/PkgInfo XMLEditor.app/Contents/Resources/empty.lproj XMLEditor.app/Contents/Info.plist $(TARGET)
 
-$(TARGET): ui_mainwindow.h $(OBJECTS)  
+$(TARGET): ui_launch.h ui_wdb.h ui_sdb.h $(OBJECTS)  
 	@test -d XMLEditor.app/Contents/MacOS/ || mkdir -p XMLEditor.app/Contents/MacOS/
 	$(LINK) $(LFLAGS) -o $(TARGET) $(OBJECTS) $(OBJCOMP) $(LIBS)
 
@@ -494,7 +499,7 @@ XMLEditor.app/Contents/Info.plist:
 	@sed -e "s,@SHORT_VERSION@,1.0,g" -e "s,@TYPEINFO@,????,g" -e "s,@ICON@,,g" -e "s,@BUNDLEIDENTIFIER@,abc.XMLEditor,g" -e "s,@EXECUTABLE@,XMLEditor,g" -e "s,@TYPEINFO@,????,g" ../../../Qt5.3.2/5.3/clang_64/mkspecs/macx-clang/Info.plist.app >XMLEditor.app/Contents/Info.plist
 dist: 
 	@test -d .tmp/XMLEditor1.0.0 || mkdir -p .tmp/XMLEditor1.0.0
-	$(COPY_FILE) --parents $(DIST) .tmp/XMLEditor1.0.0/ && $(COPY_FILE) --parents ../proj/CDailyWeatherModel.h ../proj/CDailyWeatherView.h ../proj/CMainWindow.h ../proj/CStation.h ../proj/CXMLParser.h ../proj/CTableView.h .tmp/XMLEditor1.0.0/ && $(COPY_FILE) --parents ../proj/main.cpp ../proj/CDailyWeatherModel.cpp ../proj/CDailyWeatherView.cpp ../proj/CMainWindow.cpp ../proj/CStation.cpp ../proj/CXMLParser.cpp ../proj/CTableView.cpp .tmp/XMLEditor1.0.0/ && $(COPY_FILE) --parents ../proj/mainwindow.ui .tmp/XMLEditor1.0.0/ && (cd `dirname .tmp/XMLEditor1.0.0` && $(TAR) XMLEditor1.0.0.tar XMLEditor1.0.0 && $(COMPRESS) XMLEditor1.0.0.tar) && $(MOVE) `dirname .tmp/XMLEditor1.0.0`/XMLEditor1.0.0.tar.gz . && $(DEL_FILE) -r .tmp/XMLEditor1.0.0
+	$(COPY_FILE) --parents $(DIST) .tmp/XMLEditor1.0.0/ && $(COPY_FILE) --parents ../proj/CDailyWeatherModel.h ../proj/CLaunchWindow.h ../proj/CWindowSDB.h ../proj/CWindowWDB.h ../proj/CSoil.h ../proj/CSoilLayerModel.h ../proj/CStation.h ../proj/CXMLParser.h .tmp/XMLEditor1.0.0/ && $(COPY_FILE) --parents ../proj/main.cpp ../proj/CDailyWeatherModel.cpp ../proj/CLaunchWindow.cpp ../proj/CWindowSDB.cpp ../proj/CWindowWDB.cpp ../proj/CSoil.cpp ../proj/CStation.cpp ../proj/CXMLParser.cpp .tmp/XMLEditor1.0.0/ && $(COPY_FILE) --parents ../proj/ui/launch.ui ../proj/ui/wdb.ui ../proj/ui/sdb.ui .tmp/XMLEditor1.0.0/ && (cd `dirname .tmp/XMLEditor1.0.0` && $(TAR) XMLEditor1.0.0.tar XMLEditor1.0.0 && $(COMPRESS) XMLEditor1.0.0.tar) && $(MOVE) `dirname .tmp/XMLEditor1.0.0`/XMLEditor1.0.0.tar.gz . && $(DEL_FILE) -r .tmp/XMLEditor1.0.0
 
 
 clean:compiler_clean 
@@ -519,38 +524,47 @@ compiler_objective_c_make_all:
 compiler_objective_c_clean:
 compiler_rcc_make_all:
 compiler_rcc_clean:
-compiler_moc_header_make_all: moc_CDailyWeatherModel.cpp moc_CDailyWeatherView.cpp moc_CMainWindow.cpp moc_CTableView.cpp
+compiler_moc_header_make_all: moc_CDailyWeatherModel.cpp moc_CLaunchWindow.cpp moc_CWindowSDB.cpp moc_CWindowWDB.cpp moc_CSoilLayerModel.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) moc_CDailyWeatherModel.cpp moc_CDailyWeatherView.cpp moc_CMainWindow.cpp moc_CTableView.cpp
+	-$(DEL_FILE) moc_CDailyWeatherModel.cpp moc_CLaunchWindow.cpp moc_CWindowSDB.cpp moc_CWindowWDB.cpp moc_CSoilLayerModel.cpp
 moc_CDailyWeatherModel.cpp: ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QAbstractTableModel \
 		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qabstractitemmodel.h \
 		../proj/CDailyWeatherModel.h
 	/Users/westjour/Qt5.3.2/5.3/clang_64/bin/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -I/Users/westjour/Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I/Users/westjour/Desktop/GUI_Repo/proj -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers -I. -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib ../proj/CDailyWeatherModel.h -o moc_CDailyWeatherModel.cpp
 
-moc_CDailyWeatherView.cpp: ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QTableView \
-		../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qtableview.h \
-		../proj/CDailyWeatherView.h
-	/Users/westjour/Qt5.3.2/5.3/clang_64/bin/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -I/Users/westjour/Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I/Users/westjour/Desktop/GUI_Repo/proj -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers -I. -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib ../proj/CDailyWeatherView.h -o moc_CDailyWeatherView.cpp
+moc_CLaunchWindow.cpp: ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QWidget \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qwidget.h \
+		../proj/CLaunchWindow.h
+	/Users/westjour/Qt5.3.2/5.3/clang_64/bin/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -I/Users/westjour/Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I/Users/westjour/Desktop/GUI_Repo/proj -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers -I. -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib ../proj/CLaunchWindow.h -o moc_CLaunchWindow.cpp
 
-moc_CMainWindow.cpp: ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QMainWindow \
+moc_CWindowSDB.cpp: ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QMainWindow \
 		../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qmainwindow.h \
-		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector \
-		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h \
-		../proj/CMainWindow.h
-	/Users/westjour/Qt5.3.2/5.3/clang_64/bin/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -I/Users/westjour/Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I/Users/westjour/Desktop/GUI_Repo/proj -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers -I. -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib ../proj/CMainWindow.h -o moc_CMainWindow.cpp
+		../proj/CWindowSDB.h
+	/Users/westjour/Qt5.3.2/5.3/clang_64/bin/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -I/Users/westjour/Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I/Users/westjour/Desktop/GUI_Repo/proj -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers -I. -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib ../proj/CWindowSDB.h -o moc_CWindowSDB.cpp
 
-moc_CTableView.cpp: ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QTableView \
-		../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qtableview.h \
-		../proj/CTableView.h
-	/Users/westjour/Qt5.3.2/5.3/clang_64/bin/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -I/Users/westjour/Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I/Users/westjour/Desktop/GUI_Repo/proj -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers -I. -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib ../proj/CTableView.h -o moc_CTableView.cpp
+moc_CWindowWDB.cpp: ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QMainWindow \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qmainwindow.h \
+		../proj/CWindowWDB.h
+	/Users/westjour/Qt5.3.2/5.3/clang_64/bin/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -I/Users/westjour/Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I/Users/westjour/Desktop/GUI_Repo/proj -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers -I. -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib ../proj/CWindowWDB.h -o moc_CWindowWDB.cpp
+
+moc_CSoilLayerModel.cpp: ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QAbstractTableModel \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qabstractitemmodel.h \
+		../proj/CSoilLayerModel.h
+	/Users/westjour/Qt5.3.2/5.3/clang_64/bin/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -I/Users/westjour/Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I/Users/westjour/Desktop/GUI_Repo/proj -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers -I. -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib ../proj/CSoilLayerModel.h -o moc_CSoilLayerModel.cpp
 
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
-compiler_uic_make_all: ui_mainwindow.h
+compiler_uic_make_all: ui_launch.h ui_wdb.h ui_sdb.h
 compiler_uic_clean:
-	-$(DEL_FILE) ui_mainwindow.h
-ui_mainwindow.h: ../proj/mainwindow.ui
-	/Users/westjour/Qt5.3.2/5.3/clang_64/bin/uic ../proj/mainwindow.ui -o ui_mainwindow.h
+	-$(DEL_FILE) ui_launch.h ui_wdb.h ui_sdb.h
+ui_launch.h: ../proj/ui/launch.ui
+	/Users/westjour/Qt5.3.2/5.3/clang_64/bin/uic ../proj/ui/launch.ui -o ui_launch.h
+
+ui_wdb.h: ../proj/ui/wdb.ui
+	/Users/westjour/Qt5.3.2/5.3/clang_64/bin/uic ../proj/ui/wdb.ui -o ui_wdb.h
+
+ui_sdb.h: ../proj/ui/sdb.ui
+	/Users/westjour/Qt5.3.2/5.3/clang_64/bin/uic ../proj/ui/sdb.ui -o ui_sdb.h
 
 compiler_rez_source_make_all:
 compiler_rez_source_clean:
@@ -564,13 +578,11 @@ compiler_clean: compiler_moc_header_clean compiler_uic_clean
 
 ####### Compile
 
-main.o: ../proj/main.cpp ../proj/CMainWindow.h \
-		../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QMainWindow \
-		../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qmainwindow.h \
-		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector \
-		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h \
-		../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QApplication \
-		../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qapplication.h
+main.o: ../proj/main.cpp ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QApplication \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qapplication.h \
+		../proj/CLaunchWindow.h \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QWidget \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qwidget.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../proj/main.cpp
 
 CDailyWeatherModel.o: ../proj/CDailyWeatherModel.cpp ../proj/CDailyWeatherModel.h \
@@ -581,20 +593,43 @@ CDailyWeatherModel.o: ../proj/CDailyWeatherModel.cpp ../proj/CDailyWeatherModel.
 		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qstring.h \
 		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector \
 		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h \
-		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QHash \
-		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qhash.h \
 		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QMap \
-		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qmap.h
+		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qmap.h \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QHash \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qhash.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o CDailyWeatherModel.o ../proj/CDailyWeatherModel.cpp
 
-CDailyWeatherView.o: ../proj/CDailyWeatherView.cpp ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QHeaderView \
-		../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qheaderview.h \
-		../proj/CDailyWeatherView.h \
-		../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QTableView \
-		../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qtableview.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o CDailyWeatherView.o ../proj/CDailyWeatherView.cpp
+CLaunchWindow.o: ../proj/CLaunchWindow.cpp ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QFileDialog \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qfiledialog.h \
+		../proj/CLaunchWindow.h \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QWidget \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qwidget.h \
+		../proj/ui_launch.h \
+		../proj/CWindowWDB.h \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QMainWindow \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qmainwindow.h \
+		../proj/CWindowSDB.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o CLaunchWindow.o ../proj/CLaunchWindow.cpp
 
-CMainWindow.o: ../proj/CMainWindow.cpp ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QGridLayout \
+CWindowSDB.o: ../proj/CWindowSDB.cpp ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h \
+		../proj/CSoil.h \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QString \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qstring.h \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QMap \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qmap.h \
+		../proj/CSoilLayerModel.cpp \
+		../proj/CSoilLayerModel.h \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QAbstractTableModel \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qabstractitemmodel.h \
+		../proj/CXMLParser.h \
+		../proj/CWindowSDB.h \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QMainWindow \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qmainwindow.h \
+		../proj/ui_sdb.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o CWindowSDB.o ../proj/CWindowSDB.cpp
+
+CWindowWDB.o: ../proj/CWindowWDB.cpp ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QGridLayout \
 		../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qgridlayout.h \
 		../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QVBoxLayout \
 		../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qboxlayout.h \
@@ -608,37 +643,51 @@ CMainWindow.o: ../proj/CMainWindow.cpp ../../../Qt5.3.2/5.3/clang_64/lib/QtWidge
 		../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qlineedit.h \
 		../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QGroupBox \
 		../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qgroupbox.h \
-		../proj/CMainWindow.h \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QFile \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qfile.h \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QXmlStreamWriter \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qxmlstream.h \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QSignalMapper \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qsignalmapper.h \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QFileDialog \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qfiledialog.h \
+		../proj/CWindowWDB.h \
 		../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QMainWindow \
 		../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qmainwindow.h \
-		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector \
-		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h \
-		../proj/ui_mainwindow.h \
+		../proj/ui_wdb.h \
 		../proj/CXMLParser.h \
 		../proj/CStation.h \
 		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QString \
 		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qstring.h \
-		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QHash \
-		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qhash.h \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h \
 		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QMap \
 		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qmap.h \
-		../proj/CDailyWeatherView.h \
-		../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QTableView \
-		../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qtableview.h \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QHash \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qhash.h \
 		../proj/CDailyWeatherModel.h \
 		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QAbstractTableModel \
 		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qabstractitemmodel.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o CMainWindow.o ../proj/CMainWindow.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o CWindowWDB.o ../proj/CWindowWDB.cpp
+
+CSoil.o: ../proj/CSoil.cpp ../proj/CSoil.h \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QString \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qstring.h \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QMap \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qmap.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o CSoil.o ../proj/CSoil.cpp
 
 CStation.o: ../proj/CStation.cpp ../proj/CStation.h \
 		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QString \
 		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qstring.h \
 		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector \
 		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h \
-		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QHash \
-		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qhash.h \
 		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QMap \
-		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qmap.h
+		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qmap.h \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QHash \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qhash.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o CStation.o ../proj/CStation.cpp
 
 CXMLParser.o: ../proj/CXMLParser.cpp ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QFile \
@@ -655,30 +704,27 @@ CXMLParser.o: ../proj/CXMLParser.cpp ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.fr
 		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qstring.h \
 		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector \
 		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QMap \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qmap.h \
 		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QHash \
 		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qhash.h \
-		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QMap \
-		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qmap.h
+		../proj/CSoil.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o CXMLParser.o ../proj/CXMLParser.cpp
-
-CTableView.o: ../proj/CTableView.cpp ../proj/CTableView.h \
-		../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QTableView \
-		../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qtableview.h \
-		../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QHeaderView \
-		../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qheaderview.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o CTableView.o ../proj/CTableView.cpp
 
 moc_CDailyWeatherModel.o: moc_CDailyWeatherModel.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_CDailyWeatherModel.o moc_CDailyWeatherModel.cpp
 
-moc_CDailyWeatherView.o: moc_CDailyWeatherView.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_CDailyWeatherView.o moc_CDailyWeatherView.cpp
+moc_CLaunchWindow.o: moc_CLaunchWindow.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_CLaunchWindow.o moc_CLaunchWindow.cpp
 
-moc_CMainWindow.o: moc_CMainWindow.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_CMainWindow.o moc_CMainWindow.cpp
+moc_CWindowSDB.o: moc_CWindowSDB.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_CWindowSDB.o moc_CWindowSDB.cpp
 
-moc_CTableView.o: moc_CTableView.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_CTableView.o moc_CTableView.cpp
+moc_CWindowWDB.o: moc_CWindowWDB.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_CWindowWDB.o moc_CWindowWDB.cpp
+
+moc_CSoilLayerModel.o: moc_CSoilLayerModel.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_CSoilLayerModel.o moc_CSoilLayerModel.cpp
 
 ####### Install
 

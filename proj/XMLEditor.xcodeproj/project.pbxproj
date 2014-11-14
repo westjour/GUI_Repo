@@ -44,7 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		564087571A169D6700D255B4 /* PBXContainerItemProxy */ = {
+		5640875A1A16A14500D255B4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6DB9C3763D02B1415CD9D565 /* Project object */;
 			proxyType = 1;
@@ -576,7 +576,7 @@
 		F86E05C107B86A16D2A48FCC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B065C007C8DAD32E2A4D8AA4 /* Qt Preprocess */;
-			targetProxy = 564087571A169D6700D255B4 /* PBXContainerItemProxy */;
+			targetProxy = 5640875A1A16A14500D255B4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -614,8 +614,8 @@
 					../../../Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers,
 					../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers,
 					.,
-					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework/Headers,
-					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AGL.framework/Headers/,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AGL.framework/Headers,
 					.,
 					"../../../Qt5.3.2/5.3/clang_64/mkspecs/macx-clang",
 				);
@@ -695,8 +695,8 @@
 					../../../Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers,
 					../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers,
 					.,
-					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework/Headers,
-					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AGL.framework/Headers/,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AGL.framework/Headers,
 					.,
 					"../../../Qt5.3.2/5.3/clang_64/mkspecs/macx-clang",
 				);

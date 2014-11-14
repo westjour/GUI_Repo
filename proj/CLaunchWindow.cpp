@@ -42,12 +42,12 @@ void CLaunchWindow::onOpen() {
         return;
     
     if(fileName.contains("sdb")) {
-        qDebug("SDB file");
+        qDebug("SDB file:%s", fileName.toUtf8().constData());
         CWindowSDB* window = new CWindowSDB(0, fileName);
         window->show();
     }
     else if (fileName.contains("wdb")) {
-        qDebug("WDB file");
+        qDebug("WDB file:%s", fileName.toUtf8().constData());
         CWindowWDB* window = new CWindowWDB(0, fileName);
         window->show();
     }

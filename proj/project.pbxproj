@@ -85,6 +85,20 @@
 					);
 			};
 		};
+		83A114D9C0027347C0A543E1 = {
+			isa = PBXFileReference;
+			path = "CSoil.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		3215F104CDA47866B13086EE = {
+			fileRef = "83A114D9C0027347C0A543E1";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
 		393B5CE8D3BCE90CCBC751BD = {
 			isa = PBXFileReference;
 			path = "CStation.cpp";
@@ -169,15 +183,35 @@
 					);
 			};
 		};
-		14C9776A4B2E34DB51106724 = {
+		57CC9B48BFF8BC6CF20A3E73 = {
 			isa = PBXFileReference;
-			path = "ui_mainwindow.h";
+			path = "moc_CSoilLayerModel.cpp";
 			sourceTree = "<absolute>";
-			lastKnownFileType = "sourcecode.c.h";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		7F392EDA4F3B45D168E150D5 = {
+			fileRef = "57CC9B48BFF8BC6CF20A3E73";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
 		};
 		4CC37DF1DCC11A8F2B6105DA = {
 			isa = PBXFileReference;
 			path = "ui_launch.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		368D83A6625C8E0F8A160ED6 = {
+			isa = PBXFileReference;
+			path = "ui_wdb.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		9E81541DC4B75F5BD0014937 = {
+			isa = PBXFileReference;
+			path = "ui_sdb.h";
 			sourceTree = "<absolute>";
 			lastKnownFileType = "sourcecode.c.h";
 		};
@@ -202,6 +236,18 @@
 		99915B276060AE8BD12EF1A2 = {
 			isa = PBXFileReference;
 			path = "CWindowWDB.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		923CE9797149CC349514024D = {
+			isa = PBXFileReference;
+			path = "CSoil.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		15B0E380EF333DB99AE9624D = {
+			isa = PBXFileReference;
+			path = "CSoilLayerModel.h";
 			sourceTree = "<absolute>";
 			lastKnownFileType = "sourcecode.c.h";
 		};
@@ -782,16 +828,22 @@
 			sourceTree = "<absolute>";
 			lastKnownFileType = "text";
 		};
-		E6203756DEA2CD8BCAB6D262 = {
-			isa = PBXFileReference;
-			path = "ui/mainwindow.ui";
-			name = "mainwindow.ui";
-			sourceTree = "<absolute>";
-		};
 		90107D33E658E8B3F52135D5 = {
 			isa = PBXFileReference;
 			path = "ui/launch.ui";
 			name = "launch.ui";
+			sourceTree = "<absolute>";
+		};
+		F91D192CF93B0CE8BFCBA8AD = {
+			isa = PBXFileReference;
+			path = "ui/wdb.ui";
+			name = "wdb.ui";
+			sourceTree = "<absolute>";
+		};
+		DD3D93DB3083013A5FF6F708 = {
+			isa = PBXFileReference;
+			path = "ui/sdb.ui";
+			name = "sdb.ui";
 			sourceTree = "<absolute>";
 		};
 		25B08E2869634E9BCBA333A2 = {
@@ -801,16 +853,19 @@
 				"65E537FC9E72E387800F050D",
 				"EAF8498399AC596D6A3D41CA",
 				"367D357CEF28AC3A09C42364",
-				"14C9776A4B2E34DB51106724",
-				"4CC37DF1DCC11A8F2B6105DA");
+				"57CC9B48BFF8BC6CF20A3E73",
+				"4CC37DF1DCC11A8F2B6105DA",
+				"368D83A6625C8E0F8A160ED6",
+				"9E81541DC4B75F5BD0014937");
 			name = "Generated Sources";
 			sourceTree = "<Group>";
 		};
 		F027E420C02C9CC7A06A0901 = {
 			isa = PBXGroup;
 			children = (
-				"E6203756DEA2CD8BCAB6D262",
-				"90107D33E658E8B3F52135D5");
+				"90107D33E658E8B3F52135D5",
+				"F91D192CF93B0CE8BFCBA8AD",
+				"DD3D93DB3083013A5FF6F708");
 			name = "ui";
 			sourceTree = "<Group>";
 		};
@@ -997,12 +1052,15 @@
 				"08A4AEB96F0AC1AC9B6B4865",
 				"94CF35C944F0BD3E270F8490",
 				"F8E1C5D6150E4D8C8E5957BA",
+				"83A114D9C0027347C0A543E1",
 				"393B5CE8D3BCE90CCBC751BD",
 				"14BBBC027744E753CA279113",
 				"CA66E871929802F1B7DE123E",
 				"58BBC3DD41BFC2EF4D6F7BDE",
 				"49C82568C41A029F3BC2D88F",
 				"99915B276060AE8BD12EF1A2",
+				"923CE9797149CC349514024D",
+				"15B0E380EF333DB99AE9624D",
 				"37BBEF775C693ADDD49563CD",
 				"B60A5A328D50B94CAB593D17");
 			name = "Sources";
@@ -1042,12 +1100,14 @@
 				"23AD31E18855707CC01F7885",
 				"A3DE32AB31D028650B4B4131",
 				"9386EA582B4A76312DDB1420",
+				"3215F104CDA47866B13086EE",
 				"B3CF9240B62B94B17484ECCD",
 				"C196F2D85DD169818853FAA2",
 				"B10B4D7298B5E160396E8E8B",
 				"9BACEEDA15D35F0513EB2F8A",
 				"D7049B8D2EA076E65CEB587F",
-				"BFFF396E260B5BD9C6D95274");
+				"BFFF396E260B5BD9C6D95274",
+				"7F392EDA4F3B45D168E150D5");
 			isa = PBXSourcesBuildPhase;
 			runOnlyForDeploymentPostprocessing = 0;
 			name = "Compile Sources";

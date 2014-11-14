@@ -17,6 +17,8 @@ SOURCES += main.cpp \
     CLaunchWindow.cpp\
     CWindowSDB.cpp \
     CWindowWDB.cpp \
+    CSoil.cpp \
+    CSoilLayerModel.cpp \
     CStation.cpp \
     CXMLParser.cpp
 
@@ -24,8 +26,11 @@ HEADERS  += CDailyWeatherModel.h \
     CLaunchWindow.h \
     CWindowSDB.h \
     CWindowWDB.h \
+    CSoil.h \
+    CSoilLayerModel.h \
     CStation.h \
     CXMLParser.h
 
-FORMS    += ui/mainwindow.ui \
-    ui/launch.ui
+FORMS    += ui/launch.ui \
+    ui/wdb.ui \
+    ui/sdb.ui

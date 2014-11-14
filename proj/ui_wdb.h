@@ -1,13 +1,13 @@
 /********************************************************************************
-** Form generated from reading UI file 'mainwindow.ui'
+** Form generated from reading UI file 'wdb.ui'
 **
 ** Created by: Qt User Interface Compiler version 5.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
 
-#ifndef UI_MAINWINDOW_H
-#define UI_MAINWINDOW_H
+#ifndef UI_WDB_H
+#define UI_WDB_H
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QAction>
@@ -28,7 +28,7 @@
 
 QT_BEGIN_NAMESPACE
 
-class Ui_MainWindow
+class Ui_WDB
 {
 public:
     QWidget *centralWidget;
@@ -67,12 +67,12 @@ public:
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
 
-    void setupUi(QMainWindow *MainWindow)
+    void setupUi(QMainWindow *WDB)
     {
-        if (MainWindow->objectName().isEmpty())
-            MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(823, 966);
-        centralWidget = new QWidget(MainWindow);
+        if (WDB->objectName().isEmpty())
+            WDB->setObjectName(QStringLiteral("WDB"));
+        WDB->resize(879, 1118);
+        centralWidget = new QWidget(WDB);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         statGroupBox = new QGroupBox(centralWidget);
         statGroupBox->setObjectName(QStringLiteral("statGroupBox"));
@@ -224,48 +224,48 @@ public:
         mDailyWeatherView->setGeometry(QRect(10, 70, 781, 411));
         mDailyWeatherView->setAlternatingRowColors(true);
         mDailyWeatherView->verticalHeader()->setVisible(false);
-        MainWindow->setCentralWidget(centralWidget);
-        menuBar = new QMenuBar(MainWindow);
+        WDB->setCentralWidget(centralWidget);
+        menuBar = new QMenuBar(WDB);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 823, 22));
-        MainWindow->setMenuBar(menuBar);
-        mainToolBar = new QToolBar(MainWindow);
+        menuBar->setGeometry(QRect(0, 0, 879, 22));
+        WDB->setMenuBar(menuBar);
+        mainToolBar = new QToolBar(WDB);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
-        MainWindow->addToolBar(Qt::TopToolBarArea, mainToolBar);
-        statusBar = new QStatusBar(MainWindow);
+        WDB->addToolBar(Qt::TopToolBarArea, mainToolBar);
+        statusBar = new QStatusBar(WDB);
         statusBar->setObjectName(QStringLiteral("statusBar"));
-        MainWindow->setStatusBar(statusBar);
+        WDB->setStatusBar(statusBar);
 
-        retranslateUi(MainWindow);
+        retranslateUi(WDB);
 
-        QMetaObject::connectSlotsByName(MainWindow);
+        QMetaObject::connectSlotsByName(WDB);
     } // setupUi
 
-    void retranslateUi(QMainWindow *MainWindow)
+    void retranslateUi(QMainWindow *WDB)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "WEATHER", 0));
-        statGroupBox->setTitle(QApplication::translate("MainWindow", "Station Information", 0));
-        stationLabel->setText(QApplication::translate("MainWindow", "Choose a Station:", 0));
-        statIDLabel->setText(QApplication::translate("MainWindow", "Station ID:", 0));
-        statNameLabel->setText(QApplication::translate("MainWindow", "Station Name:", 0));
-        placeLabel->setText(QApplication::translate("MainWindow", "Place Name:", 0));
-        latLabel->setText(QApplication::translate("MainWindow", "Lat:", 0));
-        longLabel->setText(QApplication::translate("MainWindow", "Long:", 0));
-        elevLabel->setText(QApplication::translate("MainWindow", "Elev:", 0));
-        tavLabel->setText(QApplication::translate("MainWindow", "Tav:", 0));
-        ampLabel->setText(QApplication::translate("MainWindow", "Amp:", 0));
-        tmhtLabel->setText(QApplication::translate("MainWindow", "Tmht:", 0));
-        wmhtLabel->setText(QApplication::translate("MainWindow", "Wmht:", 0));
-        dwGroupBox->setTitle(QApplication::translate("MainWindow", "Daily Weather", 0));
-        yearLabel->setText(QApplication::translate("MainWindow", "Choose Year:", 0));
+        WDB->setWindowTitle(QApplication::translate("WDB", "WEATHER", 0));
+        statGroupBox->setTitle(QApplication::translate("WDB", "Station Information", 0));
+        stationLabel->setText(QApplication::translate("WDB", "Choose a Station:", 0));
+        statIDLabel->setText(QApplication::translate("WDB", "Station ID:", 0));
+        statNameLabel->setText(QApplication::translate("WDB", "Station Name:", 0));
+        placeLabel->setText(QApplication::translate("WDB", "Place Name:", 0));
+        latLabel->setText(QApplication::translate("WDB", "Lat:", 0));
+        longLabel->setText(QApplication::translate("WDB", "Long:", 0));
+        elevLabel->setText(QApplication::translate("WDB", "Elev:", 0));
+        tavLabel->setText(QApplication::translate("WDB", "Tav:", 0));
+        ampLabel->setText(QApplication::translate("WDB", "Amp:", 0));
+        tmhtLabel->setText(QApplication::translate("WDB", "Tmht:", 0));
+        wmhtLabel->setText(QApplication::translate("WDB", "Wmht:", 0));
+        dwGroupBox->setTitle(QApplication::translate("WDB", "Daily Weather", 0));
+        yearLabel->setText(QApplication::translate("WDB", "Choose Year:", 0));
     } // retranslateUi
 
 };
 
 namespace Ui {
-    class MainWindow: public Ui_MainWindow {};
+    class WDB: public Ui_WDB {};
 } // namespace Ui
 
 QT_END_NAMESPACE
 
-#endif // UI_MAINWINDOW_H
+#endif // UI_WDB_H

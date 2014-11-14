@@ -11,20 +11,18 @@
 #include <QFileDialog>
 
 #include "CWindowWDB.h"
-#include "ui_mainwindow.h"
+#include "ui_wdb.h"
 #include "CXMLParser.h"
 #include "CStation.h"
 #include "CDailyWeatherModel.h"
 
-CWindowWDB::CWindowWDB(QWidget *parent, QString filename) : QMainWindow(parent), ui(new Ui::MainWindow) {
+CWindowWDB::CWindowWDB(QWidget *parent, QString filename) : QMainWindow(parent), ui(new Ui::WDB) {
     ui->setupUi(this);
     //setFixedSize(1000,1000);
     
     mFilename = filename;
     
-    //
-    // Parse XML
-    //
+    // Parse WDB XML
     CXMLParser parser;
     QVector<CStation* >* stations = parser.parseWDB();
     
@@ -33,8 +31,7 @@ CWindowWDB::CWindowWDB(QWidget *parent, QString filename) : QMainWindow(parent),
     weatherModel->setStations(stations);
     ui->mDailyWeatherView->setModel(weatherModel);
 
-    qDebug("filename:%s", mFilename.toUtf8().constData());
-    
+  
     //
     // Construct strings for Station combobox
     //

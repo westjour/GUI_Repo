@@ -11,6 +11,12 @@
 
 #include <QMainWindow>
 
+/* Forward declaration this class so that we can use it as a
+ member variable. It is actually defined in ui_mainWindow.h */
+namespace Ui {
+    class SDB;
+}
+
 class CWindowSDB : public QMainWindow
 {
     Q_OBJECT
@@ -24,6 +30,11 @@ public slots:
     
 private:
     QString mFilename;
+    
+    //
+    // GUI Elements
+    //
+    Ui::SDB* ui;
 };
 
 #endif /* defined(__XMLEditor__CWindowSDB__) */

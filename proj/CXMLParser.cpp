@@ -10,6 +10,7 @@
 
 #include "CXMLParser.h"
 #include "CStation.h"
+#include "CSoil.h"
 
 int UNICODE_NEWLINE = 10;
 int UNICODE_CARRIAGERETURN = 13;
@@ -24,10 +25,10 @@ typedef QPair<QString, QString> Pair;
 Stations* CXMLParser::parseWDB()
 {
     // This vector will hold a list of stations after the WDB is successfully parsed
-    QVector<CStation* >* stations = new QVector<CStation* >();
+    Stations* stations = new QVector<CStation* >();
     
-    //QFile file("/Users/westjour/Desktop/GUI_Repo/xml/SALUS_GY_USAM_RCP_60_03042014.wdb.xml");
-    QFile file("/Users/westjour/Desktop/GUI_Repo/xml/NEW_XML.xml");
+    QFile file("/Users/westjour/Desktop/GUI_Repo/xml/SALUS_GY_USAM_RCP_60_03042014.wdb.xml");
+    //QFile file("/Users/westjour/Desktop/GUI_Repo/xml/NEW_XML.xml");
     QDomDocument doc = QDomDocument();
 
 
@@ -54,9 +55,7 @@ Stations* CXMLParser::parseWDB()
             
             if (e.tagName() == "Stations" and e.hasChildNodes()) {
                 CStation* station = new CStation();
-                
-                //  CStation::HourlyRainfall* hr = station->getHourlyRainFall();
-               
+              
                 //
                 // Parse station attributes
                 //
@@ -112,11 +111,11 @@ Stations* CXMLParser::parseWDB()
                 }// finished parsing this station
 
                 stations->push_back(station);
-            } // end if, we have parsed <Stations> and its children
+            } // end if, we have parsed <Station> and its children
 
             n = n.nextSiblingElement();
         } // end "if element"
-    } // end while, done parsing XML
+    } // end while loop, done parsing XML
     
     return stations;
 }
@@ -247,16 +246,83 @@ void CXMLParser::parseWeatherData( CStation* station, QString s )
 }
 
 
-/* Brief: Parse a XDB XML file
- */
-Stations* CXMLParser::parseXDB(/*QFile* file*/){return NULL;}
-
-
 /* Brief: Parse a SDB XML file
  */
-Stations* CXMLParser::parseSDB(/*QFile* file*/){return NULL;}
+Soils* CXMLParser::parseSDB()
+{
+    // This vector will hold a list of stations after the WDB is successfully parsed
+    Soils* soils = new QVector<CSoil* >();
+
+    QFile file("/Users/westjour/Desktop/GUI_Repo/xml/AgMIP.sdb.xml");
+    QDomDocument doc = QDomDocument();
+    
+    // Return empty list on error
+    if ( !file.open(QIODevice::ReadOnly) || !doc.setContent(&file) )
+        return soils;
+    file.close();
+    
+    QDomElement root = doc.documentElement();
+    QDomNode n = root.firstChildElement();
+    
+    qDebug("entering while loop - parsing SDB");
+    while(!n.isNull()) {
+        if (n.isElement()) {
+            QDomElement e = n.toElement();
+            
+            if (e.tagName() == "Soils") {
+                // Iterate through <Soil> elements
+                for(int i=0; i<e.childNodes().length(); i++) {
+                    QDomElement childElem = e.childNodes().at(i).toElement();
+                    
+                    if(childElem.tagName() == "Soil") {
+                        CSoil* soil = new CSoil();
+                    
+                        // Parse <Soil> attributes
+                        QDomNamedNodeMap map = childElem.attributes();
+                        for(int j=0; j<map.count(); j++) {
+                            QDomAttr attrNode = map.item(j).toAttr();
+                            QString name = attrNode.name();
+                            QString value = attrNode.value();
+                            
+                            // Add attribute to the station's attribute map
+                            soil->getSoilAttrs()->insert(name, value);
+                            
+                            // Iterate through <Layer> elements
+                            for(int i=0; i<childElem.childNodes().length(); i++) {
+                                QDomElement layerElem = childElem.childNodes().at(i).toElement();
+                                Layer* layer = new Layer;
+                                
+                                // Parse <Layer> attributes
+                                QDomNamedNodeMap layerAttrs = layerElem.attributes();
+                                QString name, value;
+                                for(int k=0; k<layerAttrs.count(); j++) {
+                                    QDomAttr attr = layerAttrs.item(k).toAttr();
+                                    name = attr.name();
+                                    value = attr.value();
+                                    
+                                    layer->insert(name, value);
+                                    soil->getLayers().push_back(layer);
+                                }
+                            }
+                        }
+                        // Add this soil to list of soils
+                        soils->push_back(soil);
+                    } // end if, we have parsed <Soil> and its children
+                } // end for loop, parsed <Soils>
+            }
+            n = n.nextSiblingElement(); // go to next <Soil> element
+        }
+    } // end while loop, done parsing XML
+    
+    return soils;
+}
+
+
+/* Brief: Parse a XDB XML file
+ */
+void* CXMLParser::parseXDB(){return NULL;}
 
 
 /* Brief: Parse a CDB XML file
  */
-Stations* CXMLParser::parseCDB(/*QFile* file*/){return NULL;}
+void* CXMLParser::parseCDB(){return NULL;}

@@ -1,9 +1,7 @@
 dependencies: /Users/westjour/Desktop/GUI_Repo/proj/CWindowSDB.cpp \
-  CWindowSDB.h \
-  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QMainWindow \
-  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qmainwindow.h \
-  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qwidget.h \
-  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qwindowdefs.h \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QVector \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qvector.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qalgorithms.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qglobal.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qconfig.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qfeatures.h \
@@ -22,24 +20,43 @@ dependencies: /Users/westjour/Desktop/GUI_Repo/proj/CWindowSDB.cpp \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qglobalstatic.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qmutex.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qnumeric.h \
-  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qobjectdefs.h \
-  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qnamespace.h \
-  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qobjectdefs_impl.h \
-  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qobject.h \
-  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qstring.h \
-  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qchar.h \
-  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qbytearray.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qiterator.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qlist.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qrefcount.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qarraydata.h \
-  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qlist.h \
-  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qalgorithms.h \
-  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qiterator.h \
-  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qscopedpointer.h \
+  CSoil.h \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QString \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qstring.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qchar.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qbytearray.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qnamespace.h \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QMap \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qmap.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qpair.h \
+  CSoilLayerModel.cpp CSoilLayerModel.h \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QAbstractTableModel \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qabstractitemmodel.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qvariant.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qmetatype.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qvarlengtharray.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qcontainerfwd.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qisenum.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qobjectdefs.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qobjectdefs_impl.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qhash.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qstringlist.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qdatastream.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qscopedpointer.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qiodevice.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qobject.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qobject_impl.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qregexp.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qstringmatcher.h \
+  CXMLParser.h CWindowSDB.h \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QMainWindow \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qmainwindow.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qwidget.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qwindowdefs.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qmargins.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qpaintdevice.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qrect.h \
@@ -48,14 +65,7 @@ dependencies: /Users/westjour/Desktop/GUI_Repo/proj/CWindowSDB.cpp \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qpalette.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qcolor.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qrgb.h \
-  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qstringlist.h \
-  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qdatastream.h \
-  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qiodevice.h \
-  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qpair.h \
-  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qregexp.h \
-  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qstringmatcher.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qbrush.h \
-  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qvector.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qmatrix.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qpolygon.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qregion.h \
@@ -67,7 +77,6 @@ dependencies: /Users/westjour/Desktop/GUI_Repo/proj/CWindowSDB.cpp \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qsharedpointer.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qshareddata.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qsharedpointer_impl.h \
-  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qhash.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qfont.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qfontmetrics.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qfontinfo.h \
@@ -75,4 +84,66 @@ dependencies: /Users/westjour/Desktop/GUI_Repo/proj/CWindowSDB.cpp \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qcursor.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qkeysequence.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qtabwidget.h \
-  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qicon.h
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qicon.h \
+  ui_sdb.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/QVariant \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/QAction \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qaction.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qactiongroup.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/QApplication \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qapplication.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qcoreapplication.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qcoreevent.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qeventloop.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qguiapplication.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qinputmethod.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qlocale.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/QButtonGroup \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qbuttongroup.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/QComboBox \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qcombobox.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qabstractitemdelegate.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qstyleoption.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qabstractspinbox.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qvalidator.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qregularexpression.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qslider.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qabstractslider.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qstyle.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qtabbar.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qrubberband.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qframe.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/QFormLayout \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qformlayout.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/QLayout \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qlayout.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qlayoutitem.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qboxlayout.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qgridlayout.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/QGroupBox \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qgroupbox.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/QHeaderView \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qheaderview.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qabstractitemview.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qabstractscrollarea.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qitemselectionmodel.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qset.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/QLabel \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qlabel.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/QLineEdit \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qlineedit.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qtextcursor.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qtextformat.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qpen.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qtextoption.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/QMenuBar \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qmenubar.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qmenu.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/QScrollArea \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qscrollarea.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/QStatusBar \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qstatusbar.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/QTableView \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qtableview.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/QVBoxLayout \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/QWidget

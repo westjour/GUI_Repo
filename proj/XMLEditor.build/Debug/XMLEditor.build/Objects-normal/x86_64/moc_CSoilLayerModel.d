@@ -1,5 +1,6 @@
-dependencies: /Users/westjour/Desktop/GUI_Repo/proj/CSoilsModel.cpp \
-  CSoilsModel.h \
+dependencies: \
+  /Users/westjour/Desktop/GUI_Repo/proj/moc_CSoilLayerModel.cpp \
+  CSoilLayerModel.h \
   ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QAbstractTableModel \
   ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qabstractitemmodel.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qvariant.h \

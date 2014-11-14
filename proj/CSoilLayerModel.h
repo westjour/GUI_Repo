@@ -1,29 +1,35 @@
 //
-//  CHourlyWeatherModel.h
+//  CSoilLayerModel.h
 //  XMLEditor
 //
-//  Created by Jourdan West on 10/20/14.
+//  Created by Jourdan West on 11/14/14.
 //
 //
 
-#ifndef __XMLEditor__CHourlyWeatherModel__
-#define __XMLEditor__CHourlyWeatherModel__
+#ifndef __XMLEditor__CSoilLayerModel__
+#define __XMLEditor__CSoilLayerModel__
 
 #include <QAbstractTableModel>
 
+class CSoil;
+
 /* Brief:
  */
-class CHourlyWeatherModel : public QAbstractTableModel
+class CSoilLayerModel : public QAbstractTableModel
 {
     Q_OBJECT
     
 public:
     enum COL_HEADERS {
-        YEAR=0, DOY, HR, HR_PRECIP, numColHeaders
+        YEAR=0, DOY, SRAD, TMAX, TMIN, RAIN,
+        DEWP, WIND, PAR, numColHeaders
     };
     
-    explicit CHourlyWeatherModel(QObject *parent = 0);
-
+    explicit CSoilLayerModel(QObject *parent = 0);
+    void update();
+    void setSoils(QVector<CSoil* >* soils){ mSoils = soils; }
+    CSoil* findSoil(QString id);
+    
     //
     // The following functions are required for an editable table
     //
@@ -36,13 +42,15 @@ public:
     
     
 private:
+    QVector<CSoil* >* mSoils;
+    
+    // Soil selected in the "Choose Soil" dropdown box
+    CSoil* mSoil;
     
 signals:
     
-public slots:
+    public slots:
     
 };
 
-
-
-#endif /* defined(__XMLEditor__CHourlyWeatherModel__) */
+#endif /* defined(__XMLEditor__CSoilLayerModel__) */

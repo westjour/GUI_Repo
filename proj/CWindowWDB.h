@@ -19,7 +19,7 @@ class CStation;
 /* Forward declaration this class so that we can use it as a
 member variable. It is actually defined in ui_mainWindow.h */
 namespace Ui {
-    class MainWindow;
+    class WDB;
 }
 
 class CWindowWDB : public QMainWindow
@@ -53,7 +53,7 @@ private:
     //
     // GUI Elements
     //
-    Ui::MainWindow* ui;
+    Ui::WDB* ui;
     
     QMenuBar* macMenuBar;
     QAction* mFileSave;

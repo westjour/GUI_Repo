@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>WDB</class>
+ <widget class="QMainWindow" name="WDB">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>823</width>
-    <height>966</height>
+    <width>879</width>
+    <height>1118</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -215,7 +215,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>823</width>
+     <width>879</width>
      <height>22</height>
     </rect>
    </property>

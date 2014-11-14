@@ -2,7 +2,10 @@
 #define CXMLPARSER_H
 
 class CStation;
+class CSoil;
 typedef QVector<CStation* > Stations;
+typedef QVector<CSoil* > Soils;
+typedef QMap<QString, QString> Layer;
 
 
 /* Brief: This class handles the parsing of all XML files */
@@ -11,10 +14,10 @@ class CXMLParser
 public:
     CXMLParser();
 
-    Stations* parseXDB(/*QFile* file*/);
-    Stations* parseSDB(/*QFile* file*/);
+    Soils* parseSDB();
     Stations* parseWDB();
-    Stations* parseCDB(/*QFile* file*/);
+    void* parseXDB();
+    void* parseCDB();
 
     void parseWeatherData(CStation*, QString s);
 };

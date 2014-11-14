@@ -26,7 +26,9 @@
 		23AD31E18855707CC01F7885 /* CLaunchWindow.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 08A4AEB96F0AC1AC9B6B4865 /* CLaunchWindow.cpp */; settings = {ATTRIBUTES = (); }; };
 		25450DB7D868083271ABED55 /* QtWidgets.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 216827D014B70BBD74D71E0E /* QtWidgets.framework */; };
 		2D367B399AA57F7319FEA1FA /* main.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 682A50D19E416195436708E4 /* main.cpp */; settings = {ATTRIBUTES = (); }; };
+		3215F104CDA47866B13086EE /* CSoil.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 83A114D9C0027347C0A543E1 /* CSoil.cpp */; settings = {ATTRIBUTES = (); }; };
 		4E3CAED4FB5805A342258087 /* QtGui.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 4936C5FC0EF6C5A862FDA934 /* QtGui.framework */; };
+		7F392EDA4F3B45D168E150D5 /* moc_CSoilLayerModel.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 57CC9B48BFF8BC6CF20A3E73 /* moc_CSoilLayerModel.cpp */; settings = {ATTRIBUTES = (); }; };
 		8771A8C96E9C391044035D99 /* OpenGL.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = D4B32C2222F82AC56BADEB21 /* OpenGL.framework */; };
 		9386EA582B4A76312DDB1420 /* CWindowWDB.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = F8E1C5D6150E4D8C8E5957BA /* CWindowWDB.cpp */; settings = {ATTRIBUTES = (); }; };
 		9BACEEDA15D35F0513EB2F8A /* moc_CLaunchWindow.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 65E537FC9E72E387800F050D /* moc_CLaunchWindow.cpp */; settings = {ATTRIBUTES = (); }; };
@@ -42,7 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5640872C1A15000F00D255B4 /* PBXContainerItemProxy */ = {
+		564087571A169D6700D255B4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6DB9C3763D02B1415CD9D565 /* Project object */;
 			proxyType = 1;
@@ -63,7 +65,7 @@
 		13A39981C9BEB01A31FA84AF /* qt_lib_xml_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_xml_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_xml_private.pri; sourceTree = "<absolute>"; };
 		1407EEECBE29485E7D904097 /* qt_lib_declarative.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_declarative.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_declarative.pri; sourceTree = "<absolute>"; };
 		14BBBC027744E753CA279113 /* CXMLParser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CXMLParser.cpp; sourceTree = "<absolute>"; };
-		14C9776A4B2E34DB51106724 /* ui_mainwindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ui_mainwindow.h; sourceTree = "<absolute>"; };
+		15B0E380EF333DB99AE9624D /* CSoilLayerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSoilLayerModel.h; sourceTree = "<absolute>"; };
 		1790F14EBA0A3A1A695F0625 /* qt_lib_multimediawidgets_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_multimediawidgets_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_multimediawidgets_private.pri; sourceTree = "<absolute>"; };
 		18B4E6CF757F5C3CDD54DDEC /* .qmake.stash */ = {isa = PBXFileReference; lastKnownFileType = file; name = .qmake.stash; path = ../../../.qmake.stash; sourceTree = "<absolute>"; };
 		1B860945BB9CAC9ABE16CAB6 /* qt_lib_network.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_network.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_network.pri; sourceTree = "<absolute>"; };
@@ -87,6 +89,7 @@
 		354A03ABF4B89665F2E4D864 /* qt_lib_qml_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_qml_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_qml_private.pri; sourceTree = "<absolute>"; };
 		356B8241C5D30EA5181C79C3 /* mac.conf */ = {isa = PBXFileReference; lastKnownFileType = file; name = mac.conf; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/common/mac.conf; sourceTree = "<absolute>"; };
 		367D357CEF28AC3A09C42364 /* moc_CWindowWDB.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_CWindowWDB.cpp; sourceTree = "<absolute>"; };
+		368D83A6625C8E0F8A160ED6 /* ui_wdb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ui_wdb.h; sourceTree = "<absolute>"; };
 		370AD8ED477E9C07B412D2B0 /* qt_lib_sensors_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_sensors_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_sensors_private.pri; sourceTree = "<absolute>"; };
 		37BBEF775C693ADDD49563CD /* CStation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CStation.h; sourceTree = "<absolute>"; };
 		393B5CE8D3BCE90CCBC751BD /* CStation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CStation.cpp; sourceTree = "<absolute>"; };
@@ -102,6 +105,7 @@
 		54F5F191E541811663808894 /* qt_lib_printsupport.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_printsupport.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_printsupport.pri; sourceTree = "<absolute>"; };
 		565F1AE0597D3BE3053751A3 /* unix.conf */ = {isa = PBXFileReference; lastKnownFileType = file; name = unix.conf; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/common/unix.conf; sourceTree = "<absolute>"; };
 		56AAA5ABE4CCE1FC1BFB53E4 /* qt_lib_printsupport_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_printsupport_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_printsupport_private.pri; sourceTree = "<absolute>"; };
+		57CC9B48BFF8BC6CF20A3E73 /* moc_CSoilLayerModel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_CSoilLayerModel.cpp; sourceTree = "<absolute>"; };
 		58BBC3DD41BFC2EF4D6F7BDE /* CLaunchWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLaunchWindow.h; sourceTree = "<absolute>"; };
 		5E36CD8A8B0E4C1EA2797640 /* qt_lib_network_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_network_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_network_private.pri; sourceTree = "<absolute>"; };
 		6164E9817D25C55FA310A1C3 /* qt_lib_uitools_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_uitools_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_uitools_private.pri; sourceTree = "<absolute>"; };
@@ -120,6 +124,7 @@
 		7A46863C44CD52632ED75CF3 /* qt_lib_openglextensions.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_openglextensions.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_openglextensions.pri; sourceTree = "<absolute>"; };
 		7D2A6B8F2DF1A3D15D304D52 /* qt_lib_webkit_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_webkit_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_webkit_private.pri; sourceTree = "<absolute>"; };
 		7E150CEACA64E912D79A293D /* qt_lib_dbus_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_dbus_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_dbus_private.pri; sourceTree = "<absolute>"; };
+		83A114D9C0027347C0A543E1 /* CSoil.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CSoil.cpp; sourceTree = "<absolute>"; };
 		87215ECFC80730ECEF03A015 /* qt_lib_declarative_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_declarative_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_declarative_private.pri; sourceTree = "<absolute>"; };
 		8AF8B98F063AACEE2590A9EC /* qt_lib_svg.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_svg.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_svg.pri; sourceTree = "<absolute>"; };
 		8D9815BDB5BD9F90D2BC05C5 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
@@ -128,9 +133,11 @@
 		90107D33E658E8B3F52135D5 /* launch.ui */ = {isa = PBXFileReference; lastKnownFileType = file; name = launch.ui; path = ui/launch.ui; sourceTree = "<absolute>"; };
 		911C62DD50AF71AE9D66F069 /* qt_lib_sql.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_sql.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_sql.pri; sourceTree = "<absolute>"; };
 		9146E0711BCFB17910DD3FF7 /* qt_lib_quickwidgets_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_quickwidgets_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_quickwidgets_private.pri; sourceTree = "<absolute>"; };
+		923CE9797149CC349514024D /* CSoil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSoil.h; sourceTree = "<absolute>"; };
 		94CF35C944F0BD3E270F8490 /* CWindowSDB.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CWindowSDB.cpp; sourceTree = "<absolute>"; };
 		99915B276060AE8BD12EF1A2 /* CWindowWDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWindowWDB.h; sourceTree = "<absolute>"; };
 		9A4488EFF1830E805B768670 /* qt_lib_concurrent.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_concurrent.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_concurrent.pri; sourceTree = "<absolute>"; };
+		9E81541DC4B75F5BD0014937 /* ui_sdb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ui_sdb.h; sourceTree = "<absolute>"; };
 		A373A0B5796EE76B39602FD3 /* qt_lib_positioning.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_positioning.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_positioning.pri; sourceTree = "<absolute>"; };
 		A5AF5794A565A88CD09987B9 /* qt_lib_script_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_script_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_script_private.pri; sourceTree = "<absolute>"; };
 		A9D7F820FD3BF4ACEA9E4F18 /* qt_lib_designer.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_designer.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_designer.pri; sourceTree = "<absolute>"; };
@@ -156,6 +163,7 @@
 		D3EB6AF2947F50064E184E97 /* qt_lib_svg_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_svg_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_svg_private.pri; sourceTree = "<absolute>"; };
 		D4B32C2222F82AC56BADEB21 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
 		D9CC895510301795FBC13ABA /* qt_lib_opengl_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_opengl_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_opengl_private.pri; sourceTree = "<absolute>"; };
+		DD3D93DB3083013A5FF6F708 /* sdb.ui */ = {isa = PBXFileReference; lastKnownFileType = file; name = sdb.ui; path = ui/sdb.ui; sourceTree = "<absolute>"; };
 		DD62063BB309123806BD9C01 /* qt_lib_multimediawidgets.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_multimediawidgets.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_multimediawidgets.pri; sourceTree = "<absolute>"; };
 		DF1A7C6C091A8B7FAFDFDE70 /* qt_lib_widgets.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_widgets.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_widgets.pri; sourceTree = "<absolute>"; };
 		E1500C2942B998C121785275 /* qt_lib_gui_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_gui_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_gui_private.pri; sourceTree = "<absolute>"; };
@@ -163,7 +171,6 @@
 		E57F2B1C78FB5F9665EC7F5B /* qt_lib_script.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_script.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_script.pri; sourceTree = "<absolute>"; };
 		E58DC59380F7B934EE8562A8 /* XMLEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMLEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5AFDC7D9CA7DD5B8A0010C2 /* qt_lib_qtmultimediaquicktools_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_qtmultimediaquicktools_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri; sourceTree = "<absolute>"; };
-		E6203756DEA2CD8BCAB6D262 /* mainwindow.ui */ = {isa = PBXFileReference; lastKnownFileType = file; name = mainwindow.ui; path = ui/mainwindow.ui; sourceTree = "<absolute>"; };
 		E6BA331C63798A6BB15CCE23 /* qt_lib_opengl.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_opengl.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_opengl.pri; sourceTree = "<absolute>"; };
 		EAF8498399AC596D6A3D41CA /* moc_CWindowSDB.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_CWindowSDB.cpp; sourceTree = "<absolute>"; };
 		EC2FA2F860C967BF1866A9A4 /* qt_lib_help_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_help_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_help_private.pri; sourceTree = "<absolute>"; };
@@ -171,6 +178,7 @@
 		F40BA9920B20E12DDB590D27 /* qt_lib_enginio_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_enginio_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_enginio_private.pri; sourceTree = "<absolute>"; };
 		F6E5AE607E8DB6CF3A61335E /* clang.conf */ = {isa = PBXFileReference; lastKnownFileType = file; name = clang.conf; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/common/clang.conf; sourceTree = "<absolute>"; };
 		F8E1C5D6150E4D8C8E5957BA /* CWindowWDB.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CWindowWDB.cpp; sourceTree = "<absolute>"; };
+		F91D192CF93B0CE8BFCBA8AD /* wdb.ui */ = {isa = PBXFileReference; lastKnownFileType = file; name = wdb.ui; path = ui/wdb.ui; sourceTree = "<absolute>"; };
 		FBE78C7346BA1C0756902951 /* qt_lib_serialport_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_serialport_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_serialport_private.pri; sourceTree = "<absolute>"; };
 		FE2E920A62CD6B8223A043B7 /* qt_lib_qml.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_qml.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_qml.pri; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
@@ -244,8 +252,10 @@
 				65E537FC9E72E387800F050D /* moc_CLaunchWindow.cpp */,
 				EAF8498399AC596D6A3D41CA /* moc_CWindowSDB.cpp */,
 				367D357CEF28AC3A09C42364 /* moc_CWindowWDB.cpp */,
-				14C9776A4B2E34DB51106724 /* ui_mainwindow.h */,
+				57CC9B48BFF8BC6CF20A3E73 /* moc_CSoilLayerModel.cpp */,
 				4CC37DF1DCC11A8F2B6105DA /* ui_launch.h */,
+				368D83A6625C8E0F8A160ED6 /* ui_wdb.h */,
+				9E81541DC4B75F5BD0014937 /* ui_sdb.h */,
 			);
 			name = "Generated Sources";
 			sourceTree = "<Group>";
@@ -258,12 +268,15 @@
 				08A4AEB96F0AC1AC9B6B4865 /* CLaunchWindow.cpp */,
 				94CF35C944F0BD3E270F8490 /* CWindowSDB.cpp */,
 				F8E1C5D6150E4D8C8E5957BA /* CWindowWDB.cpp */,
+				83A114D9C0027347C0A543E1 /* CSoil.cpp */,
 				393B5CE8D3BCE90CCBC751BD /* CStation.cpp */,
 				14BBBC027744E753CA279113 /* CXMLParser.cpp */,
 				CA66E871929802F1B7DE123E /* CDailyWeatherModel.h */,
 				58BBC3DD41BFC2EF4D6F7BDE /* CLaunchWindow.h */,
 				49C82568C41A029F3BC2D88F /* CWindowSDB.h */,
 				99915B276060AE8BD12EF1A2 /* CWindowWDB.h */,
+				923CE9797149CC349514024D /* CSoil.h */,
+				15B0E380EF333DB99AE9624D /* CSoilLayerModel.h */,
 				37BBEF775C693ADDD49563CD /* CStation.h */,
 				B60A5A328D50B94CAB593D17 /* CXMLParser.h */,
 			);
@@ -451,8 +464,9 @@
 		F027E420C02C9CC7A06A0901 /* ui */ = {
 			isa = PBXGroup;
 			children = (
-				E6203756DEA2CD8BCAB6D262 /* mainwindow.ui */,
 				90107D33E658E8B3F52135D5 /* launch.ui */,
+				F91D192CF93B0CE8BFCBA8AD /* wdb.ui */,
+				DD3D93DB3083013A5FF6F708 /* sdb.ui */,
 			);
 			name = ui;
 			sourceTree = "<Group>";
@@ -544,12 +558,14 @@
 				23AD31E18855707CC01F7885 /* CLaunchWindow.cpp in Compile Sources */,
 				A3DE32AB31D028650B4B4131 /* CWindowSDB.cpp in Compile Sources */,
 				9386EA582B4A76312DDB1420 /* CWindowWDB.cpp in Compile Sources */,
+				3215F104CDA47866B13086EE /* CSoil.cpp in Compile Sources */,
 				B3CF9240B62B94B17484ECCD /* CStation.cpp in Compile Sources */,
 				C196F2D85DD169818853FAA2 /* CXMLParser.cpp in Compile Sources */,
 				B10B4D7298B5E160396E8E8B /* moc_CDailyWeatherModel.cpp in Compile Sources */,
 				9BACEEDA15D35F0513EB2F8A /* moc_CLaunchWindow.cpp in Compile Sources */,
 				D7049B8D2EA076E65CEB587F /* moc_CWindowSDB.cpp in Compile Sources */,
 				BFFF396E260B5BD9C6D95274 /* moc_CWindowWDB.cpp in Compile Sources */,
+				7F392EDA4F3B45D168E150D5 /* moc_CSoilLayerModel.cpp in Compile Sources */,
 			);
 			name = "Compile Sources";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -560,7 +576,7 @@
 		F86E05C107B86A16D2A48FCC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B065C007C8DAD32E2A4D8AA4 /* Qt Preprocess */;
-			targetProxy = 5640872C1A15000F00D255B4 /* PBXContainerItemProxy */;
+			targetProxy = 564087571A169D6700D255B4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

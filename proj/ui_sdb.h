@@ -328,6 +328,7 @@ public:
         soilLayerView = new QTableView(groupBox_2);
         soilLayerView->setObjectName(QStringLiteral("soilLayerView"));
         soilLayerView->setGeometry(QRect(10, 30, 791, 471));
+        soilLayerView->verticalHeader()->setVisible(false);
         SDB->setCentralWidget(centralwidget);
         groupBox_2->raise();
         groupBox->raise();

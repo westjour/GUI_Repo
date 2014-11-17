@@ -264,7 +264,6 @@ Soils* CXMLParser::parseSDB()
     QDomElement root = doc.documentElement();
     QDomNode n = root.firstChildElement();
     
-    qDebug("entering while loop - parsing SDB");
     while(!n.isNull()) {
         if (n.isElement()) {
             QDomElement e = n.toElement();
@@ -286,27 +285,30 @@ Soils* CXMLParser::parseSDB()
                             
                             // Add attribute to the station's attribute map
                             soil->getSoilAttrs()->insert(name, value);
-                           
-                            // Iterate through <Layer> elements
-                            for(int i=0; i<childElem.childNodes().length(); i++) {
-                                QDomElement layerElem = childElem.childNodes().at(i).toElement();
-                                Layer* layer = new Layer();
-                                
-                                // Parse <Layer> attributes
-                                QDomNamedNodeMap layerAttrs = layerElem.attributes();
-                                //qDebug("layerAttrs:%i", layerAttrs.size());
-                                QString name, value;
-                                for(int k=0; k<layerAttrs.count(); k++) {
-                                    QDomAttr attr = layerAttrs.item(k).toAttr();
-                                    name = attr.name();
-                                    value = attr.value();
-                                    
-                                    layer->insert(name, value);
-                                    QVector<Layer*>* l = soil->getLayers();
-                                    //l->push_back(layer);
-                                }
-                            }
                         }
+                        
+                        // Iterate through <Layer> elements
+                        for(int i=0; i<childElem.childNodes().length(); i++) {
+                            QDomElement layerElem = childElem.childNodes().at(i).toElement();
+                            Layer* layer = new Layer();
+                            
+                            // Parse <Layer> attributes
+                            QDomNamedNodeMap layerAttrs = layerElem.attributes();
+                            //qDebug("layerAttrs:%i", layerAttrs.size());
+                            QString name, value;
+                            for(int k=0; k<layerAttrs.count(); k++) {
+                                QDomAttr attr = layerAttrs.item(k).toAttr();
+                                name = attr.name();
+                                value = attr.value();
+                                
+                                // add attribute to the layer
+                                layer->insert(name, value);
+                            }
+                            
+                            QVector<Layer*>* layers = soil->getLayers();
+                            layers->push_back(layer);
+                        }
+                        
                         // Add this soil to list of soils
                         soils->push_back(soil);
                     } // end if, we have parsed <Soil> and its children

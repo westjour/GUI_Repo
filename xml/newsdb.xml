@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SDB>
+    <Soils>
+        <Soil SoilID="NLHA" SlDesc="Silty Clay Loam" Slsour="AgMIP Wheat" Sltx="SICL" Sldp="200" SSite="Wigeningen" SCount="Nethelands" SLat="51.967" SLong="5.633" Tacon="Wigeningen" Scom=""/>
+        <Soil SoilID="INDE" SlDesc="Silty Loam" Slsour="AgMIP Wheat" Sltx="SILO" Sldp="180" SSite="New Delhi" SCount="India" SLat="28.38" SLong="77.12" Tacon="NewDelhi" Scom=""/>
+        <Soil SoilID="AUWH" SlDesc="Loamy Sand" Slsour="AgMIP Wheat" Sltx="LOSA" Sldp="210" SSite="Wongan Hill" SCount="Australia" SLat="-30.89" SLong="116.72" Tacon="WonganHill" Scom=""/>
+        <Soil SoilID="ARBA" SlDesc="Loamy Sand" Slsour="AgMIP Wheat" Sltx="LOSA" Sldp="210" SSite="Wongan Hill" SCount="Australia" SLat="-30.89" SLong="116.72" Tacon="WonganHill" Scom=""/>
+        <Soil SoilID="NLHAm2W" SlDesc="Silty Clay Loam" Slsour="AgMIP Wheat" Sltx="SICL" Sldp="200" SSite="Wigeningen" SCount="Nethelands" SLat="51.967" SLong="5.633" Tacon="Wigeningen" Scom=""/>
+        <Soil SoilID="NLHAp2W" SlDesc="Silty Clay Loam" Slsour="AgMIP Wheat" Sltx="SICL" Sldp="200" SSite="Wigeningen" SCount="Nethelands" SLat="51.967" SLong="5.633" Tacon="Wigeningen" Scom=""/>
+        <Soil SoilID="INDEm2W" SlDesc="Silty Loam" Slsour="AgMIP Wheat" Sltx="SILO" Sldp="180" SSite="New Delhi" SCount="India" SLat="28.38" SLong="77.12" Tacon="NewDelhi" Scom=""/>
+        <Soil SoilID="INDEp2W" SlDesc="Silty Loam" Slsour="AgMIP Wheat" Sltx="SILO" Sldp="180" SSite="New Delhi" SCount="India" SLat="28.38" SLong="77.12" Tacon="NewDelhi" Scom=""/>
+        <Soil SoilID="AUWHm2W" SlDesc="Loamy Sand" Slsour="AgMIP Wheat" Sltx="LOSA" Sldp="210" SSite="Wongan Hill" SCount="Australia" SLat="-30.89" SLong="116.72" Tacon="WonganHill" Scom=""/>
+        <Soil SoilID="AUWHp2W" SlDesc="Loamy Sand" Slsour="AgMIP Wheat" Sltx="LOSA" Sldp="210" SSite="Wongan Hill" SCount="Australia" SLat="-30.89" SLong="116.72" Tacon="WonganHill" Scom=""/>
+        <Soil SoilID="ARBAm2W" SlDesc="Loamy Sand" Slsour="AgMIP Wheat" Sltx="LOSA" Sldp="210" SSite="Wongan Hill" SCount="Australia" SLat="-30.89" SLong="116.72" Tacon="WonganHill" Scom=""/>
+        <Soil SoilID="ARBAp2W" SlDesc="Loamy Sand" Slsour="AgMIP Wheat" Sltx="LOSA" Sldp="210" SSite="Wongan Hill" SCount="Australia" SLat="-30.89" SLong="116.72" Tacon="WonganHill" Scom=""/>
+        <Soil SoilID="GERM" SlDesc="Silty Clay Loam" Slsour="AgMIP Germ" Sltx="SICL" Sldp="230" SSite="Berlin" SCount="Germany" SLat="51" SLong="10" Tacon="Wigeningen" Scom=""/>
+    </Soils>
+</SDB>

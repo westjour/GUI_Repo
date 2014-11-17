@@ -293,6 +293,9 @@
        <height>471</height>
       </rect>
      </property>
+     <attribute name="verticalHeaderVisible">
+      <bool>false</bool>
+     </attribute>
     </widget>
    </widget>
    <zorder>groupBox_2</zorder>

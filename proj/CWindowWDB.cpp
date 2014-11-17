@@ -202,7 +202,7 @@ void CWindowWDB::onStationDataChanged(QString field)
 
 /* Brief: Disable the station line edits for editing
  */
-void CWindowWDB::disableStationDataLineEdits()
+void CWindowWDB::disableLineEdits()
 {
     ui->mStatNameLineEdit->setEnabled(false);
     ui->mStatNameLineEdit->setEnabled(false);
@@ -220,7 +220,7 @@ void CWindowWDB::disableStationDataLineEdits()
 
 /* Brief: Enable the station line edits for editing
  */
-void CWindowWDB::enableStationDataLineEdits()
+void CWindowWDB::enableLineEdits()
 {
     ui->mStatNameLineEdit->setEnabled(true);
     ui->mStatNameLineEdit->setEnabled(true);
@@ -252,8 +252,8 @@ void CWindowWDB::stationIndexChanged(QString text)
 
     // Update Station info line edits
     if (station == NULL) { // Station was changed to 'None'
-        clearStationLineEdits();
-        disableStationDataLineEdits();
+        clearLineEdits();
+        disableLineEdits();
     }
     else
     {
@@ -268,7 +268,7 @@ void CWindowWDB::stationIndexChanged(QString text)
         ui->mTmhtLineEdit->setText(station->getStatAttrs()->value("Tmht"));
         ui->mWmhtLineEdit->setText(station->getStatAttrs()->value("Wmht"));
         
-        enableStationDataLineEdits();
+        enableLineEdits();
     }
     
     // Change the station being shown in the Daily Weather table
@@ -279,7 +279,7 @@ void CWindowWDB::stationIndexChanged(QString text)
 
 /* Brief: Delete text in the station line edits
  */
-void CWindowWDB::clearStationLineEdits()
+void CWindowWDB::clearLineEdits()
 {
     ui->mStatNameLineEdit->clear();
     ui->mStatIDLineEdit->clear();

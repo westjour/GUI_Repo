@@ -27,16 +27,29 @@ public:
     
 public slots:
     void onSoilChanged(QString id);
+    void onFileSave();
     
     
 private:
     QString mFilename;
+    void buildMenuBar();
+    void buildMacMenuBar();
     void makeConnections();
+    void clearLineEdits();
+    void disableLineEdits();
+    void enableLineEdits();
+    void saveXML(QString filename);
+
     
     //
     // GUI Elements
     //
     Ui::SDB* ui;
+    
+    QMenuBar* macMenuBar;
+    QAction* mFileSave;
+    QAction* mFileOpen;
+    QAction* mFileExit;
 };
 
 #endif /* defined(__XMLEditor__CWindowSDB__) */

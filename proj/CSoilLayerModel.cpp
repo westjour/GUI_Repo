@@ -47,12 +47,10 @@ int CSoilLayerModel::rowCount( const QModelIndex & parent ) const
         return 0;
     
     if(mSoil != NULL) {
-        qDebug("SOIL IS NOT NULL! has %i layers", mSoil->getLayers()->size());
         return mSoil->getLayers()->size();
-        
     }
     else
-        return 10;
+        return 0;
 }
 
 
@@ -89,40 +87,76 @@ QVariant CSoilLayerModel::data( const QModelIndex & index, int role ) const
     int column = index.column();
     int row = index.row();
     
-    //qDebug("from inside Data(), row:%i, col:%i, role=%i, counter=%i", row, column, role, counter);
-    
     if (role == Qt::DisplayRole || role == Qt::EditRole)
     {
-        /*if (mStation == NULL)
-         return QVariant("n/a");
-         
-         if (column == CDailyWeatherModel::YEAR)
-         return QVariant(mYear);
-         else if (column == CDailyWeatherModel::DOY)
-         return QVariant(row+1);
-         else {
-         // Note: Be sure to use pointer here! Else, the map will be returned by value. This means
-         // that a copy of this huge map will be made whenever this function is called (whenever
-         // the model needs to be updated or the table needs to be redraen - potentially many times.
-         // This will lag the interface.
-         Hash* hash = mStation->getWeather();
-         
-         QString yr = QString::number(mYear);
-         QString doy = QString::number(row+1);
-         Pair pair(yr, doy);
-         
-         
-         // Find item in weather map with key
-         Hash::const_iterator iter = hash->find(pair);
-         
-         // (Year, Day of Year) not found in weather data map for the current station
-         if(iter == hash->end())
-         return QVariant("n/a");
-         
-         return QVariant(iter.value()->at(column-2));
-         }*/
+        if (mSoil == NULL)
+            return QVariant("n/a");
+        
+        // Valid soil selected
+        else {
+            QVector<Layer*>* layers = mSoil->getLayers();
+            Layer* layer = layers->at(row);
+            QString key;
+            
+            switch(column) {
+                case CSoilLayerModel::MH:
+                    key = "MH"; break;
+                case CSoilLayerModel::ZLYR:
+                    key = "ZLYR"; break;
+                case CSoilLayerModel::LL:
+                    key = "LL"; break;
+                case CSoilLayerModel::DUL:
+                    key = "DUL"; break;
+                case CSoilLayerModel::SAT:
+                    key = "SAT"; break;
+                case CSoilLayerModel::SHF:
+                    key = "SHF"; break;
+                case CSoilLayerModel::SWCN:
+                    key = "SWCN"; break;
+                case CSoilLayerModel::BD:
+                    key = "BD"; break;
+                case CSoilLayerModel::OC:
+                    key = "OC"; break;
+                case CSoilLayerModel::Clay:
+                    key = "Clay"; break;
+                case CSoilLayerModel::Silt:
+                    key = "Silt"; break;
+                case CSoilLayerModel::Stones:
+                    key = "Stones"; break;
+                case CSoilLayerModel::TotN:
+                    key = "TotN"; break;
+                case CSoilLayerModel::pH:
+                    key = "pH"; break;
+                case CSoilLayerModel::pHKcl:
+                    key = "pHKcl"; break;
+                case CSoilLayerModel::CEC:
+                    key = "CEC"; break;
+                case CSoilLayerModel::CaCo:
+                    key = "CaCo"; break;
+                case CSoilLayerModel::KsMtrx:
+                    key = "KsMtrx"; break;
+                case CSoilLayerModel::SBioDepF:
+                    key = "SBioDepF"; break;
+                case CSoilLayerModel::TotP:
+                    key = "TotP"; break;
+                case CSoilLayerModel::P_ActIno:
+                    key = "P_ActIno"; break;
+                case CSoilLayerModel::P_SloIno:
+                    key = "P_SloIno"; break;
+                case CSoilLayerModel::P_Labile:
+                    key = "P_Labile"; break;
+            }
+
+            // Find item in weather map with key
+            Layer::const_iterator iter = layer->find(key);
+            
+            if(iter == layer->end())
+                return QVariant("n/a");
+            
+            return QVariant(iter.value());
+        }
     }
-    
+        
     else if (role == Qt::TextAlignmentRole)
         return QVariant(Qt::AlignCenter);
     else
@@ -157,26 +191,53 @@ QVariant CSoilLayerModel::headerData( int section, Qt::Orientation orientation, 
         // Place label on horizontal header sections
         if (orientation == Qt::Horizontal)
         {
-            
             switch(section) {
-                case CSoilLayerModel::YEAR:
+                case CSoilLayerModel::MH:
                     return QVariant("MH");
-                case CSoilLayerModel::DOY:
-                    return QVariant("DOY");
-                case CSoilLayerModel::SRAD:
-                    return QVariant("SRAD");
-                case CSoilLayerModel::TMAX:
-                    return QVariant("Tmax");
-                case CSoilLayerModel::TMIN:
-                    return QVariant("Tmin");
-                case CSoilLayerModel::RAIN:
-                    return QVariant("Rain");
-                case CSoilLayerModel::DEWP:
-                    return QVariant("DewP");
-                case CSoilLayerModel::WIND:
-                    return QVariant("Wind");
-                case CSoilLayerModel::PAR:
-                    return QVariant("PAR");
+                case CSoilLayerModel::ZLYR:
+                    return QVariant("ZLYR");
+                case CSoilLayerModel::LL:
+                    return QVariant("LL");
+                case CSoilLayerModel::DUL:
+                    return QVariant("DUL");
+                case CSoilLayerModel::SAT:
+                    return QVariant("SAT");
+                case CSoilLayerModel::SHF:
+                    return QVariant("SHF");
+                case CSoilLayerModel::SWCN:
+                    return QVariant("SWCN");
+                case CSoilLayerModel::BD:
+                    return QVariant("BD");
+                case CSoilLayerModel::OC:
+                    return QVariant("OC");
+                case CSoilLayerModel::Clay:
+                    return QVariant("Clay");
+                case CSoilLayerModel::Silt:
+                    return QVariant("Silt");
+                case CSoilLayerModel::Stones:
+                    return QVariant("Stones");
+                case CSoilLayerModel::TotN:
+                    return QVariant("TotN");
+                case CSoilLayerModel::pH:
+                    return QVariant("pH");
+                case CSoilLayerModel::pHKcl:
+                    return QVariant("pHKcl");
+                case CSoilLayerModel::CEC:
+                    return QVariant("CEC");
+                case CSoilLayerModel::CaCo:
+                    return QVariant("CaCo");
+                case CSoilLayerModel::KsMtrx:
+                    return QVariant("KsMtrx");
+                case CSoilLayerModel::SBioDepF:
+                    return QVariant("SBioDepF");
+                case CSoilLayerModel::TotP:
+                    return QVariant("TotP");
+                case CSoilLayerModel::P_ActIno:
+                    return QVariant("P_ActIno");
+                case CSoilLayerModel::P_SloIno:
+                    return QVariant("P_SloIno");
+                case CSoilLayerModel::P_Labile:
+                    return QVariant("P_Labile");
             }
             
         }
@@ -203,19 +264,65 @@ bool CSoilLayerModel::setData( const QModelIndex & index, const QVariant & value
     int column = index.column();
     int row = index.row();
     
-    /*Hash* hash = mStation->getWeather();
-     
-     QString yr = QString::number(mYear);
-     QString doy = QString::number(row+1);
-     Pair pair(yr, doy);
-     
-     // Find item in weather map with key
-     Hash::iterator iter = hash->find(pair);
-     QVector<QString>* values = iter.value();*/
+    QVector<Layer*>* layers = mSoil->getLayers();
+    Layer* layer = layers->at(row);
+    
+    QString key;
+    switch(column) {
+        case CSoilLayerModel::MH:
+            key = "MH"; break;
+        case CSoilLayerModel::ZLYR:
+            key = "ZLYR"; break;
+        case CSoilLayerModel::LL:
+            key = "LL"; break;
+        case CSoilLayerModel::DUL:
+            key = "DUL"; break;
+        case CSoilLayerModel::SAT:
+            key = "SAT"; break;
+        case CSoilLayerModel::SHF:
+            key = "SHF"; break;
+        case CSoilLayerModel::SWCN:
+            key = "SWCN"; break;
+        case CSoilLayerModel::BD:
+            key = "BD"; break;
+        case CSoilLayerModel::OC:
+            key = "OC"; break;
+        case CSoilLayerModel::Clay:
+            key = "Clay"; break;
+        case CSoilLayerModel::Silt:
+            key = "Silt"; break;
+        case CSoilLayerModel::Stones:
+            key = "Stones"; break;
+        case CSoilLayerModel::TotN:
+            key = "TotN"; break;
+        case CSoilLayerModel::pH:
+            key = "pH"; break;
+        case CSoilLayerModel::pHKcl:
+            key = "pHKcl"; break;
+        case CSoilLayerModel::CEC:
+            key = "CEC"; break;
+        case CSoilLayerModel::CaCo:
+            key = "CaCo"; break;
+        case CSoilLayerModel::KsMtrx:
+            key = "KsMtrx"; break;
+        case CSoilLayerModel::SBioDepF:
+            key = "SBioDepF"; break;
+        case CSoilLayerModel::TotP:
+            key = "TotP"; break;
+        case CSoilLayerModel::P_ActIno:
+            key = "P_ActIno"; break;
+        case CSoilLayerModel::P_SloIno:
+            key = "P_SloIno"; break;
+        case CSoilLayerModel::P_Labile:
+            key = "P_Labile"; break;
+    }
+
+    // Find item in Layer map with this key
+     Layer::iterator iter = layer->find(key);
     
     if (index.isValid() && role == Qt::EditRole)
     {
-        //(*values)[column-2] = value.toString();
+        *iter = value.toString();
         emit dataChanged(index, index);
         return true;
     }

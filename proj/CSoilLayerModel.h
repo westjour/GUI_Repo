@@ -21,13 +21,15 @@ class CSoilLayerModel : public QAbstractTableModel
     
 public:
     enum COL_HEADERS {
-        YEAR=0, DOY, SRAD, TMAX, TMIN, RAIN,
-        DEWP, WIND, PAR, numColHeaders
+        MH=0, ZLYR, LL, DUL, SAT, SHF, SWCN, BD, OC, Clay, Silt, Stones, TotN, pH,
+        pHKcl, CEC, CaCo, KsMtrx, SBioDepF, TotP, P_ActIno, P_SloIno, P_Labile,
+        numColHeaders
     };
     
     explicit CSoilLayerModel(QObject *parent = 0);
     void update();
     void setSoils(QVector<CSoil* >* soils){ mSoils = soils; }
+    QVector<CSoil* >* getSoils(){return mSoils;}
     void setSoil(CSoil* soil) {mSoil=soil;}
     CSoil* findSoil(QString id);
     

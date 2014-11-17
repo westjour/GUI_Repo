@@ -30,7 +30,6 @@ public:
     explicit CWindowWDB(QWidget *parent = 0, QString filename="NULL");
     ~CWindowWDB();
 
-    void clearStationLineEdits();
     //void setFilename(QString filename){mFilename = filename;}
 
 public slots:
@@ -45,8 +44,9 @@ private:
     void buildMacMenuBar();
     void saveXML();
     void makeConnections();
-    void disableStationDataLineEdits();
-    void enableStationDataLineEdits();
+    void clearLineEdits();
+    void disableLineEdits();
+    void enableLineEdits();
     
     QString mFilename;
     

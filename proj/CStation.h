@@ -31,10 +31,10 @@ private:
     AttrMap* mWeatherAttr;
     
     // Map of attributes in the <Storm_Intensity> tag of WDB XML
-    AttrMap* mStormIntAttr;
+    /*AttrMap* mStormIntAttr;*/
     
     // Map of attributes in the <Hourly_Rainfall> tag of WDB XML
-    AttrMap* mHrRainAttr;
+    /*AttrMap* mHrRainAttr;*/
 };
 
 #endif // CSTATION_H

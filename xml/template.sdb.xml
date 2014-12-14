@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SDB>
+  <Soils>
+    <Soil SoilID="" SlDesc="" Slsour="" Sltx="" Sldp="" SSite="" SCount="" SLat="" SLong="" Tacon="" Scom="" Salb="" U="" SWCON="" CN2="" Slnf="" Slpf="" Smhb="" Smpx="" Smke="" PondMax="">
+        <Layer MH="" ZLYR="" LL="" DUL="" SAT="" SHF="" SWCN="" BD="" OC="" Clay="" Silt="" Stones="" TotN="" pH="" pHKcl="" CEC="" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+    </Soil>
+  </Soils>
+  <Version_Control>
+    <Version Number="">
+      <ReleaseDate></ReleaseDate>
+      <Notes></Notes>
+    </Version>
+    <Version Number="">
+      <ReleaseDate></ReleaseDate>
+      <Notes></Notes>
+    </Version>
+    <Version Number="">
+      <ReleaseDate></ReleaseDate>
+      <Notes></Notes>
+    </Version>
+  </Version_Control>
+</SDB>

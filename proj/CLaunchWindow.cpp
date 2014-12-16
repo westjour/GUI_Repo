@@ -32,11 +32,23 @@ void CLaunchWindow::makeConnections() {
 void CLaunchWindow::onOpen() {
     QString dir = "../../xml/";
     
+    #ifdef Q_OS_MAC
+
     // This is necessary on MAC to get the file dialog to have correct default directory
     QString dummyFile = "dummyFile.txt";
-    
+
     QString fileName = QFileDialog::getOpenFileName(this, tr("Open File"), dir+dummyFile, tr("XML Files (*.xml)"));
-    
+
+    #endif
+
+
+    #ifndef Q_OS_MAC
+
+    QString defaultDir = "C:\\Users\\Jourdan\\Desktop\\GUI_Repo-master\\xml";
+    QString fileName = QFileDialog::getOpenFileName(this, tr("Open File"), defaultDir, tr("XML Files (*.xml)"));
+
+    #endif
+
     // User didn't select a file
     if(fileName == NULL)
         return;

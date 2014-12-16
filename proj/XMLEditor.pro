@@ -30,7 +30,10 @@ HEADERS  += CDailyWeatherModel.h \
     CSoil.h \
     CSoilLayerModel.h \
     CStation.h \
-    CXMLParser.h
+    CXMLParser.h \
+    ui_sdb.h \
+    ui_wdb.h \
+    ui_launch.h
 
 FORMS    += ui/launch.ui \
     ui/wdb.ui \

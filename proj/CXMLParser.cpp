@@ -18,17 +18,25 @@ int UNICODE_COMMA = 44;
 
 
 /* Brief: Constructor */
-CXMLParser::CXMLParser() {}
+CXMLParser::CXMLParser(){}
 
 
-/* Parses Template WDB file */
-AttrMap* CXMLParser::parseTemplateWDB()
+/* Parse Template WDB file */
+AttrTemplate* CXMLParser::parseTemplateWDB()
 {
+    int r = 1344;
+
+    #ifdef Q_OS_MAC
     QFile file("/Users/westjour/Desktop/GUI_Repo/xml/template.wdb.xml");
+    #endif
+
+    #ifndef Q_OS_MAC
+    QFile file("C:\\Users\\Jourdan\\Desktop\\GUI_Repo-master\\xml\\template.wdb.xml");
+    #endif
+
     QDomDocument doc = QDomDocument();
     
     
-    // Return empty list on error
     if ( !file.open(QIODevice::ReadOnly) || !doc.setContent(&file) )
         return NULL;
     file.close();
@@ -36,11 +44,7 @@ AttrMap* CXMLParser::parseTemplateWDB()
     // name of the current XML tag
     QString tagName;
     
-    // This map will contain name, value pairs for <Stations> attributes
-    std::map<QString, QString> stationAttrMap;
-    
-    AttrMap* attrMap = new AttrMap;
-    
+    AttrTemplate* attrTemplate = new AttrTemplate;
     QDomElement root = doc.documentElement();
     QDomNode n = root.firstChildElement();
     
@@ -48,27 +52,13 @@ AttrMap* CXMLParser::parseTemplateWDB()
         if (n.isElement()) {
             QDomElement e = n.toElement();
             
-            if (e.tagName() == "Stations" and e.hasChildNodes()) {
-                CStation* station = new CStation();
-                
+            if (e.tagName() == "Stations") {
                 //
                 // Parse station attributes
                 //
-                QDomNamedNodeMap map = e.attributes();
-                
-                for(int j=0; j<map.count(); j++) {
-                    QDomNode s = map.item(j);
-                    
-                    if (s.nodeType() == QDomNode::AttributeNode) {
-                        QDomAttr attrNode = s.toAttr();
-                        QString name = attrNode.name();
-                        QString value = attrNode.value();
-                        
-                        attrMap->insert(name, value);
-                    }
-                }
-                
-                
+                QDomNamedNodeMap attrMap = e.attributes();
+                attrTemplate->insert("Station", attrMap);
+
                 //
                 // Parse <Stations> child elements
                 //
@@ -78,37 +68,29 @@ AttrMap* CXMLParser::parseTemplateWDB()
                     
                     if(childElem.tagName() == "Storm_Intensity")
                         continue;
-                    if(childElem.tagName() == "Hourly_Rainfall")
+                    else if(childElem.tagName() == "Hourly_Rainfall") {
+                        QDomNamedNodeMap attrMap = childNode.attributes();
+                        attrTemplate->insert("Hourly_Rainfall", attrMap);
                         continue;
-                    if(childElem.tagName() == "Weather") {
-                        //
-                        // Parse Weather attributes
-                        //
-                        QDomNamedNodeMap map = childNode.attributes();
-                        
-                        for(int j=0; j<map.count(); j++) {
-                            QDomNode s = map.item(j);
-                            
-                            if (s.nodeType() == QDomNode::AttributeNode) {
-                                QDomAttr attrNode = s.toAttr();
-                                QString name = attrNode.name();
-                                QString value = attrNode.value();
-                                
-                                // Add attribute to the Weather's attribute map
-                                station->getWeatherAttrs()->insert(name, value);
-                            }
-                        }
                     }
+                    else if(childElem.tagName() == "Weather") {
+                        QDomNamedNodeMap attrMap = childNode.attributes();
+                        attrTemplate->insert("Weather", attrMap);
+                    }
+
                 }// finished parsing this station
-            } // end if, we have parsed <Station> and its children
+            } // end if, we have parsed <Stations> and its children
             
             n = n.nextSiblingElement();
         } // end "if element"
     } // end while loop, done parsing XML
-    
-    //return stations;
+
+    return attrTemplate;
 }
 
+
+/* Parse Template SDB file */
+void parseTemplateSDB() {}
 
 /* Brief: Parses WDB xml file */
 Stations* CXMLParser::parseWDB()
@@ -342,7 +324,9 @@ Soils* CXMLParser::parseSDB()
     // This vector will hold a list of stations after the WDB is successfully parsed
     Soils* soils = new QVector<CSoil* >();
 
-    QFile file("/Users/westjour/Desktop/GUI_Repo/xml/AgMIP.sdb.xml");
+    //QFile file("/Users/westjour/Desktop/GUI_Repo/xml/AgMIP.sdb.xml");
+    QFile file("C:\\Users\\Jourdan\\Desktop\\GUI_Repo-master\\xml\\AgMIP.sdb.xml");
+
     QDomDocument doc = QDomDocument();
     
     // Return empty list on error

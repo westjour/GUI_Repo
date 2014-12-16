@@ -25,7 +25,8 @@ CWindowSDB::CWindowSDB(QWidget *parent, QString filename): QMainWindow(parent), 
     // Parse SDB XML
     CXMLParser parser;
     QVector<CSoil* >* soils = parser.parseSDB();
-    
+    int r = soils->size();
+
     // Set model onto view
     CSoilLayerModel* soilLayerModel = new CSoilLayerModel();
     soilLayerModel->setSoils(soils);
@@ -65,16 +66,31 @@ CWindowSDB::CWindowSDB(QWidget *parent, QString filename): QMainWindow(parent), 
  */
 void CWindowSDB::makeConnections()
 {
-    connect(ui->soilCombobox, SIGNAL(currentIndexChanged(QString)), this, SLOT(onSoilChanged(QString)));
+    connect(ui->soilCombobox, SIGNAL(currentIndexChanged(QString)),
+            this, SLOT(onSoilChanged(QString)));
     connect(mFileSave, SIGNAL(triggered (bool)), this, SLOT(onFileSave()));
-    //connect(mFileOpen, SIGNAL(triggered (bool)), this, SLOT(onFileOpen()));
+    connect(mFileOpen, SIGNAL(triggered (bool)), this, SLOT(onFileOpen()));
     connect(mFileExit, SIGNAL(triggered (bool)), this, SLOT(close()));
 }
+
 
 /* Brief: Build menu bar for any OS other than MAC
  */
 void CWindowSDB::buildMenuBar()
 {
+    QMenu* fileMenu = this->menuBar()->addMenu("File");
+
+    mFileSave = new QAction("Save", this);
+    mFileExit = new QAction("Exit", this);
+    mFileOpen = new QAction("Open", this);
+
+    mFileSave->setMenuRole(QAction::NoRole);
+    mFileExit->setMenuRole(QAction::NoRole);
+    mFileOpen->setMenuRole(QAction::NoRole);
+
+    fileMenu->addAction(mFileSave);
+    fileMenu->addAction(mFileOpen);
+    fileMenu->addAction(mFileExit);
 }
 
 
@@ -96,7 +112,6 @@ void CWindowSDB::buildMacMenuBar()
     fileMenu->addAction(mFileSave);
     fileMenu->addAction(mFileOpen);
     fileMenu->addAction(mFileExit);
-    
     
     macMenuBar->addMenu(fileMenu);
     setMenuBar(macMenuBar);
@@ -363,4 +378,10 @@ void CWindowSDB::onFileSave()
     
     if(!fileName.isNull())
         saveXML(fileName);
+}
+
+/* Brief: Automatically called when user selects File->Open
+ */
+void CWindowSDB::onFileOpen()
+{
 }

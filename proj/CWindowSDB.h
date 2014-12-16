@@ -28,6 +28,7 @@ public:
 public slots:
     void onSoilChanged(QString id);
     void onFileSave();
+    void onFileOpen();
     
     
 private:

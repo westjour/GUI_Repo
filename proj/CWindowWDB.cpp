@@ -21,9 +21,18 @@ CWindowWDB::CWindowWDB(QWidget *parent, QString filename) : QMainWindow(parent),
     //setFixedSize(1000,1000);
     
     mFilename = filename;
-    
-    // Parse WDB XML
+
+    // Parse template WDB
     CXMLParser parser;
+    mAttrTemplate = parser.parseTemplateWDB();
+
+    int r = 666;
+    if( mAttrTemplate->contains("Hourly_Rainfall") )
+        r = -1;
+
+    //int p = mAttrTemplate->value("Hourly_Rainfall").count();//["Hourly_Rainfall"].count();
+
+    // Parse WDB XML
     QVector<CStation* >* stations = parser.parseWDB();
     
     // Set model onto view
@@ -66,6 +75,19 @@ CWindowWDB::CWindowWDB(QWidget *parent, QString filename) : QMainWindow(parent),
  */
 void CWindowWDB::buildMenuBar()
 {
+    QMenu* fileMenu = this->menuBar()->addMenu("File");
+
+    mFileSave = new QAction("Save", this);
+    mFileExit = new QAction("Exit", this);
+    mFileOpen = new QAction("Open", this);
+
+    mFileSave->setMenuRole(QAction::NoRole);
+    mFileExit->setMenuRole(QAction::NoRole);
+    mFileOpen->setMenuRole(QAction::NoRole);
+
+    fileMenu->addAction(mFileSave);
+    fileMenu->addAction(mFileOpen);
+    fileMenu->addAction(mFileExit);
 }
 
 

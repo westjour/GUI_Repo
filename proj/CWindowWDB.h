@@ -10,11 +10,16 @@
 #define __XMLEditor__CWindowWDB__
 
 #include <QMainWindow>
+#include <QDomNamedNodeMap>
 
 class CTableView;
 class QComboBox;
 class QLineEdit;
 class CStation;
+
+/* Map where key=identifier(Soil, Layer, Station, etc.) and value is another map where key=attribute name
+ * and value=attribute value */
+typedef QMap<QString, QDomNamedNodeMap > AttrTemplate;
 
 /* Forward declaration this class so that we can use it as a
 member variable. It is actually defined in ui_mainWindow.h */
@@ -47,7 +52,9 @@ private:
     void clearLineEdits();
     void disableLineEdits();
     void enableLineEdits();
-    
+
+    // Map of WDB template values
+    AttrTemplate* mAttrTemplate;
     QString mFilename;
     
     //

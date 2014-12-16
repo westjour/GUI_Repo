@@ -43,14 +43,12 @@ CSoil* CSoilLayerModel::findSoil(QString id)
  */
 int CSoilLayerModel::rowCount( const QModelIndex & parent ) const
 {
-    if (parent.isValid())
+    if (parent.isValid() || mSoil == NULL)
         return 0;
     
     if(mSoil != NULL) {
         return mSoil->getLayers()->size();
     }
-    else
-        return 0;
 }
 
 

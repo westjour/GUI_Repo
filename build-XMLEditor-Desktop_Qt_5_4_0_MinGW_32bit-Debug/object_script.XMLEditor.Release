@@ -1,0 +1,15 @@
+INPUT(
+./release\main.o
+./release\CDailyWeatherModel.o
+./release\CLaunchWindow.o
+./release\CWindowSDB.o
+./release\CWindowWDB.o
+./release\CSoil.o
+./release\CStation.o
+./release\CXMLParser.o
+./release\moc_CDailyWeatherModel.o
+./release\moc_CLaunchWindow.o
+./release\moc_CWindowSDB.o
+./release\moc_CWindowWDB.o
+./release\moc_CSoilLayerModel.o
+);

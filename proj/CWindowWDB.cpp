@@ -24,13 +24,7 @@ CWindowWDB::CWindowWDB(QWidget *parent, QString filename) : QMainWindow(parent),
 
     // Parse template WDB
     CXMLParser parser;
-    mAttrTemplate = parser.parseTemplateWDB();
-
-    int r = 666;
-    if( mAttrTemplate->contains("Hourly_Rainfall") )
-        r = -1;
-
-    //int p = mAttrTemplate->value("Hourly_Rainfall").count();//["Hourly_Rainfall"].count();
+    //mAttrTemplate = parser.parseTemplateWDB();
 
     // Parse WDB XML
     QVector<CStation* >* stations = parser.parseWDB();
@@ -57,7 +51,8 @@ CWindowWDB::CWindowWDB(QWidget *parent, QString filename) : QMainWindow(parent),
     ui->mStationCombobox->setFixedSize(200, 30);
     ui->mStationCombobox->addItems(options);
   
-   
+    populateYearCombobox();
+
     // Create menus based on the operating system
     #ifdef Q_OS_MAC
     buildMacMenuBar();
@@ -113,6 +108,17 @@ void CWindowWDB::buildMacMenuBar()
     
     macMenuBar->addMenu(fileMenu);
     setMenuBar(macMenuBar);
+}
+
+
+/* Brief: Populate the Year combobox */
+void CWindowWDB::populateYearCombobox()
+{
+    QStringList yearsList;
+    for(int i=1979; i<2099; i++)
+        yearsList.append(QString::number(i));
+
+    ui->mYearCombobox->addItems(yearsList);
 }
 
 

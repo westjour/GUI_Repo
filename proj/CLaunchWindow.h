@@ -27,6 +27,8 @@ public:
 
 private slots:
     void onOpen();
+    void onNewSDB();
+    void onNewWDB();
     
 private:
     void makeConnections();

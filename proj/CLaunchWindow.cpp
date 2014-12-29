@@ -24,6 +24,8 @@ CLaunchWindow::CLaunchWindow(QWidget *parent): ui(new Ui::LaunchForm) {
  */
 void CLaunchWindow::makeConnections() {
     connect(ui->pushButtonOpen, SIGNAL(clicked(bool)), this, SLOT(onOpen()));
+    connect(ui->pushButton_newSDB, SIGNAL(clicked(bool)), this, SLOT(onNewSDB()));
+    connect(ui->pushButton_newWDB, SIGNAL(clicked(bool)), this, SLOT(onNewWDB()));
 }
 
 
@@ -64,15 +66,54 @@ void CLaunchWindow::onOpen() {
         window->show();
     }
     
-    
-    
-    
+
     // Since we have opened a window, we don't need to see the launch window anymore.
     this->hide();
 }
 
-/* Brief:
- */
+
+/* Brief: */
+void CLaunchWindow::onNewSDB()
+{
+    QString filename;
+
+    #ifdef Q_OS_MAC
+    filename = "TODO";
+    #endif
+
+    #ifndef Q_OS_MAC
+    filename = "C:\\Users\\Jourdan\\Desktop\\GUI_Repo-master\\xml\\template.sdb";
+    #endif
+
+    CWindowSDB* window = new CWindowSDB(0, filename);
+    window->show();
+
+    // Since we have opened a window, we don't need to see the launch window anymore.
+    this->hide();
+}
+
+
+/* Brief: */
+void CLaunchWindow::onNewWDB()
+{
+    QString filename;
+
+    #ifdef Q_OS_MAC
+    filename = "TODO";
+    #endif
+
+    #ifndef Q_OS_MAC
+    filename = "C:\\Users\\Jourdan\\Desktop\\GUI_Repo-master\\xml\\template.wdb";
+    #endif
+
+    CWindowWDB* window = new CWindowWDB(0, filename);
+    window->show();
+
+    // Since we have opened a window, we don't need to see the launch window anymore.
+    this->hide();
+}
+
+/* Brief: Destructor */
 CLaunchWindow::~CLaunchWindow()
 {
 }

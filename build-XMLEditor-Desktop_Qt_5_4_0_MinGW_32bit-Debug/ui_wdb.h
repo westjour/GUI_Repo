@@ -35,27 +35,25 @@ public:
     QGroupBox *statGroupBox;
     QWidget *formLayoutWidget;
     QFormLayout *stationDataFormLayout;
-    QLabel *stationLabel;
-    QComboBox *mStationCombobox;
     QLabel *statIDLabel;
     QLineEdit *mStatIDLineEdit;
     QLabel *statNameLabel;
     QLineEdit *mStatNameLineEdit;
     QLabel *placeLabel;
-    QLabel *latLabel;
     QLineEdit *mPlaceNameLineEdit;
+    QLabel *latLabel;
     QLineEdit *mLatLineEdit;
     QLabel *longLabel;
-    QLabel *elevLabel;
-    QLabel *tavLabel;
-    QLabel *ampLabel;
     QLineEdit *mLongLineEdit;
+    QLabel *elevLabel;
     QLineEdit *mElevLineEdit;
+    QLabel *tavLabel;
     QLineEdit *mTavLineEdit;
+    QLabel *ampLabel;
     QLineEdit *mAmpLineEdit;
     QLabel *tmhtLabel;
-    QLabel *wmhtLabel;
     QLineEdit *mTmhtLineEdit;
+    QLabel *wmhtLabel;
     QLineEdit *mWmhtLineEdit;
     QGroupBox *dwGroupBox;
     QWidget *formLayoutWidget_2;
@@ -63,6 +61,8 @@ public:
     QLabel *yearLabel;
     QComboBox *mYearCombobox;
     QTableView *mDailyWeatherView;
+    QComboBox *mStationCombobox;
+    QLabel *stationLabel;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -71,12 +71,12 @@ public:
     {
         if (WDB->objectName().isEmpty())
             WDB->setObjectName(QStringLiteral("WDB"));
-        WDB->resize(879, 1118);
+        WDB->resize(879, 650);
         centralWidget = new QWidget(WDB);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         statGroupBox = new QGroupBox(centralWidget);
         statGroupBox->setObjectName(QStringLiteral("statGroupBox"));
-        statGroupBox->setGeometry(QRect(10, 10, 801, 381));
+        statGroupBox->setGeometry(QRect(10, 70, 441, 301));
         formLayoutWidget = new QWidget(statGroupBox);
         formLayoutWidget->setObjectName(QStringLiteral("formLayoutWidget"));
         formLayoutWidget->setGeometry(QRect(20, 30, 381, 341));
@@ -84,122 +84,113 @@ public:
         stationDataFormLayout->setSpacing(6);
         stationDataFormLayout->setContentsMargins(11, 11, 11, 11);
         stationDataFormLayout->setObjectName(QStringLiteral("stationDataFormLayout"));
+        stationDataFormLayout->setFieldGrowthPolicy(QFormLayout::AllNonFixedFieldsGrow);
         stationDataFormLayout->setLabelAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         stationDataFormLayout->setFormAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop);
         stationDataFormLayout->setContentsMargins(0, 0, 0, 0);
-        stationLabel = new QLabel(formLayoutWidget);
-        stationLabel->setObjectName(QStringLiteral("stationLabel"));
-
-        stationDataFormLayout->setWidget(0, QFormLayout::LabelRole, stationLabel);
-
-        mStationCombobox = new QComboBox(formLayoutWidget);
-        mStationCombobox->setObjectName(QStringLiteral("mStationCombobox"));
-
-        stationDataFormLayout->setWidget(0, QFormLayout::FieldRole, mStationCombobox);
-
         statIDLabel = new QLabel(formLayoutWidget);
         statIDLabel->setObjectName(QStringLiteral("statIDLabel"));
 
-        stationDataFormLayout->setWidget(1, QFormLayout::LabelRole, statIDLabel);
+        stationDataFormLayout->setWidget(0, QFormLayout::LabelRole, statIDLabel);
 
         mStatIDLineEdit = new QLineEdit(formLayoutWidget);
         mStatIDLineEdit->setObjectName(QStringLiteral("mStatIDLineEdit"));
 
-        stationDataFormLayout->setWidget(1, QFormLayout::FieldRole, mStatIDLineEdit);
+        stationDataFormLayout->setWidget(0, QFormLayout::FieldRole, mStatIDLineEdit);
 
         statNameLabel = new QLabel(formLayoutWidget);
         statNameLabel->setObjectName(QStringLiteral("statNameLabel"));
 
-        stationDataFormLayout->setWidget(2, QFormLayout::LabelRole, statNameLabel);
+        stationDataFormLayout->setWidget(1, QFormLayout::LabelRole, statNameLabel);
 
         mStatNameLineEdit = new QLineEdit(formLayoutWidget);
         mStatNameLineEdit->setObjectName(QStringLiteral("mStatNameLineEdit"));
 
-        stationDataFormLayout->setWidget(2, QFormLayout::FieldRole, mStatNameLineEdit);
+        stationDataFormLayout->setWidget(1, QFormLayout::FieldRole, mStatNameLineEdit);
 
         placeLabel = new QLabel(formLayoutWidget);
         placeLabel->setObjectName(QStringLiteral("placeLabel"));
 
-        stationDataFormLayout->setWidget(3, QFormLayout::LabelRole, placeLabel);
-
-        latLabel = new QLabel(formLayoutWidget);
-        latLabel->setObjectName(QStringLiteral("latLabel"));
-
-        stationDataFormLayout->setWidget(4, QFormLayout::LabelRole, latLabel);
+        stationDataFormLayout->setWidget(2, QFormLayout::LabelRole, placeLabel);
 
         mPlaceNameLineEdit = new QLineEdit(formLayoutWidget);
         mPlaceNameLineEdit->setObjectName(QStringLiteral("mPlaceNameLineEdit"));
 
-        stationDataFormLayout->setWidget(3, QFormLayout::FieldRole, mPlaceNameLineEdit);
+        stationDataFormLayout->setWidget(2, QFormLayout::FieldRole, mPlaceNameLineEdit);
+
+        latLabel = new QLabel(formLayoutWidget);
+        latLabel->setObjectName(QStringLiteral("latLabel"));
+
+        stationDataFormLayout->setWidget(3, QFormLayout::LabelRole, latLabel);
 
         mLatLineEdit = new QLineEdit(formLayoutWidget);
         mLatLineEdit->setObjectName(QStringLiteral("mLatLineEdit"));
 
-        stationDataFormLayout->setWidget(4, QFormLayout::FieldRole, mLatLineEdit);
+        stationDataFormLayout->setWidget(3, QFormLayout::FieldRole, mLatLineEdit);
 
         longLabel = new QLabel(formLayoutWidget);
         longLabel->setObjectName(QStringLiteral("longLabel"));
 
-        stationDataFormLayout->setWidget(5, QFormLayout::LabelRole, longLabel);
-
-        elevLabel = new QLabel(formLayoutWidget);
-        elevLabel->setObjectName(QStringLiteral("elevLabel"));
-
-        stationDataFormLayout->setWidget(6, QFormLayout::LabelRole, elevLabel);
-
-        tavLabel = new QLabel(formLayoutWidget);
-        tavLabel->setObjectName(QStringLiteral("tavLabel"));
-
-        stationDataFormLayout->setWidget(7, QFormLayout::LabelRole, tavLabel);
-
-        ampLabel = new QLabel(formLayoutWidget);
-        ampLabel->setObjectName(QStringLiteral("ampLabel"));
-
-        stationDataFormLayout->setWidget(8, QFormLayout::LabelRole, ampLabel);
+        stationDataFormLayout->setWidget(4, QFormLayout::LabelRole, longLabel);
 
         mLongLineEdit = new QLineEdit(formLayoutWidget);
         mLongLineEdit->setObjectName(QStringLiteral("mLongLineEdit"));
 
-        stationDataFormLayout->setWidget(5, QFormLayout::FieldRole, mLongLineEdit);
+        stationDataFormLayout->setWidget(4, QFormLayout::FieldRole, mLongLineEdit);
+
+        elevLabel = new QLabel(formLayoutWidget);
+        elevLabel->setObjectName(QStringLiteral("elevLabel"));
+
+        stationDataFormLayout->setWidget(5, QFormLayout::LabelRole, elevLabel);
 
         mElevLineEdit = new QLineEdit(formLayoutWidget);
         mElevLineEdit->setObjectName(QStringLiteral("mElevLineEdit"));
 
-        stationDataFormLayout->setWidget(6, QFormLayout::FieldRole, mElevLineEdit);
+        stationDataFormLayout->setWidget(5, QFormLayout::FieldRole, mElevLineEdit);
+
+        tavLabel = new QLabel(formLayoutWidget);
+        tavLabel->setObjectName(QStringLiteral("tavLabel"));
+
+        stationDataFormLayout->setWidget(6, QFormLayout::LabelRole, tavLabel);
 
         mTavLineEdit = new QLineEdit(formLayoutWidget);
         mTavLineEdit->setObjectName(QStringLiteral("mTavLineEdit"));
 
-        stationDataFormLayout->setWidget(7, QFormLayout::FieldRole, mTavLineEdit);
+        stationDataFormLayout->setWidget(6, QFormLayout::FieldRole, mTavLineEdit);
+
+        ampLabel = new QLabel(formLayoutWidget);
+        ampLabel->setObjectName(QStringLiteral("ampLabel"));
+
+        stationDataFormLayout->setWidget(7, QFormLayout::LabelRole, ampLabel);
 
         mAmpLineEdit = new QLineEdit(formLayoutWidget);
         mAmpLineEdit->setObjectName(QStringLiteral("mAmpLineEdit"));
 
-        stationDataFormLayout->setWidget(8, QFormLayout::FieldRole, mAmpLineEdit);
+        stationDataFormLayout->setWidget(7, QFormLayout::FieldRole, mAmpLineEdit);
 
         tmhtLabel = new QLabel(formLayoutWidget);
         tmhtLabel->setObjectName(QStringLiteral("tmhtLabel"));
 
-        stationDataFormLayout->setWidget(9, QFormLayout::LabelRole, tmhtLabel);
-
-        wmhtLabel = new QLabel(formLayoutWidget);
-        wmhtLabel->setObjectName(QStringLiteral("wmhtLabel"));
-
-        stationDataFormLayout->setWidget(10, QFormLayout::LabelRole, wmhtLabel);
+        stationDataFormLayout->setWidget(8, QFormLayout::LabelRole, tmhtLabel);
 
         mTmhtLineEdit = new QLineEdit(formLayoutWidget);
         mTmhtLineEdit->setObjectName(QStringLiteral("mTmhtLineEdit"));
 
-        stationDataFormLayout->setWidget(9, QFormLayout::FieldRole, mTmhtLineEdit);
+        stationDataFormLayout->setWidget(8, QFormLayout::FieldRole, mTmhtLineEdit);
+
+        wmhtLabel = new QLabel(formLayoutWidget);
+        wmhtLabel->setObjectName(QStringLiteral("wmhtLabel"));
+
+        stationDataFormLayout->setWidget(9, QFormLayout::LabelRole, wmhtLabel);
 
         mWmhtLineEdit = new QLineEdit(formLayoutWidget);
         mWmhtLineEdit->setObjectName(QStringLiteral("mWmhtLineEdit"));
 
-        stationDataFormLayout->setWidget(10, QFormLayout::FieldRole, mWmhtLineEdit);
+        stationDataFormLayout->setWidget(9, QFormLayout::FieldRole, mWmhtLineEdit);
 
         dwGroupBox = new QGroupBox(centralWidget);
         dwGroupBox->setObjectName(QStringLiteral("dwGroupBox"));
-        dwGroupBox->setGeometry(QRect(10, 410, 801, 491));
+        dwGroupBox->setGeometry(QRect(0, 390, 801, 491));
         formLayoutWidget_2 = new QWidget(dwGroupBox);
         formLayoutWidget_2->setObjectName(QStringLiteral("formLayoutWidget_2"));
         formLayoutWidget_2->setGeometry(QRect(10, 30, 261, 31));
@@ -224,10 +215,16 @@ public:
         mDailyWeatherView->setGeometry(QRect(10, 70, 781, 411));
         mDailyWeatherView->setAlternatingRowColors(true);
         mDailyWeatherView->verticalHeader()->setVisible(false);
+        mStationCombobox = new QComboBox(centralWidget);
+        mStationCombobox->setObjectName(QStringLiteral("mStationCombobox"));
+        mStationCombobox->setGeometry(QRect(110, 40, 287, 20));
+        stationLabel = new QLabel(centralWidget);
+        stationLabel->setObjectName(QStringLiteral("stationLabel"));
+        stationLabel->setGeometry(QRect(10, 40, 86, 13));
         WDB->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(WDB);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 879, 22));
+        menuBar->setGeometry(QRect(0, 0, 879, 21));
         WDB->setMenuBar(menuBar);
         mainToolBar = new QToolBar(WDB);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
@@ -245,7 +242,6 @@ public:
     {
         WDB->setWindowTitle(QApplication::translate("WDB", "WEATHER", 0));
         statGroupBox->setTitle(QApplication::translate("WDB", "Station Information", 0));
-        stationLabel->setText(QApplication::translate("WDB", "Choose a Station:", 0));
         statIDLabel->setText(QApplication::translate("WDB", "Station ID:", 0));
         statNameLabel->setText(QApplication::translate("WDB", "Station Name:", 0));
         placeLabel->setText(QApplication::translate("WDB", "Place Name:", 0));
@@ -258,6 +254,7 @@ public:
         wmhtLabel->setText(QApplication::translate("WDB", "Wmht:", 0));
         dwGroupBox->setTitle(QApplication::translate("WDB", "Daily Weather", 0));
         yearLabel->setText(QApplication::translate("WDB", "Choose Year:", 0));
+        stationLabel->setText(QApplication::translate("WDB", "Choose a Station:", 0));
     } // retranslateUi
 
 };

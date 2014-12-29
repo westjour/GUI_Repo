@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>843</width>
-    <height>959</height>
+    <height>650</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,7 +18,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>10</y>
+      <y>40</y>
       <width>411</width>
       <height>331</height>
      </rect>
@@ -46,114 +46,130 @@
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>339</width>
-        <height>666</height>
+        <width>322</width>
+        <height>534</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout">
        <item>
         <layout class="QFormLayout" name="formLayout">
+         <property name="fieldGrowthPolicy">
+          <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+         </property>
          <property name="formAlignment">
           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
          </property>
-         <item row="1" column="0">
+         <item row="0" column="0">
           <widget class="QLabel" name="label">
            <property name="text">
             <string>SlDesc</string>
            </property>
           </widget>
          </item>
-         <item row="2" column="0">
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="sldescLineEdit"/>
+         </item>
+         <item row="1" column="0">
           <widget class="QLabel" name="label_2">
            <property name="text">
             <string>Slsour</string>
            </property>
           </widget>
          </item>
-         <item row="3" column="0">
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="slsourLineEdit"/>
+         </item>
+         <item row="2" column="0">
           <widget class="QLabel" name="label_3">
            <property name="text">
             <string>Sltx</string>
            </property>
           </widget>
          </item>
-         <item row="4" column="0">
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="sltxLineEdit"/>
+         </item>
+         <item row="3" column="0">
           <widget class="QLabel" name="label_4">
            <property name="text">
             <string>Sldp</string>
            </property>
           </widget>
          </item>
-         <item row="6" column="0">
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="sldpLineEdit"/>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_13">
+           <property name="text">
+            <string>SSite</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLineEdit" name="ssiteLineEdit"/>
+         </item>
+         <item row="5" column="0">
           <widget class="QLabel" name="label_5">
            <property name="text">
             <string>SCount</string>
            </property>
           </widget>
          </item>
-         <item row="1" column="1">
-          <widget class="QLineEdit" name="sldescLineEdit"/>
-         </item>
-         <item row="2" column="1">
-          <widget class="QLineEdit" name="slsourLineEdit"/>
-         </item>
-         <item row="3" column="1">
-          <widget class="QLineEdit" name="sltxLineEdit"/>
-         </item>
-         <item row="4" column="1">
-          <widget class="QLineEdit" name="sldpLineEdit"/>
-         </item>
-         <item row="6" column="1">
+         <item row="5" column="1">
           <widget class="QLineEdit" name="scountLineEdit"/>
          </item>
-         <item row="7" column="0">
+         <item row="6" column="0">
           <widget class="QLabel" name="label_6">
            <property name="text">
             <string>SLat</string>
            </property>
           </widget>
          </item>
-         <item row="8" column="0">
+         <item row="6" column="1">
+          <widget class="QLineEdit" name="slatLineEdit"/>
+         </item>
+         <item row="7" column="0">
           <widget class="QLabel" name="label_7">
            <property name="text">
             <string>SLong</string>
            </property>
           </widget>
          </item>
-         <item row="9" column="0">
+         <item row="7" column="1">
+          <widget class="QLineEdit" name="slongLineEdit"/>
+         </item>
+         <item row="8" column="0">
           <widget class="QLabel" name="label_8">
            <property name="text">
             <string>Tacon</string>
            </property>
           </widget>
          </item>
-         <item row="10" column="0">
+         <item row="8" column="1">
+          <widget class="QLineEdit" name="taconLineEdit"/>
+         </item>
+         <item row="9" column="0">
           <widget class="QLabel" name="label_9">
            <property name="text">
             <string>Scom</string>
            </property>
           </widget>
          </item>
-         <item row="7" column="1">
-          <widget class="QLineEdit" name="slatLineEdit"/>
-         </item>
-         <item row="8" column="1">
-          <widget class="QLineEdit" name="slongLineEdit"/>
-         </item>
          <item row="9" column="1">
-          <widget class="QLineEdit" name="taconLineEdit"/>
-         </item>
-         <item row="10" column="1">
           <widget class="QLineEdit" name="scomLineEdit"/>
          </item>
-         <item row="11" column="0">
+         <item row="10" column="0">
           <widget class="QLabel" name="label_10">
            <property name="text">
             <string>Salb</string>
            </property>
           </widget>
          </item>
-         <item row="12" column="0">
+         <item row="10" column="1">
+          <widget class="QLineEdit" name="salbLineEdit"/>
+         </item>
+         <item row="11" column="0">
           <widget class="QLabel" name="label_11">
            <property name="text">
             <string>U</string>
@@ -161,109 +177,86 @@
           </widget>
          </item>
          <item row="11" column="1">
-          <widget class="QLineEdit" name="salbLineEdit"/>
-         </item>
-         <item row="12" column="1">
           <widget class="QLineEdit" name="uLineEdit"/>
          </item>
-         <item row="0" column="0">
-          <widget class="QLabel" name="label_12">
-           <property name="text">
-            <string>Choose a Soil:</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="1">
-          <widget class="QComboBox" name="soilCombobox"/>
-         </item>
-         <item row="5" column="0">
-          <widget class="QLabel" name="label_13">
-           <property name="text">
-            <string>SSite</string>
-           </property>
-          </widget>
-         </item>
-         <item row="5" column="1">
-          <widget class="QLineEdit" name="ssiteLineEdit"/>
-         </item>
-         <item row="13" column="0">
+         <item row="12" column="0">
           <widget class="QLabel" name="label_14">
            <property name="text">
             <string>SWCON</string>
            </property>
           </widget>
          </item>
-         <item row="13" column="1">
+         <item row="12" column="1">
           <widget class="QLineEdit" name="SWCONLineEdit"/>
          </item>
-         <item row="14" column="0">
+         <item row="13" column="0">
           <widget class="QLabel" name="label_15">
            <property name="text">
             <string>CN2</string>
            </property>
           </widget>
          </item>
-         <item row="14" column="1">
+         <item row="13" column="1">
           <widget class="QLineEdit" name="CN2LineEdit"/>
          </item>
-         <item row="16" column="1">
-          <widget class="QLineEdit" name="slpfLineEdit"/>
-         </item>
-         <item row="15" column="1">
-          <widget class="QLineEdit" name="slnfLineEdit"/>
-         </item>
-         <item row="15" column="0">
+         <item row="14" column="0">
           <widget class="QLabel" name="label_16">
            <property name="text">
             <string>Slnf</string>
            </property>
           </widget>
          </item>
-         <item row="16" column="0">
+         <item row="14" column="1">
+          <widget class="QLineEdit" name="slnfLineEdit"/>
+         </item>
+         <item row="15" column="0">
           <widget class="QLabel" name="label_17">
            <property name="text">
             <string>Slpf</string>
            </property>
           </widget>
          </item>
-         <item row="17" column="0">
+         <item row="15" column="1">
+          <widget class="QLineEdit" name="slpfLineEdit"/>
+         </item>
+         <item row="16" column="0">
           <widget class="QLabel" name="smhbLabel">
            <property name="text">
             <string>Smhb</string>
            </property>
           </widget>
          </item>
-         <item row="17" column="1">
+         <item row="16" column="1">
           <widget class="QLineEdit" name="smhbLineEdit"/>
          </item>
-         <item row="18" column="0">
+         <item row="17" column="0">
           <widget class="QLabel" name="smpxLabel">
            <property name="text">
             <string>Smpx</string>
            </property>
           </widget>
          </item>
-         <item row="18" column="1">
+         <item row="17" column="1">
           <widget class="QLineEdit" name="smpxLineEdit"/>
          </item>
-         <item row="19" column="0">
+         <item row="18" column="0">
           <widget class="QLabel" name="smkeLabel">
            <property name="text">
             <string>Smke</string>
            </property>
           </widget>
          </item>
-         <item row="19" column="1">
+         <item row="18" column="1">
           <widget class="QLineEdit" name="smkeLineEdit"/>
          </item>
-         <item row="20" column="0">
+         <item row="19" column="0">
           <widget class="QLabel" name="pondMaxLabel">
            <property name="text">
             <string>PondMax</string>
            </property>
           </widget>
          </item>
-         <item row="20" column="1">
+         <item row="19" column="1">
           <widget class="QLineEdit" name="pondMaxLineEdit"/>
          </item>
         </layout>
@@ -276,7 +269,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>350</y>
+      <y>390</y>
       <width>811</width>
       <height>511</height>
      </rect>
@@ -293,13 +286,42 @@
        <height>471</height>
       </rect>
      </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAsNeeded</enum>
+     </property>
+     <property name="alternatingRowColors">
+      <bool>true</bool>
+     </property>
      <attribute name="verticalHeaderVisible">
       <bool>false</bool>
      </attribute>
     </widget>
    </widget>
+   <widget class="QWidget" name="formLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>281</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="chooseSoilFormLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="chooseSoilLabel">
+       <property name="text">
+        <string>Choose a Soil:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QComboBox" name="soilCombobox"/>
+     </item>
+    </layout>
+   </widget>
    <zorder>groupBox_2</zorder>
    <zorder>groupBox</zorder>
+   <zorder>formLayoutWidget</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -307,7 +329,7 @@
      <x>0</x>
      <y>0</y>
      <width>843</width>
-     <height>22</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>

@@ -11,7 +11,7 @@
 
 #include <QMainWindow>
 
-/* Forward declaration this class so that we can use it as a
+/* Forward declare this class so that we can use it as a
  member variable. It is actually defined in ui_mainWindow.h */
 namespace Ui {
     class SDB;

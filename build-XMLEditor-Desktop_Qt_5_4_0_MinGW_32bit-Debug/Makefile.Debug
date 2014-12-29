@@ -77,9 +77,9 @@ DIST          =  ..\proj\CDailyWeatherModel.h \
 		..\proj\CSoilLayerModel.h \
 		..\proj\CStation.h \
 		..\proj\CXMLParser.h \
-		..\proj\ui_sdb.h \
-		..\proj\ui_wdb.h \
-		..\proj\ui_launch.h ..\proj\main.cpp \
+		ui_sdb.h \
+		ui_wdb.h \
+		ui_launch.h ..\proj\main.cpp \
 		..\proj\CDailyWeatherModel.cpp \
 		..\proj\CLaunchWindow.cpp \
 		..\proj\CWindowSDB.cpp \
@@ -213,7 +213,7 @@ debug/moc_CDailyWeatherModel.cpp: C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/Q
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qregexp.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qstringmatcher.h \
 		../proj/CDailyWeatherModel.h
-	C:\Qt\Qt5.4.0\5.4\mingw491_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/Qt5.4.0/5.4/mingw491_32/mkspecs/win32-g++ -IC:/Users/Jourdan/Desktop/GUI_Repo/proj -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtGui -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtXml -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore -I. ..\proj\CDailyWeatherModel.h -o debug\moc_CDailyWeatherModel.cpp
+	C:\Qt\Qt5.4.0\5.4\mingw491_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/Qt5.4.0/5.4/mingw491_32/mkspecs/win32-g++ -IC:/Users/Jourdan/Desktop/GUI_Repo-master/proj -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtGui -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtXml -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore -I. ..\proj\CDailyWeatherModel.h -o debug\moc_CDailyWeatherModel.cpp
 
 debug/moc_CLaunchWindow.cpp: C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets/QWidget \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets/qwidget.h \
@@ -318,7 +318,7 @@ debug/moc_CLaunchWindow.cpp: C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets/QWi
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtGui/qvector2d.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtGui/qtouchdevice.h \
 		../proj/CLaunchWindow.h
-	C:\Qt\Qt5.4.0\5.4\mingw491_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/Qt5.4.0/5.4/mingw491_32/mkspecs/win32-g++ -IC:/Users/Jourdan/Desktop/GUI_Repo/proj -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtGui -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtXml -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore -I. ..\proj\CLaunchWindow.h -o debug\moc_CLaunchWindow.cpp
+	C:\Qt\Qt5.4.0\5.4\mingw491_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/Qt5.4.0/5.4/mingw491_32/mkspecs/win32-g++ -IC:/Users/Jourdan/Desktop/GUI_Repo-master/proj -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtGui -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtXml -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore -I. ..\proj\CLaunchWindow.h -o debug\moc_CLaunchWindow.cpp
 
 debug/moc_CWindowSDB.cpp: C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets/QMainWindow \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets/qmainwindow.h \
@@ -426,7 +426,7 @@ debug/moc_CWindowSDB.cpp: C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets/QMainW
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets/qtabwidget.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtGui/qicon.h \
 		../proj/CWindowSDB.h
-	C:\Qt\Qt5.4.0\5.4\mingw491_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/Qt5.4.0/5.4/mingw491_32/mkspecs/win32-g++ -IC:/Users/Jourdan/Desktop/GUI_Repo/proj -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtGui -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtXml -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore -I. ..\proj\CWindowSDB.h -o debug\moc_CWindowSDB.cpp
+	C:\Qt\Qt5.4.0\5.4\mingw491_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/Qt5.4.0/5.4/mingw491_32/mkspecs/win32-g++ -IC:/Users/Jourdan/Desktop/GUI_Repo-master/proj -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtGui -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtXml -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore -I. ..\proj\CWindowSDB.h -o debug\moc_CWindowSDB.cpp
 
 debug/moc_CWindowWDB.cpp: C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets/QMainWindow \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets/qmainwindow.h \
@@ -533,11 +533,8 @@ debug/moc_CWindowWDB.cpp: C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets/QMainW
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtGui/qtouchdevice.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets/qtabwidget.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtGui/qicon.h \
-		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtXml/QDomNamedNodeMap \
-		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtXml/qdom.h \
-		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtXml/qtxmlglobal.h \
 		../proj/CWindowWDB.h
-	C:\Qt\Qt5.4.0\5.4\mingw491_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/Qt5.4.0/5.4/mingw491_32/mkspecs/win32-g++ -IC:/Users/Jourdan/Desktop/GUI_Repo/proj -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtGui -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtXml -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore -I. ..\proj\CWindowWDB.h -o debug\moc_CWindowWDB.cpp
+	C:\Qt\Qt5.4.0\5.4\mingw491_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/Qt5.4.0/5.4/mingw491_32/mkspecs/win32-g++ -IC:/Users/Jourdan/Desktop/GUI_Repo-master/proj -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtGui -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtXml -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore -I. ..\proj\CWindowWDB.h -o debug\moc_CWindowWDB.cpp
 
 debug/moc_CSoilLayerModel.cpp: C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/QAbstractTableModel \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qabstractitemmodel.h \
@@ -608,7 +605,7 @@ debug/moc_CSoilLayerModel.cpp: C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/QAbs
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qregexp.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qstringmatcher.h \
 		../proj/CSoilLayerModel.h
-	C:\Qt\Qt5.4.0\5.4\mingw491_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/Qt5.4.0/5.4/mingw491_32/mkspecs/win32-g++ -IC:/Users/Jourdan/Desktop/GUI_Repo/proj -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtGui -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtXml -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore -I. ..\proj\CSoilLayerModel.h -o debug\moc_CSoilLayerModel.cpp
+	C:\Qt\Qt5.4.0\5.4\mingw491_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/Qt5.4.0/5.4/mingw491_32/mkspecs/win32-g++ -IC:/Users/Jourdan/Desktop/GUI_Repo-master/proj -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtGui -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtXml -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore -I. ..\proj\CSoilLayerModel.h -o debug\moc_CSoilLayerModel.cpp
 
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
@@ -937,7 +934,7 @@ debug/CLaunchWindow.o: ../proj/CLaunchWindow.cpp C:/Qt/Qt5.4.0/5.4/mingw491_32/i
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtGui/qtouchdevice.h \
 		../proj/CLaunchWindow.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets/QWidget \
-		../proj/ui_launch.h \
+		ui_launch.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/QVariant \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets/QAction \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets/qaction.h \
@@ -978,9 +975,6 @@ debug/CLaunchWindow.o: ../proj/CLaunchWindow.cpp C:/Qt/Qt5.4.0/5.4/mingw491_32/i
 		../proj/CWindowWDB.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets/QMainWindow \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets/qmainwindow.h \
-		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtXml/QDomNamedNodeMap \
-		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtXml/qdom.h \
-		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtXml/qtxmlglobal.h \
 		../proj/CWindowSDB.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\CLaunchWindow.o ..\proj\CLaunchWindow.cpp
 
@@ -1102,15 +1096,12 @@ debug/CWindowSDB.o: ../proj/CWindowSDB.cpp C:/Qt/Qt5.4.0/5.4/mingw491_32/include
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/QAbstractTableModel \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qabstractitemmodel.h \
 		../proj/CXMLParser.h \
-		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtXml/QDomNamedNodeMap \
-		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtXml/qdom.h \
-		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtXml/qtxmlglobal.h \
 		../proj/CWindowSDB.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets/QMainWindow \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets/qmainwindow.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets/qtabwidget.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtGui/qicon.h \
-		../proj/ui_sdb.h \
+		ui_sdb.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/QVariant \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets/QAction \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets/qaction.h \
@@ -1321,10 +1312,7 @@ debug/CWindowWDB.o: ../proj/CWindowWDB.cpp C:/Qt/Qt5.4.0/5.4/mingw491_32/include
 		../proj/CWindowWDB.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets/QMainWindow \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets/qmainwindow.h \
-		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtXml/QDomNamedNodeMap \
-		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtXml/qdom.h \
-		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtXml/qtxmlglobal.h \
-		../proj/ui_wdb.h \
+		ui_wdb.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/QVariant \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets/QAction \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets/qaction.h \
@@ -1354,10 +1342,10 @@ debug/CWindowWDB.o: ../proj/CWindowWDB.cpp C:/Qt/Qt5.4.0/5.4/mingw491_32/include
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets/qtoolbar.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets/QWidget \
 		../proj/CXMLParser.h \
-		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/QMap \
 		../proj/CStation.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/QString \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/QVector \
+		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/QMap \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/QHash \
 		../proj/CDailyWeatherModel.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/QAbstractTableModel
@@ -1573,7 +1561,11 @@ debug/CXMLParser.o: ../proj/CXMLParser.cpp C:/Qt/Qt5.4.0/5.4/mingw491_32/include
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtXml/QDomDocument \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtXml/QDomAttr \
 		../proj/CXMLParser.h \
-		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtXml/QDomNamedNodeMap \
+		../proj/CStation.h \
+		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/QString \
+		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/QVector \
+		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qvector.h \
+		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qpoint.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/QMap \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qmap.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qdebug.h \
@@ -1582,13 +1574,8 @@ debug/CXMLParser.o: ../proj/CXMLParser.cpp C:/Qt/Qt5.4.0/5.4/mingw491_32/include
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qlocale.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qvariant.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qshareddata.h \
-		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qvector.h \
-		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qpoint.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qset.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qcontiguouscache.h \
-		../proj/CStation.h \
-		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/QString \
-		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/QVector \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/QHash \
 		../proj/CSoil.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\CXMLParser.o ..\proj\CXMLParser.cpp

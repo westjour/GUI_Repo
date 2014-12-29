@@ -25,12 +25,14 @@ class Ui_LaunchForm
 public:
     QPushButton *pushButtonOpen;
     QLabel *label;
+    QPushButton *pushButton_newSDB;
+    QPushButton *pushButton_newWDB;
 
     void setupUi(QWidget *LaunchForm)
     {
         if (LaunchForm->objectName().isEmpty())
             LaunchForm->setObjectName(QStringLiteral("LaunchForm"));
-        LaunchForm->resize(400, 300);
+        LaunchForm->resize(483, 344);
         pushButtonOpen = new QPushButton(LaunchForm);
         pushButtonOpen->setObjectName(QStringLiteral("pushButtonOpen"));
         pushButtonOpen->setGeometry(QRect(40, 90, 115, 32));
@@ -40,6 +42,12 @@ public:
         QFont font;
         font.setPointSize(19);
         label->setFont(font);
+        pushButton_newSDB = new QPushButton(LaunchForm);
+        pushButton_newSDB->setObjectName(QStringLiteral("pushButton_newSDB"));
+        pushButton_newSDB->setGeometry(QRect(40, 140, 111, 31));
+        pushButton_newWDB = new QPushButton(LaunchForm);
+        pushButton_newWDB->setObjectName(QStringLiteral("pushButton_newWDB"));
+        pushButton_newWDB->setGeometry(QRect(40, 190, 111, 31));
 
         retranslateUi(LaunchForm);
 
@@ -51,6 +59,8 @@ public:
         LaunchForm->setWindowTitle(QApplication::translate("LaunchForm", "XML Editor - Home", 0));
         pushButtonOpen->setText(QApplication::translate("LaunchForm", "Open...", 0));
         label->setText(QApplication::translate("LaunchForm", "<html><head/><body><p><span style=\" color:#006600;\">Welcome/Splash Screen</span></p></body></html>", 0));
+        pushButton_newSDB->setText(QApplication::translate("LaunchForm", "New SDB", 0));
+        pushButton_newWDB->setText(QApplication::translate("LaunchForm", "New WDB", 0));
     } // retranslateUi
 
 };

@@ -98,8 +98,15 @@ Stations* CXMLParser::parseWDB()
     // This vector will hold a list of stations after the WDB is successfully parsed
     Stations* stations = new QVector<CStation* >();
     
+
+    #ifdef Q_OS_MAC
     QFile file("/Users/westjour/Desktop/GUI_Repo/xml/SALUS_GY_USAM_RCP_60_03042014.wdb.xml");
-    //QFile file("/Users/westjour/Desktop/GUI_Repo/xml/NEW_XML.xml");
+    #endif
+
+    #ifndef Q_OS_MAC
+    QFile file("C:\\Users\\Jourdan\\Desktop\\GUI_Repo-master\\xml\\SALUS_GY_USAM_RCP_60_03042014.wdb.xml");
+    #endif
+
     QDomDocument doc = QDomDocument();
 
 

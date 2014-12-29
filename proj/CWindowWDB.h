@@ -21,7 +21,7 @@ class CStation;
  * and value=attribute value */
 typedef QMap<QString, QDomNamedNodeMap > AttrTemplate;
 
-/* Forward declaration this class so that we can use it as a
+/* Forward declare this class so that we can use it as a
 member variable. It is actually defined in ui_mainWindow.h */
 namespace Ui {
     class WDB;
@@ -49,12 +49,15 @@ private:
     void buildMacMenuBar();
     void saveXML();
     void makeConnections();
+    void populateYearCombobox();
     void clearLineEdits();
     void disableLineEdits();
     void enableLineEdits();
 
     // Map of WDB template values
     AttrTemplate* mAttrTemplate;
+
+    // WDB file being displayed in the UI
     QString mFilename;
     
     //

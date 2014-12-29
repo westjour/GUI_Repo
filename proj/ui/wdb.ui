@@ -202,6 +202,7 @@
      </attribute>
     </widget>
    </widget>
+<<<<<<< HEAD
    <widget class="QSplitter" name="splitter">
     <property name="geometry">
      <rect>
@@ -220,6 +221,30 @@
      </property>
     </widget>
     <widget class="QComboBox" name="mStationCombobox"/>
+=======
+   <widget class="QComboBox" name="mStationCombobox">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>40</y>
+      <width>287</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="stationLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>86</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Choose a Station:</string>
+    </property>
+>>>>>>> 8cb4400... update
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
@@ -228,7 +253,7 @@
      <x>0</x>
      <y>0</y>
      <width>879</width>
-     <height>22</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>

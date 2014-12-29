@@ -148,6 +148,32 @@
     <string>New CDB</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="pushButton_newSDB">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>140</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>New SDB</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_newWDB">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>190</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>New WDB</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

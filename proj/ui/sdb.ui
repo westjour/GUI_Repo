@@ -46,8 +46,13 @@
        <rect>
         <x>0</x>
         <y>0</y>
+<<<<<<< HEAD
         <width>339</width>
         <height>636</height>
+=======
+        <width>322</width>
+        <height>534</height>
+>>>>>>> 8cb4400... update
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout">
@@ -329,7 +334,7 @@
      <x>0</x>
      <y>0</y>
      <width>843</width>
-     <height>22</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>

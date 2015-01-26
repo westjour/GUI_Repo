@@ -151,6 +151,8 @@ dependencies: /Users/westjour/Desktop/GUI_Repo/proj/CWindowWDB.cpp \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/QMenuBar \
   ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qmenubar.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qmenu.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/QSplitter \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qsplitter.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/QStatusBar \
   ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qstatusbar.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/QTableView \

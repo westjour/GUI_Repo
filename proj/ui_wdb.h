@@ -21,6 +21,7 @@
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
+#include <QtWidgets/QSplitter>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTableView>
 #include <QtWidgets/QToolBar>
@@ -61,8 +62,9 @@ public:
     QLabel *yearLabel;
     QComboBox *mYearCombobox;
     QTableView *mDailyWeatherView;
-    QComboBox *mStationCombobox;
+    QSplitter *splitter;
     QLabel *stationLabel;
+    QComboBox *mStationCombobox;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -71,7 +73,7 @@ public:
     {
         if (WDB->objectName().isEmpty())
             WDB->setObjectName(QStringLiteral("WDB"));
-        WDB->resize(879, 650);
+        WDB->resize(923, 927);
         centralWidget = new QWidget(WDB);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         statGroupBox = new QGroupBox(centralWidget);
@@ -215,16 +217,20 @@ public:
         mDailyWeatherView->setGeometry(QRect(10, 70, 781, 411));
         mDailyWeatherView->setAlternatingRowColors(true);
         mDailyWeatherView->verticalHeader()->setVisible(false);
-        mStationCombobox = new QComboBox(centralWidget);
-        mStationCombobox->setObjectName(QStringLiteral("mStationCombobox"));
-        mStationCombobox->setGeometry(QRect(110, 40, 287, 20));
-        stationLabel = new QLabel(centralWidget);
+        splitter = new QSplitter(centralWidget);
+        splitter->setObjectName(QStringLiteral("splitter"));
+        splitter->setGeometry(QRect(24, 40, 421, 26));
+        splitter->setOrientation(Qt::Horizontal);
+        stationLabel = new QLabel(splitter);
         stationLabel->setObjectName(QStringLiteral("stationLabel"));
-        stationLabel->setGeometry(QRect(10, 40, 86, 13));
+        splitter->addWidget(stationLabel);
+        mStationCombobox = new QComboBox(splitter);
+        mStationCombobox->setObjectName(QStringLiteral("mStationCombobox"));
+        splitter->addWidget(mStationCombobox);
         WDB->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(WDB);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 879, 21));
+        menuBar->setGeometry(QRect(0, 0, 923, 22));
         WDB->setMenuBar(menuBar);
         mainToolBar = new QToolBar(WDB);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));

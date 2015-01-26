@@ -44,7 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5694103F1A7677D2009E7045 /* PBXContainerItemProxy */ = {
+		569410451A769253009E7045 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6DB9C3763D02B1415CD9D565 /* Project object */;
 			proxyType = 1;
@@ -104,7 +104,6 @@
 		4D64EC62868BEDD2D525E9B5 /* qt_lib_quickparticles_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_quickparticles_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_quickparticles_private.pri; sourceTree = "<absolute>"; };
 		54F5F191E541811663808894 /* qt_lib_printsupport.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_printsupport.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_printsupport.pri; sourceTree = "<absolute>"; };
 		565F1AE0597D3BE3053751A3 /* unix.conf */ = {isa = PBXFileReference; lastKnownFileType = file; name = unix.conf; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/common/unix.conf; sourceTree = "<absolute>"; };
-		569410401A767825009E7045 /* CWindowXDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWindowXDB.h; sourceTree = SOURCE_ROOT; };
 		56AAA5ABE4CCE1FC1BFB53E4 /* qt_lib_printsupport_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_printsupport_private.pri; path = ../../../Qt5.3.2/5.3/clang_64/mkspecs/modules/qt_lib_printsupport_private.pri; sourceTree = "<absolute>"; };
 		57CC9B48BFF8BC6CF20A3E73 /* moc_CSoilLayerModel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_CSoilLayerModel.cpp; sourceTree = "<absolute>"; };
 		58BBC3DD41BFC2EF4D6F7BDE /* CLaunchWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLaunchWindow.h; sourceTree = "<absolute>"; };
@@ -280,7 +279,6 @@
 				15B0E380EF333DB99AE9624D /* CSoilLayerModel.h */,
 				37BBEF775C693ADDD49563CD /* CStation.h */,
 				B60A5A328D50B94CAB593D17 /* CXMLParser.h */,
-				569410401A767825009E7045 /* CWindowXDB.h */,
 			);
 			name = Sources;
 			sourceTree = "<Group>";
@@ -578,7 +576,7 @@
 		F86E05C107B86A16D2A48FCC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B065C007C8DAD32E2A4D8AA4 /* Qt Preprocess */;
-			targetProxy = 5694103F1A7677D2009E7045 /* PBXContainerItemProxy */;
+			targetProxy = 569410451A769253009E7045 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

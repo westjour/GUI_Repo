@@ -104,7 +104,7 @@ public:
         scrollArea->setWidgetResizable(true);
         scrollAreaWidgetContents = new QWidget();
         scrollAreaWidgetContents->setObjectName(QStringLiteral("scrollAreaWidgetContents"));
-        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 322, 534));
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 339, 636));
         verticalLayout = new QVBoxLayout(scrollAreaWidgetContents);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         formLayout = new QFormLayout();
@@ -346,7 +346,7 @@ public:
         formLayoutWidget->raise();
         menubar = new QMenuBar(SDB);
         menubar->setObjectName(QStringLiteral("menubar"));
-        menubar->setGeometry(QRect(0, 0, 843, 21));
+        menubar->setGeometry(QRect(0, 0, 843, 22));
         SDB->setMenuBar(menubar);
         statusbar = new QStatusBar(SDB);
         statusbar->setObjectName(QStringLiteral("statusbar"));

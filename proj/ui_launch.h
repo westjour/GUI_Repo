@@ -16,6 +16,7 @@
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -23,8 +24,10 @@ QT_BEGIN_NAMESPACE
 class Ui_LaunchForm
 {
 public:
-    QPushButton *pushButtonOpen;
     QLabel *label;
+    QWidget *layoutWidget;
+    QVBoxLayout *verticalLayout;
+    QPushButton *pushButtonOpen;
     QPushButton *pushButton_newSDB;
     QPushButton *pushButton_newWDB;
     QPushButton *pushButton_newXDB;
@@ -35,27 +38,43 @@ public:
         if (LaunchForm->objectName().isEmpty())
             LaunchForm->setObjectName(QStringLiteral("LaunchForm"));
         LaunchForm->resize(483, 344);
-        pushButtonOpen = new QPushButton(LaunchForm);
-        pushButtonOpen->setObjectName(QStringLiteral("pushButtonOpen"));
-        pushButtonOpen->setGeometry(QRect(40, 90, 115, 32));
         label = new QLabel(LaunchForm);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(50, 30, 221, 31));
         QFont font;
         font.setPointSize(19);
         label->setFont(font);
-        pushButton_newSDB = new QPushButton(LaunchForm);
+        layoutWidget = new QWidget(LaunchForm);
+        layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
+        layoutWidget->setGeometry(QRect(40, 90, 207, 168));
+        verticalLayout = new QVBoxLayout(layoutWidget);
+        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        verticalLayout->setContentsMargins(0, 0, 0, 0);
+        pushButtonOpen = new QPushButton(layoutWidget);
+        pushButtonOpen->setObjectName(QStringLiteral("pushButtonOpen"));
+
+        verticalLayout->addWidget(pushButtonOpen);
+
+        pushButton_newSDB = new QPushButton(layoutWidget);
         pushButton_newSDB->setObjectName(QStringLiteral("pushButton_newSDB"));
-        pushButton_newSDB->setGeometry(QRect(40, 140, 111, 31));
-        pushButton_newWDB = new QPushButton(LaunchForm);
+
+        verticalLayout->addWidget(pushButton_newSDB);
+
+        pushButton_newWDB = new QPushButton(layoutWidget);
         pushButton_newWDB->setObjectName(QStringLiteral("pushButton_newWDB"));
-        pushButton_newWDB->setGeometry(QRect(40, 170, 111, 31));
-        pushButton_newXDB = new QPushButton(LaunchForm);
+
+        verticalLayout->addWidget(pushButton_newWDB);
+
+        pushButton_newXDB = new QPushButton(layoutWidget);
         pushButton_newXDB->setObjectName(QStringLiteral("pushButton_newXDB"));
-        pushButton_newXDB->setGeometry(QRect(40, 200, 115, 32));
-        pushButton_newCDB = new QPushButton(LaunchForm);
+
+        verticalLayout->addWidget(pushButton_newXDB);
+
+        pushButton_newCDB = new QPushButton(layoutWidget);
         pushButton_newCDB->setObjectName(QStringLiteral("pushButton_newCDB"));
-        pushButton_newCDB->setGeometry(QRect(40, 230, 115, 32));
+
+        verticalLayout->addWidget(pushButton_newCDB);
+
 
         retranslateUi(LaunchForm);
 
@@ -65,12 +84,12 @@ public:
     void retranslateUi(QWidget *LaunchForm)
     {
         LaunchForm->setWindowTitle(QApplication::translate("LaunchForm", "XML Editor - Home", 0));
-        pushButtonOpen->setText(QApplication::translate("LaunchForm", "Open...", 0));
         label->setText(QApplication::translate("LaunchForm", "<html><head/><body><p><span style=\" color:#006600;\">Welcome/Splash Screen</span></p></body></html>", 0));
-        pushButton_newSDB->setText(QApplication::translate("LaunchForm", "New SDB", 0));
-        pushButton_newWDB->setText(QApplication::translate("LaunchForm", "New WDB", 0));
-        pushButton_newXDB->setText(QApplication::translate("LaunchForm", "New XDB", 0));
-        pushButton_newCDB->setText(QApplication::translate("LaunchForm", "New CDB", 0));
+        pushButtonOpen->setText(QApplication::translate("LaunchForm", "Open...", 0));
+        pushButton_newSDB->setText(QApplication::translate("LaunchForm", "New Soil (SDB) File", 0));
+        pushButton_newWDB->setText(QApplication::translate("LaunchForm", "New Weather (WDB) File", 0));
+        pushButton_newXDB->setText(QApplication::translate("LaunchForm", "New Experiment (XDB) File", 0));
+        pushButton_newCDB->setText(QApplication::translate("LaunchForm", "New Crop (CDB) File", 0));
     } // retranslateUi
 
 };

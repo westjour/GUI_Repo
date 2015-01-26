@@ -13,19 +13,6 @@
   <property name="windowTitle">
    <string>XML Editor - Home</string>
   </property>
-  <widget class="QPushButton" name="pushButtonOpen">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>90</y>
-     <width>115</width>
-     <height>32</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Open...</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
@@ -44,31 +31,38 @@
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#006600;&quot;&gt;Welcome/Splash Screen&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_newSDB">
+  <widget class="QWidget" name="">
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>140</y>
-     <width>111</width>
-     <height>31</height>
+     <y>90</y>
+     <width>192</width>
+     <height>100</height>
     </rect>
    </property>
-   <property name="text">
-    <string>New SDB</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_newWDB">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>190</y>
-     <width>111</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>New WDB</string>
-   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="pushButtonOpen">
+      <property name="text">
+       <string>Open...</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_newSDB">
+      <property name="text">
+       <string>New Soil (SDB) File</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_newWDB">
+      <property name="text">
+       <string>New Weather (WDB) File</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>

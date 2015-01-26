@@ -91,7 +91,11 @@ dependencies: /Users/westjour/Desktop/GUI_Repo/proj/CWindowSDB.cpp \
   ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QAbstractTableModel \
   ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qabstractitemmodel.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers/qvariant.h \
-  CXMLParser.h CWindowSDB.h \
+  CXMLParser.h \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Versions/5/Headers/QDomNamedNodeMap \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Versions/5/Headers/qdom.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Headers/qtxmlglobal.h \
+  CWindowSDB.h \
   ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QMainWindow \
   ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qmainwindow.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qtabwidget.h \

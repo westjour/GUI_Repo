@@ -15,7 +15,7 @@ LEXFLAGS  =
 YACC      = yacc
 YACCFLAGS = -d
 DEFINES       = -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_CORE_LIB
-INCPATH       = -I../../../Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I. -I../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AGL.framework/Headers/ -I. -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib
+INCPATH       = -I../../../Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I. -I../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers -I../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AGL.framework/Headers -I. -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib
 DEL_FILE  = rm -f
 MOVE      = mv -f
 
@@ -41,27 +41,23 @@ compiler_moc_header_make_all: moc_CDailyWeatherModel.cpp moc_CLaunchWindow.cpp m
 compiler_moc_header_clean:
 	-$(DEL_FILE) moc_CDailyWeatherModel.cpp moc_CLaunchWindow.cpp moc_CWindowSDB.cpp moc_CWindowWDB.cpp moc_CSoilLayerModel.cpp
 moc_CDailyWeatherModel.cpp: ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QAbstractTableModel \
-		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qabstractitemmodel.h \
 		CDailyWeatherModel.h
 	/Users/westjour/Qt5.3.2/5.3/clang_64/bin/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -I/Users/westjour/Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I/Users/westjour/Desktop/GUI_Repo/proj -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib CDailyWeatherModel.h -o moc_CDailyWeatherModel.cpp
 
 moc_CLaunchWindow.cpp: ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QWidget \
-		../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qwidget.h \
 		CLaunchWindow.h
 	/Users/westjour/Qt5.3.2/5.3/clang_64/bin/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -I/Users/westjour/Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I/Users/westjour/Desktop/GUI_Repo/proj -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib CLaunchWindow.h -o moc_CLaunchWindow.cpp
 
 moc_CWindowSDB.cpp: ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QMainWindow \
-		../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qmainwindow.h \
 		CWindowSDB.h
 	/Users/westjour/Qt5.3.2/5.3/clang_64/bin/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -I/Users/westjour/Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I/Users/westjour/Desktop/GUI_Repo/proj -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib CWindowSDB.h -o moc_CWindowSDB.cpp
 
 moc_CWindowWDB.cpp: ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QMainWindow \
-		../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qmainwindow.h \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Versions/5/Headers/QDomNamedNodeMap \
 		CWindowWDB.h
 	/Users/westjour/Qt5.3.2/5.3/clang_64/bin/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -I/Users/westjour/Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I/Users/westjour/Desktop/GUI_Repo/proj -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib CWindowWDB.h -o moc_CWindowWDB.cpp
 
 moc_CSoilLayerModel.cpp: ../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QAbstractTableModel \
-		../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qabstractitemmodel.h \
 		CSoilLayerModel.h
 	/Users/westjour/Qt5.3.2/5.3/clang_64/bin/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -I/Users/westjour/Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I/Users/westjour/Desktop/GUI_Repo/proj -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib CSoilLayerModel.h -o moc_CSoilLayerModel.cpp
 

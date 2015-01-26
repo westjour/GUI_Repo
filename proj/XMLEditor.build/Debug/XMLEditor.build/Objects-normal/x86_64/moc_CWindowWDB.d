@@ -75,4 +75,7 @@ dependencies: /Users/westjour/Desktop/GUI_Repo/proj/moc_CWindowWDB.cpp \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qcursor.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qkeysequence.h \
   /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers/qtabwidget.h \
-  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qicon.h
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers/qicon.h \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Versions/5/Headers/QDomNamedNodeMap \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Versions/5/Headers/qdom.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Headers/qtxmlglobal.h

@@ -263,6 +263,24 @@
 			sourceTree = "<absolute>";
 			lastKnownFileType = "sourcecode.c.h";
 		};
+		9E81541DC4B75F5BD0014937 = {
+			isa = PBXFileReference;
+			path = "ui_sdb.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		368D83A6625C8E0F8A160ED6 = {
+			isa = PBXFileReference;
+			path = "ui_wdb.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		4CC37DF1DCC11A8F2B6105DA = {
+			isa = PBXFileReference;
+			path = "ui_launch.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
 		947250330C824966EE416BF7 = {
 			isa = PBXFileReference;
 			path = "proj/XMLEditor.pro";
@@ -1062,7 +1080,10 @@
 				"923CE9797149CC349514024D",
 				"15B0E380EF333DB99AE9624D",
 				"37BBEF775C693ADDD49563CD",
-				"B60A5A328D50B94CAB593D17");
+				"B60A5A328D50B94CAB593D17",
+				"9E81541DC4B75F5BD0014937",
+				"368D83A6625C8E0F8A160ED6",
+				"4CC37DF1DCC11A8F2B6105DA");
 			name = "Sources";
 			sourceTree = "<Group>";
 		};
@@ -1287,7 +1308,7 @@
 				GCC_OPTIMIZATION_LEVEL = "0";
 				PRODUCT_NAME = "XMLEditor";
 				QT_LIBRARY_SUFFIX = "_debug";
-				SDKROOT = "macosx10.8";
+				SDKROOT = "macosx10.9";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				CC = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang";
 				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
@@ -1301,8 +1322,8 @@
 					"../../../Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers",
 					"../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers",
 					".",
-					"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework/Headers",
-					"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AGL.framework/Headers/",
+					"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers",
+					"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AGL.framework/Headers",
 					".",
 					"../../../Qt5.3.2/5.3/clang_64/mkspecs/macx-clang");
 				LIBRARY_SEARCH_PATHS = (
@@ -1348,7 +1369,7 @@
 				GCC_OPTIMIZATION_LEVEL = "0";
 				PRODUCT_NAME = "XMLEditor";
 				QT_LIBRARY_SUFFIX = "_debug";
-				SDKROOT = "macosx10.8";
+				SDKROOT = "macosx10.9";
 				PRODUCT_NAME = "XMLEditor";
 			};
 			name = "Debug";
@@ -1360,7 +1381,7 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = "NO";
 				PRODUCT_NAME = "XMLEditor";
 				QT_LIBRARY_SUFFIX = "";
-				SDKROOT = "macosx10.8";
+				SDKROOT = "macosx10.9";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				CC = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang";
 				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
@@ -1374,8 +1395,8 @@
 					"../../../Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers",
 					"../../../Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers",
 					".",
-					"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework/Headers",
-					"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AGL.framework/Headers/",
+					"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers",
+					"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AGL.framework/Headers",
 					".",
 					"../../../Qt5.3.2/5.3/clang_64/mkspecs/macx-clang");
 				LIBRARY_SEARCH_PATHS = (
@@ -1420,7 +1441,7 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = "NO";
 				PRODUCT_NAME = "XMLEditor";
 				QT_LIBRARY_SUFFIX = "";
-				SDKROOT = "macosx10.8";
+				SDKROOT = "macosx10.9";
 				PRODUCT_NAME = "XMLEditor";
 			};
 			name = "Release";

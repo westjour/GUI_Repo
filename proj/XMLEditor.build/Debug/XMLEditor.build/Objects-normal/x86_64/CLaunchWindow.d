@@ -126,4 +126,7 @@ dependencies: /Users/westjour/Desktop/GUI_Repo/proj/CLaunchWindow.cpp \
   CWindowWDB.h \
   ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QMainWindow \
   ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qmainwindow.h \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Versions/5/Headers/QDomNamedNodeMap \
+  ../../../Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Versions/5/Headers/qdom.h \
+  /Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Headers/qtxmlglobal.h \
   CWindowSDB.h

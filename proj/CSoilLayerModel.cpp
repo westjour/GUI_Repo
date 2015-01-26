@@ -46,9 +46,9 @@ int CSoilLayerModel::rowCount( const QModelIndex & parent ) const
     if (parent.isValid() || mSoil == NULL)
         return 0;
     
-    if(mSoil != NULL) {
+    else
         return mSoil->getLayers()->size();
-    }
+    
 }
 
 

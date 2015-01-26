@@ -53,6 +53,7 @@ moc_CWindowSDB.cpp: ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versio
 	/Users/westjour/Qt5.3.2/5.3/clang_64/bin/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -I/Users/westjour/Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I/Users/westjour/Desktop/GUI_Repo/proj -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib CWindowSDB.h -o moc_CWindowSDB.cpp
 
 moc_CWindowWDB.cpp: ../../../Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QMainWindow \
+		../../../Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Versions/5/Headers/QDomNamedNodeMap \
 		CWindowWDB.h
 	/Users/westjour/Qt5.3.2/5.3/clang_64/bin/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -I/Users/westjour/Qt5.3.2/5.3/clang_64/mkspecs/macx-clang -I/Users/westjour/Desktop/GUI_Repo/proj -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtWidgets.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtXml.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtGui.framework/Headers -I/Users/westjour/Qt5.3.2/5.3/clang_64/lib/QtCore.framework/Headers -F/Users/westjour/Qt5.3.2/5.3/clang_64/lib CWindowWDB.h -o moc_CWindowWDB.cpp
 

@@ -35,15 +35,12 @@
    <property name="geometry">
     <rect>
      <x>40</x>
-<<<<<<< Updated upstream
      <y>90</y>
      <width>192</width>
      <height>100</height>
-=======
      <y>170</y>
      <width>111</width>
      <height>31</height>
->>>>>>> Stashed changes
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -87,15 +84,38 @@
    <property name="geometry">
     <rect>
      <x>40</x>
-<<<<<<< Updated upstream
      <y>230</y>
      <width>115</width>
      <height>32</height>
-=======
      <y>170</y>
      <width>111</width>
      <height>31</height>
->>>>>>> Stashed changes
+    </rect>
+   </property>
+   <property name="text">
+    <string>New CDB</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_newXDB">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>200</y>
+     <width>115</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>New XDB</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_newCDB">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>230</y>
+     <width>115</width>
+     <height>32</height>
     </rect>
    </property>
    <property name="text">

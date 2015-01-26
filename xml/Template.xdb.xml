@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XDB>
+  <Experiment ExpID="1" Title="" NYrs="" SYear="" SDOY="" ISwWat="" ISwNit="" ISwPho="" Frop="" Soilfp=".xml" SoilID="" Weatherfp=".xml" StationID="" Cropfp=".xml" Person="" Address="" Location="" RelPath="" NRrepSq="0" ISimI="" ISwSym="" ISwPot="" ISwDis="" MeWth="M" MeSIC="" MeSLi="" MeEvp="R" MeInf="R" MePho="" IOX="" IDetO="" IDetS="" IDetG="" IDetC="" IDetN="" IDetP="" IDetD="" IDetL="">
+    <Experiments_Notes Notes="" />
+    <Measured_Data FieldName="" Date="" Value="0" />
+    <Measured_Data_Notes Notes="" />
+    <Mgt_InitialCond Year="" DOY="" PrCrop="" WResR="" WResAG="" KnDnFrac="0" TImpl="" TDep="" WResNd="" EfInoc="1" EfNFix="1" FlDD="0" SFDrn="0">
+      <Layer DLayrI="" SWInit="" INinorg="0" TotP="0" P_ActIno="" P_SloIno="" P_Labile="" />
+    </Mgt_InitialCond>
+    <Rotation_Components>
+      <Component OrderNum="0" Title="" IPltI="" IIrrI="" IferI="" IResI="" ITilI="" IHarI="" IEnvI="">
+        <Mgt_Chemical_App Year="" DOY="" DAP="" ChCod="" ChAmt="0" ChMet="" ChDep="" ChT="" />
+        <Mgt_EnvMod_App Year="" DOY="" DAP="" DayFac="" DayAdj="" RadFac="" RadAdj="" TxFac="" TxAdj="" TnFac="" TnAdj="" PrcFac="" PrcAdj="" CO2Fac="" CO2Adj="" DptFac="" DptAdj="" WndFac="" WndAdj="" />
+        <Mgt_Planting CropMod="S" SpeciesID="" CultivarID="" Year="0" DOY="0" EYear="0" EDOY="" Ppop="0" Ppoe="0" PlMe="" PlDs="" RowSpc="" AziR="" SDepth="" SdWtPl="" SdAge="" ATemp="" PlPH="" />
+        <Mgt_Planting_Auto FYear="" FDOY="" LYear="" LDOY="" SwPltL="" SwPltH="" SwPltD="" PTx="" PTTn="" />
+        <Mgt_Harvest_App Year="" DOY="" DAP="" HStg="" HCom="" HSiz="" HPc="" HBmin="0" HBPc="" HKnDnPc="0" />
+        <Mgt_Harvest_Auto HDlay="" HLYear="" HLDOY="" HPP="" HRP="" />
+        <Mgt_Fertilizer_Auto DSoilN="" SoilNC="" SoilNX="" NCode="" NEnd="" />
+        <Mgt_Irrigation_Auto EffIrr="" DSoil="0" ThetaC="" IEPt="" IOff="" IAMe="" AIrAm="" />
+        <Mgt_Residue_Auto RIP="" NResDL="" DResMG="" />
+        <Mgt_Tillage_App Year="" DOY="" DAP="" TImpl="" TDep="" />
+        <Mgt_Fertilizer_App Year="" DOY="" DAP="" IFType="" FerCode="" FInP="0" DFert="0" ACrbFer="0" ANFer="0" APFer="0" AKFer="0" ACFer="0" AOFer="0" FOCod="" FerDecRt="0" VolN="0" VolNRate="0" />
+        <Mgt_Residue_App Year="" DOY="" DAP="" ResCode="" Residue="" RInP="0" DepRes="0" ResC="0" ResN="0" ResP="0" ResK="0" />
+        <Mgt_Irrigation_App Year="" DOY="" DAP="" IrrCod="" Amt="" DFDrn="" FLDD="" SFDrn="" />
+          <Mgt_SoilAnalysis ExpID="1" RcID="1" Year="" DOY="" SMHB="" SMPX="" SMKE="" dbnum="1">
+              <Mgt_SoilAnalysis_Lay ExpID="1" RcID="1" SABL="" SADM="" SAOC="" SANI="" SApHW="" SApHB="" SAPX="" SAKE="" dbnum="1" />
+          </Mgt_SoilAnalysis>
+      </Component>
+    </Rotation_Components>
+  </Experiment>
+  <Version_Control>
+    <Version Number="1">
+      <ReleaseDate>11/26/1999 12:00:00 AM</ReleaseDate>
+      <Notes>Initial release, beta version.</Notes>
+    </Version>
+    <Version Number="1.1">
+      <ReleaseDate>11/27/1999 12:00:00 AM</ReleaseDate>
+      <Notes>testingâ¦</Notes>
+    </Version>
+    <Version Number="1.2">
+      <ReleaseDate>6/7/2011 12:00:00 AM</ReleaseDate>
+      <Notes>Added harvest parameters HBpc and Hbmin</Notes>
+    </Version>
+    <Version Number="1.3">
+      <ReleaseDate>12/13/2012 12:00:00 AM</ReleaseDate>
+      <Notes>Added Relative File Path Flag (RelPath) -- B.D. Baer</Notes>
+    </Version>
+    <Version Number="X_1.1">
+      <ReleaseDate>03/20/2014</ReleaseDate>
+      <Notes>Automatically converted from Access DB by salus_access2xml program.</Notes>
+    </Version>
+  </Version_Control>
+</XDB>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CDB>
+  <Complex_Species>
+    <Species SpeciesID="1" Species="" LEtg="" TbaseD="" ToptD="" ToptP="" RUE="" LEsec="" lncsf="" SLWmax="" Phase3="" LEear="" Kf="" glfmat="" EmgInt="" EmgSlp="" PhotoC="" Nfixing="" PARtK="" PARtE="" CHeight="0">
+      <Phases>
+        <Phase Label="" PhylF="" Tswch="" TopSk="" Slwf="" LeafF="" StemF="" GRF="" RTF="" ResF="" MxTiS="" RlNVg="" RlNKr="" RlPVg="" RlPKr="" />
+      </Phases>
+      <TempFactors>
+        <Factor TRF="" X="" Y="" />
+      </TempFactors>
+      <Cultivars>
+        <Cultivar CultivarID="1" Name="" Vcoef="" LT50c="" PhLow="" PhHig="" DelpH="" LEJuv="" KrNPt="" KrSEf="" BrnCo="" Prolf="" EaNPt="" EaSEf="" LEgg="" krPGR="" phyll="" Phy14="" MxNVg="" MxNKr="" MnNMlt="" MxPVg="" MxPKr="" MnPMlt="" />
+      </Cultivars>
+    </Species>
+  </Complex_Species>
+  <Simple_Crop>
+    <Species SpeciesID="1" Species_Name="" Source="" relTT_P1="" relLAI_P1="" relTT_P2="" relLAI_P2="" LAImax="" RUEmax="" relTT_Sn="" SnParLAI="" SnParRUE="" TbaseDev="" ToptDev="" TTtoGerm="" TTtoMatr="" EmgInter="" EmgSlope="" HrvIndex="" PlntN_Em="" PlntN_Hf="" PlntN_Mt="" GrnN_Mt="" PlntP_Em="" PlntP_Hf="" PlntP_Mt="" GrnP_Mt="" Nfixing="" CHeight="0" />
+  </Simple_Crop>
+  <N_Fix>
+    <Species SpeciesID="1" Species_Name="" Source="" TTFIX="" RFIXN="" CtoNod="" />
+  </N_Fix>
+  <CO2_XY>
+    <PhotoSynType PhotSynID="C3">
+    </PhotoSynType>
+    <PhotoSynType PhotSynID="C4">
+    </PhotoSynType>
+  </CO2_XY>
+  <Version_Control>
+    <Version Number="1">
+      <ReleaseDate>11/26/1999 12:00:00 AM</ReleaseDate>
+      <Notes>Initial Rel., beta v.</Notes>
+    </Version>
+    <Version Number="1.1">
+      <ReleaseDate>11/27/1999 12:00:00 AM</ReleaseDate>
+      <Notes>Testing</Notes>
+    </Version>
+    <Version Number="X_1.1">
+      <ReleaseDate>03/20/2014</ReleaseDate>
+      <Notes>Automatically converted from Access DB by salus_access2xml program.</Notes>
+    </Version>
+  </Version_Control>
+</CDB>
